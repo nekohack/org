@@ -1,0 +1,81 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 35vh;
+  margin-top: 2rem;
+
+  @media (min-width: 500px) {
+    padding: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    padding: 3rem;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 10rem;
+  }
+}
+
+.mainTitle {
+  h1 {
+    margin-bottom: 0;
+    font-size: clamp(2rem, 10vw, 5.5rem);
+    line-height: 55pt;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: clamp(1.2rem, 6vw, 2.5rem);
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.mainText {
+  align-self: center;
+  max-width: 65ch;
+  margin: 1.5rem 0;
+  font-size: clamp(1rem, 5vw, 1.3rem);
+  color: var(--light);
+  text-align: center;
+}
+
+.btnContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+.btnContainer a {
+  margin: 0;
+  transition: filter 200ms, transform 200ms;
+}
+
+.btnContainer a:hover,
+.btnContainer a:focus {
+  filter: brightness(150%);
+  transform: translateY(-0.2rem);
+}
+
+@media (min-width: 768px) {
+  .btnContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btnContainer .btn:nth-child(2n + 2) {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .btnContainer {
+    grid-template-columns: auto;
+  }
+}

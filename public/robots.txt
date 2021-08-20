@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://nekohack.me
+
+# Sitemaps
+Sitemap: https://nekohack.me/sitemap.xml

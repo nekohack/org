@@ -1,0 +1,53 @@
+{
+  "name": "nekohack.me",
+  "version": "0.1.0",
+  "description": "Next.js project",
+  "author": "yuukit <yuma.kitamura@ponos.co.jp>",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"next dev\" \"npm run build:typed-css:w\"",
+    "build": "next build && next-sitemap",
+    "export": "next export",
+    "start": "next start",
+    "format": "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss,sass}\" --ignore-path .gitignore",
+    "eslint": "eslint ./src --ext .tsx,.ts,.jsx,.js",
+    "eslint:fix": "eslint ./src --ext .tsx,.ts,.jsx,.js --fix",
+    "stylelint": "stylelint --config .stylelintrc.yml 'src/styles/**/*.scss'",
+    "stylelint:fix": "stylelint --config .stylelintrc.yml 'src/styles/**/*.scss' --fix",
+    "build:typed-css": "tsm src",
+    "build:typed-css:w": "tsm src -w",
+    "tsc": "npm run build:typed-css && tsc --noEmit"
+  },
+  "dependencies": {
+    "date-fns": "2.23.0",
+    "next": "11.1.0",
+    "next-pwa": "5.2.24",
+    "next-sitemap": "1.6.157",
+    "nprogress": "0.2.0",
+    "preact": "10.5.14",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-tooltip": "4.2.21",
+    "sass": "1.37.5",
+    "zenscroll": "4.0.2"
+  },
+  "devDependencies": {
+    "@nekohack/eslint-config-react": "0.5.0",
+    "@types/node": "16.6.2",
+    "@types/react": "17.0.18",
+    "@types/react-dom": "17.0.9",
+    "@typescript-eslint/eslint-plugin": "4.29.1",
+    "@typescript-eslint/parser": "4.29.1",
+    "concurrently": "6.2.1",
+    "esbuild": "0.12.20",
+    "eslint": "7.32.0",
+    "prettier": "2.3.2",
+    "stylelint": "13.13.1",
+    "stylelint-a11y": "1.2.3",
+    "stylelint-config-recess-order": "2.5.0",
+    "stylelint-config-standard": "20.0.0",
+    "stylelint-scss": "3.20.1",
+    "typed-scss-modules": "4.1.1",
+    "typescript": "4.3.5"
+  }
+}
