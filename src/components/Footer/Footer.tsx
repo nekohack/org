@@ -3,7 +3,7 @@ import format from 'date-fns/format'
 import styles from './footer.module.scss'
 
 async function fetchLastUpdated(setLastUpdated: React.Dispatch<React.SetStateAction<string>>) {
-  const data = await fetch('https://api.github.com/repos/jiyuujin/webneko-blog')
+  const data = await fetch('https://api.github.com/repos/nekohack/nekohack.me')
     .then((v) => v.json())
     .catch(() => null)
 
@@ -26,7 +26,7 @@ export const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
         <p>
-          Created by <a href="https://github.com/nekohack/portfolio">Portfolio</a> with ❤️
+          Created by <a href="https://github.com/nekohack/nekohack.me">Portfolio</a> with ❤️
           <br />
           Colors: GitHub dark mode. Built with <a href="https://nextjs.org">Next.js</a>
           <br />
