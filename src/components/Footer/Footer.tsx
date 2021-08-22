@@ -28,7 +28,7 @@ export const Footer = () => {
         <p>
           Created by <a href="https://github.com/nekohack/nekohack.me">Portfolio</a> with ❤️
           <br />
-          Colors: GitHub dark mode. Built with <a href="https://nextjs.org">Next.js</a>
+          Colors: Dark mode. Built with <a href="https://nextjs.org">Next.js</a>
           <br />
           {lastUpdated ? <>Last updated: {lastUpdated}</> : null}
         </p>
