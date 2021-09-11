@@ -8,9 +8,11 @@ import 'css/globals.scss'
 import 'css/nprogress.css'
 import 'css/fonts.scss'
 import { useScrollTop } from 'src/hooks/useScrollTop'
+import { useGoogleAdsense } from 'src/hooks/useGoogleAdsense'
 
 function App({ Component, pageProps }: AppProps) {
   useScrollTop()
+  useGoogleAdsense()
 
   React.useEffect(() => {
     function handleRouteStart() {

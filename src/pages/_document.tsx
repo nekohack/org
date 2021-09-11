@@ -25,6 +25,11 @@ class NekohackMe extends Document {
           <meta name="twitter:creator" content="@jiyuujinlaab" />
           <meta name="twitter:site" content="@jiyuujinlaab" />
           <meta property="twitter:image" content="https://nekohack.me/icons/nekohack-128.png" />
+          <script
+            async
+            src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+            data-ad-client="ca-pub-7095980629133842"
+          />
         </Head>
         <body>
           <Main />
