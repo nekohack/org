@@ -11,9 +11,9 @@ const SkillsSection = () => {
         {skills.map((skillsItem) => {
           return (
             <div key={skillsItem.header} className={styles.skillsItem}>
-              <header>
+              <div className={styles.header}>
                 <h1>{skillsItem.header}</h1>
-              </header>
+              </div>
 
               <ul className={styles.skillsItem}>
                 {skillsItem.items.map((item) => (

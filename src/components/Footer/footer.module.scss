@@ -7,7 +7,12 @@
   padding-bottom: 2rem;
 
   a {
+    color: #000;
     text-decoration: underline;
+
+    @media (prefers-color-scheme: dark) {
+      color: #fff;
+    }
   }
 }
 
@@ -15,7 +20,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: var(--content-width);
+  width: 90%;
 
   @media (max-width: 450px) {
     text-align: center;

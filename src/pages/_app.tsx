@@ -3,7 +3,6 @@ import { AppProps } from 'next/app'
 import Router from 'next/router'
 import NProgress from 'nprogress'
 import 'zenscroll/zenscroll-min'
-import { Nav, Footer } from '@components/index'
 import 'css/globals.scss'
 import 'css/nprogress.css'
 import 'css/fonts.scss'
@@ -33,17 +32,7 @@ function App({ Component, pageProps }: AppProps) {
     }
   }, [])
 
-  return (
-    <>
-      <Nav />
-      <div id="container" className="container">
-        <div className="content">
-          <Component {...pageProps} />
-        </div>
-      </div>
-      <Footer />
-    </>
-  )
+  return <Component {...pageProps} />
 }
 
 export default App
