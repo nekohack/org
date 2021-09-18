@@ -15,10 +15,8 @@
 }
 
 :root {
-  --bg: #303030;
   --text-color: #cdd6e2;
   --secondary: #1e2126;
-  --dark: #474747;
 }
 
 *,
@@ -36,8 +34,13 @@ html {
 body {
   overflow-x: hidden;
   font-weight: 400;
-  color: var(--text-color);
-  background: var(--bg);
+  color: #000;
+  background: #fff;
+
+  @media (prefers-color-scheme: dark) {
+    color: #fff;
+    background: #303030;
+  }
 }
 
 #__next {
@@ -97,15 +100,27 @@ a {
 }
 
 .btn__light {
-  background: var(--secondary);
+  color: #000;
+  background: #ddd;
+
+  @media (prefers-color-scheme: dark) {
+    color: #fff;
+    background: #1e2126;
+  }
 }
 
 .btn__dark {
-  background: var(--dark);
+  color: #000;
+  background: #ddd;
+
+  @media (prefers-color-scheme: dark) {
+    color: #fff;
+    background: #474747;
+  }
 }
 
 .btn__lighter {
-  color: var(--bg) !important;
+  color: #303030 !important;
   background: var(--text-color);
 
   &:hover {
