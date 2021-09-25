@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { useEmitEvent } from '@hooks/useEmitEvent'
+import { useLocale } from '@hooks/useLocale'
 import SkillsSection from '@sections/SkillsSection'
 import TimelineSection from '@sections/TimelineSection'
 import { PersonIcon, ContactIcon, GitHubIcon, TwitterIcon } from '@components/Icons/About'
@@ -22,11 +23,7 @@ const Index = () => {
         <h2>Web Developer</h2>
       </div>
 
-      <p className={mainStyles.mainText}>
-        On the net, they live under the name of JIYUUJIN. Birthday is November 04, 1988. Born in
-        Toyonaka City, Osaka Prefecture. Gender is male. Currently, we are active mainly in the
-        Kansai area (Kyoto and Osaka).
-      </p>
+      <p className={mainStyles.mainText}>{i18next.t('basic_biography')}</p>
 
       <div className={mainStyles.btnContainer}>
         <a onClick={dispatch} className="btn btn__light btn__icon" href="#timeline">

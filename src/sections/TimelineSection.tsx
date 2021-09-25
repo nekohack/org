@@ -3,11 +3,13 @@ import ReactTooltip from 'react-tooltip'
 import { ArrowDown } from '@components/Icons/ArrowDown'
 import styles from 'css/timeline.module.scss'
 import { classes } from '@lib/classes'
+import { useLocale } from '@hooks/useLocale'
 import timeline from '../data/timeline'
 
 const TimelineSection = () => {
   const [viewOlderText, setViewOlderText] = React.useState<string>('View All')
   const [length, setLength] = React.useState<number>(7)
+  const { t } = useLocale()
 
   function showMore() {
     if (length > 7) {
@@ -21,7 +23,8 @@ const TimelineSection = () => {
 
   return (
     <section id="timeline">
-      <h1 className="section__title">Timeline</h1>
+      <h1 className="section__title">{t.timeline}</h1>
+      <p>{t.timeline_description}</p>
       <div className={styles.timeline}>
         {timeline.slice(0, length).map((item, idx: number) => {
           const side = idx % 2 === 0 ? styles.left : styles.right

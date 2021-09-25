@@ -1,12 +1,15 @@
 import * as React from 'react'
 import styles from 'css/skills.module.scss'
+import { useLocale } from '@hooks/useLocale'
 import { skills } from '../data/skills'
 
 const SkillsSection = () => {
+  const { t } = useLocale()
+
   return (
     <section id="skills">
-      <h1 className="section__title">My Backpack</h1>
-
+      <h1 className="section__title">{t.backpack}</h1>
+      <p>{t.backpack_description}</p>
       <div className={styles.skillsContainer}>
         {skills.map((skillsItem) => {
           return (
