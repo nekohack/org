@@ -1,7 +1,3 @@
-.timelineSection {
-  margin-top: 3rem;
-}
-
 .timeline {
   position: relative;
   max-width: 1200px;
@@ -151,10 +147,6 @@
   }
 }
 
-.reverse {
-  flex-direction: row-reverse;
-}
-
 @media screen and (max-width: 1300px) {
   .timeline::after {
     left: 20px;
@@ -180,10 +172,6 @@
 
   .right {
     left: 0;
-  }
-
-  .reverse {
-    flex-direction: row;
   }
 }
 
@@ -212,10 +200,6 @@
 @media (hover: hover) {
   .timelineItemBody:hover {
     box-shadow: 0 0 18px 0 rgb(22, 27, 34, 0.3);
-  }
-
-  .timelineLink:hover {
-    color: white;
   }
 
   .viewOlderBtn:hover {
