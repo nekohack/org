@@ -2,20 +2,6 @@
 const withPWA = require('next-pwa')
 
 const config = {
-  async redirects() {
-    return [
-      {
-        source: '/twitter',
-        destination: process.env.NEXT_PUBLIC_TWITTER_PROFILE_URL || 'https://twitter.com',
-        permanent: true,
-      },
-      {
-        source: '/github',
-        destination: process.env.NEXT_PUBLIC_GITHUB_PROFILE_URL || 'https://github.com',
-        permanent: true,
-      },
-    ]
-  },
   async headers() {
     return [
       {
