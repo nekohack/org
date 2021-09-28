@@ -1,5 +1,6 @@
 import * as React from 'react'
 import ReactTooltip from 'react-tooltip'
+import i18next from 'i18next'
 import { ArrowDown } from '@components/Icons/ArrowDown'
 import styles from 'css/timeline.module.scss'
 import { classes } from '@lib/classes'
@@ -21,7 +22,8 @@ const TimelineSection = () => {
 
   return (
     <section id="timeline">
-      <h1 className="section__title">Timeline</h1>
+      <h1 className="section__title">{i18next.t('timeline')}</h1>
+      <p>{i18next.t('timeline_description')}</p>
       <div className={styles.timeline}>
         {timeline.slice(0, length).map((item, idx: number) => {
           const side = idx % 2 === 0 ? styles.left : styles.right
