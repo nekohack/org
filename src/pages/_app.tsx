@@ -2,6 +2,8 @@ import * as React from 'react'
 import { AppProps } from 'next/app'
 import Router from 'next/router'
 import NProgress from 'nprogress'
+import i18next from 'i18next'
+import '../../i18n.init'
 import 'zenscroll/zenscroll-min'
 import 'css/globals.scss'
 import 'css/nprogress.css'
@@ -10,6 +12,7 @@ import { useScrollTop } from 'src/hooks/useScrollTop'
 import { useGoogleAdsense } from 'src/hooks/useGoogleAdsense'
 
 function App({ Component, pageProps }: AppProps) {
+  i18next.changeLanguage(pageProps.language)
   useScrollTop()
   useGoogleAdsense()
 

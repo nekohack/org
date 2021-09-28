@@ -1,12 +1,13 @@
 import * as React from 'react'
+import i18next from 'i18next'
 import styles from 'css/skills.module.scss'
 import { skills } from '../data/skills'
 
 const SkillsSection = () => {
   return (
     <section id="skills">
-      <h1 className="section__title">My Backpack</h1>
-
+      <h1 className="section__title">{i18next.t('backpack')}</h1>
+      <p>{i18next.t('backpack_description')}</p>
       <div className={styles.skillsContainer}>
         {skills.map((skillsItem) => {
           return (
