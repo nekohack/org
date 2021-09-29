@@ -44,8 +44,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
       - name: Deploy to S3
-        run: aws s3 sync ./out/ s3://nekohack.me/ --delete --acl public-read
-
+        run: bash scripts/sub_directory.sh
 #      - name: Clear cache in CloudFront
 #        uses: chetan/invalidate-cloudfront-action@v1.2
 #        env:
