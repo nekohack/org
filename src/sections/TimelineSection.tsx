@@ -56,7 +56,10 @@ const TimelineSection = () => {
                     </ReactTooltip>
                   ) : null}
                 </header>
-                {item.description}
+                <div className={styles.timelineItemDetail}>
+                  {item.image && <img alt={item.title} src={item.image} />}
+                  {item.description && <span>{item.description}</span>}
+                </div>
               </a>
             </div>
           )

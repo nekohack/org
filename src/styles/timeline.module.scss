@@ -147,6 +147,21 @@
   }
 }
 
+.timelineItemDetail {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  img {
+    width: 200px;
+    padding: 0 4px;
+  }
+
+  span {
+    margin-left: 2px;
+  }
+}
+
 @media screen and (max-width: 1300px) {
   .timeline::after {
     left: 20px;
