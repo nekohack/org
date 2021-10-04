@@ -1,106 +1,104 @@
+import i18next from 'i18next'
+
 interface TimelineItem {
   date: string
   full_date?: string // eg: March 28, 2021
   title: string
-  description: string
+  description?: string
+  image?: string
   url?: string
 }
 
 const timeline: TimelineItem[] = [
   {
     date: 'Spring 2021',
-    title: 'Gave up during the dormant period',
-    description: 'Gradually resumed activities of tech communities.',
+    title: i18next.t('finish_the_dormant_period'),
   },
   {
     date: 'Spring 2020',
-    title: 'Started to take a dormant period',
-    description: 'Minimized activities of tech communities.',
+    title: i18next.t('start_the_dormant_period'),
+    description: i18next.t('start_the_dormant_period_in_memo'),
   },
   {
     date: 'February 2020',
-    title: 'Created a profile website',
-    description: 'Started to create a profile website.',
+    title: i18next.t('created_a_profile_website'),
+    description: i18next.t('created_a_profile_website_in_memo'),
+    image: 'https://i.imgur.com/sN5nHoS.jpg',
     url: 'https://yuma-kitamura.nekohack.me',
   },
   {
     date: 'February 2020',
-    title: 'Worked Smaregi app market',
-    description: 'Started to work on function development in Smaregi app market.',
+    title: i18next.t('worked_smaregi_app_market'),
+    description: i18next.t('worked_smaregi_app_market_in_memo'),
   },
   {
     date: 'November 2019',
     full_date: 'November 30, 2019',
-    title: 'Participated in JS Conf JP',
-    description: 'Participated in JS Conf JP.',
+    title: i18next.t('participated_in_js_conf_jp_2019'),
   },
   {
     date: 'November 2019',
     full_date: 'November 16, 2019',
-    title: 'Participated in Frontend Conference Fukuoka',
-    description: 'Participated in Frontend Conference Fukuoka.',
+    title: i18next.t('participated_in_fec_fukuoka_2019'),
   },
   {
     date: 'November 2019',
     full_date: 'November 2, 2019',
-    title: 'Participated in Frontend Conference Kansai',
-    description: 'Participated in Frontend Conference Kansai as a staff.',
+    title: i18next.t('participated_in_front_kansai_2019'),
   },
   {
     date: 'October 2019',
-    title: 'Considered DevRel (Developer Relations)',
-    description: 'Started to advise from perspective of HR, such as Human Resource.',
-    url: 'https://yuma-kitamura.nekohack.me',
+    title: i18next.t('started_to_consider_dev_rel'),
+    description: i18next.t('started_to_consider_dev_rel_in_memo'),
   },
   {
     date: 'July 2019',
-    title: 'Improved Smaregi POS',
-    description: 'Started to improve frontend on Smaregi POS.',
+    title: i18next.t('improved_smaregi_pos'),
+    description: i18next.t('improved_smaregi_pos_in_memo'),
   },
   {
     date: 'February 2019',
-    title: 'Worked AGENT BANK',
-    description: 'Started to work on function development in AGENT BANK (old: SARDINE).',
+    title: i18next.t('worked_roxx_agent_bank'),
+    description: i18next.t('worked_roxx_agent_bank_in_memo'),
   },
   {
     date: 'November 2018',
     full_date: 'November 3, 2018',
-    title: 'Participated in Vue Fes Japan',
-    description: 'Participated in Vue Fes Japan.',
+    title: i18next.t('participated_in_vue_fes_japan_2018'),
     url: 'https://vuefes.jp/2018',
   },
   {
     date: 'September 2018',
-    title: 'Created a technical blog',
-    description: 'Started to create a technical blog.',
+    title: i18next.t('created_a_technical_blog'),
+    description: i18next.t('created_a_technical_blog_in_memo'),
+    image: 'https://i.imgur.com/xuj6KVU.jpg',
     url: 'https://webneko.dev',
   },
   {
     date: 'May 2017',
     full_date: 'May 8, 2017',
-    title: 'Participated in Unite Tokyo',
-    description: 'I personally participated in the first conference.',
+    title: i18next.t('participated_in_unite_tokyo_2017'),
+    description: i18next.t('participated_in_unite_tokyo_2017_in_memo'),
   },
   {
     date: 'October 2016',
-    title: 'Worked Namesta',
-    description: 'Started to work on function development in Namesta.',
+    title: i18next.t('worked_ponos_namesta'),
+    image: 'https://i.imgur.com/Cb9sWiz.jpg',
   },
   {
     date: 'January 2016',
-    title: 'Improved Battlecats',
-    description: 'Started to improve on function development in Battlecats.',
+    title: i18next.t('improved_ponos_battlecats'),
+    image: 'https://i.imgur.com/WAvevMW.jpg',
   },
   {
     date: 'November 2014',
     full_date: 'November 10, 2014',
-    title: 'Start Github',
-    description: 'Created Github account.',
+    title: i18next.t('started_github'),
   },
   {
     date: 'October 2014',
-    title: 'Worked remote viewing app',
-    description: 'Started to make a remote viewing app.',
+    title: i18next.t('worked_the_remote_viewing_app'),
+    description: i18next.t('worked_the_remote_viewing_app_in_memo'),
   },
   {
     date: 'Summer 2014',
