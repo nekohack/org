@@ -22,7 +22,7 @@
   align-self: center;
   max-width: 65ch;
   margin: 1.5rem 0;
-  font-size: clamp(1rem, 5vw, 1.3rem);
+  font-size: clamp(0.84rem, 2.4vw, 1.12rem);
   color: #000;
   text-align: center;
 
@@ -40,8 +40,8 @@
 
 .btnContainer a {
   margin: 0;
-  transition: filter 200ms, transform 200ms;
   color: #000;
+  transition: filter 200ms, transform 200ms;
 
   @media (prefers-color-scheme: dark) {
     color: #fff;
