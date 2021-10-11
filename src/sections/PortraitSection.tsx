@@ -1,9 +1,6 @@
 import * as React from 'react'
-import Image from 'next/image'
 import i18next from 'i18next'
 import styles from 'css/portrait.module.scss'
-import VKansai10Img from '../../public/images/v-kansai_10.jpg'
-import VuefesImg from '../../public/images/vuefes.jpg'
 
 const PortraitSection = () => {
   return (
@@ -12,10 +9,10 @@ const PortraitSection = () => {
       <p>{i18next.t('portrait_description')}</p>
       <div className={styles.photosContainer}>
         <div className={styles.standingImg}>
-          <Image alt="Standing photo" src={VKansai10Img} />
+          <img alt="Standing photo" src="/images/v-kansai_10.jpg" />
         </div>
         <div className={styles.vuefesImg}>
-          <Image alt="Vuefes photo" src={VuefesImg} />
+          <img alt="Vuefes photo" src="/images/vuefes.jpg" />
         </div>
       </div>
     </section>

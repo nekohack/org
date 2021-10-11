@@ -1,5 +1,6 @@
 /* eslint-disable */
 const withPWA = require('next-pwa')
+const withOptimizedImages = require('next-optimized-images')
 
 const config = {
   async headers() {
@@ -30,10 +31,12 @@ const config = {
   experimental: { esmExternals: 'loose' },
 }
 
-module.exports = withPWA({
+module.exports = withPWA(withOptimizedImages({
   ...config,
+  reactStrictMode: true,
+  trailingSlash: true,
   pwa: {
     dest: 'public',
     disable: process.env.NODE_ENV !== 'production',
   },
-})
+}))
