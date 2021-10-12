@@ -20,5 +20,5 @@ export function useGoogleAdsense() {
         }
       }
     }
-  }, [])
+  }, [loadAd])
 }
