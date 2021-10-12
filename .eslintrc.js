@@ -1,6 +1,6 @@
 module.exports = {
   extends: ['@nekohack/eslint-config-react'],
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'jsx-a11y'],
   root: true,
   env: { node: true, es6: true },
   parser: '@typescript-eslint/parser',
