@@ -57,7 +57,8 @@ const TimelineSection = () => {
                   ) : null}
                 </header>
                 <div className={styles.timelineItemDetail}>
-                  {item.image && <img alt={item.title} src={item.image} />}
+                  {item.imageName && <img alt={item.title} src={`/og/${item.imageName}.jpg`} />}
+                  {item.imageUrl && <img alt={item.title} src={item.imageUrl} />}
                   {item.description && <span>{item.description}</span>}
                 </div>
               </a>
