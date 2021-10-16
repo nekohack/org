@@ -5,7 +5,8 @@ interface TimelineItem {
   full_date?: string // eg: March 28, 2021
   title: string
   description?: string
-  image?: string
+  imageName?: string
+  imageUrl?: string
   url?: string
 }
 
@@ -13,13 +14,14 @@ const timeline: TimelineItem[] = [
   {
     date: 'May 2021',
     title: i18next.t('created_vscodecon_website'),
-    image: 'https://i.imgur.com/fOyWXX2.jpg',
+    imageName: 'vscodejpcon-2021',
+    // imageUrl: 'https://i.imgur.com/fOyWXX2.jpg',
     url: 'https://vscodejp.github.io/conf2021',
   },
   {
     date: 'April 2021',
     title: i18next.t('created_flutterkaigi_website'),
-    image: 'https://i.imgur.com/9xFIDzQ.jpg',
+    imageUrl: 'https://i.imgur.com/9xFIDzQ.jpg',
     url: 'https://flutterkaigi.jp',
   },
   {
@@ -35,7 +37,8 @@ const timeline: TimelineItem[] = [
     date: 'February 2020',
     title: i18next.t('created_a_profile_website'),
     description: i18next.t('created_a_profile_website_in_memo'),
-    image: 'https://i.imgur.com/sN5nHoS.jpg',
+    imageName: 'yuma_kitamura-nekohack-me',
+    // imageUrl: 'https://i.imgur.com/sN5nHoS.jpg',
     url: 'https://yuma-kitamura.nekohack.me',
   },
   {
@@ -83,7 +86,8 @@ const timeline: TimelineItem[] = [
     date: 'September 2018',
     title: i18next.t('created_a_technical_blog'),
     description: i18next.t('created_a_technical_blog_in_memo'),
-    image: 'https://i.imgur.com/xuj6KVU.jpg',
+    imageName: 'webneko-blog',
+    // imageUrl: 'https://i.imgur.com/xuj6KVU.jpg',
     url: 'https://webneko.dev',
   },
   {
@@ -95,12 +99,12 @@ const timeline: TimelineItem[] = [
   {
     date: 'October 2016',
     title: i18next.t('worked_ponos_namesta'),
-    image: 'https://i.imgur.com/Cb9sWiz.jpg',
+    imageUrl: 'https://i.imgur.com/Cb9sWiz.jpg',
   },
   {
     date: 'January 2016',
     title: i18next.t('improved_ponos_battlecats'),
-    image: 'https://i.imgur.com/WAvevMW.jpg',
+    imageUrl: 'https://i.imgur.com/WAvevMW.jpg',
   },
   {
     date: 'November 2014',
