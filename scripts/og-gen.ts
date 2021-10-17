@@ -1,5 +1,3 @@
-'use strict'
-
 const puppeteer = require('puppeteer')
 const path = require('path')
 

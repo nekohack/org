@@ -6,8 +6,8 @@
   "private": true,
   "scripts": {
     "dev": "concurrently \"next dev\" \"npm run build:typed-css:w\"",
-    "build": "next build && next-sitemap",
-    "build:og-gen": "ts-node scripts/og-gen.ts --project tsconfig.builder.json",
+    "build": "npm run build:og-gen && next build && next-sitemap",
+    "build:og-gen": "ts-node scripts/og-gen.ts",
     "export": "next export",
     "start": "next start",
     "format": "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss,sass}\" --ignore-path .gitignore",
