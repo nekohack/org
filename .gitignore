@@ -48,3 +48,4 @@ public/*.js.map
 public/sitemap.xml
 
 public/og/*.jpg
+!public/og/top.jpg
