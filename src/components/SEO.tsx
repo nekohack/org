@@ -26,11 +26,11 @@ export const SEO = (props: Props) => {
   return (
     <Head>
       <title>{tags.title}</title>
-      <meta name="twitter:title" content={tags.title} />
       <meta property="og:site_name" content={tags.title} />
       <meta property="og:title" content={tags.title} />
+      <meta name="twitter:title" content={tags.title} />
 
-      <meta name="description" content={tags.description} />
+      <meta property="description" content={tags.description} />
       <meta property="og:description" content={tags.description} />
       <meta name="twitter:description" content={tags.description} />
 

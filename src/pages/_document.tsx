@@ -17,14 +17,18 @@ class NekohackMe extends Document {
           <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
           <link rel="mask-icon" href="/favicons//safari-pinned-tab.svg" color="#161b22" />
+          <meta property="og:title" content="nekohack.me | Yuma Kitamura - Web Developer" />
+          <meta property="og:description" content="Hi, I am Yuma Kitamura! A Web Developer." />
           <meta property="og:type" content="website" />
-          <meta property="og:image" content="https://nekohack.me/icons/nekohack-128.png" />
+          <meta property="og:image" content="https://nekohack.me/og/top.jpg" />
           <meta property="og:url" content="https://nekohack.me" />
+          <meta name="twitter:title" content="nekohack.me | Yuma Kitamura - Web Developer" />
+          <meta name="twitter:description" content="Hi, I am Yuma Kitamura! A Web Developer." />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="@jiyuujinlaab" />
           <meta name="twitter:creator" content="@jiyuujinlaab" />
           <meta name="twitter:site" content="@jiyuujinlaab" />
-          <meta property="twitter:image" content="https://nekohack.me/icons/nekohack-128.png" />
+          <meta name="twitter:image" content="https://nekohack.me/og/top.jpg" />
           <script
             async
             src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
