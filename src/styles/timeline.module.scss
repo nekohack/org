@@ -163,6 +163,13 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .timelineItemDetail {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media screen and (max-width: 1300px) {
   .timeline::after {
     left: 20px;
