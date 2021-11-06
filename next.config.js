@@ -31,12 +31,14 @@ const config = {
   experimental: { esmExternals: 'loose' },
 }
 
-module.exports = withPWA(withOptimizedImages({
-  ...config,
-  reactStrictMode: true,
-  trailingSlash: true,
-  pwa: {
-    dest: 'public',
-    disable: process.env.NODE_ENV !== 'production',
-  },
-}))
+module.exports = withPWA(
+  withOptimizedImages({
+    ...config,
+    reactStrictMode: true,
+    trailingSlash: true,
+    pwa: {
+      dest: 'public',
+      disable: process.env.NODE_ENV !== 'production',
+    },
+  }),
+)
