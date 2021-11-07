@@ -1,4 +1,5 @@
 import * as React from 'react'
+import i18next from 'i18next'
 import styles from './footer.module.scss'
 
 export const Footer = () => {
@@ -6,11 +7,12 @@ export const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
         <p>
-          At once read <a href="https://nekohack-privacy-policy.netlify.app">Privacy Policy</a>
+          <a href="https://nekohack-privacy-policy.netlify.app">
+            {i18next.t('at_once_read_privacy_policy')}
+          </a>
           <br />
-          Please contact easily from{' '}
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFzwsCVnFbu-lV0Jz2fEYHR97hpBSK2g6kEwc-G1fo976ngA/viewform">
-            Survey Form
+            {i18next.t('please_contact_easily_from_the_survey_form')}
           </a>
         </p>
 
