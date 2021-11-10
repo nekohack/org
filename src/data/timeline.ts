@@ -12,6 +12,11 @@ interface TimelineItem {
 
 const timeline: TimelineItem[] = [
   {
+    date: 'October 2021',
+    title: i18next.t('created_the_ohayo_website'),
+    description: i18next.t('created_the_ohayo_website_in_memo'),
+  },
+  {
     date: 'July 2021',
     title: i18next.t('created_vscodecon_website'),
     imageName: 'vscodejpcon-2021',
