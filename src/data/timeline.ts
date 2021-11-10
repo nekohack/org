@@ -12,7 +12,7 @@ interface TimelineItem {
 
 const timeline: TimelineItem[] = [
   {
-    date: 'May 2021',
+    date: 'July 2021',
     title: i18next.t('created_vscodecon_website'),
     imageName: 'vscodejpcon-2021',
     // imageUrl: 'https://i.imgur.com/fOyWXX2.jpg',
