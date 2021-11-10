@@ -4,6 +4,7 @@ import { useEmitEvent } from '@hooks/useEmitEvent'
 import SkillsSection from '@sections/SkillsSection'
 import TimelineSection from '@sections/TimelineSection'
 import PortraitSection from '@sections/PortraitSection'
+import HobbiesSection from '@sections/HobbiesSection'
 import { PersonIcon, ContactIcon, GitHubIcon, TwitterIcon } from '@components/Icons/About'
 import { Nav } from '@components/Nav'
 import { Footer } from '@components/Footer'
@@ -66,6 +67,8 @@ export default function Home() {
       <TimelineSection />
 
       <PortraitSection />
+
+      <HobbiesSection />
 
       <Footer />
     </main>

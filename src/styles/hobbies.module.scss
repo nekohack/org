@@ -1,0 +1,31 @@
+.hobbiesItem {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .header {
+    margin-bottom: 0.7rem;
+    width: 120px;
+
+    h1 {
+      font-size: clamp(1.1rem, 6vw, 1.5rem);
+      font-weight: bold;
+    }
+  }
+
+  ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  p {
+    margin-bottom: 0.2rem;
+    font-size: 1.1rem;
+  }
+}

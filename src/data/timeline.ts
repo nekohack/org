@@ -19,6 +19,11 @@ const timeline: TimelineItem[] = [
     url: 'https://vscodejp.github.io/conf2021',
   },
   {
+    date: 'May 2020',
+    title: i18next.t('start_ohayo_engineer_on_twitter_spaces'),
+    description: i18next.t('start_ohayo_engineer_on_twitter_spaces_in_memo'),
+  },
+  {
     date: 'April 2021',
     title: i18next.t('created_flutterkaigi_website'),
     imageUrl: 'https://i.imgur.com/9xFIDzQ.jpg',
