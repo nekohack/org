@@ -17,18 +17,10 @@ export const Footer = () => {
         </p>
 
         <div className={styles.footerLinks}>
-          <a
-            target="_blank"
-            rel="noreferrer noopener"
-            href={process.env.NEXT_PUBLIC_TWITTER_PROFILE_URL}
-          >
+          <a target="_blank" rel="noreferrer noopener" href="https://twitter.com/jiyuujinlab">
             Twitter
           </a>
-          <a
-            target="_blank"
-            rel="noreferrer noopener"
-            href={process.env.NEXT_PUBLIC_GITHUB_PROFILE_URL}
-          >
+          <a target="_blank" rel="noreferrer noopener" href="https://github.com/jiyuujin">
             GitHub
           </a>
         </div>

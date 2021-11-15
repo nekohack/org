@@ -37,7 +37,7 @@ export default function Home() {
           rel="noopener noreferrer"
           target="_blank"
           className="btn btn__light btn__icon"
-          href={process.env.NEXT_PUBLIC_CONTACT_URL}
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfFzwsCVnFbu-lV0Jz2fEYHR97hpBSK2g6kEwc-G1fo976ngA/viewform"
         >
           <ContactIcon />
           Contact
@@ -46,7 +46,7 @@ export default function Home() {
           rel="noopener noreferrer"
           target="_blank"
           className="btn btn__light btn__icon"
-          href={process.env.NEXT_PUBLIC_GITHUB_PROFILE_URL}
+          href="https://github.com/jiyuujin"
         >
           <GitHubIcon />
           GitHub
@@ -55,7 +55,7 @@ export default function Home() {
           rel="noopener noreferrer"
           target="_blank"
           className="btn btn__light btn__icon"
-          href={process.env.NEXT_PUBLIC_TWITTER_PROFILE_URL}
+          href="https://twitter.com/jiyuujinlab"
         >
           <TwitterIcon />
           Twitter
