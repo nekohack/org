@@ -18,7 +18,10 @@ class NekohackMe extends Document {
           <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
           <link rel="mask-icon" href="/favicons//safari-pinned-tab.svg" color="#161b22" />
           <meta property="og:title" content="nekohack.me | Yuma Kitamura - Web Developer" />
-          <meta property="og:description" content="Hi, I am Yuma Kitamura! A Web Developer." />
+          <meta
+            property="og:description"
+            content="A personal website that provides a wide range of information regardless of technology."
+          />
           <meta property="og:type" content="website" />
           <meta property="og:image" content="https://nekohack.me/og/top.jpg" />
           <meta property="og:url" content="https://nekohack.me" />
