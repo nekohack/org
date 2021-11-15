@@ -15,6 +15,7 @@ const timeline: TimelineItem[] = [
     date: 'October 2021',
     title: i18next.t('created_the_ohayo_website'),
     description: i18next.t('created_the_ohayo_website_in_memo'),
+    url: 'https://ohayo.nekohack.me/',
   },
   {
     date: 'July 2021',
