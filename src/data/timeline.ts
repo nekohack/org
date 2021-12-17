@@ -20,7 +20,8 @@ const timeline: TimelineItem[] = [
   {
     date: 'July 2021',
     title: i18next.t('created_vscodecon_jp_2021_website'),
-    imageName: 'vscodejpcon-2021',
+    description: i18next.t('created_vscodecon_jp_2021_website_in_memo'),
+    // imageName: 'vscodejpcon-2021',
     // imageUrl: 'https://i.imgur.com/fOyWXX2.jpg',
     url: 'https://vscodejp.github.io/conf2021',
   },
@@ -32,12 +33,14 @@ const timeline: TimelineItem[] = [
   {
     date: 'April 2021',
     title: i18next.t('created_flutterkaigi_2021_website'),
-    imageUrl: 'https://i.imgur.com/9xFIDzQ.jpg',
+    description: i18next.t('created_flutterkaigi_2021_website_in_memo'),
+    // imageUrl: 'https://i.imgur.com/9xFIDzQ.jpg',
     url: 'https://flutterkaigi.jp',
   },
   {
     date: 'Spring 2021',
     title: i18next.t('finish_the_dormant_period'),
+    description: i18next.t('finish_the_dormant_period_in_memo'),
   },
   {
     date: 'Spring 2020',
@@ -48,7 +51,7 @@ const timeline: TimelineItem[] = [
     date: 'February 2020',
     title: i18next.t('created_a_profile_website'),
     description: i18next.t('created_a_profile_website_in_memo'),
-    imageName: 'yuma_kitamura-nekohack-me',
+    // imageName: 'yuma_kitamura-nekohack-me',
     // imageUrl: 'https://i.imgur.com/sN5nHoS.jpg',
     url: 'https://yuma-kitamura.nekohack.me',
   },
