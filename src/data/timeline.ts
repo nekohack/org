@@ -25,6 +25,10 @@ const timeline: TimelineItem[] = [
     url: 'https://vscodejp.github.io/conf2021',
   },
   {
+    date: 'June 2021',
+    title: i18next.t('worked_vcube_eventin'),
+  },
+  {
     date: 'May 2021',
     title: i18next.t('start_ohayo_engineer_on_twitter_spaces'),
     description: i18next.t('start_ohayo_engineer_on_twitter_spaces_in_memo'),
