@@ -19,7 +19,7 @@ const timeline: TimelineItem[] = [
   },
   {
     date: 'July 2021',
-    title: i18next.t('created_vscodecon_website'),
+    title: i18next.t('created_vscodecon_jp_2021_website'),
     imageName: 'vscodejpcon-2021',
     // imageUrl: 'https://i.imgur.com/fOyWXX2.jpg',
     url: 'https://vscodejp.github.io/conf2021',
@@ -31,7 +31,7 @@ const timeline: TimelineItem[] = [
   },
   {
     date: 'April 2021',
-    title: i18next.t('created_flutterkaigi_website'),
+    title: i18next.t('created_flutterkaigi_2021_website'),
     imageUrl: 'https://i.imgur.com/9xFIDzQ.jpg',
     url: 'https://flutterkaigi.jp',
   },
