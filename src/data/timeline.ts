@@ -66,11 +66,13 @@ const timeline: TimelineItem[] = [
     date: 'November 2019',
     full_date: 'November 16, 2019',
     title: i18next.t('participated_in_fec_fukuoka_2019'),
+    description: i18next.t('participated_in_fec_fukuoka_2019_in_memo'),
   },
   {
     date: 'November 2019',
     full_date: 'November 2, 2019',
     title: i18next.t('participated_in_front_kansai_2019'),
+    description: i18next.t('participated_in_front_kansai_2019_in_memo'),
   },
   {
     date: 'October 2019',
@@ -97,7 +99,7 @@ const timeline: TimelineItem[] = [
     date: 'September 2018',
     title: i18next.t('created_a_technical_blog'),
     description: i18next.t('created_a_technical_blog_in_memo'),
-    imageName: 'webneko-blog',
+    // imageName: 'webneko-blog',
     // imageUrl: 'https://i.imgur.com/xuj6KVU.jpg',
     url: 'https://webneko.dev',
   },
