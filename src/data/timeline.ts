@@ -20,9 +20,14 @@ const timeline: TimelineItem[] = [
   {
     date: 'July 2021',
     title: i18next.t('created_vscodecon_jp_2021_website'),
-    imageName: 'vscodejpcon-2021',
+    description: i18next.t('created_vscodecon_jp_2021_website_in_memo'),
+    // imageName: 'vscodejpcon-2021',
     // imageUrl: 'https://i.imgur.com/fOyWXX2.jpg',
     url: 'https://vscodejp.github.io/conf2021',
+  },
+  {
+    date: 'June 2021',
+    title: i18next.t('worked_vcube_eventin'),
   },
   {
     date: 'May 2021',
@@ -32,12 +37,14 @@ const timeline: TimelineItem[] = [
   {
     date: 'April 2021',
     title: i18next.t('created_flutterkaigi_2021_website'),
-    imageUrl: 'https://i.imgur.com/9xFIDzQ.jpg',
+    description: i18next.t('created_flutterkaigi_2021_website_in_memo'),
+    // imageUrl: 'https://i.imgur.com/9xFIDzQ.jpg',
     url: 'https://flutterkaigi.jp',
   },
   {
     date: 'Spring 2021',
     title: i18next.t('finish_the_dormant_period'),
+    description: i18next.t('finish_the_dormant_period_in_memo'),
   },
   {
     date: 'Spring 2020',
@@ -48,7 +55,7 @@ const timeline: TimelineItem[] = [
     date: 'February 2020',
     title: i18next.t('created_a_profile_website'),
     description: i18next.t('created_a_profile_website_in_memo'),
-    imageName: 'yuma_kitamura-nekohack-me',
+    // imageName: 'yuma_kitamura-nekohack-me',
     // imageUrl: 'https://i.imgur.com/sN5nHoS.jpg',
     url: 'https://yuma-kitamura.nekohack.me',
   },
@@ -66,11 +73,13 @@ const timeline: TimelineItem[] = [
     date: 'November 2019',
     full_date: 'November 16, 2019',
     title: i18next.t('participated_in_fec_fukuoka_2019'),
+    description: i18next.t('participated_in_fec_fukuoka_2019_in_memo'),
   },
   {
     date: 'November 2019',
     full_date: 'November 2, 2019',
     title: i18next.t('participated_in_front_kansai_2019'),
+    description: i18next.t('participated_in_front_kansai_2019_in_memo'),
   },
   {
     date: 'October 2019',
@@ -97,7 +106,7 @@ const timeline: TimelineItem[] = [
     date: 'September 2018',
     title: i18next.t('created_a_technical_blog'),
     description: i18next.t('created_a_technical_blog_in_memo'),
-    imageName: 'webneko-blog',
+    // imageName: 'webneko-blog',
     // imageUrl: 'https://i.imgur.com/xuj6KVU.jpg',
     url: 'https://webneko.dev',
   },
