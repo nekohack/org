@@ -37,6 +37,7 @@ jobs:
 
       - name: Transpile
         run: |
+          yarn build:og-gen
           yarn build
           yarn export
         env:

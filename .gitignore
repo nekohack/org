@@ -13,6 +13,7 @@ yarn.lock
 # next.js
 /.next/
 /out/
+/dist/
 
 # production
 /build
@@ -43,9 +44,9 @@ yarn-error.log*
 .vscode
 
 # remove service workers, will be present when running `npm run build`.
-public/*.js
-public/*.js.map
-public/sitemap.xml
+apps/nextjs/public/*.js
+apps/nextjs/public/*.js.map
+apps/nextjs/public/sitemap.xml
 
-public/og/*.jpg
-!public/og/top.jpg
+apps/nextjs/public/og/*.jpg
+!apps/nextjs/public/og/top.jpg
