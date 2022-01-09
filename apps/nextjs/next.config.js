@@ -1,6 +1,9 @@
-/* eslint-disable */
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const withPWA = require('next-pwa')
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const withOptimizedImages = require('next-optimized-images')
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const withNx = require('@nrwl/next/plugins/with-nx')
 
 const config = {
   async headers() {
@@ -31,14 +34,16 @@ const config = {
   experimental: { esmExternals: 'loose' },
 }
 
-module.exports = withPWA(
-  withOptimizedImages({
-    ...config,
-    reactStrictMode: true,
-    trailingSlash: true,
-    pwa: {
-      dest: 'public',
-      disable: process.env.NODE_ENV !== 'production',
-    },
-  }),
+module.exports = withNx(
+  withPWA(
+    withOptimizedImages({
+      ...config,
+      reactStrictMode: true,
+      trailingSlash: true,
+      pwa: {
+        dest: 'public',
+        disable: process.env.NODE_ENV !== 'production',
+      },
+    }),
+  ),
 )

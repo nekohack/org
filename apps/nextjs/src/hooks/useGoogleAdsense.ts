@@ -2,6 +2,9 @@ import * as React from 'react'
 
 export function useGoogleAdsense() {
   const loadAd = React.useCallback(() => {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    // eslint-disable-next-line
     ;(window.adsbygoogle = window.adsbygoogle || []).push({})
   }, [])
 

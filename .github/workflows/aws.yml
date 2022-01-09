@@ -5,6 +5,9 @@ on:
     branches:
       - master
       - feature/deploy-to-s3
+  pull_request:
+    branches:
+      - master
 
 jobs:
   deploy:
@@ -37,6 +40,7 @@ jobs:
 
       - name: Transpile
         run: |
+          yarn build:og-gen
           yarn build
           yarn export
         env:

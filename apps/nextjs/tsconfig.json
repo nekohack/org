@@ -1,0 +1,29 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "preserve",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "types": ["node"],
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "baseUrl": ".",
+    "paths": {
+      "root": ["."],
+      "@components/*": ["./src/components/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@sections/*": ["./src/sections/*"],
+      "css/*": ["./src/styles/*"],
+      "@icons/*": ["./src/components/icons/*"],
+      "@lib/*": ["./src/lib/*"],
+      "public/*": ["./public/*"],
+      "node_modules/@nekohack/normalize.css/*": ["../../node_modules/@nekohack/normalize.css/*"]
+    }
+  },
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "next-env.d.ts"],
+  "exclude": ["node_modules"]
+}
