@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "nx serve",
     "build": "nx build",
-    "build:og-gen": "ts-node scripts/og-gen.ts --project tsconfig.builder.json",
+    "build:og-gen": "ts-node libs/og-gen/main.ts --project tsconfig.builder.json",
     "export": "nx export",
     "tsm": "nx tsm",
     "lint": "nx lint"
