@@ -3,9 +3,9 @@ const path = require("path");
 
 const fs = require("fs");
 
-const OG_SOURCE_DIR_PATH = path.join(__dirname, "..", "data");
+const OG_SOURCE_DIR_PATH = path.join(__dirname, "data");
 const OG_SOURCE_HTML_FILE_PATH = path.join(OG_SOURCE_DIR_PATH, "og.html");
-const OG_DIR_PATH = path.join(__dirname, "..", "apps", "nextjs", "public", "og");
+const OG_DIR_PATH = path.join(__dirname, "..", "..", "apps", "nextjs", "public", "og");
 
 async function captureOgImage(
   browser: any,
