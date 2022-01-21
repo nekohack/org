@@ -9,10 +9,10 @@ const PortraitSection = () => {
       <p>{i18next.t('portrait_description')}</p>
       <div className={styles.photosContainer}>
         <div className={styles.standingImg}>
-          <img alt="Standing photo" src="/images/v-kansai_10.jpg" />
+          <img alt="Standing" src="/images/v-kansai_10.jpg" />
         </div>
         <div className={styles.vuefesImg}>
-          <img alt="Vuefes photo" src="/images/vuefes.jpg" />
+          <img alt="Vue Fes" src="/images/vuefes.jpg" />
         </div>
       </div>
     </section>
