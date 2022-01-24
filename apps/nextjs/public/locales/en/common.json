@@ -6,6 +6,10 @@
   "please_contact_easily_from_the_survey_form": "Please contact easily from the survey form.",
   "backpack": "Backpack",
   "backpack_description": "I started my career as an iOS native app engineer. While acquiring basic coding through work as an application engineer, I also worked on improving the UX of the management screen (PHP) that runs behind it. I was fascinated by the part that went through the process of improving the Web, and gradually stepped into the area of front-end engineers, such as Node.js and other front-ends, CSS design, and the use of frameworks.",
+  "works": "Works",
+  "works_description": "In my main time, I develop front-end (Node.js/React) services, make proposals for accessibility improvements, and revamp the development environment. In my spare time, I also actively contribute to open source projects.",
+  "tech_blog": "I started this blog, which I've been running since October 2018, and I design and develop mainly frontends using Vue.js and Nuxt.",
+  "eventin": "This is a project that I have joined since June 2021, and I am contributing mainly to the functional development of services using NestJS (Express) and WebSockets.",
   "portrait": "Portrait",
   "portrait_description": "I often wear event T-shirts at offline events such as conferences. Until now, I had been at Vue Fes, JSConf, and Front-End conferences. Basically my appearance is NG in online, but please feel free to contact us."
 }
