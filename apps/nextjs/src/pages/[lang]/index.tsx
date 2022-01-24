@@ -3,7 +3,6 @@ import i18next from 'i18next'
 import { useEmitEvent } from '@hooks/useEmitEvent'
 import SkillsSection from '@sections/SkillsSection'
 import PortraitSection from '@sections/PortraitSection'
-import HobbiesSection from '@sections/HobbiesSection'
 import { PersonIcon, ContactIcon, GitHubIcon, TwitterIcon } from '@components/Icons/About'
 import { Nav } from '@components/Nav'
 import { Footer } from '@components/Footer'
@@ -64,8 +63,6 @@ export default function Home() {
       <SkillsSection />
 
       <PortraitSection />
-
-      <HobbiesSection />
 
       <Footer />
     </main>
