@@ -2,6 +2,7 @@ import * as React from 'react'
 import i18next from 'i18next'
 import { useEmitEvent } from '@hooks/useEmitEvent'
 import SkillsSection from '@sections/SkillsSection'
+import WorksSection from '@sections/WorksSection'
 import PortraitSection from '@sections/PortraitSection'
 import { PersonIcon, ContactIcon, GitHubIcon, TwitterIcon } from '@components/Icons/About'
 import { Nav } from '@components/Nav'
@@ -61,6 +62,8 @@ export default function Home() {
       </div>
 
       <SkillsSection />
+
+      <WorksSection />
 
       <PortraitSection />
 

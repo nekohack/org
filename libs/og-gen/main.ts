@@ -72,6 +72,12 @@ async function captureOgImage(
       title: "",
       description: "",
     },
+    {
+      slug: "eventin",
+      url: "https://jp.vcube.com/eventdx/eventin",
+      title: "",
+      description: "",
+    },
   ];
 
   const browser = await puppeteer.launch();
