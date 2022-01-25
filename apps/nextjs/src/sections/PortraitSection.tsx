@@ -4,7 +4,7 @@ import styles from 'css/portrait.module.scss'
 
 const PortraitSection = () => {
   return (
-    <section id="hobbies">
+    <section id="portrait">
       <h1 className="section__title">{i18next.t('portrait')}</h1>
       <p>{i18next.t('portrait_description')}</p>
       <div className={styles.photosContainer}>
