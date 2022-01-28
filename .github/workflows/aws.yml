@@ -1,10 +1,12 @@
 name: Deploy to S3
 
 on:
-  push:
+  #  push:
+  #    branches:
+  #      - master
+  pull_request:
     branches:
       - master
-      - feature/deploy-to-s3
 
 jobs:
   deploy:
