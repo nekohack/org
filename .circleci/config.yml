@@ -1,0 +1,85 @@
+version: 2.1
+
+parameters:
+  pull_request:
+    type: boolean
+    default: false
+
+orbs:
+  welcome: circleci/welcome-orb@0.4.1
+  aws-cli: circleci/aws-cli@2.0.6
+  aws-s3: circleci/aws-s3@3.0
+
+executors:
+  aws-cli:
+    working_directory: ~/workspace
+    environment:
+      AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+      AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+      AWS_DEFAULT_REGION: ap-northeast-1
+    docker:
+      - image: amazon/aws-cli
+  default:
+    working_directory: ~/workspace
+    docker:
+      - image: circleci/node:14
+
+commands:
+  prepare_node_dependency:
+    description: Prepare
+    steps:
+      - checkout
+
+      - run: sudo apt-get update && sudo apt-get install -y nasm autoconf automake libtool dpkg libpng-dev g++
+
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package.json" }}
+            - v1-dependencies-
+
+      - run: yarn install
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+
+      - run: yarn build:og-gen && yarn build && yarn export
+
+  package_and_deploy:
+    description: Deploy
+    steps:
+      - aws-s3/sync:
+          from: dist/apps/nextjs/exported/
+          to: s3://nekohack.me
+
+jobs:
+  install_and_setup_cli:
+    executor:
+      name: aws-cli
+    steps:
+      - aws-cli/install
+      - aws-cli/setup
+
+  master_build:
+    executor:
+      name: default
+    steps:
+      - checkout
+      - aws-cli/install
+      - aws-cli/setup
+      - prepare_node_dependency
+      - package_and_deploy
+
+workflows:
+  version: 2
+  push:
+    jobs:
+      - master_build:
+          filters:
+            branches:
+              only: master
+  pull_request:
+    when: << pipeline.parameters.pull_request >>
+    jobs:
+      - master_build
