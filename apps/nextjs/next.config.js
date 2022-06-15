@@ -34,10 +34,32 @@ const config = {
   experimental: { esmExternals: 'loose' },
 }
 
+const rewriteConfig = {
+  basePath: 'home',
+  assetPrefix: 'home',
+  async rewrites() {
+    return [
+      {
+        source: '/home/api/:path*',
+        destination: '/api/:path*',
+      },
+      {
+        source: '/home/images/:query*',
+        destination: '/_next/image/:query*'
+      },
+      {
+        source: '/home/_next/:path*',
+        destination: '/_next/:path*',
+      },
+    ]
+  }
+}
+
 module.exports = withNx(
   withPWA(
     withOptimizedImages({
       ...config,
+      ...rewriteConfig,
       reactStrictMode: true,
       trailingSlash: true,
       pwa: {
