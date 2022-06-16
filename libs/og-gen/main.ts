@@ -81,6 +81,24 @@ async function captureOgImage(
       title: "",
       description: "",
     },
+    {
+      slug: 'pos',
+      url: 'https://smaregi.jp/',
+      title: "",
+      description: "",
+    },
+    {
+      slug: 'agentbank',
+      url: 'https://agent-bank.com/',
+      title: "",
+      description: "",
+    },
+    {
+      slug: 'battlecats',
+      url: 'https://battlecats.club/en/series/battlecats/',
+      title: "",
+      description: "",
+    },
   ];
 
   const browser = await puppeteer.launch();
