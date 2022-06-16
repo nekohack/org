@@ -4,12 +4,15 @@ import styles from 'css/link-preview.module.scss'
 import { works } from '../data/works'
 
 const WorksSection = () => {
+  const showWorks = React.useMemo(() => {
+    return works.filter((work) => work.status === 'enabled')
+  }, [])
   return (
     <section id="works">
       <h1 className="section__title">{i18next.t('works')}</h1>
       <p>{i18next.t('works_description')}</p>
       <div>
-        {works.map((work, index) => {
+        {showWorks.map((work, index) => {
           return (
             <div key={index}>
               <h2>{work.title}</h2>
