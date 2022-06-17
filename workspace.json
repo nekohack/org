@@ -1,7 +1,8 @@
 {
   "version": 2,
   "projects": {
-    "nextjs": "apps/nextjs",
+    "company-app": "apps/company-app",
+    "profile-app": "apps/profile-app",
     "og-lib": "libs/og-gen"
   }
 }

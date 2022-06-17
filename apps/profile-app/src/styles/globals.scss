@@ -1,0 +1,43 @@
+@import 'node_modules/@nekohack/normalize.css/dist/index.css';
+
+html {
+  font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* https://github.com/gatsbyjs/gatsby/issues/7310#issuecomment-419977425 */
+#___gatsby > * {
+  height: 100%;
+}
+
+div[role='group'][tabindex] {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+#gatsby-focus-wrapper {
+  height: 100%;
+}
+
+.section img {
+  width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #fff;
+  }
+}
