@@ -5,11 +5,11 @@
   "author": "yuukit <yuma.kitamura@ponos.co.jp>",
   "private": true,
   "scripts": {
-    "nextjs:dev": "nx run nextjs:serve",
-    "nextjs:build": "nx run nextjs:build",
-    "nextjs:export": "nx run nextjs:export",
-    "nextjs:tsm": "nx run nextjs:tsm",
-    "nextjs:lint": "nx run nextjs:lint",
+    "company-app:dev": "nx run company-app:serve",
+    "company-app:build": "nx run company-app:build",
+    "company-app:export": "nx run company-app:export",
+    "company-app:tsm": "nx run company-app:tsm",
+    "company-app:lint": "nx run company-app:lint",
     "og-lib:build": "nx run og-lib:build"
   },
   "dependencies": {
