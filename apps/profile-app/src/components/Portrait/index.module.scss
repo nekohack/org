@@ -1,0 +1,36 @@
+.photosContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+
+  @media (max-width: 500px) {
+    height: 160px;
+  }
+}
+
+.standingImg {
+  img {
+    width: 240px;
+    height: 360px;
+    margin: 12px;
+
+    @media (max-width: 500px) {
+      width: 80px;
+      height: 120px;
+    }
+  }
+}
+
+.vuefesImg {
+  img {
+    width: 540px;
+    height: 360px;
+    margin: 12px;
+
+    @media (max-width: 500px) {
+      width: 180px;
+      height: 120px;
+    }
+  }
+}

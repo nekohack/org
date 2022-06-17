@@ -1,0 +1,59 @@
+{
+  "root": "apps/profile-app",
+  "sourceRoot": "apps/profile-app",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "root": "apps/profile-app",
+        "outputPath": "dist/apps/profile-app"
+      },
+      "configurations": {
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/next:server",
+      "options": {
+        "buildTarget": "profile-app:build",
+        "dev": true
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "profile-app:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nrwl/next:export",
+      "options": {
+        "buildTarget": "profile-app:build:production"
+      }
+    },
+    "tsm": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "command": "tsm src",
+        "cwd": "apps/profile-app",
+        "parallel": false
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": [
+          "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss,sass}\" --ignore-path .gitignore",
+          "eslint ./src --ext .tsx,.ts,.jsx,.js --fix",
+          "stylelint --config .stylelintrc.yml 'src/components/**/*.scss' --fix"
+        ],
+        "cwd": "apps/profile-app",
+        "parallel": false
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://yuma-kitamura.nekohack.me
+
+# Sitemaps
+Sitemap: https://yuma-kitamura.nekohack.me/sitemap.xml
