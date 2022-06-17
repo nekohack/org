@@ -1,0 +1,81 @@
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: auto;
+  padding: 8px 4%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+  opacity: 0.92;
+
+  .card-info {
+    position: relative;
+    padding: 0 0.8rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+    opacity: 0.75;
+
+    .name {
+      padding-top: 1.6rem;
+      margin: 0;
+      font-size: 1.475rem;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 0 7px;
+      margin-right: 4px;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 18px;
+      color: #2c2e2f;
+      background-color: transparent;
+      border: 1px solid #30363d;
+      border-radius: 2em;
+    }
+
+    .position {
+      padding: 1.2rem 0 0;
+      margin: 0;
+      font-size: 1.12rem;
+      font-weight: bold;
+      text-align: center;
+      list-style: none;
+    }
+
+    .contact {
+      padding: 0.8rem 0;
+      margin: 0;
+      text-align: center;
+    }
+  }
+}
+
+.footer-area {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 4px 0;
+  vertical-align: middle;
+  border-top: 1px #ccc solid;
+
+  button {
+    margin: 0 4px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-info {
+    width: 96%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

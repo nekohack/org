@@ -1,0 +1,231 @@
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 6px;
+    margin-left: -3px;
+    content: '';
+    background: #ddd;
+    filter: brightness(150%);
+    border-radius: 0.5rem;
+
+    @media (prefers-color-scheme: dark) {
+      background: #1e2126;
+    }
+  }
+}
+
+.timelineItem {
+  position: relative;
+  display: block;
+  width: 50%;
+  cursor: default;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: -13px;
+    z-index: 80;
+    width: 25px;
+    height: 25px;
+    content: '';
+    background: #ddd;
+    border-radius: 50%;
+    transform: translateY(-50%);
+
+    @media (prefers-color-scheme: dark) {
+      background: #1e2126;
+    }
+  }
+
+  a {
+    color: #000;
+
+    @media (prefers-color-scheme: dark) {
+      color: #fff;
+    }
+  }
+}
+
+.left {
+  left: 0;
+  padding: 10px 40px 10px 0;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    width: 0;
+    height: 0;
+    content: '';
+    border: solid var(--secondary);
+    border-color: transparent transparent transparent var(--secondary);
+    border-width: 10px 0 10px 10px;
+    transform: translateY(-50%);
+  }
+}
+
+.right {
+  left: 50%;
+  padding: 10px 0 10px 40px;
+
+  &::after {
+    left: -12px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    width: 0;
+    height: 0;
+    content: '';
+    border: 10px solid var(--secondary);
+    border-color: transparent var(--secondary) transparent transparent;
+    border-width: 10px 10px 10px 0;
+    transform: translateY(-50%);
+  }
+}
+
+.timelineItemBody {
+  display: block;
+  padding: 0.8rem 1rem;
+  font-size: 1.1rem;
+  color: #000;
+  background: #ddd;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px 0 rgb(22 27 34 / 30%);
+  transition: box-shadow 300ms ease;
+
+  @media (prefers-color-scheme: dark) {
+    color: #fff;
+    background: #1e2126;
+  }
+}
+
+.timelineItemHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  color: white;
+
+  p {
+    padding: 0.2rem 0.5rem;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    background: #ddd;
+    filter: brightness(80%);
+    border-radius: 0.5rem;
+
+    @media (prefers-color-scheme: dark) {
+      color: #fff;
+      background: #1e2126;
+    }
+  }
+
+  h1 {
+    margin: 0.2rem 0;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    color: #000;
+
+    @media (prefers-color-scheme: dark) {
+      color: #fff;
+    }
+  }
+}
+
+.timelineItemDetail {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  img {
+    width: 200px;
+    padding: 0 4px;
+  }
+
+  span {
+    margin-left: 2px;
+    font-size: clamp(0.8rem, 1.2vw, 1.04rem);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timelineItemDetail {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .timeline::after {
+    left: 20px;
+  }
+
+  .timelineItem {
+    width: 90%;
+    padding-right: 0;
+    padding-left: 55px;
+  }
+
+  .timelineItem::before {
+    left: 45px;
+    border-color: transparent var(--secondary) transparent transparent;
+    border-width: 10px 10px 10px 0;
+  }
+
+  .left::after,
+  .right::after {
+    left: 8px;
+    z-index: 80;
+  }
+
+  .right {
+    left: 0;
+  }
+}
+
+.viewOlderBtn {
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1e2126;
+  cursor: pointer;
+  background: none;
+  border: none;
+  transition: transform 300ms;
+  transform: translateX(-50%);
+
+  @media (prefers-color-scheme: dark) {
+    color: #ddd;
+  }
+}
+
+@media (hover: hover) {
+  .timelineItemBody:hover {
+    box-shadow: 0 0 18px 0 rgb(22 27 34 / 30%);
+  }
+
+  .viewOlderBtn:hover {
+    transform: translateX(-50%) scale(1.1);
+  }
+}
