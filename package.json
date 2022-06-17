@@ -5,12 +5,12 @@
   "author": "yuukit <yuma.kitamura@ponos.co.jp>",
   "private": true,
   "scripts": {
-    "dev": "nx serve",
-    "build": "nx build",
+    "nextjs:dev": "nx run nextjs:serve",
+    "nextjs:build": "nx run nextjs:build",
     "build:og-gen": "ts-node libs/og-gen/main.ts --project tsconfig.builder.json",
-    "export": "nx export",
-    "tsm": "nx tsm",
-    "lint": "nx lint"
+    "nextjs:export": "nx run nextjs:export",
+    "nextjs:tsm": "nx run nextjs:tsm",
+    "nextjs:lint": "nx run nextjs:lint"
   },
   "dependencies": {
     "@nekohack/normalize.css": "^2.3.7",

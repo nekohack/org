@@ -44,7 +44,7 @@ commands:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run: yarn build:og-gen && yarn build && yarn export
+      - run: yarn build:og-gen && yarn nextjs:build && yarn nextjs:export
 
   package_and_deploy:
     description: Deploy
