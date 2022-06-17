@@ -39,7 +39,7 @@ jobs:
 
       - name: Transpile
         run: |
-          yarn build:og-gen
+          yarn og-lib:build
           yarn nextjs:build
           yarn nextjs:export
         env:

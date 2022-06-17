@@ -7,10 +7,10 @@
   "scripts": {
     "nextjs:dev": "nx run nextjs:serve",
     "nextjs:build": "nx run nextjs:build",
-    "build:og-gen": "ts-node libs/og-gen/main.ts --project tsconfig.builder.json",
     "nextjs:export": "nx run nextjs:export",
     "nextjs:tsm": "nx run nextjs:tsm",
-    "nextjs:lint": "nx run nextjs:lint"
+    "nextjs:lint": "nx run nextjs:lint",
+    "og-lib:build": "nx run og-lib:build"
   },
   "dependencies": {
     "@nekohack/normalize.css": "^2.3.7",

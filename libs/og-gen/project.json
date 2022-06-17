@@ -1,0 +1,18 @@
+{
+  "root": "libs/og-gen",
+  "sourceRoot": "libs/og-gen",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": [
+          "ts-node main.ts --project tsconfig.builder.json"
+        ],
+        "cwd": "libs/og-gen",
+        "parallel": false
+      }
+    }
+  },
+  "tags": []
+}
