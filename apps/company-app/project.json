@@ -1,6 +1,6 @@
 {
-  "root": "apps/nextjs",
-  "sourceRoot": "apps/nextjs",
+  "root": "apps/company-app",
+  "sourceRoot": "apps/company-app",
   "projectType": "application",
   "targets": {
     "build": {
@@ -8,8 +8,8 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "root": "apps/nextjs",
-        "outputPath": "dist/apps/nextjs"
+        "root": "apps/company-app",
+        "outputPath": "dist/apps/company-app"
       },
       "configurations": {
         "production": {}
@@ -18,12 +18,12 @@
     "serve": {
       "executor": "@nrwl/next:server",
       "options": {
-        "buildTarget": "nextjs:build",
+        "buildTarget": "company-app:build",
         "dev": true
       },
       "configurations": {
         "production": {
-          "buildTarget": "nextjs:build:production",
+          "buildTarget": "company-app:build:production",
           "dev": false
         }
       }
@@ -31,14 +31,14 @@
     "export": {
       "executor": "@nrwl/next:export",
       "options": {
-        "buildTarget": "nextjs:build:production"
+        "buildTarget": "company-app:build:production"
       }
     },
     "tsm": {
       "executor": "@nrwl/workspace:run-commands",
       "options": {
         "command": "tsm src",
-        "cwd": "apps/nextjs",
+        "cwd": "apps/company-app",
         "parallel": false
       }
     },
@@ -50,7 +50,7 @@
           "eslint ./src --ext .tsx,.ts,.jsx,.js --fix",
           "stylelint --config .stylelintrc.yml 'src/styles/**/*.scss' --fix"
         ],
-        "cwd": "apps/nextjs",
+        "cwd": "apps/company-app",
         "parallel": false
       }
     }

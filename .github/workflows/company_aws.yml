@@ -40,19 +40,11 @@ jobs:
       - name: Transpile
         run: |
           yarn og-lib:build
-          yarn nextjs:build
-          yarn nextjs:export
+          yarn company-app:build
+          yarn company-app:export
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
       - name: Deploy to S3
-        run: bash tools/scripts/sub_directory.sh
-#      - name: Clear cache in CloudFront
-#        uses: chetan/invalidate-cloudfront-action@v1.2
-#        env:
-#          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-#          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-#          AWS_REGION: ap-northeast-1
-#          DISTRIBUTION: ${{ secrets.DISTRIBUTION }}
-#          PATHS: "/*"
+        run: bash tools/scripts/sub_company_directory.sh
