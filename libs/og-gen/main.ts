@@ -5,7 +5,8 @@ const fs = require("fs");
 
 const OG_SOURCE_DIR_PATH = path.join(__dirname, "data");
 const OG_SOURCE_HTML_FILE_PATH = path.join(OG_SOURCE_DIR_PATH, "og.html");
-const OG_DIR_PATH = path.join(__dirname, "..", "..", "apps", "nextjs", "public", "og");
+const COMPANY_OG_DIR_PATH = path.join(__dirname, "..", "..", "apps", "company-app", "public", "og");
+const PROFILE_OG_DIR_PATH = path.join(__dirname, "..", "..", "apps", "profile-app", "public", "og");
 
 async function captureOgImage(
   browser: any,
@@ -86,8 +87,10 @@ async function captureOgImage(
   const browser = await puppeteer.launch();
 
   for (const { slug, url, title, description } of ogList) {
-    const OG_IMAGE_FILE_PATH = `${OG_DIR_PATH}/` + slug + ".jpg";
-    await captureOgImage(browser, url, title, description, OG_IMAGE_FILE_PATH);
+    const COMPANY_OG_IMAGE_FILE_PATH = `${COMPANY_OG_DIR_PATH}/` + slug + ".jpg";
+    await captureOgImage(browser, url, title, description, COMPANY_OG_IMAGE_FILE_PATH);
+    const PROFILE_OG_IMAGE_FILE_PATH = `${PROFILE_OG_DIR_PATH}/` + slug + ".jpg";
+    await captureOgImage(browser, url, title, description, PROFILE_OG_IMAGE_FILE_PATH);
   }
 
   await browser.close();
