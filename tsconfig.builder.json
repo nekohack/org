@@ -5,7 +5,7 @@
     "outDir": "dist",
     "noEmit": false
   },
-  "include": ["scripts/og-gen.ts"],
+  "include": ["libs/og-gen/main.ts"],
   "exclude": ["node_modules"],
   "ts-node": {
     "transpileOnly": true,
