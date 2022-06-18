@@ -44,14 +44,26 @@ commands:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run: yarn og-lib:build && yarn company-app:build && yarn company-app:export
+      - run: yarn company-app:build && yarn company-app:export
 
-  package_and_deploy:
-    description: Deploy
+      - run: yarn profile-app:build && yarn profile-app:export
+
+  company_and_deploy:
+    description: Company Deploy
     steps:
       - aws-s3/sync:
           from: dist/apps/company-app/exported/
           to: s3://nekohack.me
+          arguments: |
+            --acl public-read \
+            --cache-control "max-age=86400"
+
+  profile_and_deploy:
+    description: Profile Deploy
+    steps:
+      - aws-s3/sync:
+          from: dist/apps/profile-app/exported/
+          to: s3://yuma-kitamura.nekohack.me
           arguments: |
             --acl public-read \
             --cache-control "max-age=86400"
@@ -72,7 +84,8 @@ jobs:
       - aws-cli/install
       - aws-cli/setup
       - prepare_node_dependency
-      - package_and_deploy
+      - company_and_deploy
+      - profile_and_deploy
 
 workflows:
   version: 2
