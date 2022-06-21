@@ -27,9 +27,14 @@ const Product: FC = () => {
                         (s: { name: string; url: string; status: 'active' | 'used' }) =>
                           s.status === 'active',
                       )
-                      .map((s: { name: string; category: string; status: 'active' | 'used' }, key: number) => {
-                        return <li key={key}>{`${s.name} (${s.category})`}</li>
-                      })}
+                      .map(
+                        (
+                          s: { name: string; category: string; status: 'active' | 'used' },
+                          key: number,
+                        ) => {
+                          return <li key={key}>{`${s.name} (${s.category})`}</li>
+                        },
+                      )}
                   </ul>
                 </>
               )}
@@ -42,15 +47,20 @@ const Product: FC = () => {
                         (s: { name: string; url: string; status: 'active' | 'used' }) =>
                           s.status === 'active',
                       )
-                      .map((s: { name: string; url: string; status: 'active' | 'used' }, key: number) => {
-                        return (
-                          <li key={key}>
-                            <a href={s.url} target="_blank" rel="noopener noreferrer">
-                              {s.name}
-                            </a>
-                          </li>
-                        )
-                      })}
+                      .map(
+                        (
+                          s: { name: string; url: string; status: 'active' | 'used' },
+                          key: number,
+                        ) => {
+                          return (
+                            <li key={key}>
+                              <a href={s.url} target="_blank" rel="noopener noreferrer">
+                                {s.name}
+                              </a>
+                            </li>
+                          )
+                        },
+                      )}
                   </ul>
                 </>
               )}
