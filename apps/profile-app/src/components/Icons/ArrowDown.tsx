@@ -1,8 +1,8 @@
-import * as React from 'react'
+import React from 'react'
 
 type Props = React.SVGAttributes<SVGElement>
 
-export const ArrowDown = (props: Props) => {
+export const ArrowDown: FCWithChildren<Props> = (props: Props) => {
   return (
     <svg
       width="16"

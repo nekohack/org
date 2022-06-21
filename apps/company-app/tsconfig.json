@@ -11,6 +11,7 @@
     "noEmit": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "incremental": true,
     "baseUrl": ".",
     "paths": {
       "root": ["."],
@@ -24,6 +25,6 @@
       "node_modules/@nekohack/normalize.css/*": ["../../node_modules/@nekohack/normalize.css/*"]
     }
   },
-  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "next-env.d.ts"],
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "next-env.d.ts", "react-app-env.d.ts"],
   "exclude": ["node_modules"]
 }

@@ -1,4 +1,4 @@
-import * as React from 'react'
+import { useCallback, useEffect, useState } from 'react'
 
 type ReturnType<T> = {
   event: CustomEvent<T> | null
@@ -10,9 +10,9 @@ export function useEmitEvent<T = unknown>(
   payload?: T,
   options?: Omit<CustomEventInit, 'detail'>,
 ): ReturnType<T> {
-  const [event, setEvent] = React.useState<CustomEvent | null>(null)
+  const [event, setEvent] = useState<CustomEvent | null>(null)
 
-  React.useEffect(() => {
+  useEffect(() => {
     const event = new CustomEvent(eventName, {
       detail: payload,
       ...options,
@@ -25,7 +25,7 @@ export function useEmitEvent<T = unknown>(
     }
   }, [eventName, options, payload])
 
-  const dispatch = React.useCallback(() => {
+  const dispatch = useCallback(() => {
     if (!event) {
       throw new Error('somehow event was null')
     }

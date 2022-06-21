@@ -18,7 +18,7 @@ const classes = (...args: string[]): string => {
   return args.join(' ')
 }
 
-const Timeline = () => {
+const Timeline: FC = () => {
   const timeline: TimelineItem[] = [
     {
       date: 'October 2021',

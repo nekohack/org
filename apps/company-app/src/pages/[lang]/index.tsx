@@ -1,4 +1,3 @@
-import * as React from 'react'
 import i18next from 'i18next'
 import { useEmitEvent } from '@hooks/useEmitEvent'
 import SkillsSection from '@sections/SkillsSection'
@@ -25,7 +24,7 @@ export default function Home() {
         <h2>Web Developer</h2>
       </div>
 
-      <p className={mainStyles.mainText}>{i18next.t('basic_biography')}</p>
+      <p className={mainStyles.mainText}>{i18next.t('basic_biography') as string}</p>
 
       <div className={mainStyles.btnContainer}>
         <a onClick={dispatch} className="btn btn__light btn__icon" href="#timeline">
