@@ -13,8 +13,8 @@ const Introduction: FC = () => {
       <p>{i18next.t('basic_biography')}</p>
       <h2>{i18next.t('labels.position')}</h2>
       <ul>
-        {positionList?.map((p: string) => {
-          return <li key={p}>{p}</li>
+        {positionList?.map((position: string, index: number) => {
+          return <li key={index}>{position}</li>
         })}
       </ul>
     </div>

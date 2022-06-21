@@ -8,15 +8,15 @@ const Product: FC = () => {
       <h1>{i18next.t('product')}</h1>
       {products
         .filter((node: any) => node.enabled === true)
-        .map((node: any) => {
+        .map((node: any, index: number) => {
           return (
-            <div key={node.id}>
+            <div key={index}>
               <h2>{i18next.t(node.title)}</h2>
               {node.image && (
                 <img src={node.image} alt={node.title} width={600} height={400} decoding="async" />
               )}
-              {node.description.map((d: string, index: number) => {
-                return <p key={index} dangerouslySetInnerHTML={{ __html: i18next.t(d) }} />
+              {node.description.map((d: string, key: number) => {
+                return <p key={key} dangerouslySetInnerHTML={{ __html: i18next.t(d) }} />
               })}
               {node.skills && (
                 <>
@@ -27,8 +27,8 @@ const Product: FC = () => {
                         (s: { name: string; url: string; status: 'active' | 'used' }) =>
                           s.status === 'active',
                       )
-                      .map((s: { name: string; category: string; status: 'active' | 'used' }) => {
-                        return <li key={s.name}>{`${s.name} (${s.category})`}</li>
+                      .map((s: { name: string; category: string; status: 'active' | 'used' }, key: number) => {
+                        return <li key={key}>{`${s.name} (${s.category})`}</li>
                       })}
                   </ul>
                 </>
@@ -42,9 +42,9 @@ const Product: FC = () => {
                         (s: { name: string; url: string; status: 'active' | 'used' }) =>
                           s.status === 'active',
                       )
-                      .map((s: { name: string; url: string; status: 'active' | 'used' }) => {
+                      .map((s: { name: string; url: string; status: 'active' | 'used' }, key: number) => {
                         return (
-                          <li key={s.name}>
+                          <li key={key}>
                             <a href={s.url} target="_blank" rel="noopener noreferrer">
                               {s.name}
                             </a>
@@ -79,9 +79,9 @@ const Product: FC = () => {
                           }>
                           url: string
                         },
-                        index: number,
+                        key: number,
                       ) => (
-                        <li key={index}>
+                        <li key={key}>
                           <h4>{i18next.t(s.title)}</h4>
                           <h5>{i18next.t('product_technology_used')}</h5>
                           <ul>

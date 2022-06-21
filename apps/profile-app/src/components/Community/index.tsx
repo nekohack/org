@@ -9,9 +9,9 @@ const Community: FC = () => {
       <ul>
         {communities
           .filter((node: any) => node.enabled === true)
-          .map((node: any) => {
+          .map((node: any, index: number) => {
             return (
-              <li key={node.id}>
+              <li key={index}>
                 <a
                   href={node.url}
                   role="button"
