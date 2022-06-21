@@ -1,4 +1,3 @@
-import React, { FC } from 'react'
 import * as SC from './index.module.scss'
 
 export const Index: FC = () => {

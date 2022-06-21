@@ -2,7 +2,6 @@
   "extends": [
     "plugin:@nrwl/nx/react-typescript",
     "@nekohack/eslint-config-react",
-    "../../.eslintrc.json",
     "next",
     "next/core-web-vitals"
   ],

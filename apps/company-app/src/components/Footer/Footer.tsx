@@ -1,8 +1,7 @@
-import * as React from 'react'
 import i18next from 'i18next'
 import styles from './footer.module.scss'
 
-export const Footer = () => {
+export const Footer: FC = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContent}>

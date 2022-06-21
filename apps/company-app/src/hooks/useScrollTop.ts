@@ -1,8 +1,8 @@
-import * as React from 'react'
+import { useEffect } from 'react'
 import { Router } from 'next/router'
 
 export function useScrollTop() {
-  React.useEffect(() => {
+  useEffect(() => {
     function onChangeStart() {
       window.scrollTo({
         behavior: 'smooth',

@@ -1,4 +1,3 @@
-import React, { FC } from 'react'
 import i18next from 'i18next'
 import { links } from '@utils/link.constants'
 

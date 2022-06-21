@@ -1,4 +1,4 @@
-export const PersonIcon = () => {
+export const PersonIcon: FC = () => {
   return (
     <svg
       version="1.0"
@@ -20,7 +20,7 @@ export const PersonIcon = () => {
   )
 }
 
-export const ContactIcon = () => {
+export const ContactIcon: FC = () => {
   return (
     <svg
       aria-hidden="true"
@@ -39,7 +39,7 @@ export const ContactIcon = () => {
   )
 }
 
-export const GitHubIcon = () => {
+export const GitHubIcon: FC = () => {
   return (
     <svg
       aria-hidden="true"
@@ -58,7 +58,7 @@ export const GitHubIcon = () => {
   )
 }
 
-export const TwitterIcon = () => {
+export const TwitterIcon: FC = () => {
   return (
     <svg
       aria-hidden="true"

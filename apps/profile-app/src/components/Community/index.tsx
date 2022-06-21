@@ -1,4 +1,3 @@
-import React, { FC } from 'react'
 import i18next from 'i18next'
 import { communities } from '@utils/community.constants'
 

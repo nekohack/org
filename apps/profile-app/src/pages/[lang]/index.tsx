@@ -1,4 +1,3 @@
-import * as React from 'react'
 import { defaultLanguage, languages } from '../../../i18n.config'
 import Layout from '@components/Layout'
 import { Index as NoticeBar } from '@components/Notice'

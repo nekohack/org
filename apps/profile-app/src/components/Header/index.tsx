@@ -1,4 +1,3 @@
-import React, { FC } from 'react'
 import TextLoop from 'react-text-loop'
 import * as SC from './index.module.scss'
 import { positions } from '@utils/position.constants'

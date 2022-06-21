@@ -1,4 +1,3 @@
-import React, { FC } from 'react'
 import Header from '@components/Header'
 import { Payment } from '@components/Payment'
 import Introduction from '@components/Introduction'

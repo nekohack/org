@@ -1,12 +1,11 @@
-import * as React from 'react'
+import { useEffect, useRef } from 'react'
 import Link from 'next/link'
-
 import styles from './nav.module.scss'
 
-export const Nav = () => {
-  const ref = React.useRef<HTMLDivElement>()
+export const Nav: FC = () => {
+  const ref = useRef<HTMLDivElement>()
 
-  React.useEffect(() => {
+  useEffect(() => {
     window.onscroll = function updateNav() {
       if (isPageOffset()) {
         ref.current.classList.add(styles.navActive)
