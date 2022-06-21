@@ -1,14 +1,14 @@
-import * as React from 'react'
+import { useCallback, useEffect } from 'react'
 
 export function useGoogleAdsense() {
-  const loadAd = React.useCallback(() => {
+  const loadAd = useCallback(() => {
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     // eslint-disable-next-line
     ;(window.adsbygoogle = window.adsbygoogle || []).push({})
   }, [])
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (typeof window !== 'undefined') {
       const component = window.document.getElementById('__next').querySelector('.adsbygoogle')
       if (component) {

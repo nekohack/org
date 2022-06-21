@@ -6,8 +6,8 @@ import { works } from '../data/works'
 const WorksSection = () => {
   return (
     <section id="works">
-      <h1 className="section__title">{i18next.t('works')}</h1>
-      <p>{i18next.t('works_description')}</p>
+      <h1 className="section__title">{i18next.t('works') as string}</h1>
+      <p>{i18next.t('works_description') as string}</p>
       <div>
         {works.map((work, index) => {
           return (
@@ -16,7 +16,9 @@ const WorksSection = () => {
               <div className={styles.linkPreview}>
                 <a href={work.url} target="_blank" rel="noopener noreferrer">
                   <div className={styles.linkPreviewTitle}>{work.title}</div>
-                  <div className={styles.linkPreviewDescription}>{i18next.t(work.description)}</div>
+                  <div className={styles.linkPreviewDescription}>
+                    {i18next.t(work.description) as string}
+                  </div>
                   <div className={styles.linkPreviewUrl}>{work.url}</div>
                 </a>
                 <img className={styles.linkPreviewImage} src={`/og/${work.image}.jpg`} />

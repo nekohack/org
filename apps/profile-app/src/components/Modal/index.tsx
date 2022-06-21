@@ -1,4 +1,4 @@
-import React, { FC, useCallback, useEffect, useRef } from 'react'
+import React, { useCallback, useEffect, useRef } from 'react'
 import * as SC from './index.module.scss'
 
 type ModalProps = {
@@ -6,7 +6,7 @@ type ModalProps = {
   onClose: any
 }
 
-const Modal: FC<ModalProps> = ({ children, onClose }: ModalProps) => {
+const Modal: FCWithChildren<ModalProps> = ({ children, onClose }: ModalProps) => {
   const ref = useRef(null)
 
   const escapeListener = useCallback(

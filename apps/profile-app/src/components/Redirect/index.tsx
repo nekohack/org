@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 
-const Redirect = () => {
+const Redirect: FC = () => {
   return <Fragment />
 }
 

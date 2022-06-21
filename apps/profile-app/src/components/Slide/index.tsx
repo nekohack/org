@@ -1,4 +1,3 @@
-import React, { FC } from 'react'
 import i18next from 'i18next'
 import dayjs from 'dayjs'
 import { talks } from '@utils/talk.constants'

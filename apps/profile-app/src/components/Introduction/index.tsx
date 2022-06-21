@@ -1,4 +1,4 @@
-import React, { FC, useMemo } from 'react'
+import { useMemo } from 'react'
 import i18next from 'i18next'
 
 const Introduction: FC = () => {

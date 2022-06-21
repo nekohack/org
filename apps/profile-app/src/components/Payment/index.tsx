@@ -12,7 +12,7 @@ type CheckoutFormType = {
   isTest: boolean
 }
 
-export const Payment = () => {
+export const Payment: FC = () => {
   const isTest = false
 
   const stripeApiKey = isTest
@@ -29,7 +29,7 @@ export const Payment = () => {
   )
 }
 
-export const CheckoutForm = ({ isTest }: CheckoutFormType) => {
+export const CheckoutForm: FCWithChildren<CheckoutFormType> = ({ isTest }: CheckoutFormType) => {
   const stripe = useStripe()
 
   const elements = useElements()
