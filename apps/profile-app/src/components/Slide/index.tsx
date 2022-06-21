@@ -14,9 +14,9 @@ const Slide: FC = () => {
       <ul>
         {talks
           .filter((node: any) => node.enabled === true)
-          .map((node: any) => {
+          .map((node: any, index: number) => {
             return (
-              <li key={node.id}>
+              <li key={index}>
                 <p>{dateFormat(node.date)}</p>
                 <p style={{ display: 'flex', flexDirection: 'column', verticalAlign: 'middle' }}>
                   {node.host}

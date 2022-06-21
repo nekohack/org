@@ -7,8 +7,8 @@ const Header: FC = () => {
   return (
     <div className={SC.title}>
       <TextLoop interval={5000}>
-        {positions.map((position: string) => (
-          <div key={position}>{position}</div>
+        {positions.map((position: string, index: number) => (
+          <div key={index}>{position}</div>
         ))}
       </TextLoop>
       <div className={SC.name}>Yuma Kitamura</div>
