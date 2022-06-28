@@ -76,7 +76,7 @@ jobs:
       - aws-cli/install
       - aws-cli/setup
 
-  master_build:
+  main_build:
     executor:
       name: default
     steps:
@@ -91,11 +91,11 @@ workflows:
   version: 2
   push:
     jobs:
-      - master_build:
+      - main_build:
           filters:
             branches:
-              only: master
+              only: main
   pull_request:
     when: << pipeline.parameters.pull_request >>
     jobs:
-      - master_build
+      - main_build
