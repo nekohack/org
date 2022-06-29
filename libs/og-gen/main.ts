@@ -30,6 +30,7 @@ async function captureOgImage(
     await page.exposeFunction("getTitle", () => title);
     await page.exposeFunction("getDescription", () => description);
   }
+  await page.waitForTimeout(1000);
   await page.reload();
   await page.screenshot({
     path: imagePath,
@@ -66,7 +67,7 @@ async function captureOgImage(
     },
     {
       slug: "flutterkaigi-2021",
-      url: "https://flutterkaigi.jp",
+      url: "https://flutterkaigi.jp/2021",
       title: "",
       description: "",
     },
