@@ -1,5 +1,13 @@
 export const talks = [
   {
+    text: 'slides.oss_activities_2022',
+    host: 'me',
+    url: 'https://docs.google.com/presentation/d/141tABAoz2LYozHC89fSwqqXJtGEX47mVXyJ5SEfYtZY/edit?usp=sharing',
+    youtubeUrl: null,
+    date: '2022/06/23',
+    enabled: true,
+  },
+  {
     text: 'slides.about_22s_googleio_wwdc_recap',
     host: 'PWA Night',
     url: 'https://webneko.dev/posts/22s-googleio-wwdc-recap',
@@ -8,11 +16,43 @@ export const talks = [
     enabled: true,
   },
   {
+    text: 'slides.customize_markuplint',
+    host: 'me',
+    url: 'https://docs.google.com/presentation/d/1IGtF7dFfB4QTHNPBDND8KeczHRSrs0Uy7eBMvYqYHdQ/edit?usp=sharing',
+    youtubeUrl: null,
+    date: '2022/04/21',
+    enabled: true,
+  },
+  {
+    text: 'slides.setup_markuplint',
+    host: 'me',
+    url: 'https://docs.google.com/presentation/d/1vvkYKVMRt6pYJSZC2Fm_eFKYxjhrqchfqn6UJBKikfU/edit?usp=sharing',
+    youtubeUrl: null,
+    date: '2022/04/14',
+    enabled: true,
+  },
+  {
+    text: 'slides.learn_accessibility_again',
+    host: 'me',
+    url: 'https://docs.google.com/presentation/d/1TGXqz-mg1mkKPRazb_jT5umxC98h6dXrhQqdJX4YJUE/edit?usp=sharing',
+    youtubeUrl: null,
+    date: '2022/03/10',
+    enabled: true,
+  },
+  {
     text: 'slides.react_workshop_in_line_developer_community_2022',
     host: 'LINE Developer Community',
     url: 'https://webneko.dev/posts/the-answer-to-learn-react-with-line',
     youtubeUrl: 'https://www.youtube.com/watch?v=D8GeQyrueEY',
     date: '2022/03/03',
+    enabled: true,
+  },
+  {
+    text: 'slides.learn_accessibility',
+    host: 'me',
+    url: 'https://docs.google.com/presentation/d/1z6OFNh3NnN9mP3Rh2wGhyOpy_QslKcZfR6I8K7blOEY/edit?usp=sharing',
+    youtubeUrl: null,
+    date: '2022/01/20',
     enabled: true,
   },
   {

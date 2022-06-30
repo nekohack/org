@@ -18,7 +18,7 @@ const Slide: FC = () => {
               <li key={index}>
                 <p>{dateFormat(node.date)}</p>
                 <p style={{ display: 'flex', flexDirection: 'column', verticalAlign: 'middle' }}>
-                  {node.host}
+                  {node.host === 'me' ? '内内の勉強会など' : node.host}
                   <a
                     href={node.url}
                     role="button"
