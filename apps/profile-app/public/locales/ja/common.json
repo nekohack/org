@@ -92,6 +92,7 @@
   "community_role": "下記コミュニティに一スタッフとして参画中",
   "slide": "登壇スライド",
   "slides": {
+    "oss_activities_2022": "わたしの OSS 活動について",
     "about_22s_googleio_wwdc_recap": "Google I/O 2022 Recap × WWDC 2022 Recap について",
     "react_workshop_in_line_developer_community_2022": "React (Vite) × LIFF ハンズオン",
     "inside_the_website_in_vscodecon_jp_2021": "VSCondeCon JP 2021 の内幕",

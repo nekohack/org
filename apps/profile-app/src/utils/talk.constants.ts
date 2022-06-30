@@ -1,5 +1,13 @@
 export const talks = [
   {
+    text: 'slides.oss_activities_2022',
+    host: 'me',
+    url: 'https://docs.google.com/presentation/d/141tABAoz2LYozHC89fSwqqXJtGEX47mVXyJ5SEfYtZY/edit?usp=sharing',
+    youtubeUrl: null,
+    date: '2022/06/23',
+    enabled: true,
+  },
+  {
     text: 'slides.about_22s_googleio_wwdc_recap',
     host: 'PWA Night',
     url: 'https://webneko.dev/posts/22s-googleio-wwdc-recap',
