@@ -92,8 +92,13 @@
   "community_role": "下記コミュニティに一スタッフとして参画中",
   "slide": "登壇スライド",
   "slides": {
+    "oss_activities_2022": "わたしの OSS 活動について",
     "about_22s_googleio_wwdc_recap": "Google I/O 2022 Recap × WWDC 2022 Recap について",
+    "customize_markuplint": "markuplint をカスタマイズする",
+    "setup_markuplint": "markuplint の動作環境を構築する",
+    "learn_accessibility_again": "アクセシビリティを基礎から学ぶ (第 2 版)",
     "react_workshop_in_line_developer_community_2022": "React (Vite) × LIFF ハンズオン",
+    "learn_accessibility": "アクセシビリティを基礎から学ぶ (第 1 版)",
     "inside_the_website_in_vscodecon_jp_2021": "VSCondeCon JP 2021 の内幕",
     "github_issues_usage_as_a_cmd": "Github issues を CMS として扱う",
     "recommend_to_developers_relations_in_community_handson": "コミュニティハンズオンにおける DevRel のすゝめ",
