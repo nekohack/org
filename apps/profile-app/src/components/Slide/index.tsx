@@ -18,7 +18,33 @@ const Slide: FC = () => {
               <li key={index}>
                 <p>{dateFormat(node.date)}</p>
                 <p style={{ display: 'flex', flexDirection: 'column', verticalAlign: 'middle' }}>
-                  {node.host === 'me' ? '内内の勉強会など' : node.host}
+                  {node.host === 'me' && node.place === 'EventIn' ? (
+                    <a
+                      href="https://jp.vcube.com/eventdx/eventin"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      EventIn
+                    </a>
+                  ) : node.host === 'me' && node.place === 'Zoom' ? (
+                    <a
+                      href="https://explore.zoom.us/ja/products/meetings"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Zoom
+                    </a>
+                  ) : node.host === 'me' && node.place === 'Meet' ? (
+                    <a
+                      href="https://workspace.google.co.jp/intl/ja/products/meet"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Meet
+                    </a>
+                  ) : (
+                    node.host
+                  )}
                   <a
                     href={node.url}
                     role="button"

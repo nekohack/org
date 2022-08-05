@@ -7,7 +7,7 @@ const Community: FC = () => {
       <h1>{i18next.t('community')}</h1>
       <ul>
         {communities
-          .filter((node: any) => node.enabled === true)
+          .filter((node: any) => node.enabled === true && node.status === 'active')
           .map((node: any, index: number) => {
             return (
               <li key={index}>
