@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@conference/shared/types": [
+        "libs/shared/types/basic.d.ts",
+        "libs/shared/types/profile.d.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

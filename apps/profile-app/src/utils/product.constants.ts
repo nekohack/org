@@ -1,4 +1,6 @@
-export const products = [
+import { Product } from '../../../../libs/shared/types/profile'
+
+export const products: Product[] = [
   {
     title: 'products.design_system',
     description: ['products.design_system_description'],
@@ -83,7 +85,7 @@ export const products = [
       {
         name: 'Circle CI',
         category: 'CI',
-        status: 'used',
+        status: 'inactive',
       },
       {
         name: 'Github Actions',
@@ -113,7 +115,7 @@ export const products = [
       {
         name: 'j-stylebook',
         category: 'Atomic Components UI',
-        status: 'used',
+        status: 'inactive',
       },
       {
         name: 'Nuxt.js',
@@ -128,7 +130,7 @@ export const products = [
       {
         name: 'AWS Fargate',
         category: 'ECS',
-        status: 'used',
+        status: 'inactive',
       },
       {
         name: 'AWS Amplify',
@@ -143,12 +145,12 @@ export const products = [
       {
         name: 'Travis CI',
         category: 'CI',
-        status: 'used',
+        status: 'inactive',
       },
       {
         name: 'Circle CI',
         category: 'CI',
-        status: 'used',
+        status: 'inactive',
       },
       {
         name: 'Github Actions',
@@ -160,7 +162,7 @@ export const products = [
       {
         name: 'jiyuujin/webneko-blog',
         url: 'https://github.com/jiyuujin/webneko-blog',
-        status: 'used',
+        status: 'inactive',
       },
       {
         name: 'jiyuujin/webneko-blog-next',

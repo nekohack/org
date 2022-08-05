@@ -1,4 +1,6 @@
-export const links = [
+import { Link } from '../../../../libs/shared/types/profile'
+
+export const links: Link[] = [
   {
     text: 'labels.curriculum_vitae',
     url: 'https://github.com/jiyuujin/Curriculum-Vitae',
