@@ -42,9 +42,10 @@
     "tech_blog_description_3": "Then, after a two-year \"COVID19 Disaster,\" we switched to Composition API to support Nuxt 3 (Vue 3). Currently, the newly released Nuxt 3 blog and the previously released Nuxt 2 blog are being operated in parallel.",
     "minna_de_blog": "Blog made by everyone",
     "minna_de_blog_description": "Every weekday morning, we started \"Ohayo Engineer\" as a place to chat loosely on Twitter Spaces. We also create and operate a website so that you can look back on the content of the chat in any time.",
+    "flutterkaigi_2022": "FlutterKaigi 2022 official website",
     "flutterkaigi_2021": "FlutterKaigi 2021 official website",
     "flutterkaigi_2021_description": "When holding FlutterKaigi 2021, the first tech conference on the theme of Flutter in Japan, I was mainly in charge of producing the official website.",
-    "vscodeconjp_2021": "VSCode Conference Japan 2021 official website",
+    "vscodeconjp_2021": "VS Code Conference JP 2021 official website",
     "vscodeconjp_2021_description": "This year, the 10th anniversary of VS Code, will be held under the concept of Happy Extension. Also, unlike the previous VSCode Conference, I was in charge of VSCode Conference Japan 2021 teaser website production in response to the increased momentum for producing the official website for the first time.",
     "insight": "A website established to calculate the performance of each website that it operates as a quantitative numerical value on a daily basis. The numbers here are based on PageSpeed \u200B\u200BInsights v5 and are regularly observed daily using Google Cloud Run."
   },
@@ -92,6 +93,7 @@
   "community_role": "Participating in the following community as a staff member",
   "slide": "Stage Slide",
   "slides": {
+    "calendar_app_workshop_in_flutter_japan_user_group_2022": "Flutter Calendar App workshop 2022",
     "oss_activities_2022": "My Own OSS Activities",
     "about_22s_googleio_wwdc_recap": "About Google I/O 2022 Recap × WWDC 2022 Recap",
     "customize_markuplint": "markuplint customize",

@@ -31,10 +31,10 @@ interface Repo {
 }
 
 export interface Product {
-  title: string
+  title: string[]
   description: string[]
-  url: string
-  image?: string
+  url: string[]
+  image?: string[]
   skills?: Skill[]
   repos?: Repo[]
   sub?: Array<{ title: string; skills: Skill[] }>
@@ -57,9 +57,10 @@ export interface Community {
 export interface Talk {
   text: string
   host: Host
-  url: string
+  url: string | undefined
   youtubeUrl: string
   place: Place | RealPlace
+  image: string | undefined
   date: string
   enabled: boolean
 }

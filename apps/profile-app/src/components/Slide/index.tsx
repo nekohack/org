@@ -1,6 +1,7 @@
 import i18next from 'i18next'
 import dayjs from 'dayjs'
 import { talks } from '@utils/talk.constants'
+import { LinkPreview } from '../../../../../libs/shared-ui/LinkPreview'
 
 const Slide: FC = () => {
   const dateFormat = (d: string) => {
@@ -45,30 +46,26 @@ const Slide: FC = () => {
                   ) : (
                     node.host
                   )}
-                  <a
-                    href={node.url}
-                    role="button"
-                    aria-pressed="true"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {i18next.t(node.text)}
-                  </a>
                   {node.youtubeUrl && (
-                    <>
-                      <a
-                        href={node.youtubeUrl}
-                        role="button"
-                        aria-pressed="true"
-                        style={{ display: 'flex', justifyContent: 'flex-start' }}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {i18next.t('labels.youtube_live')}
-                      </a>
-                    </>
+                    <a
+                      href={node.youtubeUrl}
+                      role="button"
+                      aria-pressed="true"
+                      style={{ display: 'flex', justifyContent: 'flex-start' }}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {i18next.t('labels.youtube_live')}
+                    </a>
                   )}
                 </p>
+                {node.url && (
+                  <LinkPreview
+                    title={i18next.t(node.text)}
+                    url={node.url}
+                    image={node.image || ''}
+                  />
+                )}
               </li>
             )
           })}

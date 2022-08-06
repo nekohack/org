@@ -42,9 +42,10 @@
     "tech_blog_description_3": "そして 2 年の「コロナ禍」を経て Nuxt 3 (Vue 3) に対応するべく Composition API に乗り換える。現在は新たに本番公開した Nuxt 3 製のブログと、これまで公開していた Nuxt 2 製のブログの並行運用している。",
     "minna_de_blog": "みんなでブログ",
     "minna_de_blog_description": "平日毎朝、Twitter Spaces にゆるふわ雑談する場として「オハヨーエンジニア」を開始した。なお雑談した内容をいつでも振り返ることができるように、ウェブサイトも製作・運用している。",
+    "flutterkaigi_2022": "FlutterKaigi 2022 ティザーサイト",
     "flutterkaigi_2021": "FlutterKaigi 2021 ティザーサイト",
     "flutterkaigi_2021_description": "日本で初めて Flutter をテーマに扱うテックカンファレンス FlutterKaigi 2021 の開催にあたって、私自身はそのティザーサイト製作をメインで担当させていただきました。",
-    "vscodeconjp_2021": "VSCode Conference Japan 2021 ティザーサイト",
+    "vscodeconjp_2021": "VS Code Conference JP 2021 ティザーサイト",
     "vscodeconjp_2021_description": "VSCode 10 周年の年となる今年は Happy Extension というコンセプトの下開催される。またこれまでの VSCode Conference と違って、初めてティザーサイトを製作する機運が高まったことを受け VSCode Conference Japan 2021 ティザーサイト製作を担当した。",
     "insight": "自らが運営する各 Web サイトのパフォーマンスを日々定量的な数値として算出するため開設した Web サイト。ここでの数値は PageSpeed Insights v5 を採用しており Google Cloud Run を利用して毎日定期観測している。"
   },
@@ -92,6 +93,7 @@
   "community_role": "下記コミュニティに一スタッフとして参画中",
   "slide": "登壇スライド",
   "slides": {
+    "calendar_app_workshop_in_flutter_japan_user_group_2022": "カレンダーアプリで学ぶパッケージ開発",
     "oss_activities_2022": "わたしの OSS 活動について",
     "about_22s_googleio_wwdc_recap": "Google I/O 2022 Recap × WWDC 2022 Recap について",
     "customize_markuplint": "markuplint をカスタマイズする",
