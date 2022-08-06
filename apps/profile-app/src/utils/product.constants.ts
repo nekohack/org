@@ -2,9 +2,9 @@ import { Product } from '../../../../libs/shared/types/profile'
 
 export const products: Product[] = [
   {
-    title: 'products.design_system',
+    title: ['products.design_system'],
     description: ['products.design_system_description'],
-    url: 'https://normalize.nekohack.me/',
+    url: ['https://normalize.nekohack.me/'],
     sub: [
       {
         title: 'products.react_design_system',
@@ -50,7 +50,7 @@ export const products: Product[] = [
     enabled: false,
   },
   {
-    title: 'products.profile',
+    title: ['products.profile'],
     description: [
       'products.profile_description_1',
       'products.profile_description_2',
@@ -100,12 +100,12 @@ export const products: Product[] = [
         status: 'active',
       },
     ],
-    image: 'https://yuma-kitamura.nekohack.me/og/yuma_kitamura-nekohack-me.jpg',
-    url: 'https://yuma-kitamura.nekohack.me/',
+    image: ['top'],
+    url: ['https://yuma-kitamura.nekohack.me/'],
     enabled: true,
   },
   {
-    title: 'products.tech_blog',
+    title: ['products.tech_blog'],
     description: [
       'products.tech_blog_description_1',
       'products.tech_blog_description_2',
@@ -170,12 +170,12 @@ export const products: Product[] = [
         status: 'active',
       },
     ],
-    image: 'https://yuma-kitamura.nekohack.me/og/webneko-blog.jpg',
-    url: 'https://webneko.dev/',
+    image: ['webneko-blog'],
+    url: ['https://webneko.dev/'],
     enabled: true,
   },
   {
-    title: 'products.minna_de_blog',
+    title: ['products.minna_de_blog'],
     description: ['products.minna_de_blog_description'],
     skills: [
       {
@@ -204,12 +204,12 @@ export const products: Product[] = [
         status: 'active',
       },
     ],
-    image: 'https://yuma-kitamura.nekohack.me/og/ohayo-engineer.jpg',
-    url: 'https://ohayo.nekohack.me/',
+    image: [],
+    url: ['https://ohayo.nekohack.me/'],
     enabled: true,
   },
   {
-    title: 'products.flutterkaigi_2021',
+    title: ['products.flutterkaigi_2022', 'products.flutterkaigi_2021'],
     description: ['products.flutterkaigi_2021_description'],
     skills: [
       {
@@ -220,22 +220,37 @@ export const products: Product[] = [
       {
         name: 'Firebase hosting',
         category: 'Static Website Hosting',
+        status: 'inactive',
+      },
+      {
+        name: 'GitHub Page',
+        category: 'Static Website Hosting',
+        status: 'active',
+      },
+      {
+        name: 'Codemagic Static Page',
+        category: 'Static Website Hosting',
         status: 'active',
       },
     ],
     repos: [
       {
-        name: 'FlutterKaigi/confwebsite2021',
-        url: 'https://github.com/FlutterKaigi/confwebsite2021',
+        name: 'FlutterKaigi/2022',
+        url: 'https://github.com/FlutterKaigi/2022',
+        status: 'active',
+      },
+      {
+        name: 'FlutterKaigi/2021',
+        url: 'https://github.com/FlutterKaigi/2021',
         status: 'active',
       },
     ],
-    image: 'https://yuma-kitamura.nekohack.me/og/flutterkaigi-2021.jpg',
-    url: 'https://flutterkaigi.jp/',
+    image: ['flutterkaigi-2022', 'flutterkaigi-2021'],
+    url: ['https://flutterkaigi.jp/2022', 'https://flutterkaigi.jp/2021'],
     enabled: true,
   },
   {
-    title: 'products.vscodeconjp_2021',
+    title: ['products.vscodeconjp_2021'],
     description: ['products.vscodeconjp_2021_description'],
     skills: [
       {
@@ -261,8 +276,8 @@ export const products: Product[] = [
         status: 'active',
       },
     ],
-    image: 'https://yuma-kitamura.nekohack.me/og/vscodejpcon-2021.jpg',
-    url: 'https://vscode.github.io/conf2021/',
+    image: ['vscodeconjp-2021'],
+    url: ['https://vscodejp.github.io/conference/2021/'],
     enabled: true,
   },
 ]

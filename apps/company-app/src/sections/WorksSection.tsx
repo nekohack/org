@@ -1,6 +1,6 @@
 import * as React from 'react'
 import i18next from 'i18next'
-import styles from 'css/link-preview.module.scss'
+import { LinkPreview } from '../../../../libs/shared-ui/LinkPreview'
 import { works } from '../data/works'
 
 const WorksSection = () => {
@@ -13,16 +13,12 @@ const WorksSection = () => {
           return (
             <div key={index}>
               <h2>{work.title}</h2>
-              <div className={styles.linkPreview}>
-                <a href={work.url} target="_blank" rel="noopener noreferrer">
-                  <div className={styles.linkPreviewTitle}>{work.title}</div>
-                  <div className={styles.linkPreviewDescription}>
-                    {i18next.t(work.description) as string}
-                  </div>
-                  <div className={styles.linkPreviewUrl}>{work.url}</div>
-                </a>
-                <img className={styles.linkPreviewImage} src={`/og/${work.image}.jpg`} />
-              </div>
+              <LinkPreview
+                title={work.title}
+                description={i18next.t(work.description)}
+                url={work.url}
+                image={work.image || ''}
+              />
             </div>
           )
         })}

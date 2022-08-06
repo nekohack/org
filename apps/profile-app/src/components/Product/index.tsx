@@ -1,5 +1,6 @@
 import i18next from 'i18next'
 import { products } from '@utils/product.constants'
+import { LinkPreview } from '../../../../../libs/shared-ui/LinkPreview'
 
 const Product: FC = () => {
   return (
@@ -11,9 +12,12 @@ const Product: FC = () => {
           return (
             <div key={index}>
               <h2>{i18next.t(node.title)}</h2>
-              {node.image && (
-                <img src={node.image} alt={node.title} width={600} height={400} decoding="async" />
-              )}
+              {node.image.length === 1 &&
+                node.image.map((i, key: number) => (
+                  <div key={key}>
+                    <img src={`/og/${i}.jpg`} alt={node.title[key]} decoding="async" />
+                  </div>
+                ))}
               {node.description.map((d: string, key: number) => {
                 return <p key={key} dangerouslySetInnerHTML={{ __html: i18next.t(d) }} />
               })}
@@ -63,16 +67,16 @@ const Product: FC = () => {
                   </ul>
                 </>
               )}
-              {node.url && (
-                <>
-                  <h3>{i18next.t('product_url')}</h3>
-                  <p>
-                    <a href={node.url} target="_blank" rel="noopener noreferrer">
-                      {node.url}
-                    </a>
-                  </p>
-                </>
-              )}
+              {node.url.length !== 0 &&
+                node.url.map((u: string, key: number) => (
+                  <div key={key} style={{ padding: '4px 0' }}>
+                    <LinkPreview
+                      title={i18next.t(node.title[key])}
+                      url={u}
+                      image={node.image[key] || ''}
+                    />
+                  </div>
+                ))}
               {node.sub && (
                 <>
                   <h3>{i18next.t('sub_product')}</h3>
