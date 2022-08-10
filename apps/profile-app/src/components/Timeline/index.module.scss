@@ -14,7 +14,7 @@
     left: 50%;
     width: 6px;
     margin-left: -3px;
-    content: '';
+    content: "";
     background: #ddd;
     filter: brightness(150%);
     border-radius: 0.5rem;
@@ -38,7 +38,7 @@
     z-index: 80;
     width: 25px;
     height: 25px;
-    content: '';
+    content: "";
     background: #ddd;
     border-radius: 50%;
     transform: translateY(-50%);
@@ -68,7 +68,7 @@
     right: 30px;
     width: 0;
     height: 0;
-    content: '';
+    content: "";
     border: solid var(--secondary);
     border-color: transparent transparent transparent var(--secondary);
     border-width: 10px 0 10px 10px;
@@ -90,7 +90,7 @@
     left: 30px;
     width: 0;
     height: 0;
-    content: '';
+    content: "";
     border: 10px solid var(--secondary);
     border-color: transparent var(--secondary) transparent transparent;
     border-width: 10px 10px 10px 0;

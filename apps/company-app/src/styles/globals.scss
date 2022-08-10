@@ -1,4 +1,4 @@
-@import 'node_modules/@nekohack/normalize.css/dist/index.css';
+@import "node_modules/@nekohack/normalize.css/dist/index.css";
 
 ::-webkit-scrollbar {
   width: 10px;
@@ -55,7 +55,7 @@ a {
 
 * {
   box-sizing: border-box;
-  font-family: 'Catamaran', sans-serif;
+  font-family: Catamaran, sans-serif;
 }
 
 .section__title {
