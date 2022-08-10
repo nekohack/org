@@ -37,7 +37,7 @@
     "tsm": {
       "executor": "@nrwl/workspace:run-commands",
       "options": {
-        "command": "tsm src",
+        "command": "typed-scss-modules src",
         "cwd": "apps/profile-app",
         "parallel": false
       }
