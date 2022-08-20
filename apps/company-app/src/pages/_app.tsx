@@ -9,12 +9,12 @@ import 'css/globals.scss'
 import 'css/nprogress.css'
 import 'css/fonts.scss'
 import { useScrollTop } from 'src/hooks/useScrollTop'
-import { useGoogleAdsense } from 'src/hooks/useGoogleAdsense'
+// import { useGoogleAdsense } from 'src/hooks/useGoogleAdsense'
 
 function App({ Component, pageProps }: AppProps) {
   i18next.changeLanguage(pageProps.language)
   useScrollTop()
-  useGoogleAdsense()
+  // useGoogleAdsense()
 
   useEffect(() => {
     function handleRouteStart() {
