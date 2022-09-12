@@ -209,6 +209,68 @@ export const products: Product[] = [
     enabled: true,
   },
   {
+    title: ['products.vuefes_2022'],
+    description: ['products.vuefes_2022_description'],
+    skills: [
+      {
+        name: 'Nuxt.js',
+        category: 'JavaScript Framework',
+        status: 'active',
+      },
+      {
+        name: 'Newt',
+        category: 'Headless CMS',
+        status: 'active',
+      },
+      {
+        name: 'Netlify',
+        category: 'Static Website Hosting',
+        status: 'active',
+      },
+    ],
+    repos: [
+      {
+        name: 'vuejs-jp/vuefes-2022',
+        url: 'https://github.com/vuejs-jp/vuefes-2022',
+        status: 'active',
+      },
+    ],
+    image: ['vuefes-2022'],
+    url: ['https://vuefes.jp/2022'],
+    enabled: true,
+  },
+  {
+    title: ['products.revup_2022'],
+    description: ['products.revup_2022_description'],
+    skills: [
+      {
+        name: 'SvelteKit',
+        category: 'JavaScript Framework',
+        status: 'active',
+      },
+      {
+        name: 'microCMS',
+        category: 'Headless CMS',
+        status: 'active',
+      },
+      {
+        name: 'Netlify',
+        category: 'Static Website Hosting',
+        status: 'active',
+      },
+    ],
+    repos: [
+      {
+        name: 'LPF-REVUP/lpf-revup-2022',
+        url: 'https://github.com/LPF-REVUP/lpf-revup-2022',
+        status: 'active',
+      },
+    ],
+    image: ['revup-2022'],
+    url: ['https://revup.jp/'],
+    enabled: true,
+  },
+  {
     title: ['products.flutterkaigi_2022', 'products.flutterkaigi_2021'],
     description: ['products.flutterkaigi_2021_description'],
     skills: [
