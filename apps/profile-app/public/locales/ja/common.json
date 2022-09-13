@@ -48,7 +48,7 @@
     "revup_2022_description": "LINE Developers Community REV UP 2022 は LINE のコミュニティが主催する国内最大の LINE 関連カンファレンスです。各分野のエキスパートが LINE 関連の技術や事例、知見について惜しみなく発信する様々なセッションが今年も数多く行われます。この度 REV UP 2022 のウェブサイトを制作させていただきました。",
     "flutterkaigi_2022": "FlutterKaigi 2022 ティザーサイト",
     "flutterkaigi_2021": "FlutterKaigi 2021 ティザーサイト",
-    "flutterkaigi_2021_description": "日本で初めて Flutter をテーマに扱うテックカンファレンス FlutterKaigi 2021 の開催にあたって、私自身はそのティザーサイト製作をメインで担当させていただきました。",
+    "flutterkaigi_description": "日本で Flutter をテーマに扱うテックカンファレンス FlutterKaigi の開催にあたって、私自身はそのウェブサイトの初期ローンチを始め、プロジェクト全体のリードを担当させていただきました。",
     "vscodeconjp_2021": "VS Code Conference JP 2021 ティザーサイト",
     "vscodeconjp_2021_description": "VSCode 10 周年の年となる今年は Happy Extension というコンセプトの下開催される。またこれまでの VSCode Conference と違って、初めてティザーサイトを製作する機運が高まったことを受け VSCode Conference Japan 2021 ティザーサイト製作を担当した。",
     "insight": "自らが運営する各 Web サイトのパフォーマンスを日々定量的な数値として算出するため開設した Web サイト。ここでの数値は PageSpeed Insights v5 を採用しており Google Cloud Run を利用して毎日定期観測している。"
