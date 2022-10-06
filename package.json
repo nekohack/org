@@ -70,7 +70,6 @@
     "prettier": "2.7.1",
     "rss-parser": "3.11.0",
     "stylelint": "14.9.1",
-    "stylelint-a11y": "git+https://github.com/jiyuujin/stylelint-a11y.git#chore/peerDependencies-stylelint-14.0.0",
     "stylelint-config-recess-order": "3.0.0",
     "stylelint-config-standard": "26.0.0",
     "stylelint-scss": "4.3.0",

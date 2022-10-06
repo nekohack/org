@@ -2,7 +2,7 @@
 
 plugins:
   - stylelint-scss
-  - stylelint-a11y
+  # - stylelint-a11y
 
 syntax:
   - scss
