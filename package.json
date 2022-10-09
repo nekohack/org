@@ -23,7 +23,7 @@
     "@nrwl/next": "14.7.4",
     "@stripe/react-stripe-js": "1.9.0",
     "@stripe/stripe-js": "1.32.0",
-    "dayjs": "1.11.3",
+    "dayjs": "1.11.5",
     "i18next": "21.8.10",
     "i18next-browser-languagedetector": "6.1.4",
     "nekohack-ui": "4.0.0-alpha.2",
