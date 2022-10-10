@@ -38,7 +38,7 @@
     "react-tooltip": "4.2.21",
     "react-transition-group": "4.4.5",
     "sass": "1.54.4",
-    "styled-components": "5.3.5",
+    "styled-components": "5.3.6",
     "ts-node": "10.3.0",
     "zenscroll": "4.0.2"
   },
