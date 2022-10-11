@@ -60,7 +60,7 @@
     "@types/styled-components": "5.1.26",
     "@typescript-eslint/eslint-plugin": "5.33.0",
     "@typescript-eslint/parser": "5.33.0",
-    "concurrently": "6.2.1",
+    "concurrently": "6.5.1",
     "dotenv": "8.2.0",
     "esbuild": "0.12.20",
     "eslint": "8.7.0",
