@@ -22,7 +22,7 @@
     "@nekohack/normalize.css": "2.6.0",
     "@nrwl/next": "14.7.4",
     "@stripe/react-stripe-js": "1.12.0",
-    "@stripe/stripe-js": "1.39.0",
+    "@stripe/stripe-js": "1.40.0",
     "dayjs": "1.11.5",
     "i18next": "21.10.0",
     "i18next-browser-languagedetector": "6.1.8",
