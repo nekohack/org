@@ -2,7 +2,7 @@
   "version": 2,
   "projects": {
     "company-app": "apps/company-app",
-    "profile-app": "apps/profile-app",
-    "og-lib": "libs/og-gen"
+    "og-lib": "libs/og-gen",
+    "profile-app": "apps/profile-app"
   }
 }

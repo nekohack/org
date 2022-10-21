@@ -1,5 +1,4 @@
 {
-  "root": "libs/og-gen",
   "sourceRoot": "libs/og-gen",
   "projectType": "application",
   "targets": {
