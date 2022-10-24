@@ -32,8 +32,8 @@ export const Nav: FC = () => {
           </h1>
 
           <div className={styles.navLinks}>
-            <Link scroll href="https://webneko.dev">
-              <a href="https://webneko.dev" className={styles.navLink}>
+            <Link scroll href="https://blog.nekohack.me/">
+              <a href="https://blog.nekohack.me/" className={styles.navLink}>
                 Blog
               </a>
             </Link>

@@ -24,7 +24,7 @@ export const talks: Talk[] = [
   {
     text: 'slides.about_22s_googleio_wwdc_recap',
     host: 'PWA Night',
-    url: 'https://webneko.dev/posts/22s-googleio-wwdc-recap',
+    url: 'https://blog.nekohack.me/posts/22s-googleio-wwdc-recap',
     youtubeUrl: null,
     place: 'Zoom',
     image: '22s-googleio-wwdc-recap',
@@ -64,7 +64,7 @@ export const talks: Talk[] = [
   {
     text: 'slides.react_workshop_in_line_developer_community_2022',
     host: 'LINE Developer Community',
-    url: 'https://webneko.dev/posts/the-answer-to-learn-react-with-line',
+    url: 'https://blog.nekohack.me/posts/the-answer-to-learn-react-with-line',
     youtubeUrl: 'https://www.youtube.com/watch?v=D8GeQyrueEY',
     place: 'YouTube',
     image: 'the-answer-to-learn-react-with-line',
@@ -84,7 +84,7 @@ export const talks: Talk[] = [
   {
     text: 'slides.inside_the_website_in_vscodecon_jp_2021',
     host: 'VS Code Meetup',
-    url: 'https://webneko.dev/posts/inside-the-website-in-vscodecon-jp-2021',
+    url: 'https://blog.nekohack.me/posts/inside-the-website-in-vscodecon-jp-2021',
     youtubeUrl: 'https://www.youtube.com/watch?v=Y8dl1y2qdG8',
     place: 'YouTube',
     image: 'inside-the-website-in-vscodecon-jp-2021',
@@ -94,7 +94,7 @@ export const talks: Talk[] = [
   {
     text: 'slides.github_issues_usage_as_a_cmd',
     host: 'microCMS',
-    url: 'https://webneko.dev/posts/github-issues-usage-as-a-cms',
+    url: 'https://blog.nekohack.me/posts/github-issues-usage-as-a-cms',
     youtubeUrl: 'https://www.youtube.com/watch?v=qCPqheDPq6g',
     place: 'YouTube',
     image: 'github-issues-usage-as-a-cms',
@@ -104,7 +104,7 @@ export const talks: Talk[] = [
   {
     text: 'slides.recommend_to_developers_relations_in_community_handson',
     host: 'DevRel Meetup Tokyo',
-    url: 'https://webneko.dev/posts/challenge-the-community-handson-2021',
+    url: 'https://blog.nekohack.me/posts/challenge-the-community-handson-2021',
     youtubeUrl: 'https://www.youtube.com/watch?v=oUCGt-SNmfE',
     place: 'YouTube',
     image: 'challenge-the-community-handson-2021',
@@ -124,7 +124,7 @@ export const talks: Talk[] = [
   {
     text: 'slides.the_world_revolves_around_slack',
     host: 'VR Study',
-    url: 'https://webneko.dev/posts/recommend-tools-in-vr-study-3',
+    url: 'https://blog.nekohack.me/posts/recommend-tools-in-vr-study-3',
     youtubeUrl: 'https://www.youtube.com/watch?v=l3BCTi3xSds',
     place: 'YouTube',
     image: 'recommend-tools-in-vr-study-3',
@@ -144,7 +144,7 @@ export const talks: Talk[] = [
   {
     text: 'slides.practical_use_of_transition',
     host: 'Yumemi inc.',
-    url: 'https://webneko.dev/posts/vue-transition-more-pratically',
+    url: 'https://blog.nekohack.me/posts/vue-transition-more-pratically',
     youtubeUrl: null,
     place: 'Yumemi inc.',
     image: 'vue-transition-more-pratically',
@@ -154,7 +154,7 @@ export const talks: Talk[] = [
   {
     text: 'slides.the_point_of_composition_api',
     host: 'v-okinawa',
-    url: 'https://webneko.dev/posts/notices-of-composition-api-in-vue3-eve',
+    url: 'https://blog.nekohack.me/posts/notices-of-composition-api-in-vue3-eve',
     youtubeUrl: null,
     place: 'Zoom',
     image: 'notices-of-composition-api-in-vue3-eve',
@@ -164,7 +164,7 @@ export const talks: Talk[] = [
   {
     text: 'slides.looking_back_in_2019',
     host: 'v-kansai',
-    url: 'https://webneko.dev/posts/feedback-2019',
+    url: 'https://blog.nekohack.me/posts/feedback-2019',
     youtubeUrl: null,
     place: 'Moneyforward',
     image: 'feedback-2019',

@@ -49,7 +49,7 @@ async function captureOgImage(
     },
     {
       slug: "webneko-blog",
-      url: "https://webneko.dev",
+      url: "https://blog.nekohack.me/",
       title: "",
       description: "",
     },

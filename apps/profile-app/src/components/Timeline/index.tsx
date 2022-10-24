@@ -117,7 +117,7 @@ const Timeline: FC = () => {
       description: i18next.t('created_a_technical_blog_in_memo'),
       // imageName: 'webneko-blog',
       // imageUrl: 'https://i.imgur.com/xuj6KVU.jpg',
-      url: 'https://webneko.dev',
+      url: 'https://blog.nekohack.me/',
     },
     {
       date: 'May 2017',
