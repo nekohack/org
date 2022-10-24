@@ -9,7 +9,7 @@ export const works: WorkItem[] = [
   {
     title: 'Tech Blog',
     description: 'tech_blog',
-    url: 'https://webneko.dev/',
+    url: 'https://blog.nekohack.me/',
     image: 'webneko-blog',
   },
   {

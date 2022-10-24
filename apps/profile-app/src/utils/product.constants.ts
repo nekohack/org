@@ -171,7 +171,7 @@ export const products: Product[] = [
       },
     ],
     image: ['webneko-blog'],
-    url: ['https://webneko.dev/'],
+    url: ['https://blog.nekohack.me/'],
     enabled: true,
   },
   {
