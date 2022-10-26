@@ -21,7 +21,7 @@
     "@nekohack/footer-ui": "1.0.0",
     "@nekohack/normalize.css": "2.6.0",
     "@nrwl/next": "15.0.3",
-    "@stripe/react-stripe-js": "1.13.0",
+    "@stripe/react-stripe-js": "1.14.0",
     "@stripe/stripe-js": "1.42.0",
     "dayjs": "1.11.6",
     "i18next": "21.10.0",
