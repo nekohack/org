@@ -31,7 +31,7 @@ const config = {
 
     return config
   },
-  experimental: { esmExternals: 'loose' },
+  experimental: { esmExternals: 'loose', appDir: false },
 }
 
 module.exports = withNx(
