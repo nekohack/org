@@ -1,4 +1,4 @@
-import { Product } from '../../../../libs/shared/types/profile'
+import { Product } from '@org/shared/types'
 
 export const products: Product[] = [
   {
