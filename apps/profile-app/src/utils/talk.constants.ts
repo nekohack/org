@@ -1,4 +1,4 @@
-import { Talk } from '../../../../libs/shared/types/profile'
+import { Talk } from '@org/shared/types'
 
 export const talks: Talk[] = [
   {
