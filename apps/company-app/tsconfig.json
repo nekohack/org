@@ -22,7 +22,9 @@
       "@icons/*": ["./src/components/icons/*"],
       "@lib/*": ["./src/lib/*"],
       "public/*": ["./public/*"],
-      "node_modules/@nekohack/normalize.css/*": ["../../node_modules/@nekohack/normalize.css/*"]
+      "node_modules/@nekohack/normalize.css/*": ["../../node_modules/@nekohack/normalize.css/*"],
+      "@org/shared/types": ["../../libs/shared/types/index.ts"],
+      "@org/shared/ui": ["../../libs/shared/ui/index.ts"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "next-env.d.ts", "react-app-env.d.ts"],

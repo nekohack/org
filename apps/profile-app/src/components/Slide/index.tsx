@@ -1,7 +1,7 @@
 import i18next from 'i18next'
 import dayjs from 'dayjs'
+import { LinkPreview } from '@org/shared/ui'
 import { talks } from '@utils/talk.constants'
-import { LinkPreview } from '../../../../../libs/shared-ui/LinkPreview'
 
 const Slide: FC = () => {
   const dateFormat = (d: string) => {

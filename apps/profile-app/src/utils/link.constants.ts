@@ -1,4 +1,4 @@
-import { Link } from '../../../../libs/shared/types/profile'
+import { Link } from '@org/shared/types'
 
 export const links: Link[] = [
   {

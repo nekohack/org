@@ -1,4 +1,4 @@
-import { Community } from '../../../../libs/shared/types/profile'
+import { Community } from '@org/shared/types'
 
 export const communities: Community[] = [
   {

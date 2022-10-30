@@ -1,6 +1,6 @@
 import i18next from 'i18next'
+import { LinkPreview } from '@org/shared/ui'
 import { products } from '@utils/product.constants'
-import { LinkPreview } from '../../../../../libs/shared-ui/LinkPreview'
 
 const Product: FC = () => {
   return (
