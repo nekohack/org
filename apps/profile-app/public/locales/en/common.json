@@ -95,8 +95,9 @@
   "worked_the_remote_viewing_app_in_memo": "Based on contract development.",
   "community": "Tech Community",
   "community_role": "Participating in the following community as a staff member",
-  "slide": "Stage Slide",
+  "slide": "Stage Slide / Writing",
   "slides": {
+    "useful_features_in_git_and_github_integrations": "Useful features in Git & GitHub integrations",
     "calendar_app_workshop_in_flutter_japan_user_group_2022": "Flutter Calendar App workshop 2022",
     "oss_activities_2022": "My Own OSS Activities",
     "about_22s_googleio_wwdc_recap": "About Google I/O 2022 Recap × WWDC 2022 Recap",

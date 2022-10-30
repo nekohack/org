@@ -14,8 +14,9 @@ type Host =
   | 'VR Study'
   | 'VS Code Meetup'
   | 'Yumemi inc.'
+  | 'SOFTWARE DESIGN'
 
-type Place = 'EventIn' | 'Meet' | 'YouTube' | 'Zoom'
+type Place = 'Writing' | 'EventIn' | 'Meet' | 'YouTube' | 'Zoom'
 type RealPlace = 'Moneyforward' | 'necco inc.' | 'Yumemi inc.'
 
 interface Skill {
