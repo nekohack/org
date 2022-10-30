@@ -18,9 +18,11 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@conference/shared/types": [
-        "libs/shared/types/basic.d.ts",
-        "libs/shared/types/profile.d.ts"
+      "@org/shared/types": [
+        "libs/shared/types/index.ts"
+      ],
+      "@org/shared/ui": [
+        "libs/shared/ui/index.ts"
       ]
     }
   },

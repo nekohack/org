@@ -1,6 +1,6 @@
 import * as React from 'react'
 import i18next from 'i18next'
-import { LinkPreview } from '../../../../libs/shared-ui/LinkPreview'
+import { LinkPreview } from '@org/shared/ui'
 import { works } from '../data/works'
 
 const WorksSection = () => {
