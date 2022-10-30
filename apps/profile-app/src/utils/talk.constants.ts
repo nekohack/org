@@ -2,6 +2,16 @@ import { Talk } from '../../../../libs/shared/types/profile'
 
 export const talks: Talk[] = [
   {
+    text: 'slides.useful_features_in_git_and_github_integrations',
+    host: 'SOFTWARE DESIGN',
+    url: 'https://gihyo.jp/magazine/SD/archive/2022/202210',
+    youtubeUrl: null,
+    place: 'Writing',
+    image: 'software-design-202210',
+    date: '2022/09/16',
+    enabled: true,
+  },
+  {
     text: 'slides.calendar_app_workshop_in_flutter_japan_user_group_2022',
     host: 'Flutter Japan User Group',
     url: 'https://zenn.dev/chooyan/books/calendar-package',
