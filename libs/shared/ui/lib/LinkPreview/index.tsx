@@ -1,6 +1,6 @@
 import styles from './link-preview.module.scss'
 
-interface LinkPreviewProps {
+export interface LinkPreviewProps {
   title: string
   description?: string
   url: string

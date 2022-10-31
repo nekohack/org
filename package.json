@@ -15,7 +15,9 @@
     "profile-app:export": "nx run profile-app:export",
     "profile-app:tsm": "nx run profile-app:tsm",
     "profile-app:lint": "nx run profile-app:lint",
-    "og-lib:build": "nx run og-lib:build"
+    "og-lib:build": "nx run og-lib:build",
+    "shared-ui:storybook": "nx run shared-ui:storybook",
+    "shared-ui:build-storybook": "nx run shared-ui:build-storybook"
   },
   "dependencies": {
     "@nekohack/footer-ui": "1.0.0",
@@ -43,6 +45,8 @@
     "zenscroll": "4.0.2"
   },
   "devDependencies": {
+    "@emotion/babel-plugin": "^11.10.5",
+    "@emotion/react": "^11.10.5",
     "@nekohack/eslint-config-react": "0.10.0",
     "@nrwl/cli": "15.0.3",
     "@nrwl/cypress": "15.0.3",
@@ -54,6 +58,10 @@
     "@nrwl/tao": "15.0.3",
     "@nrwl/web": "15.0.3",
     "@nrwl/workspace": "15.0.3",
+    "@storybook/addon-essentials": "^6.5.13",
+    "@storybook/addon-links": "^6.5.13",
+    "@storybook/builder-vite": "^0.2.5",
+    "@storybook/react": "^6.5.13",
     "@types/node": "18.7.16",
     "@types/puppeteer": "5.4.7",
     "@types/react": "18.0.24",
@@ -61,6 +69,7 @@
     "@types/styled-components": "5.1.26",
     "@typescript-eslint/eslint-plugin": "5.40.1",
     "@typescript-eslint/parser": "5.40.1",
+    "@vitejs/plugin-react": "^2.2.0",
     "concurrently": "6.5.1",
     "dotenv": "8.6.0",
     "esbuild": "0.15.12",
@@ -76,6 +85,7 @@
     "stylelint-config-standard": "26.0.0",
     "stylelint-scss": "4.3.0",
     "typed-scss-modules": "6.6.0",
-    "typescript": "4.8.4"
+    "typescript": "4.8.4",
+    "vite": "^3.2.2"
   }
 }
