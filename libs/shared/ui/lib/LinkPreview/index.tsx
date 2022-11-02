@@ -1,4 +1,5 @@
-import styles from './link-preview.module.scss'
+import React from 'react'
+import * as styles from './index.styles'
 
 export interface LinkPreviewProps {
   title: string
@@ -7,15 +8,16 @@ export interface LinkPreviewProps {
   image: string | undefined
 }
 
-export const LinkPreview: FC<LinkPreviewProps> = ({ title, description, url, image }) => {
+export const LinkPreview = (props: LinkPreviewProps) => {
+  const { title, description, url, image } = props
   return (
-    <div className={styles.linkPreview}>
+    <div css={styles.linkPreview}>
       <a href={url} target="_blank" rel="noopener noreferrer">
-        <div className={styles.linkPreviewTitle}>{title}</div>
-        <div className={styles.linkPreviewDescription}>{description}</div>
-        <div className={styles.linkPreviewUrl}>{url}</div>
+        <div css={styles.linkPreviewTitle}>{title}</div>
+        <div css={styles.linkPreviewDescription}>{description}</div>
+        <div css={styles.linkPreviewUrl}>{url}</div>
       </a>
-      <img className={styles.linkPreviewImage} alt="" src={`/og/${image}.jpg`} />
+      <img css={styles.linkPreviewImage} alt="" src={`/og/${image}.jpg`} />
     </div>
   )
 }

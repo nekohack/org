@@ -45,8 +45,8 @@
     "zenscroll": "4.0.2"
   },
   "devDependencies": {
-    "@emotion/babel-plugin": "^11.10.5",
-    "@emotion/react": "^11.10.5",
+    "@emotion/babel-plugin": "11.10.5",
+    "@emotion/react": "11.10.5",
     "@nekohack/eslint-config-react": "0.10.0",
     "@nrwl/cli": "15.0.4",
     "@nrwl/cypress": "15.0.4",
