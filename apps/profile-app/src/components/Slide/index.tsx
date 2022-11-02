@@ -1,6 +1,6 @@
 import i18next from 'i18next'
 import dayjs from 'dayjs'
-import { LinkPreview } from '@org/shared/ui'
+import { LinkPreview, LinkText } from '@org/shared/ui'
 import { talks } from '@utils/talk.constants'
 
 const Slide: FC = () => {
@@ -20,43 +20,27 @@ const Slide: FC = () => {
                 <p>{dateFormat(node.date)}</p>
                 <p style={{ display: 'flex', flexDirection: 'column', verticalAlign: 'middle' }}>
                   {node.host === 'me' && node.place === 'EventIn' ? (
-                    <a
-                      href="https://jp.vcube.com/eventdx/eventin"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <LinkText name="EventIn" url="https://jp.vcube.com/eventdx/eventin">
                       EventIn
-                    </a>
+                    </LinkText>
                   ) : node.host === 'me' && node.place === 'Zoom' ? (
-                    <a
-                      href="https://explore.zoom.us/ja/products/meetings"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <LinkText name="Zoom" url="https://explore.zoom.us/ja/products/meetings">
                       Zoom
-                    </a>
+                    </LinkText>
                   ) : node.host === 'me' && node.place === 'Meet' ? (
-                    <a
-                      href="https://workspace.google.co.jp/intl/ja/products/meet"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <LinkText
+                      name="Meet"
+                      url="https://workspace.google.co.jp/intl/ja/products/meet"
                     >
                       Meet
-                    </a>
+                    </LinkText>
                   ) : (
                     node.host
                   )}
                   {node.youtubeUrl && (
-                    <a
-                      href={node.youtubeUrl}
-                      role="button"
-                      aria-pressed="true"
-                      style={{ display: 'flex', justifyContent: 'flex-start' }}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+                    <LinkText name={i18next.t('labels.youtube_live')} url={node.youtubeUrl}>
                       {i18next.t('labels.youtube_live')}
-                    </a>
+                    </LinkText>
                   )}
                 </p>
                 {node.url && (

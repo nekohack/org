@@ -1,4 +1,5 @@
 import i18next from 'i18next'
+import { LinkText } from '@org/shared/ui'
 import { communities } from '@utils/community.constants'
 
 const Community: FC = () => {
@@ -11,15 +12,9 @@ const Community: FC = () => {
           .map((node: any, index: number) => {
             return (
               <li key={index}>
-                <a
-                  href={node.url}
-                  role="button"
-                  aria-pressed="true"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <LinkText name={node.text} url={node.url}>
                   {node.text}
-                </a>
+                </LinkText>
               </li>
             )
           })}

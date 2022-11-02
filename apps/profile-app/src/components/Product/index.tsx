@@ -1,5 +1,5 @@
 import i18next from 'i18next'
-import { LinkPreview } from '@org/shared/ui'
+import { LinkPreview, LinkText } from '@org/shared/ui'
 import { products } from '@utils/product.constants'
 
 const Product: FC = () => {
@@ -57,9 +57,9 @@ const Product: FC = () => {
                         ) => {
                           return (
                             <li key={key}>
-                              <a href={s.url} target="_blank" rel="noopener noreferrer">
+                              <LinkText name={s.name} url={s.url}>
                                 {s.name}
-                              </a>
+                              </LinkText>
                             </li>
                           )
                         },
@@ -114,9 +114,9 @@ const Product: FC = () => {
                           </ul>
                           <h5>{i18next.t('product_url')}</h5>
                           <p>
-                            <a href={s.url} target="_blank" rel="noopener noreferrer">
+                            <LinkText name={s.url} url={s.url}>
                               {s.url}
-                            </a>
+                            </LinkText>
                           </p>
                         </li>
                       ),

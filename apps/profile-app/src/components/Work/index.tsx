@@ -1,4 +1,5 @@
 import i18next from 'i18next'
+import { LinkText } from '@org/shared/ui'
 import { links } from '@utils/link.constants'
 
 const Work: FC = () => {
@@ -13,15 +14,9 @@ const Work: FC = () => {
           .map((node: any, index: number) => {
             return (
               <li key={index}>
-                <a
-                  href={node.url}
-                  role="button"
-                  aria-pressed="true"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <LinkText name={i18next.t(node.text)} url={node.url}>
                   {i18next.t(node.text)}
-                </a>
+                </LinkText>
               </li>
             )
           })}

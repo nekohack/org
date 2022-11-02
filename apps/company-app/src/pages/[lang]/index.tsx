@@ -1,4 +1,5 @@
 import i18next from 'i18next'
+import { LinkText } from '@org/shared/ui'
 import { useEmitEvent } from '@hooks/useEmitEvent'
 import SkillsSection from '@sections/SkillsSection'
 import WorksSection from '@sections/WorksSection'
@@ -31,33 +32,26 @@ export default function Home() {
           <PersonIcon />
           Timeline
         </a>
-        <a
-          rel="noopener noreferrer"
-          target="_blank"
-          className="btn btn__light btn__icon"
-          href="https://docs.google.com/forms/d/e/1FAIpQLSfFzwsCVnFbu-lV0Jz2fEYHR97hpBSK2g6kEwc-G1fo976ngA/viewform"
+        <LinkText
+          name="contact"
+          url="https://docs.google.com/forms/d/e/1FAIpQLSfFzwsCVnFbu-lV0Jz2fEYHR97hpBSK2g6kEwc-G1fo976ngA/viewform"
+          custom="btn btn__light btn__icon"
         >
           <ContactIcon />
           Contact
-        </a>
-        <a
-          rel="noopener noreferrer"
-          target="_blank"
-          className="btn btn__light btn__icon"
-          href="https://github.com/jiyuujin"
-        >
+        </LinkText>
+        <LinkText name="github" url="https://github.com/jiyuujin" custom="btn btn__light btn__icon">
           <GitHubIcon />
           GitHub
-        </a>
-        <a
-          rel="noopener noreferrer"
-          target="_blank"
-          className="btn btn__light btn__icon"
-          href="https://twitter.com/jiyuujinlab"
+        </LinkText>
+        <LinkText
+          name="twitter"
+          url="https://twitter.com/jiyuujinlab"
+          custom="btn btn__light btn__icon"
         >
           <TwitterIcon />
           Twitter
-        </a>
+        </LinkText>
       </div>
 
       <SkillsSection />
