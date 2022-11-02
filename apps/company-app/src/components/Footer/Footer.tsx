@@ -1,4 +1,5 @@
 import i18next from 'i18next'
+import { LinkText } from '@org/shared/ui'
 import styles from './footer.module.scss'
 
 export const Footer: FC = () => {
@@ -6,22 +7,28 @@ export const Footer: FC = () => {
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
         <p>
-          <a href="https://nekohack-privacy-policy.netlify.app">
+          <LinkText
+            name={i18next.t('at_once_read_privacy_policy')}
+            url="https://nekohack-privacy-policy.netlify.app/"
+          >
             {i18next.t('at_once_read_privacy_policy') as string}
-          </a>
+          </LinkText>
           <br />
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFzwsCVnFbu-lV0Jz2fEYHR97hpBSK2g6kEwc-G1fo976ngA/viewform">
+          <LinkText
+            name={i18next.t('at_once_read_privacy_policy')}
+            url="https://docs.google.com/forms/d/e/1FAIpQLSfFzwsCVnFbu-lV0Jz2fEYHR97hpBSK2g6kEwc-G1fo976ngA/viewform"
+          >
             {i18next.t('please_contact_easily_from_the_survey_form') as string}
-          </a>
+          </LinkText>
         </p>
 
         <div className={styles.footerLinks}>
-          <a target="_blank" rel="noreferrer noopener" href="https://twitter.com/jiyuujinlab">
+          <LinkText name="Twitter" url="https://twitter.com/jiyuujinlab">
             Twitter
-          </a>
-          <a target="_blank" rel="noreferrer noopener" href="https://github.com/jiyuujin">
+          </LinkText>
+          <LinkText name="GitHub" url="https://github.com/jiyuujin">
             GitHub
-          </a>
+          </LinkText>
         </div>
       </div>
     </footer>
