@@ -1,4 +1,5 @@
 import i18next from 'i18next'
+import { Skill } from '@org/shared/types'
 import { LinkPreview, LinkText } from '@org/shared/ui'
 import { products } from '@utils/product.constants'
 
@@ -26,18 +27,10 @@ const Product: FC = () => {
                   <h3>{i18next.t('product_technology_used')}</h3>
                   <ul>
                     {node.skills
-                      ?.filter(
-                        (s: { name: string; url: string; status: 'active' | 'used' }) =>
-                          s.status === 'active',
-                      )
-                      .map(
-                        (
-                          s: { name: string; category: string; status: 'active' | 'used' },
-                          key: number,
-                        ) => {
-                          return <li key={key}>{`${s.name} (${s.category})`}</li>
-                        },
-                      )}
+                      ?.filter((s: Skill) => s.status === 'active')
+                      .map((s: Skill, key: number) => {
+                        return <li key={key}>{`${s.name} (${s.category})`}</li>
+                      })}
                   </ul>
                 </>
               )}
@@ -46,24 +39,16 @@ const Product: FC = () => {
                   <h3>{i18next.t('repository_managed')}</h3>
                   <ul>
                     {node.repos
-                      ?.filter(
-                        (s: { name: string; url: string; status: 'active' | 'used' }) =>
-                          s.status === 'active',
-                      )
-                      .map(
-                        (
-                          s: { name: string; url: string; status: 'active' | 'used' },
-                          key: number,
-                        ) => {
-                          return (
-                            <li key={key}>
-                              <LinkText name={s.name} url={s.url}>
-                                {s.name}
-                              </LinkText>
-                            </li>
-                          )
-                        },
-                      )}
+                      ?.filter((s: Skill) => s.status === 'active')
+                      .map((s: Skill, key: number) => {
+                        return (
+                          <li key={key}>
+                            <LinkText name={s.name} url={s.url}>
+                              {s.name}
+                            </LinkText>
+                          </li>
+                        )
+                      })}
                   </ul>
                 </>
               )}
@@ -85,11 +70,7 @@ const Product: FC = () => {
                       (
                         s: {
                           title: string
-                          skills: Array<{
-                            name: string
-                            category: string
-                            status: 'active' | 'used'
-                          }>
+                          skills: Skill[]
                           url: string
                         },
                         key: number,
@@ -98,19 +79,10 @@ const Product: FC = () => {
                           <h4>{i18next.t(s.title)}</h4>
                           <h5>{i18next.t('product_technology_used')}</h5>
                           <ul>
-                            {s.skills?.map(
-                              (
-                                s: {
-                                  name: string
-                                  category: string
-                                  status: 'active' | 'used'
-                                },
-                                key: number,
-                              ) => {
-                                if (s.status !== 'active') return
-                                return <li key={key}>{`${s.name} (${s.category})`}</li>
-                              },
-                            )}
+                            {s.skills?.map((s: Skill, key: number) => {
+                              if (s.status !== 'active') return
+                              return <li key={key}>{`${s.name} (${s.category})`}</li>
+                            })}
                           </ul>
                           <h5>{i18next.t('product_url')}</h5>
                           <p>
