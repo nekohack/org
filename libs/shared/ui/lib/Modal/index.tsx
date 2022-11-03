@@ -1,12 +1,11 @@
 import React, { useCallback, useEffect, useRef } from 'react'
-import * as SC from './index.module.scss'
+import * as styles from './index.styles'
 
-type ModalProps = {
-  children?: React.ReactChild | React.ReactChild[] | React.ReactChildren | React.ReactChildren[]
-  onClose: any
+export interface ModalProps {
+  onClose: () => void
 }
 
-const Modal: FCWithChildren<ModalProps> = ({ children, onClose }: ModalProps) => {
+export const Modal = ({ children, onClose }: React.PropsWithChildren<ModalProps>) => {
   const ref = useRef(null)
 
   const escapeListener = useCallback(
@@ -37,12 +36,10 @@ const Modal: FCWithChildren<ModalProps> = ({ children, onClose }: ModalProps) =>
   }, [clickListener, escapeListener])
 
   return (
-    <div className={SC.modalMask}>
-      <div ref={ref} className={SC.modalContainer}>
+    <div css={styles.mask}>
+      <div ref={ref} css={styles.wrapper}>
         {children}
       </div>
     </div>
   )
 }
-
-export default Modal
