@@ -13,5 +13,5 @@ Primary.args = {
   title: 'Test',
   description: 'example',
   url: 'https://webneko.dev/',
-  image: new URL('../images/bakeneko2.png', import.meta.url).href,
+  image: new URL('../../images/bakeneko2.png', import.meta.url).href,
 }
