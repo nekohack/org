@@ -11,7 +11,7 @@ const Slide: FC = () => {
 
   return (
     <div className="section">
-      <h1>{i18next.t('slide')}</h1>
+      <h2>{i18next.t('slide')}</h2>
       <ul>
         {talks
           .filter((node: Talk) => node.enabled === true)

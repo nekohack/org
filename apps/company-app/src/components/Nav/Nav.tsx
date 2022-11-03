@@ -25,11 +25,11 @@ export const Nav: FC = () => {
     <div className={styles.navContainer}>
       <nav ref={ref} className={styles.nav} id="nav">
         <div className={styles.navContent}>
-          <h1 className={styles.navIcon}>
+          <h2 className={styles.navIcon}>
             <a href="/">
               Yuma <span className={styles.navHidden}>Kitamura</span>
             </a>
-          </h1>
+          </h2>
 
           <div className={styles.navLinks}>
             <Link scroll href="https://blog.nekohack.me/">

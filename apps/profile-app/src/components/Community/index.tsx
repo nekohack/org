@@ -6,7 +6,7 @@ import { communities } from '@utils/community.constants'
 const Community: FC = () => {
   return (
     <div className="section">
-      <h1>{i18next.t('community')}</h1>
+      <h2>{i18next.t('community')}</h2>
       <ul>
         {communities
           .filter((node: CommunityItem) => node.enabled === true && node.status === 'active')

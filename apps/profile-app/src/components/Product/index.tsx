@@ -6,13 +6,13 @@ import { products } from '@utils/product.constants'
 const Product: FC = () => {
   return (
     <div className="section">
-      <h1>{i18next.t('product')}</h1>
+      <h2>{i18next.t('product')}</h2>
       {products
         .filter((node: any) => node.enabled === true)
         .map((node: any, index: number) => {
           return (
             <div key={index}>
-              <h2>{i18next.t(node.title)}</h2>
+              <h3>{i18next.t(node.title)}</h3>
               {node.image.length === 1 &&
                 node.image.map((i, key: number) => (
                   <div key={key}>
@@ -24,7 +24,7 @@ const Product: FC = () => {
               })}
               {node.skills && (
                 <>
-                  <h3>{i18next.t('product_technology_used')}</h3>
+                  <h4>{i18next.t('product_technology_used')}</h4>
                   <ul>
                     {node.skills
                       ?.filter((s: Skill) => s.status === 'active')
@@ -36,7 +36,7 @@ const Product: FC = () => {
               )}
               {node.repos && (
                 <>
-                  <h3>{i18next.t('repository_managed')}</h3>
+                  <h4>{i18next.t('repository_managed')}</h4>
                   <ul>
                     {node.repos
                       ?.filter((s: Repo) => s.status === 'active')
@@ -64,7 +64,7 @@ const Product: FC = () => {
                 ))}
               {node.sub && (
                 <>
-                  <h3>{i18next.t('sub_product')}</h3>
+                  <h4>{i18next.t('sub_product')}</h4>
                   <ul>
                     {node.sub?.map(
                       (
@@ -76,8 +76,8 @@ const Product: FC = () => {
                         key: number,
                       ) => (
                         <li key={key}>
-                          <h4>{i18next.t(s.title)}</h4>
-                          <h5>{i18next.t('product_technology_used')}</h5>
+                          <h5>{i18next.t(s.title)}</h5>
+                          <h6>{i18next.t('product_technology_used')}</h6>
                           <ul>
                             {s.skills?.map((s: Skill, key: number) => {
                               if (s.status !== 'active') return

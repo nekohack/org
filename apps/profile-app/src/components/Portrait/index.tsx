@@ -5,7 +5,7 @@ import * as SC from './index.module.scss'
 const Portrait: FC = () => {
   return (
     <section id="portrait">
-      <h1 className="section__title">{i18next.t('portrait')}</h1>
+      <h2 className="section__title">{i18next.t('portrait')}</h2>
       <p>{i18next.t('portrait_description')}</p>
       <div className={SC.photosContainer}>
         <div className={SC.standingImg}>
