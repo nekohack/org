@@ -1,7 +1,7 @@
 import * as React from 'react'
 import ReactTooltip from 'react-tooltip'
 import i18next from 'i18next'
-import { ArrowDown } from '@components/Icons/ArrowDown'
+import { ArrowDown } from '@org/shared/ui'
 import { timeline } from '@utils/timeline.constants'
 import * as SC from './index.module.scss'
 
