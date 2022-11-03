@@ -3,9 +3,9 @@ import i18next from 'i18next'
 import { NekoButton } from 'nekohack-ui'
 import { Elements, CardElement, useStripe, useElements } from '@stripe/react-stripe-js'
 import { loadStripe } from '@stripe/stripe-js'
+import { Modal } from '@org/shared/ui'
 import * as SC from './index.module.scss'
 
-import Modal from '../Modal'
 import { Card } from '../Card'
 
 type CheckoutFormType = {
