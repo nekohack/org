@@ -1,6 +1,6 @@
-import { Community } from '@org/shared/types'
+import { CommunityItem } from '@org/shared/types'
 
-export const communities: Community[] = [
+export const communities: CommunityItem[] = [
   {
     text: 'Vue.js Japan User Group',
     url: 'https://vuefes.jp/',

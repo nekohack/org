@@ -1,5 +1,6 @@
 import i18next from 'i18next'
 import dayjs from 'dayjs'
+import { Talk } from '@org/shared/types'
 import { LinkPreview, LinkText } from '@org/shared/ui'
 import { talks } from '@utils/talk.constants'
 
@@ -13,8 +14,8 @@ const Slide: FC = () => {
       <h1>{i18next.t('slide')}</h1>
       <ul>
         {talks
-          .filter((node: any) => node.enabled === true)
-          .map((node: any, index: number) => {
+          .filter((node: Talk) => node.enabled === true)
+          .map((node: Talk, index: number) => {
             return (
               <li key={index}>
                 <p>{dateFormat(node.date)}</p>

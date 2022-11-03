@@ -19,13 +19,13 @@ type Host =
 type Place = 'Writing' | 'EventIn' | 'Meet' | 'YouTube' | 'Zoom'
 type RealPlace = 'Moneyforward' | 'necco inc.' | 'Yumemi inc.'
 
-interface Skill {
+export interface Skill {
   name: string
   category: string
   status: Status
 }
 
-interface Repo {
+export interface Repo {
   name: string
   url: string
   status: Status
@@ -48,7 +48,7 @@ export interface Link {
   enabled: boolean
 }
 
-export interface Community {
+export interface CommunityItem {
   text: string
   url: string
   status: Status
