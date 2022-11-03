@@ -6,13 +6,13 @@ import { works } from '../data/works'
 const WorksSection = () => {
   return (
     <section id="works">
-      <h1 className="section__title">{i18next.t('works') as string}</h1>
+      <h2 className="section__title">{i18next.t('works') as string}</h2>
       <p>{i18next.t('works_description') as string}</p>
       <div>
         {works.map((work, index) => {
           return (
             <div key={index}>
-              <h2>{work.title}</h2>
+              <h3>{work.title}</h3>
               <LinkPreview
                 title={work.title}
                 description={i18next.t(work.description)}

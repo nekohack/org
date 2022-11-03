@@ -25,7 +25,7 @@ const Timeline: FC = () => {
 
   return (
     <section id="timeline">
-      <h1 className="section__title">{i18next.t('timeline')}</h1>
+      <h2 className="section__title">{i18next.t('timeline')}</h2>
       <p>{i18next.t('timeline_description')}</p>
       <div className={SC.timeline}>
         {timeline.slice(0, length).map((item, idx: number) => {
@@ -40,7 +40,7 @@ const Timeline: FC = () => {
                 className={SC.timelineItemBody}
               >
                 <header className={SC.timelineItemHeader}>
-                  <h1>{i18next.exists(item.title) ? i18next.t(item.title) : item.title}</h1>
+                  <h3>{i18next.exists(item.title) ? i18next.t(item.title) : item.title}</h3>
 
                   <p data-tip data-for={`timeline-item-${idx}`}>
                     {item.date}

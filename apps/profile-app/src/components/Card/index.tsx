@@ -7,7 +7,7 @@ export const Card: FC = () => {
   return (
     <div className={SC.content}>
       <div className={SC.cardInfo}>
-        <h1 className={SC.name}>Yuma Kitamura</h1>
+        <h2 className={SC.name}>Yuma Kitamura</h2>
         <span className={SC.tag}>{i18next.t('covid19.fully_vaccinated')}</span>
         <ul className={SC.position}>
           {'Front-End Engineer,Web Developer,HR Adviser'.split(',').map((p: string) => (
