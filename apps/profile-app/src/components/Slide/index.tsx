@@ -1,10 +1,10 @@
 import i18next from 'i18next'
 import dayjs from 'dayjs'
+import { talks } from '@org/data'
 import { Talk } from '@org/shared/types'
 import { LinkPreview, LinkText } from '@org/shared/ui'
-import { talks } from '@utils/talk.constants'
 
-const Slide: FC = () => {
+const SlideSection: FC = () => {
   const dateFormat = (d: string) => {
     return dayjs(new Date(d)).format('YYYY年MM月DD日')
   }
@@ -59,4 +59,4 @@ const Slide: FC = () => {
   )
 }
 
-export default Slide
+export default SlideSection

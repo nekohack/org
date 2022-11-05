@@ -1,15 +1,15 @@
 import i18next from 'i18next'
-import { Repo, Skill } from '@org/shared/types'
+import { products } from '@org/data'
+import { Product, Repo, Skill } from '@org/shared/types'
 import { LinkPreview, LinkText } from '@org/shared/ui'
-import { products } from '@utils/product.constants'
 
-const Product: FC = () => {
+const ProductSection: FC = () => {
   return (
     <div className="section">
       <h2>{i18next.t('product')}</h2>
       {products
-        .filter((node: any) => node.enabled === true)
-        .map((node: any, index: number) => {
+        .filter((node: Product) => node.enabled === true)
+        .map((node: Product, index: number) => {
           return (
             <div key={index}>
               <h3>{i18next.t(node.title)}</h3>
@@ -103,4 +103,4 @@ const Product: FC = () => {
   )
 }
 
-export default Product
+export default ProductSection

@@ -18,6 +18,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@org/data": [
+        "libs/data/index.ts"
+      ],
       "@org/shared/types": [
         "libs/shared/types/index.ts"
       ],

@@ -2,7 +2,7 @@ import { defaultLanguage, languages } from '../../../i18n.config'
 import Layout from '@components/Layout'
 import { Index as NoticeBar } from '@components/Notice'
 import Home from '@components/Home'
-import { Index as Footer } from '@components/Footer'
+import { FooterSection } from '@components/Footer'
 
 export default function Lang() {
   return (
@@ -10,7 +10,7 @@ export default function Lang() {
       <NoticeBar />
       <main>
         <Home />
-        <Footer />
+        <FooterSection />
       </main>
     </Layout>
   )

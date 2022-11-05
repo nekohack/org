@@ -1,6 +1,6 @@
 import i18next from 'i18next'
+import { technologies } from '@org/data'
 import styles from 'css/skills.module.scss'
-import { skills } from '../data/skills'
 
 const SkillsSection: FC = () => {
   return (
@@ -8,17 +8,17 @@ const SkillsSection: FC = () => {
       <h2 className="section__title">{i18next.t('backpack') as string}</h2>
       <p>{i18next.t('backpack_description') as string}</p>
       <div className={styles.skillsContainer}>
-        {skills.map((skillsItem, index) => {
+        {technologies.map((skillsItem, index) => {
           return (
             <div key={index} className={styles.skillsItem}>
               <div className={styles.header}>
-                <h3>{skillsItem.header}</h3>
+                <h3>{skillsItem.title}</h3>
               </div>
 
               <ul className={styles.skillsItem}>
-                {skillsItem.items.map((item, key) => (
+                {skillsItem.skills.map((item, key) => (
                   <li key={key}>
-                    <p>{item}</p>
+                    <p>{item.name}</p>
                   </li>
                 ))}
               </ul>

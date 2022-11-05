@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 import { Transition } from 'react-transition-group'
+import { positions } from '@org/data'
 import * as SC from './index.module.scss'
-import { positions } from '@utils/position.constants'
 
-const Header: FC = () => {
+const HeaderSection: FC = () => {
   const [index, setIndex] = useState(0)
 
   const inProp = true
@@ -44,4 +44,4 @@ const Header: FC = () => {
   )
 }
 
-export default Header
+export default HeaderSection

@@ -1,16 +1,16 @@
 import i18next from 'i18next'
-import { CommunityItem } from '@org/shared/types'
+import { communities } from '@org/data'
+import { Community } from '@org/shared/types'
 import { LinkText } from '@org/shared/ui'
-import { communities } from '@utils/community.constants'
 
-const Community: FC = () => {
+const CommunitySection: FC = () => {
   return (
     <div className="section">
       <h2>{i18next.t('community')}</h2>
       <ul>
         {communities
-          .filter((node: CommunityItem) => node.enabled === true && node.status === 'active')
-          .map((node: CommunityItem, index: number) => {
+          .filter((node: Community) => node.enabled === true && node.status === 'active')
+          .map((node: Community, index: number) => {
             return (
               <li key={index}>
                 <LinkText name={node.text} url={node.url}>
@@ -24,4 +24,4 @@ const Community: FC = () => {
   )
 }
 
-export default Community
+export default CommunitySection

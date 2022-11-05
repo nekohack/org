@@ -1,6 +1,6 @@
-import { TimelineItem } from '@org/shared/types'
+import { Timeline } from '@org/shared/types'
 
-export const timeline: TimelineItem[] = [
+export const timelines: Timeline[] = [
   {
     date: 'October 2021',
     title: 'created_the_ohayo_website',

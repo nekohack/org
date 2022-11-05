@@ -114,7 +114,7 @@ export const products: Product[] = [
     skills: [
       {
         name: 'j-stylebook',
-        category: 'Atomic Components UI',
+        category: 'Design System',
         status: 'inactive',
       },
       {
@@ -129,7 +129,7 @@ export const products: Product[] = [
       },
       {
         name: 'AWS Fargate',
-        category: 'ECS',
+        category: 'Container',
         status: 'inactive',
       },
       {
@@ -276,7 +276,7 @@ export const products: Product[] = [
     skills: [
       {
         name: 'Flutter',
-        category: 'Mobile Application Framework',
+        category: 'Cross Platform Framework',
         status: 'active',
       },
       {
