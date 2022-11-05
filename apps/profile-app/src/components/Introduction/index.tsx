@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 import i18next from 'i18next'
 
-const Introduction: FC = () => {
+const IntroductionSection: FC = () => {
   const positionList: string[] = useMemo(
     () => 'Front-End Engineer,Web Developer,HR Adviser'.split(','),
     [],
@@ -21,4 +21,4 @@ const Introduction: FC = () => {
   )
 }
 
-export default Introduction
+export default IntroductionSection

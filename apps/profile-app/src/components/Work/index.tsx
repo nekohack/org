@@ -1,16 +1,16 @@
 import i18next from 'i18next'
+import { internalDocs } from '@org/data'
 import { Link } from '@org/shared/types'
 import { LinkText } from '@org/shared/ui'
-import { links } from '@utils/link.constants'
 
-const Work: FC = () => {
+const WorkSection: FC = () => {
   return (
     <div className="section">
       <h2>{i18next.t('work')}</h2>
       <p>{i18next.t('work_experience')}</p>
       <h3>{i18next.t('labels.related_links')}</h3>
       <ul>
-        {links
+        {internalDocs
           .filter((node: Link) => node.enabled === true)
           .map((node: Link, index: number) => {
             return (
@@ -26,4 +26,4 @@ const Work: FC = () => {
   )
 }
 
-export default Work
+export default WorkSection

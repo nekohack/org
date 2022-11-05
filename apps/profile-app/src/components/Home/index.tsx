@@ -1,26 +1,26 @@
-import Header from '@components/Header'
-import { Payment } from '@components/Payment'
-import Introduction from '@components/Introduction'
-import Work from '@components/Work'
-import Product from '@components/Product'
-import Timeline from '@components/Timeline'
-import Community from '@components/Community'
-import Slide from '@components/Slide'
-import Portrait from '@components/Portrait'
+import HeaderSection from '@components/Header'
+import { PaymentSection } from '@components/Payment'
+import IntroductionSection from '@components/Introduction'
+import WorkSection from '@components/Work'
+import ProductSection from '@components/Product'
+import TimelineSection from '@components/Timeline'
+import CommunitySection from '@components/Community'
+import SlideSection from '@components/Slide'
+import PortraitSection from '@components/Portrait'
 import { PAYMENT } from '@utils/feature.constants'
 
 const Home: FC = () => {
   return (
     <main>
-      <Header />
-      {PAYMENT && <Payment />}
-      <Introduction />
-      <Work />
-      <Product />
-      <Timeline />
-      <Community />
-      <Slide />
-      <Portrait />
+      <HeaderSection />
+      {PAYMENT && <PaymentSection />}
+      <IntroductionSection />
+      <WorkSection />
+      <ProductSection />
+      <TimelineSection />
+      <CommunitySection />
+      <SlideSection />
+      <PortraitSection />
     </main>
   )
 }

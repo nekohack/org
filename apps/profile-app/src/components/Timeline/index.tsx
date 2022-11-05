@@ -1,15 +1,15 @@
 import * as React from 'react'
 import ReactTooltip from 'react-tooltip'
 import i18next from 'i18next'
+import { timelines } from '@org/data'
 import { ArrowDown } from '@org/shared/ui'
-import { timeline } from '@utils/timeline.constants'
 import * as SC from './index.module.scss'
 
 const classes = (...args: string[]): string => {
   return args.join(' ')
 }
 
-const Timeline: FC = () => {
+const TimelineSection: FC = () => {
   const [viewOlderText, setViewOlderText] = React.useState<string>('View All')
   const [length, setLength] = React.useState<number>(7)
 
@@ -18,7 +18,7 @@ const Timeline: FC = () => {
       setLength(7)
       setViewOlderText('View All')
     } else {
-      setLength(() => timeline.length)
+      setLength(() => timelines.length)
       setViewOlderText('View less')
     }
   }
@@ -28,7 +28,7 @@ const Timeline: FC = () => {
       <h2 className="section__title">{i18next.t('timeline')}</h2>
       <p>{i18next.t('timeline_description')}</p>
       <div className={SC.timeline}>
-        {timeline.slice(0, length).map((item, idx: number) => {
+        {timelines.slice(0, length).map((item, idx: number) => {
           const side = idx % 2 === 0 ? SC.left : SC.right
 
           return (
@@ -98,4 +98,4 @@ const Timeline: FC = () => {
   )
 }
 
-export default Timeline
+export default TimelineSection

@@ -2,7 +2,7 @@ import i18next from 'i18next'
 import { LinkText } from '@org/shared/ui'
 import * as SC from './index.module.scss'
 
-export const Index: FC = () => {
+export const FooterSection: FC = () => {
   return (
     <footer className={SC.footer}>
       <p className={SC.contact}>

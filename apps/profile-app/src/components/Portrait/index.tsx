@@ -2,7 +2,7 @@ import * as React from 'react'
 import i18next from 'i18next'
 import * as SC from './index.module.scss'
 
-const Portrait: FC = () => {
+const PortraitSection: FC = () => {
   return (
     <section id="portrait">
       <h2 className="section__title">{i18next.t('portrait')}</h2>
@@ -19,4 +19,4 @@ const Portrait: FC = () => {
   )
 }
 
-export default Portrait
+export default PortraitSection

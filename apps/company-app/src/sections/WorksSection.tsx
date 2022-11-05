@@ -1,7 +1,7 @@
 import * as React from 'react'
 import i18next from 'i18next'
+import { docsForExternal } from '@org/data'
 import { LinkPreview } from '@org/shared/ui'
-import { works } from '../data/works'
 
 const WorksSection = () => {
   return (
@@ -9,12 +9,12 @@ const WorksSection = () => {
       <h2 className="section__title">{i18next.t('works') as string}</h2>
       <p>{i18next.t('works_description') as string}</p>
       <div>
-        {works.map((work, index) => {
+        {docsForExternal.map((work, index) => {
           return (
             <div key={index}>
-              <h3>{work.title}</h3>
+              <h3>{work.text}</h3>
               <LinkPreview
-                title={work.title}
+                title={i18next.exists(work.text) ? i18next.t(work.text) : work.text}
                 description={i18next.t(work.description)}
                 url={work.url}
                 image={work.image || ''}
