@@ -11566,10 +11566,10 @@ negotiator@0.6.3:
   resolved "https://registry.npmjs.org/negotiator/-/negotiator-0.6.3.tgz"
   integrity sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==
 
-nekohack-ui@4.0.0-alpha.2:
-  version "4.0.0-alpha.2"
-  resolved "https://registry.npmjs.org/nekohack-ui/-/nekohack-ui-4.0.0-alpha.2.tgz"
-  integrity sha512-q/r543VxgzBNaD4EZybt2r/PDRVPq3By42aid3uQnLG+3QutpHbk3ehLVmkrlpGW7P3dNdIJph5+fxGSWP1TbQ==
+nekohack-ui@4.0.0-beta.0:
+  version "4.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/nekohack-ui/-/nekohack-ui-4.0.0-beta.0.tgz#bcfe4428b1fe0f3d2f550389e5668f1ed60cc7bb"
+  integrity sha512-9adhZOcgZ1JH0HBu7ApqKv6DjEIc9ZLveODtsFHqE5c23MHmq9bsBFxm5xmJxEC8oRMKxeqGHEq5K6bYB+qrGQ==
 
 neo-async@^2.5.0, neo-async@^2.6.0, neo-async@^2.6.1, neo-async@^2.6.2:
   version "2.6.2"
