@@ -1,4 +1,5 @@
 {
+  "name": "company-app",
   "sourceRoot": "apps/company-app",
   "projectType": "application",
   "targets": {

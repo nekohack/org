@@ -1,10 +1,13 @@
 {
+  "name": "shared-ui",
   "sourceRoot": "libs/shared-ui",
   "projectType": "library",
   "targets": {
     "build-storybook": {
       "executor": "@nrwl/storybook:build",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "uiFramework": "@storybook/react",
         "outputPath": "dist/storybook/shared/ui",
