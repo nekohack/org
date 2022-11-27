@@ -1,4 +1,5 @@
 {
+  "name": "profile-app",
   "sourceRoot": "apps/profile-app",
   "projectType": "application",
   "targets": {
