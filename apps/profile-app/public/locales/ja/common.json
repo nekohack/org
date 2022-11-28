@@ -97,6 +97,7 @@
   "community_role": "下記コミュニティに一スタッフとして参画中",
   "slide": "登壇スライド・執筆",
   "slides": {
+    "learn_monorepo_tutorial": "モノレポについて",
     "useful_features_in_git_and_github_integrations": "Git & GitHub 連携で役立つ機能",
     "calendar_app_workshop_in_flutter_japan_user_group_2022": "カレンダーアプリで学ぶパッケージ開発",
     "oss_activities_2022": "わたしの OSS 活動について",

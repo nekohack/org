@@ -97,6 +97,7 @@
   "community_role": "Participating in the following community as a staff member",
   "slide": "Stage Slide / Writing",
   "slides": {
+    "learn_monorepo_tutorial": "Learn Monorepo",
     "useful_features_in_git_and_github_integrations": "Useful features in Git & GitHub integrations",
     "calendar_app_workshop_in_flutter_japan_user_group_2022": "Flutter Calendar App workshop 2022",
     "oss_activities_2022": "My Own OSS Activities",

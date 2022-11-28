@@ -2,6 +2,16 @@ import { Talk } from '@org/shared/types'
 
 export const talks: Talk[] = [
   {
+    text: 'slides.learn_monorepo_tutorial',
+    host: 'me',
+    url: 'https://blog.nekohack.me/posts/monorepo-tutorial',
+    youtubeUrl: null,
+    place: 'EventIn',
+    image: 'monorepo-tutorial',
+    date: '2022/10/07',
+    enabled: true,
+  },
+  {
     text: 'slides.useful_features_in_git_and_github_integrations',
     host: 'SOFTWARE DESIGN',
     url: 'https://gihyo.jp/magazine/SD/archive/2022/202210',
