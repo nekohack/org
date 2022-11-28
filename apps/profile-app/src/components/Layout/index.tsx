@@ -1,3 +1,3 @@
-import React from 'react'
+import { ReactNode } from 'react'
 
-export default ({ children }: { children?: React.ReactNode }) => <>{children}</>
+export default ({ children }: { children?: ReactNode }) => <>{children}</>

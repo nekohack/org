@@ -1,4 +1,3 @@
-import * as React from 'react'
 import i18next from 'i18next'
 import { docsForExternal } from '@org/data'
 import { LinkPreview } from '@org/shared/ui'

@@ -1,4 +1,4 @@
-import * as React from 'react'
+import { useEffect } from 'react'
 import { AppProps } from 'next/app'
 import Router from 'next/router'
 import NProgress from 'nprogress'
@@ -16,7 +16,7 @@ function App({ Component, pageProps }: AppProps<{ language: string }>) {
   useScrollTop()
   useGoogleAdsense()
 
-  React.useEffect(() => {
+  useEffect(() => {
     function handleRouteStart() {
       NProgress.start()
     }

@@ -1,4 +1,3 @@
-import * as React from 'react'
 import ReactTooltip from 'react-tooltip'
 import i18next from 'i18next'
 import { timelines } from '@org/data'

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import i18next from 'i18next'
 import { NekoButton } from 'nekohack-ui'
 import { Elements, CardElement, useStripe, useElements } from '@stripe/react-stripe-js'
