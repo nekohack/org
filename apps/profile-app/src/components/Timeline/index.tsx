@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import ReactTooltip from 'react-tooltip'
 import i18next from 'i18next'
 import { timelines } from '@org/data'
@@ -9,8 +10,8 @@ const classes = (...args: string[]): string => {
 }
 
 const TimelineSection: FC = () => {
-  const [viewOlderText, setViewOlderText] = React.useState<string>('View All')
-  const [length, setLength] = React.useState<number>(7)
+  const [viewOlderText, setViewOlderText] = useState<string>('View All')
+  const [length, setLength] = useState<number>(7)
 
   function showMore() {
     if (length > 7) {
