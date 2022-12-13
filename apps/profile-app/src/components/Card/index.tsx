@@ -23,13 +23,7 @@ export const Card: FC = () => {
             }}
           >
             {i18next.t('contact')}
-            <PlaneLogoSvg
-              style={{
-                width: '20px',
-                height: '20px',
-                marginLeft: '4px',
-              }}
-            />
+            <PlaneLogoSvg />
           </NekoButton>
         </p>
       </div>

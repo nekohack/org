@@ -1,4 +1,4 @@
-const react = require('@vitejs/plugin-react');
+const react = require('@vitejs/plugin-react')
 
 module.exports = {
   core: {
@@ -15,9 +15,8 @@ module.exports = {
 
   async viteFinal(config) {
     config.plugins = config.plugins.filter(
-      (plugin) =>
-        !(Array.isArray(plugin) && plugin[0]?.name.includes('vite:react'))
-    );
+      (plugin) => !(Array.isArray(plugin) && plugin[0]?.name.includes('vite:react')),
+    )
 
     config.plugins.push(
       react({
@@ -26,9 +25,9 @@ module.exports = {
         babel: {
           plugins: ['@emotion/babel-plugin'],
         },
-      })
-    );
+      }),
+    )
 
-    return config;
+    return config
   },
-};
+}

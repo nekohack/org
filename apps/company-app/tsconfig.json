@@ -20,6 +20,7 @@
       "@hooks/*": ["./src/hooks/*"],
       "@sections/*": ["./src/sections/*"],
       "css/*": ["./src/styles/*"],
+      "@utils/*": ["./src/utils/*"],
       "@icons/*": ["./src/components/icons/*"],
       "@lib/*": ["./src/lib/*"],
       "public/*": ["./public/*"],
