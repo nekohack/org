@@ -32,7 +32,7 @@ export const linkPreviewTitle = css`
   -webkit-line-clamp: 2;
 `
 
- export const linkPreviewDescription = css`
+export const linkPreviewDescription = css`
   max-height: 3em;
   margin-bottom: 4px;
   overflow: hidden;

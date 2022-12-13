@@ -5,11 +5,10 @@
     "types": ["node"]
   },
   "files": [
-    "../../../node_modules/@nrwl/react/typings/cssmodule.d.ts",
-    "../../../node_modules/@nrwl/react/typings/image.d.ts"
+    "../../node_modules/@nrwl/react/typings/cssmodule.d.ts",
+    "../../node_modules/@nrwl/react/typings/image.d.ts"
   ],
   "exclude": [
-    "jest.config.ts",
     "**/*.spec.ts",
     "**/*.test.ts",
     "**/*.spec.tsx",
@@ -19,9 +18,10 @@
     "**/*.spec.jsx",
     "**/*.test.jsx",
     "**/*.stories.ts",
+    "**/*.stories.tsx",
     "**/*.stories.js",
     "**/*.stories.jsx",
-    "**/*.stories.tsx"
+    "jest.config.ts"
   ],
   "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"]
 }

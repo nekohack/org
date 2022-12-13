@@ -6,8 +6,8 @@ export default {
   component: Typography,
   title: 'Typography',
   args: {
-    variant: 'title'
-  }
+    variant: 'title',
+  },
 } as Meta
 
 export const Default: Story<TypographyProps> = (args) => (

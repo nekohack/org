@@ -8,16 +8,20 @@
     "company-app:dev": "nx run company-app:serve",
     "company-app:build": "nx run company-app:build",
     "company-app:export": "nx run company-app:export",
+    "company-app:typecheck": "nx run company-app:typecheck",
     "company-app:tsm": "nx run company-app:tsm",
     "company-app:lint": "nx run company-app:lint",
     "profile-app:dev": "nx run profile-app:serve",
     "profile-app:build": "nx run profile-app:build",
     "profile-app:export": "nx run profile-app:export",
+    "profile-app:typecheck": "nx run profile-app:typecheck",
     "profile-app:tsm": "nx run profile-app:tsm",
     "profile-app:lint": "nx run profile-app:lint",
     "og-gen:build": "nx run og-gen:build",
     "shared-ui:storybook": "nx run shared-ui:storybook",
-    "shared-ui:build-storybook": "nx run shared-ui:build-storybook"
+    "shared-ui:build-storybook": "nx run shared-ui:build-storybook",
+    "shared-ui:typecheck": "nx run shared-ui:typecheck",
+    "shared-ui:lint": "nx run shared-ui:lint"
   },
   "dependencies": {
     "@nekohack/footer-ui": "1.0.0",

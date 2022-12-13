@@ -3,7 +3,14 @@ import { match } from 'ts-pattern'
 import * as styles from './index.styles'
 
 export interface TypographyProps {
-  variant: 'title' | 'subtitle 1' | 'subtitle 2' | 'subtitle 3' | 'subtitle 4' | 'subtitle 5' | 'body'
+  variant:
+    | 'title'
+    | 'subtitle 1'
+    | 'subtitle 2'
+    | 'subtitle 3'
+    | 'subtitle 4'
+    | 'subtitle 5'
+    | 'body'
 }
 
 export const Typography = (props: React.PropsWithChildren<TypographyProps>) => {
