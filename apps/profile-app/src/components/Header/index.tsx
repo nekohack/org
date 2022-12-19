@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Transition } from 'react-transition-group'
 import { positions } from '@org/data'
+import { Typography } from '@org/shared/ui'
 import * as SC from './index.module.scss'
 
 const HeaderSection: FC = () => {
@@ -30,7 +31,7 @@ const HeaderSection: FC = () => {
   }, [])
 
   return (
-    <div className={SC.title}>
+    <div className={SC.header}>
       <Transition in={inProp} timeout={duration}>
         {(state) => (
           <div style={{ ...defaultStyle, ...transitionStyles[state] }}>
@@ -38,8 +39,8 @@ const HeaderSection: FC = () => {
           </div>
         )}
       </Transition>
-      <div className={SC.name}>Yuma Kitamura</div>
-      <div className={SC.locale}>Osaka, Kyoto in Japan</div>
+      <Typography variant="subtitle 1">Yuma Kitamura</Typography>
+      <Typography variant="subtitle 2">Osaka, Kyoto in Japan</Typography>
     </div>
   )
 }

@@ -1,24 +1,25 @@
-import i18next from 'i18next'
+import { t } from 'i18next'
 import { technologies } from '@org/data'
+import { Typography } from '@org/shared/ui'
 import styles from 'css/skills.module.scss'
 
 const SkillsSection: FC = () => {
   return (
     <section id="skills">
-      <h2 className="section__title">{i18next.t('backpack') as string}</h2>
-      <p>{i18next.t('backpack_description') as string}</p>
+      <Typography variant="subtitle 1">{`${t('backpack')}`}</Typography>
+      <Typography variant="body 1">{`${t('backpack_description')}`}</Typography>
       <div className={styles.skillsContainer}>
         {technologies.map((skillsItem, index) => {
           return (
             <div key={index} className={styles.skillsItem}>
               <div className={styles.header}>
-                <h3>{skillsItem.title}</h3>
+                <Typography variant="subtitle 2">{skillsItem.title}</Typography>
               </div>
 
               <ul className={styles.skillsItem}>
                 {skillsItem.skills.map((item, key) => (
                   <li key={key}>
-                    <p>{item.name}</p>
+                    <Typography variant="body 1">{item.name}</Typography>
                   </li>
                 ))}
               </ul>

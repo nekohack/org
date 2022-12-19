@@ -1,30 +1,34 @@
-import i18next from 'i18next'
+import { t } from 'i18next'
 import { products } from '@org/data'
 import { Product, Repo, Skill } from '@org/shared/types'
-import { LinkPreview, LinkText } from '@org/shared/ui'
+import { LinkPreview, LinkText, Typography } from '@org/shared/ui'
 
 const ProductSection: FC = () => {
   return (
     <div className="section">
-      <h2>{i18next.t('product')}</h2>
+      <Typography variant="subtitle 1">{t('product')}</Typography>
       {products
         .filter((node: Product) => node.enabled === true)
         .map((node: Product, index: number) => {
           return (
             <div key={index}>
-              <h3>{i18next.t(node.title)}</h3>
+              <Typography variant="subtitle 2">{t(node.title)}</Typography>
               {node.image.length === 1 &&
                 node.image.map((i, key: number) => (
                   <div key={key}>
-                    <img src={`/og/${i}.jpg`} alt={node.title[key]} decoding="async" />
+                    <img alt="" src={`/og/${i}.jpg`} />
                   </div>
                 ))}
               {node.description.map((d: string, key: number) => {
-                return <p key={key} dangerouslySetInnerHTML={{ __html: i18next.t(d) }} />
+                return (
+                  <Typography variant="body 2" key={key}>
+                    <div dangerouslySetInnerHTML={{ __html: t(d) }} />
+                  </Typography>
+                )
               })}
               {node.skills && (
                 <>
-                  <h4>{i18next.t('product_technology_used')}</h4>
+                  <Typography variant="subtitle 2">{t('product_technology_used')}</Typography>
                   <ul>
                     {node.skills
                       ?.filter((s: Skill) => s.status === 'active')
@@ -36,14 +40,14 @@ const ProductSection: FC = () => {
               )}
               {node.repos && (
                 <>
-                  <h4>{i18next.t('repository_managed')}</h4>
+                  <Typography variant="subtitle 2">{t('repository_managed')}</Typography>
                   <ul>
                     {node.repos
                       ?.filter((s: Repo) => s.status === 'active')
                       .map((s: Repo, key: number) => {
                         return (
                           <li key={key}>
-                            <LinkText name={s.name} url={s.url}>
+                            <LinkText ariaLabel={s.name} url={s.url}>
                               {s.name}
                             </LinkText>
                           </li>
@@ -56,15 +60,15 @@ const ProductSection: FC = () => {
                 node.url.map((u: string, key: number) => (
                   <div key={key} style={{ padding: '4px 0' }}>
                     <LinkPreview
-                      title={i18next.t(node.title[key])}
+                      title={t(node.title[key])}
                       url={u}
-                      image={node.image[key] || ''}
+                      image={`/og/${node.image[key] || ''}.jpg`}
                     />
                   </div>
                 ))}
               {node.sub && (
                 <>
-                  <h4>{i18next.t('sub_product')}</h4>
+                  <Typography variant="subtitle 2">{t('sub_product')}</Typography>
                   <ul>
                     {node.sub?.map(
                       (
@@ -76,17 +80,19 @@ const ProductSection: FC = () => {
                         key: number,
                       ) => (
                         <li key={key}>
-                          <h5>{i18next.t(s.title)}</h5>
-                          <h6>{i18next.t('product_technology_used')}</h6>
+                          <Typography variant="body 1">{t(s.title)}</Typography>
+                          <Typography variant="subtitle 3">
+                            {t('product_technology_used')}
+                          </Typography>
                           <ul>
                             {s.skills?.map((s: Skill, key: number) => {
                               if (s.status !== 'active') return
                               return <li key={key}>{`${s.name} (${s.category})`}</li>
                             })}
                           </ul>
-                          <h5>{i18next.t('product_url')}</h5>
+                          <Typography variant="body 1">{t('product_url')}</Typography>
                           <p>
-                            <LinkText name={s.url} url={s.url}>
+                            <LinkText ariaLabel={s.url} url={s.url}>
                               {s.url}
                             </LinkText>
                           </p>

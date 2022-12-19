@@ -6,7 +6,7 @@ export default {
   component: Typography,
   title: 'Typography',
   args: {
-    variant: 'title',
+    variant: 'title 1',
   },
 } as Meta
 
@@ -22,13 +22,13 @@ export const Default: Story<TypographyProps> = (args) => (
     <Typography {...args} variant="subtitle 3">
       H4
     </Typography>
-    <Typography {...args} variant="subtitle 4">
+    <Typography {...args} variant="body 1">
       H5
     </Typography>
-    <Typography {...args} variant="subtitle 5">
+    <Typography {...args} variant="body 2">
       H6
     </Typography>
-    <Typography {...args} variant="body">
+    <Typography {...args} variant="body 3">
       P
     </Typography>
   </Fragment>

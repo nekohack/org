@@ -1,19 +1,20 @@
 import React from 'react'
 
 export interface LinkTextProps {
-  name: string
-  custom?: string
+  ariaLabel?: string
+  customClass?: string
   url: string
 }
 
 export const LinkText = (props: React.PropsWithChildren<LinkTextProps>) => {
-  const { name, custom, url, children } = props
+  const { ariaLabel, customClass, url, children } = props
+
   return (
     <a
       href={url}
-      aria-label={name}
+      aria-label={ariaLabel}
       aria-pressed="true"
-      className={custom}
+      className={customClass}
       target="_blank"
       rel="noopener noreferrer"
     >

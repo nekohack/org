@@ -24,7 +24,7 @@ export default function Home() {
         <h2>Web Developer</h2>
       </div>
 
-      <p className={mainStyles.mainText}>{i18next.t('basic_biography') as string}</p>
+      <p>{`${i18next.t('basic_biography')}`}</p>
 
       <div className={mainStyles.btnContainer}>
         <a onClick={dispatch} className="btn btn__light btn__icon" href="#timeline">
@@ -32,21 +32,25 @@ export default function Home() {
           Timeline
         </a>
         <LinkText
-          name="contact"
+          ariaLabel="contact"
           url="https://docs.google.com/forms/d/e/1FAIpQLSfFzwsCVnFbu-lV0Jz2fEYHR97hpBSK2g6kEwc-G1fo976ngA/viewform"
-          custom="btn btn__light btn__icon"
+          customClass="btn btn__light btn__icon"
         >
           <Contact />
           Contact
         </LinkText>
-        <LinkText name="github" url="https://github.com/jiyuujin" custom="btn btn__light btn__icon">
+        <LinkText
+          ariaLabel="github"
+          url="https://github.com/jiyuujin"
+          customClass="btn btn__light btn__icon"
+        >
           <GitHub />
           GitHub
         </LinkText>
         <LinkText
-          name="twitter"
+          ariaLabel="twitter"
           url="https://twitter.com/jiyuujinlab"
-          custom="btn btn__light btn__icon"
+          customClass="btn btn__light btn__icon"
         >
           <Twitter />
           Twitter

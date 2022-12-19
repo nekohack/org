@@ -1,17 +1,18 @@
-import i18next from 'i18next'
+import { t } from 'i18next'
+import { Typography } from '@org/shared/ui'
 import * as SC from './index.module.scss'
 
 const PortraitSection: FC = () => {
   return (
     <section id="portrait">
-      <h2 className="section__title">{i18next.t('portrait')}</h2>
-      <p>{i18next.t('portrait_description')}</p>
+      <Typography variant="subtitle 1">{t('portrait')}</Typography>
+      <Typography variant="body 1">{t('portrait_description')}</Typography>
       <div className={SC.photosContainer}>
         <div className={SC.standingImg}>
-          <img alt="Standing" src="../../images/v-kansai_10.jpg" />
+          <img alt="" src="/images/v-kansai_10.jpg" />
         </div>
         <div className={SC.vuefesImg}>
-          <img alt="Vue Fes" src="../../images/vuefes.jpg" />
+          <img alt="" src="/images/vuefes.jpg" />
         </div>
       </div>
     </section>
