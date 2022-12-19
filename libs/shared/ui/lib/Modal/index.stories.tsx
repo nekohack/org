@@ -1,14 +1,13 @@
 import { Story, Meta } from '@storybook/react'
+import { action } from '@storybook/addon-actions'
 import { Modal, ModalProps } from './index'
 
 export default {
   component: Modal,
   title: 'Modal',
+  args: {
+    onClose: action('closed'),
+  },
 } as Meta
 
-const Template: Story<ModalProps> = (args) => <Modal {...args}>Test</Modal>
-
-export const Primary = Template.bind({})
-Primary.args = {
-  onClose: () => {},
-}
+export const Default: Story<ModalProps> = (args) => <Modal {...args}>Test</Modal>
