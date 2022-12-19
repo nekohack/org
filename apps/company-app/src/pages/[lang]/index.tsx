@@ -1,5 +1,5 @@
 import i18next from 'i18next'
-import { Contact, GitHub, LinkText, Person, Twitter } from '@org/shared/ui'
+import { Icon, LinkText } from '@org/shared/ui'
 import { useEmitEvent } from '@hooks/useEmitEvent'
 import SkillsSection from '@sections/SkillsSection'
 import WorksSection from '@sections/WorksSection'
@@ -28,7 +28,7 @@ export default function Home() {
 
       <div className={mainStyles.btnContainer}>
         <a onClick={dispatch} className="btn btn__light btn__icon" href="#timeline">
-          <Person />
+          <Icon name="person" />
           Timeline
         </a>
         <LinkText
@@ -36,7 +36,7 @@ export default function Home() {
           url="https://docs.google.com/forms/d/e/1FAIpQLSfFzwsCVnFbu-lV0Jz2fEYHR97hpBSK2g6kEwc-G1fo976ngA/viewform"
           customClass="btn btn__light btn__icon"
         >
-          <Contact />
+          <Icon name="contact" />
           Contact
         </LinkText>
         <LinkText
@@ -44,7 +44,7 @@ export default function Home() {
           url="https://github.com/jiyuujin"
           customClass="btn btn__light btn__icon"
         >
-          <GitHub />
+          <Icon name="github" />
           GitHub
         </LinkText>
         <LinkText
@@ -52,7 +52,7 @@ export default function Home() {
           url="https://twitter.com/jiyuujinlab"
           customClass="btn btn__light btn__icon"
         >
-          <Twitter />
+          <Icon name="twitter" />
           Twitter
         </LinkText>
       </div>
