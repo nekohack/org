@@ -1,22 +1,22 @@
-import i18next from 'i18next'
+import i18next, { t } from 'i18next'
 import { docsForExternal } from '@org/data'
-import { LinkPreview } from '@org/shared/ui'
+import { LinkPreview, Typography } from '@org/shared/ui'
 
 const WorksSection = () => {
   return (
     <section id="works">
-      <h2 className="section__title">{i18next.t('works') as string}</h2>
-      <p>{i18next.t('works_description') as string}</p>
+      <Typography variant="subtitle 1">{`${t('works')}`}</Typography>
+      <Typography variant="body 1">{`${t('works_description')}`}</Typography>
       <div>
         {docsForExternal.map((work, index) => {
           return (
             <div key={index}>
-              <h3>{work.text}</h3>
+              <Typography variant="subtitle 2">{work.text}</Typography>
               <LinkPreview
-                title={i18next.exists(work.text) ? i18next.t(work.text) : work.text}
-                description={i18next.t(work.description)}
+                title={i18next.exists(work.text) ? t(work.text) : work.text}
+                description={t(work.description)}
                 url={work.url}
-                image={work.image || ''}
+                image={`/og/${work.image || ''}.jpg`}
               />
             </div>
           )

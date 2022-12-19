@@ -8,14 +8,14 @@ export const Footer: FC = () => {
       <div className={styles.footerContent}>
         <p>
           <LinkText
-            name={i18next.t('at_once_read_privacy_policy')}
+            ariaLabel={i18next.t('at_once_read_privacy_policy')}
             url="https://nekohack-privacy-policy.netlify.app/"
           >
             {i18next.t('at_once_read_privacy_policy') as string}
           </LinkText>
           <br />
           <LinkText
-            name={i18next.t('at_once_read_privacy_policy')}
+            ariaLabel={i18next.t('at_once_read_privacy_policy')}
             url="https://docs.google.com/forms/d/e/1FAIpQLSfFzwsCVnFbu-lV0Jz2fEYHR97hpBSK2g6kEwc-G1fo976ngA/viewform"
           >
             {i18next.t('please_contact_easily_from_the_survey_form') as string}
@@ -23,10 +23,10 @@ export const Footer: FC = () => {
         </p>
 
         <div className={styles.footerLinks}>
-          <LinkText name="Twitter" url="https://twitter.com/jiyuujinlab">
+          <LinkText ariaLabel="Twitter" url="https://twitter.com/jiyuujinlab">
             Twitter
           </LinkText>
-          <LinkText name="GitHub" url="https://github.com/jiyuujin">
+          <LinkText ariaLabel="GitHub" url="https://github.com/jiyuujin">
             GitHub
           </LinkText>
         </div>

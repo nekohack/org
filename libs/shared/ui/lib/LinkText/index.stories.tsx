@@ -4,12 +4,10 @@ import { LinkText, LinkTextProps } from './index'
 export default {
   component: LinkText,
   title: 'LinkText',
+  args: {
+    ariaLabel: 'ブログ',
+    url: 'https://blog.nekohack.me/',
+  },
 } as Meta
 
-const Template: Story<LinkTextProps> = (args) => <LinkText {...args}>Test</LinkText>
-
-export const Primary = Template.bind({})
-Primary.args = {
-  name: 'Test',
-  url: 'https://webneko.dev/',
-}
+export const Default: Story<LinkTextProps> = (args) => <LinkText {...args}>ブログ</LinkText>
