@@ -2,7 +2,7 @@ import { useState } from 'react'
 import ReactTooltip from 'react-tooltip'
 import { exists, t } from 'i18next'
 import { timelines } from '@org/data'
-import { ArrowDown, Typography } from '@org/shared/ui'
+import { Icon, Typography } from '@org/shared/ui'
 import * as SC from './index.module.scss'
 
 const classes = (...args: string[]): string => {
@@ -79,7 +79,7 @@ const TimelineSection: FC = () => {
 
         <button onClick={showMore} className={SC.viewOlderBtn}>
           {viewOlderText}
-          <ArrowDown style={{ transform: viewOlderText === 'View less' ? 'rotate(180deg)' : '' }} />
+          <Icon name="arrow-down" />
         </button>
       </div>
     </section>
