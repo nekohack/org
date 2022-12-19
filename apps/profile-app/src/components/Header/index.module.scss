@@ -1,4 +1,4 @@
-.title {
+.header {
   max-width: 100%;
   margin: 32px 20px;
   font-size: 2.4rem;
@@ -6,12 +6,4 @@
   line-height: 1;
   text-shadow: 0 2px 5px rgb(0 0 0 / 30%);
   text-transform: uppercase;
-
-  .name {
-    font-size: 1.6rem;
-  }
-
-  .locale {
-    font-size: 0.8rem;
-  }
 }

@@ -1,5 +1,6 @@
 import { useMemo } from 'react'
-import i18next from 'i18next'
+import { t } from 'i18next'
+import { Typography } from '@org/shared/ui'
 
 const IntroductionSection: FC = () => {
   const positionList: string[] = useMemo(
@@ -9,9 +10,9 @@ const IntroductionSection: FC = () => {
 
   return (
     <div className="section">
-      <h2>{i18next.t('labels.basic_info')}</h2>
-      <p>{i18next.t('basic_biography')}</p>
-      <h3>{i18next.t('labels.position')}</h3>
+      <Typography variant="subtitle 1">{t('labels.basic_info')}</Typography>
+      <Typography variant="body 1">{t('basic_biography')}</Typography>
+      <Typography variant="subtitle 2">{t('labels.position')}</Typography>
       <ul>
         {positionList?.map((position: string, index: number) => {
           return <li key={index}>{position}</li>

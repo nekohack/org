@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import ReactTooltip from 'react-tooltip'
-import i18next from 'i18next'
+import { exists, t } from 'i18next'
 import { timelines } from '@org/data'
-import { ArrowDown } from '@org/shared/ui'
+import { ArrowDown, Typography } from '@org/shared/ui'
 import * as SC from './index.module.scss'
 
 const classes = (...args: string[]): string => {
@@ -25,8 +25,8 @@ const TimelineSection: FC = () => {
 
   return (
     <section id="timeline">
-      <h2 className="section__title">{i18next.t('timeline')}</h2>
-      <p>{i18next.t('timeline_description')}</p>
+      <Typography variant="subtitle 2">{t('timeline')}</Typography>
+      <Typography variant="body 2">{t('timeline_description')}</Typography>
       <div className={SC.timeline}>
         {timelines.slice(0, length).map((item, idx: number) => {
           const side = idx % 2 === 0 ? SC.left : SC.right
@@ -40,7 +40,9 @@ const TimelineSection: FC = () => {
                 className={SC.timelineItemBody}
               >
                 <header className={SC.timelineItemHeader}>
-                  <h3>{i18next.exists(item.title) ? i18next.t(item.title) : item.title}</h3>
+                  <Typography variant="body 2">
+                    {exists(item.title) ? t(item.title) : item.title}
+                  </Typography>
 
                   <p data-tip data-for={`timeline-item-${idx}`}>
                     {item.date}
@@ -61,25 +63,11 @@ const TimelineSection: FC = () => {
                 </header>
                 <div className={SC.timelineItemDetail}>
                   {item.imageName && (
-                    <img
-                      alt={item.title}
-                      src={`/og/${item.imageName}.jpg`}
-                      width={150}
-                      height={100}
-                      decoding="async"
-                    />
+                    <img alt="" src={`/og/${item.imageName}.jpg`} width={150} height={100} />
                   )}
-                  {item.imageUrl && (
-                    <img
-                      alt={item.title}
-                      src={item.imageUrl}
-                      width={150}
-                      height={100}
-                      decoding="async"
-                    />
-                  )}
-                  {item.description && i18next.exists(item.description) ? (
-                    <span>{i18next.t(item.description)}</span>
+                  {item.imageUrl && <img alt="" src={item.imageUrl} width={150} height={100} />}
+                  {item.description && exists(item.description) ? (
+                    <span>{t(item.description)}</span>
                   ) : (
                     item.description
                   )}
