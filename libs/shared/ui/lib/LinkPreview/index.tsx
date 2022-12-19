@@ -17,7 +17,7 @@ export const LinkPreview = (props: LinkPreviewProps) => {
         <div css={styles.linkPreviewDescription}>{description}</div>
         <div css={styles.linkPreviewUrl}>{url}</div>
       </a>
-      <img css={styles.linkPreviewImage} alt="" src={`/og/${image}.jpg`} />
+      <img css={styles.linkPreviewImage} alt="" src={image} />
     </div>
   )
 }
