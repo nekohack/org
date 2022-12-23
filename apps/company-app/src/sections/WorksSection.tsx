@@ -1,5 +1,5 @@
 import i18next, { t } from 'i18next'
-import { docsForExternal } from '@org/data'
+import { docsForExternal } from '@org/shared/data'
 import { LinkPreview, Typography } from '@org/shared/ui'
 
 const WorksSection = () => {

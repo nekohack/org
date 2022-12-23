@@ -1,6 +1,6 @@
 import i18next from 'i18next'
 import dayjs from 'dayjs'
-import { talks } from '@org/data'
+import { talks } from '@org/shared/data'
 import { Talk } from '@org/shared/types'
 import { LinkPreview, LinkText, Typography } from '@org/shared/ui'
 

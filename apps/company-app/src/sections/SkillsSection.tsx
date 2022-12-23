@@ -1,5 +1,5 @@
 import { t } from 'i18next'
-import { technologies } from '@org/data'
+import { technologies } from '@org/shared/data'
 import { Typography } from '@org/shared/ui'
 import styles from 'css/skills.module.scss'
 
