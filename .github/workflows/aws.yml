@@ -61,7 +61,7 @@ jobs:
           NEXT_LHCI_GITHUB_APP_TOKEN: ${{ secrets.NEXT_LHCI_GITHUB_APP_TOKEN }}
 
       - name: Deploy Company to S3
-        run: bash tools/scripts/sub_company_directory.sh
+        run: bash scripts/sub_company_directory.sh
 
       - name: Deploy Profile to S3
-        run: bash tools/scripts/sub_profile_directory.sh
+        run: bash scripts/sub_profile_directory.sh

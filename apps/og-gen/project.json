@@ -1,0 +1,32 @@
+{
+  "name": "og-gen",
+  "sourceRoot": "apps/og-gen",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": ["ts-node main.ts --project tsconfig.builder.json"],
+        "cwd": "libs/og-gen",
+        "parallel": false
+      }
+    },
+    "typecheck": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "command": "tsc --noEmit -p apps/og-gen/tsconfig.lib.json"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": [
+          "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss,sass}\" --ignore-path .gitignore"
+        ],
+        "cwd": "apps/og-gen",
+        "parallel": false
+      }
+    }
+  },
+  "tags": []
+}

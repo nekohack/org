@@ -1,5 +1,5 @@
 import { t } from 'i18next'
-import { products } from '@org/data'
+import { products } from '@org/shared/data'
 import { Product, Repo, Skill } from '@org/shared/types'
 import { LinkPreview, LinkText, Typography } from '@org/shared/ui'
 

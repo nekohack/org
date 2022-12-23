@@ -1,5 +1,5 @@
 import { t } from 'i18next'
-import { internalDocs } from '@org/data'
+import { internalDocs } from '@org/shared/data'
 import { Link } from '@org/shared/types'
 import { LinkText, Typography } from '@org/shared/ui'
 

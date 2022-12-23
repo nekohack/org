@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Transition } from 'react-transition-group'
-import { positions } from '@org/data'
+import { positions } from '@org/shared/data'
 import { Typography } from '@org/shared/ui'
 import * as SC from './index.module.scss'
 

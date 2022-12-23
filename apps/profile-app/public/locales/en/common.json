@@ -97,11 +97,12 @@
   "community_role": "Participating in the following community as a staff member",
   "slide": "Stage Slide / Writing",
   "slides": {
+    "review_oss_activities_2022": "Improved our Web experience by doing this in particular",
     "learn_monorepo_tutorial": "Learn Monorepo",
     "useful_features_in_git_and_github_integrations": "Useful features in Git & GitHub integrations",
     "calendar_app_workshop_in_flutter_japan_user_group_2022": "Flutter Calendar App workshop 2022",
     "oss_activities_2022": "My Own OSS Activities",
-    "about_22s_googleio_wwdc_recap": "About Google I/O 2022 Recap × WWDC 2022 Recap",
+    "pwa_night_40": "About Google I/O 2022 Recap × WWDC 2022 Recap",
     "customize_markuplint": "markuplint customize",
     "setup_markuplint": "markuplint setup",
     "learn_accessibility_again": "Now Again, Learn Accessibility",

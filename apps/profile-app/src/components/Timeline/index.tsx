@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import ReactTooltip from 'react-tooltip'
 import { exists, t } from 'i18next'
-import { timelines } from '@org/data'
+import { timelines } from '@org/shared/data'
 import { Icon, Typography } from '@org/shared/ui'
 import * as SC from './index.module.scss'
 

@@ -1,5 +1,5 @@
 import { t } from 'i18next'
-import { communities } from '@org/data'
+import { communities } from '@org/shared/data'
 import { Community } from '@org/shared/types'
 import { LinkText, Typography } from '@org/shared/ui'
 

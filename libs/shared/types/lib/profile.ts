@@ -88,7 +88,7 @@ export interface Talk {
   text: string
   host: Host
   url: string | undefined
-  youtubeUrl: string
+  youtubeUrl: string | null
   place: Place | RealPlace
   image: string | undefined
   date: string

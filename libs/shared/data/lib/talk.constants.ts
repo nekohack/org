@@ -2,6 +2,16 @@ import { Talk } from '@org/shared/types'
 
 export const talks: Talk[] = [
   {
+    text: 'slides.review_oss_activities_2022',
+    host: 'PWA Night',
+    url: 'https://www.figma.com/proto/12yGlG2LfcrkJ3eWDot0vj/Slides?node-id=13%3A279&starting-point-node-id=13%3A279&scaling=scale-down-width',
+    youtubeUrl: null,
+    place: 'Zoom',
+    image: 'googleio-wwdc-2022-recap',
+    date: '2022/12/21',
+    enabled: true,
+  },
+  {
     text: 'slides.learn_monorepo_tutorial',
     host: 'me',
     url: 'https://blog.nekohack.me/posts/monorepo-tutorial',
@@ -42,9 +52,9 @@ export const talks: Talk[] = [
     enabled: true,
   },
   {
-    text: 'slides.about_22s_googleio_wwdc_recap',
+    text: 'slides.pwa_night_40',
     host: 'PWA Night',
-    url: 'https://blog.nekohack.me/posts/22s-googleio-wwdc-recap',
+    url: 'https://blog.nekohack.me/posts/pwa-night-40',
     youtubeUrl: null,
     place: 'Zoom',
     image: '22s-googleio-wwdc-recap',

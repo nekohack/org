@@ -1,0 +1,25 @@
+{
+  "name": "shared-types",
+  "sourceRoot": "libs/shared-types",
+  "projectType": "library",
+  "targets": {
+    "typecheck": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "command": "tsc --noEmit -p libs/shared/types/tsconfig.lib.json"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": [
+          "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss,sass}\" --ignore-path .gitignore",
+          "eslint ./lib/* --ext .tsx,.ts,.jsx,.js --fix"
+        ],
+        "cwd": "libs/shared/types",
+        "parallel": false
+      }
+    }
+  },
+  "tags": []
+}

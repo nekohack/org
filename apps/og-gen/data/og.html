@@ -15,7 +15,7 @@
       h1,
       h2 {
         margin: 0 auto;
-        font-family: "Noto Sans JP", sans-serif;
+        font-family: 'Noto Sans JP', sans-serif;
       }
 
       :root {
@@ -77,7 +77,7 @@
     <div class="root">
       <div class="main">
         <div class="logo">
-          <img src="./vuefes.jpg" />
+          <img src="vuefes.jpg" />
         </div>
         <h1 class="title"></h1>
         <h2 class="description"></h2>
@@ -85,46 +85,42 @@
     </div>
     <script>
       async function setTitleText() {
-        const title =
-          typeof getTitle === "function" ? await getTitle() : "Yuma Kitamura";
-        const titleElement = document.querySelector(".title");
-        titleElement.innerHTML = title;
+        const title = typeof getTitle === 'function' ? await getTitle() : 'Yuma Kitamura'
+        const titleElement = document.querySelector('.title')
+        titleElement.innerHTML = title
       }
 
       async function setDescriptionText() {
         const description =
-          typeof getDescription === "function"
-            ? await getDescription()
-            : "Web Developer";
-        const descriptionElement = document.querySelector(".description");
-        descriptionElement.innerHTML = description;
+          typeof getDescription === 'function' ? await getDescription() : 'Web Developer'
+        const descriptionElement = document.querySelector('.description')
+        descriptionElement.innerHTML = description
       }
 
       function setTitleFontSize(fontSize = 100) {
-        const titleElement = document.querySelector(".title");
-        titleElement.style.fontSize = fontSize + "px";
-        const titleHeight = titleElement.getBoundingClientRect().height;
+        const titleElement = document.querySelector('.title')
+        titleElement.style.fontSize = fontSize + 'px'
+        const titleHeight = titleElement.getBoundingClientRect().height
         if (!(titleHeight <= 300)) {
-          setTitleFontSize(--fontSize);
+          setTitleFontSize(--fontSize)
         }
       }
 
       function setDescriptionFontSize(fontSize = 40) {
-        const descriptionElement = document.querySelector(".description");
-        descriptionElement.style.fontSize = fontSize + "px";
-        const descriptionHeight =
-          descriptionElement.getBoundingClientRect().height;
+        const descriptionElement = document.querySelector('.description')
+        descriptionElement.style.fontSize = fontSize + 'px'
+        const descriptionHeight = descriptionElement.getBoundingClientRect().height
         if (!(descriptionHeight <= 300)) {
-          setTitleFontSize(--fontSize);
+          setTitleFontSize(--fontSize)
         }
       }
 
-      document.addEventListener("DOMContentLoaded", async () => {
-        await setTitleText();
-        await setDescriptionText();
-        setTitleFontSize();
-        setDescriptionFontSize();
-      });
+      document.addEventListener('DOMContentLoaded', async () => {
+        await setTitleText()
+        await setDescriptionText()
+        setTitleFontSize()
+        setDescriptionFontSize()
+      })
     </script>
   </body>
 </html>
