@@ -3,7 +3,7 @@ version: 2.1
 parameters:
   pull_request:
     type: boolean
-    default: false
+    default: true
 
 orbs:
   welcome: circleci/welcome-orb@0.4.1
@@ -55,6 +55,7 @@ commands:
           from: dist/apps/company-app/exported/
           to: s3://nekohack.me
           arguments: |
+            --recursive \
             --acl public-read \
             --cache-control "max-age=86400"
 
@@ -65,6 +66,7 @@ commands:
           from: dist/apps/profile-app/exported/
           to: s3://yuma-kitamura.nekohack.me
           arguments: |
+            --recursive \
             --acl public-read \
             --cache-control "max-age=86400"
 
