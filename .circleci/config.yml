@@ -3,7 +3,7 @@ version: 2.1
 parameters:
   pull_request:
     type: boolean
-    default: false
+    default: true
 
 orbs:
   welcome: circleci/welcome-orb@0.4.1
@@ -84,8 +84,8 @@ jobs:
       - aws-cli/install
       - aws-cli/setup
       - prepare_node_dependency
-      - company_and_deploy
-      - profile_and_deploy
+      # - company_and_deploy
+      # - profile_and_deploy
 
 workflows:
   version: 2
