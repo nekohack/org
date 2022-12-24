@@ -1,0 +1,31 @@
+{
+  "name": "payment-api",
+  "sourceRoot": "apps/payment-api",
+  "projectType": "application",
+  "targets": {
+    "deploy": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "command": "NODE_ENV=live sls deploy --stage live"
+      }
+    },
+    "typecheck": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "command": "tsc --noEmit -p apps/payment-api/tsconfig.lib.json"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": [
+          "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss,sass}\" --ignore-path .gitignore",
+          "eslint ./lib --ext .tsx,.ts,.jsx,.js --fix"
+        ],
+        "cwd": "apps/payment-api",
+        "parallel": false
+      }
+    }
+  },
+  "tags": []
+}
