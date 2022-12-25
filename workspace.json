@@ -6,6 +6,7 @@
     "payment-api": "apps/payment-api",
     "profile-app": "apps/profile-app",
     "shared-data": "libs/shared/data",
+    "shared-types": "libs/shared/types",
     "shared-ui": "libs/shared/ui"
   }
 }
