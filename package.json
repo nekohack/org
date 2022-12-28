@@ -30,7 +30,10 @@
     "shared-ui:storybook": "nx run shared-ui:storybook",
     "shared-ui:build-storybook": "nx run shared-ui:build-storybook",
     "shared-ui:typecheck": "nx run shared-ui:typecheck",
-    "shared-ui:lint": "nx run shared-ui:lint"
+    "shared-ui:lint": "nx run shared-ui:lint",
+    "wasm-renderer:build": "nx run wasm-renderer:build",
+    "wasm-renderer:lint": "nx run wasm-renderer:lint",
+    "wasm-renderer:test": "nx run wasm-renderer:test"
   },
   "dependencies": {
     "dotenv": "16.0.3",
@@ -107,4 +110,3 @@
     "@types/react": "18.0.26"
   }
 }
-
