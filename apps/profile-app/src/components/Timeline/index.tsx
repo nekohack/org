@@ -44,9 +44,9 @@ const TimelineSection: FC = () => {
                     {exists(item.title) ? t(item.title) : item.title}
                   </Typography>
 
-                  <p data-tip data-for={`timeline-item-${idx}`}>
+                  <Typography variant="body 3" data-tip data-for={`timeline-item-${idx}`}>
                     {item.date}
-                  </p>
+                  </Typography>
 
                   {item.full_date ? (
                     <ReactTooltip
@@ -67,7 +67,7 @@ const TimelineSection: FC = () => {
                   )}
                   {item.imageUrl && <img alt="" src={item.imageUrl} width={150} height={100} />}
                   {item.description && exists(item.description) ? (
-                    <span>{t(item.description)}</span>
+                    <Typography variant="body 3">{t(item.description)}</Typography>
                   ) : (
                     item.description
                   )}

@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react'
 import { Transition } from 'react-transition-group'
 import { positions } from '@org/shared/data'
 import { Typography } from '@org/shared/ui'
-import * as SC from './index.module.scss'
 
 const HeaderSection: FC = () => {
   const [index, setIndex] = useState(0)
@@ -31,7 +30,7 @@ const HeaderSection: FC = () => {
   }, [])
 
   return (
-    <div className={SC.header}>
+    <div className="header">
       <Transition in={inProp} timeout={duration}>
         {(state) => (
           <div style={{ ...defaultStyle, ...transitionStyles[state] }}>

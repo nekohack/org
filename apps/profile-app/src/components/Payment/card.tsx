@@ -1,7 +1,7 @@
-import i18next from 'i18next'
-import * as SC from './index.module.scss'
 import { NekoButton } from 'nekohack-ui'
-import PlaneLogoSvg from '../../../public/icons/plane_logo.svg'
+import i18next from 'i18next'
+import * as SC from './card.module.scss'
+import PlaneLogoSvg from 'public/icons/plane_logo.svg'
 
 export const Card: FC = () => {
   return (
