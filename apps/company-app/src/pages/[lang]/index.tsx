@@ -1,4 +1,4 @@
-import i18next from 'i18next'
+import { t } from 'i18next'
 import { Icon, LinkText } from '@org/shared/ui'
 import { useEmitEvent } from '@hooks/useEmitEvent'
 import SkillsSection from '@sections/SkillsSection'
@@ -24,7 +24,7 @@ export default function Home() {
         <h2>Web Developer</h2>
       </div>
 
-      <p>{`${i18next.t('basic_biography')}`}</p>
+      <p>{`${t('basic_biography')}`}</p>
 
       <div className={mainStyles.btnContainer}>
         <a onClick={dispatch} className="btn btn__light btn__icon" href="#timeline">

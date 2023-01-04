@@ -1,4 +1,4 @@
-import i18next from 'i18next'
+import { t } from 'i18next'
 import dayjs from 'dayjs'
 import { talks } from '@org/shared/data'
 import { Talk } from '@org/shared/types'
@@ -11,7 +11,7 @@ const SlideSection: FC = () => {
 
   return (
     <div className="section">
-      <Typography variant="subtitle 1">{i18next.t('slide')}</Typography>
+      <Typography variant="subtitle 1">{t('slide')}</Typography>
       <ul>
         {talks
           .filter((node: Talk) => node.enabled === true)
@@ -40,15 +40,15 @@ const SlideSection: FC = () => {
                       node.host
                     )}
                     {node.youtubeUrl && (
-                      <LinkText ariaLabel={i18next.t('labels.youtube_live')} url={node.youtubeUrl}>
-                        {i18next.t('labels.youtube_live')}
+                      <LinkText ariaLabel={t('labels.youtube_live')} url={node.youtubeUrl}>
+                        {t('labels.youtube_live')}
                       </LinkText>
                     )}
                   </Typography>
                 </div>
                 {node.url && (
                   <LinkPreview
-                    title={i18next.t(node.text)}
+                    title={t(node.text)}
                     url={node.url}
                     image={`/og/${node.image || ''}.jpg`}
                   />

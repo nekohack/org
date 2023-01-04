@@ -36,6 +36,20 @@ div[role='group'][tabindex] {
   width: 100%;
 }
 
+.noticer {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 19;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 40px;
+  padding: 10px 60px;
+  color: #005bbb;
+  text-align: center;
+  background-color: #ffd500;
+}
+
 .header {
   max-width: 100%;
   margin: 32px 20px;

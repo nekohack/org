@@ -1,7 +1,7 @@
 import { Fragment, useState } from 'react'
 import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js'
 import { NekoButton } from 'nekohack-ui'
-import i18next from 'i18next'
+import { t } from 'i18next'
 import * as SC from './form-card.module.scss'
 import { Modal } from '@org/shared/ui'
 import { Card } from '@components/Payment/card'
@@ -57,7 +57,7 @@ export const CheckoutForm: FCWithChildren<CheckoutFormProps> = ({ isTest }: Chec
 
   return (
     <Fragment>
-      <NekoButton onClick={handleOpen}>{i18next.t('labels.contribute')}</NekoButton>
+      <NekoButton onClick={handleOpen}>{t('labels.contribute')}</NekoButton>
       {open && (
         <Modal onClose={handleOpen}>
           <div className={SC.content}>
@@ -78,7 +78,7 @@ export const CheckoutForm: FCWithChildren<CheckoutFormProps> = ({ isTest }: Chec
                 />
               </div>
               <button className={SC.checkoutFormButton} disabled={!stripe}>
-                {i18next.t('labels.payment')}
+                {t('labels.payment')}
               </button>
               <div className={SC.manual}>
                 <a
@@ -86,7 +86,7 @@ export const CheckoutForm: FCWithChildren<CheckoutFormProps> = ({ isTest }: Chec
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {i18next.t('confirm_policy')}
+                  {t('confirm_policy')}
                 </a>
               </div>
             </form>
