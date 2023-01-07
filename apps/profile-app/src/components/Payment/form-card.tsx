@@ -35,11 +35,11 @@ export const CheckoutForm: FCWithChildren<CheckoutFormProps> = ({ isTest }: Chec
     const jsonData = JSON.parse(data.body)
     const secret = jsonData.charge.client_secret
 
-    const card = elements?.getElement(CardElement)
+    const card = elements.getElement(CardElement)
 
     const result = await stripe?.confirmCardPayment(secret, {
       payment_method: {
-        card: card!,
+        card: card,
         billing_details: {
           name: 'username',
         },
