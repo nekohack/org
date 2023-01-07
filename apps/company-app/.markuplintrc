@@ -21,12 +21,6 @@
     "doctype": true,
     "id-duplication": true,
     "indentation": 2,
-    "invalid-attr": true,
-    "landmark-roles": true,
-    "permitted-contents": true,
-    "require-accessible-name": false,
-    "required-attr": true,
-    "required-h1": true,
     "invalid-attr": {
       "option": {
         "attrs": {
@@ -45,6 +39,11 @@
         }
       }
     },
+    "landmark-roles": true,
+    "permitted-contents": true,
+    "require-accessible-name": false,
+    "required-attr": true,
+    "required-h1": true,
     "wai-aria": true
   },
   "nodeRules": [
