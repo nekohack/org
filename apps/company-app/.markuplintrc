@@ -1,0 +1,88 @@
+{
+  "extends": ["markuplint:recommended"],
+  "parser": {
+    ".[jt]sx?$": "@markuplint/jsx-parser"
+  },
+  "specs": {
+    ".[jt]sx?$": "@markuplint/react-spec"
+  },
+  "rules": {
+    "attr-duplication": true,
+    "attr-equal-space-after": true,
+    "attr-equal-space-before": true,
+    "attr-spacing": true,
+    "attr-value-quotes": true,
+    "case-sensitive-attr-name": false, /* onClick, etc */
+    "case-sensitive-tag-name": true,
+    "character-reference": true,
+    "class-naming": "/.+/",
+    "deprecated-attr": true,
+    "deprecated-element": true,
+    "doctype": true,
+    "id-duplication": true,
+    "indentation": 2,
+    "invalid-attr": true,
+    "landmark-roles": true,
+    "permitted-contents": true,
+    "require-accessible-name": false,
+    "required-attr": true,
+    "required-h1": true,
+    "invalid-attr": {
+      "option": {
+        "attrs": {
+          "css": {
+            "disallowed": false
+          },
+          "controlslist": {
+            "enum": ["nodownload"]
+          },
+          "object-fit": {
+            "disallowed": true
+          },
+          "width": {
+            "type": "String"
+          }
+        }
+      }
+    },
+    "wai-aria": true
+  },
+  "nodeRules": [
+    {
+      "selector": "script",
+      "rules": {
+        "required-attr": "src"
+      }
+    },
+    {
+      "selector": "img",
+      "rules": {
+        "required-attr": "alt"
+      }
+    },
+    {
+      "tagName": "a",
+      "rules": {
+        "required-attr": [
+          {
+            "name": "rel",
+            "value": "/noopener/i"
+          }
+        ]
+      }
+    },
+    {
+      "selector": "audio",
+      "rules": {
+        "disallowed-element": ["muted"]
+      }
+    },
+    {
+      "selector": "video",
+      "rules": {
+        "disallowed-element": ["muted"]
+      }
+    }
+  ],
+  "excludeFiles": []
+}

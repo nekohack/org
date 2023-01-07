@@ -45,7 +45,8 @@
       "options": {
         "commands": [
           "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss,sass}\" --ignore-path .gitignore",
-          "eslint ./lib/**/* --ext .tsx,.ts,.jsx,.js --fix"
+          "eslint ./lib/**/* --ext .tsx,.ts,.jsx,.js --fix",
+          "markuplint \"./lib/**/*.tsx\" --config .markuplintrc --format"
         ],
         "cwd": "libs/shared/ui",
         "parallel": false
