@@ -1,3 +1,5 @@
-import { ReactNode } from 'react'
+import { Fragment, ReactNode } from 'react'
 
-export default ({ children }: { children?: ReactNode }) => <>{children}</>
+export function Layout({ children }: { children?: ReactNode }) {
+  return <Fragment>{children}</Fragment>
+}

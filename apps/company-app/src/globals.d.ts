@@ -4,22 +4,22 @@ declare module '*.scss' {
 }
 
 declare module '*.svg' {
-  const content: any
+  const content: unknown
   export default content
 }
 
 declare module '*.json' {
-  const content: any
+  const content: unknown
   export default content
 }
 
 declare module '*.png' {
-  const content: any
+  const content: unknown
   export default content
 }
 
 interface Process {
-  env: any
+  env: unknown
   browser: boolean
 }
 
@@ -34,6 +34,6 @@ declare namespace NodeJS {
 
 declare namespace JSX {
   interface ElementChildrenAttribute {
-    children: any
+    children: unknown
   }
 }
