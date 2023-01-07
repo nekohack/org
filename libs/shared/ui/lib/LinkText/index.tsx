@@ -13,7 +13,6 @@ export const LinkText = (props: React.PropsWithChildren<LinkTextProps>) => {
     <a
       href={url}
       aria-label={ariaLabel}
-      aria-pressed="true"
       className={customClass}
       target="_blank"
       rel="noopener noreferrer"
