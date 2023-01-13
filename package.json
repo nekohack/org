@@ -73,7 +73,7 @@
     "dayjs": "1.11.7",
     "esbuild": "0.16.12",
     "eslint": "8.31.0",
-    "eslint-config-next": "12.3.4",
+    "eslint-config-next": "13.1.2",
     "fs-extra": "9.1.0",
     "i18next": "21.10.0",
     "i18next-browser-languagedetector": "6.1.8",
