@@ -32,15 +32,11 @@ export const Nav: FC = () => {
           </h2>
 
           <div className={styles.navLinks}>
-            <Link scroll href="https://blog.nekohack.me/">
-              <a href="https://blog.nekohack.me/" className={styles.navLink}>
-                Blog
-              </a>
+            <Link scroll href="https://blog.nekohack.me/" className={styles.navLink}>
+              Blog
             </Link>
-            <Link scroll href="https://yuma-kitamura.nekohack.me">
-              <a href="https://yuma-kitamura.nekohack.me" className={styles.navLink}>
-                Profile
-              </a>
+            <Link scroll href="https://yuma-kitamura.nekohack.me" className={styles.navLink}>
+              Profile
             </Link>
           </div>
         </div>
