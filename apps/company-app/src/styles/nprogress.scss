@@ -1,0 +1,42 @@
+#nprogress {
+  pointer-events: none;
+
+  .spinner {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 1031;
+    display: block;
+  }
+
+  .spinner-icon {
+    box-sizing: border-box;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: solid 2px transparent;
+    border-top-color: var(--text-color);
+    border-left-color: var(--text-color);
+    border-radius: 50%;
+    animation: nprogress-spinner 400ms linear infinite;
+  }
+}
+
+.nprogress-custom-parent {
+  position: relative;
+  overflow: hidden;
+
+  #nprogress .spinner,
+  #nprogress .bar {
+    position: absolute;
+  }
+}
+
+@keyframes nprogress-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
