@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import Link from 'next/link'
-import styles from './nav.module.scss'
+import styles from './index.module.scss'
 
 export const Nav: FC = () => {
   const ref = useRef<HTMLDivElement>()

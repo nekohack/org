@@ -1,6 +1,6 @@
 import { t } from 'i18next'
 import { LinkText } from '@org/shared/ui'
-import styles from './footer.module.scss'
+import styles from './index.module.scss'
 
 export const Footer: FC = () => {
   return (
