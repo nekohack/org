@@ -89,12 +89,12 @@ jobs:
 
 workflows:
   version: 2
-  push:
-    jobs:
-      - main_build:
-          filters:
-            branches:
-              only: main
+  #  push:
+  #    jobs:
+  #      - main_build:
+  #          filters:
+  #            branches:
+  #              only: main
   pull_request:
     when: << pipeline.parameters.pull_request >>
     jobs:
