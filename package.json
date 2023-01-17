@@ -25,6 +25,7 @@
     "profile-app:lint": "nx run profile-app:lint",
     "shared-data:typecheck": "nx run shared-data:typecheck",
     "shared-data:lint": "nx run shared-data:lint",
+    "shared-lint:lint": "nx run shared-lint:lint",
     "shared-types:typecheck": "nx run shared-types:typecheck",
     "shared-types:lint": "nx run shared-types:lint",
     "shared-ui:storybook": "nx run shared-ui:storybook",

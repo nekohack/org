@@ -9,11 +9,9 @@ const PortraitSection: FC = () => {
       <Typography variant="body 1">{`${t('portrait_description')}`}</Typography>
       <div className={styles.photosContainer}>
         <div className={styles.standingImg}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img alt="" src="/images/v-kansai_10.jpg" />
         </div>
         <div className={styles.vuefesImg}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img alt="" src="/images/vuefes.jpg" />
         </div>
       </div>

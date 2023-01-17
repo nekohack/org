@@ -1,5 +1,10 @@
 {
-  "extends": ["plugin:@nrwl/nx/react-typescript", "../../.eslintrc.json", "next"],
+  "extends": [
+    "plugin:@nrwl/nx/react-typescript",
+    "../../.eslintrc.json",
+    "../../libs/shared/lint/index.js",
+    "next"
+  ],
   "ignorePatterns": ["!**/*"],
   "overrides": [
     {
@@ -19,5 +24,11 @@
   ],
   "env": {
     "jest": true
+  },
+  "rules": {
+    "@next/next/no-img-element": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/ban-ts-comment": 0,
+    "react/display-name": 0
   }
 }
