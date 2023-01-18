@@ -1,7 +1,5 @@
-import { Fragment } from 'react'
+import React from 'react'
 
-const Redirect: FC = () => {
-  return <Fragment />
-}
+const Redirect = ({ children }: React.PropsWithChildren<unknown>) => children
 
 export default Redirect

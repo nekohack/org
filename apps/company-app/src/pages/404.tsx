@@ -9,8 +9,8 @@ const Custom404 = () => {
         <meta property="og:title" content="Page Not Found - Casper Iversen" />
         <link rel="canonical" href="https://nekohack.me/404" />
       </Head>
-      <Typography variant="title 1">{'404'}</Typography>
-      <Typography variant="subtitle 1">{'Page Not Found'}</Typography>
+      <Typography variant="title 1">404</Typography>
+      <Typography variant="subtitle 1">Page Not Found</Typography>
     </main>
   )
 }

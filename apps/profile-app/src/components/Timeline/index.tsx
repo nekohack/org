@@ -77,7 +77,7 @@ const TimelineSection: FC = () => {
           )
         })}
 
-        <button onClick={showMore} className={SC.viewOlderBtn}>
+        <button onClick={() => showMore()} className={SC.viewOlderBtn}>
           {viewOlderText}
           <Icon name="arrow-down" />
         </button>
