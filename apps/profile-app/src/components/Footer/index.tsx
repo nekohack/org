@@ -10,9 +10,7 @@ export const FooterSection: FC = () => {
       >
         {t('contact')}
       </LinkText>
-      <Typography variant="body 1">
-        {'Created © 2020 jiyuujin LAB. All Rights Reserved.'}
-      </Typography>
+      <Typography variant="body 1">Created © 2020 jiyuujin LAB. All Rights Reserved.</Typography>
     </footer>
   )
 }
