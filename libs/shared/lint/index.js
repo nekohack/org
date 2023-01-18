@@ -14,6 +14,53 @@ module.exports = {
     ecmaVersion: 2015,
   },
   rules: {
+    // react
+    'react/jsx-boolean-value': 'warn',
+    'react/jsx-closing-bracket-location': 'warn',
+    'react/jsx-closing-tag-location': 'warn',
+    'react/jsx-curly-spacing': 'warn',
+    'react/jsx-equals-spacing': 'warn',
+    'react/jsx-first-prop-new-line': 'warn',
+    'react/jsx-indent': ['warn', 2],
+    'react/jsx-indent-props': ['warn', 2],
+    'react/jsx-max-props-per-line': ['warn', { when: 'multiline' }],
+    'react/jsx-no-bind': 'off', // 関数の bind を許容する
+    'react/jsx-curly-brace-presence': [
+      'warn',
+      { props: 'never', children: 'never' },
+    ],
+    'react/jsx-pascal-case': ['warn', { allowAllCaps: true }],
+    'react/jsx-props-no-multi-spaces': 'warn',
+    'react/jsx-tag-spacing': [
+      'warn',
+      {
+        closingSlash: 'never',
+        beforeSelfClosing: 'always',
+        afterOpening: 'never',
+      },
+    ],
+    'react/jsx-wrap-multilines': 'warn',
+    'react/jsx-no-useless-fragment': 'off', // Fragment のみを許容する
+    'react/no-unused-state': 'warn',
+    'react/self-closing-comp': 'warn',
+    'react/sort-comp': [
+      'warn',
+      {
+        order: [
+          'everything-else',
+          'lifecycle',
+          'render',
+          'static-methods',
+          'type-annotations',
+        ],
+      },
+    ],
+
+    // react-hooks
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'error',
+
+    // jsx-a11y
     'jsx-a11y/alt-text': 'error',
     'jsx-a11y/anchor-has-content': 'error',
     'jsx-a11y/anchor-is-valid': 'error',
