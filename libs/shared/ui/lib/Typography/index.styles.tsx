@@ -5,44 +5,56 @@ export const reset = css`
   padding: 0;
 `
 
-export const h1 = css`
-  font-size: 1.2rem; // 16
+export const title1 = css`
+  font-size: 2.4rem; // 24
+  line-height: 3.2;
+  font-weight: 400;
+`
+
+export const title2 = css`
+  font-size: 2.2rem; // 22
+  line-height: 3.2;
+  font-weight: 400;
+`
+
+export const title3 = css`
+  font-size: 1.2rem; // 12
+  line-height: 2;
+  font-weight: 400;
+`
+
+export const subtitle1 = css`
+  font-size: 1.6rem; // 16
   line-height: 2.4;
-  font-weight: 600;
+  font-weight: 400;
 `
 
-export const h2 = css`
-  font-size: 1.1rem; // 14
-  line-height: 2;
-  font-weight: 600;
-`
-
-export const h3 = css`
-  font-size: 1rem; // 12
+export const subtitle2 = css`
+  font-size: 1.4rem; // 14
   line-height: 2;
   font-weight: 400;
 `
 
-export const h4 = css`
-  font-size: 1.2rem; // 16
+export const subtitle3 = css`
+  font-size: 1.2rem; // 12
+  line-height: 2;
+  font-weight: 400;
+`
+
+export const body1 = css`
+  font-size: 1.2rem; // 12
   line-height: 2.4;
   font-weight: 400;
 `
 
-export const h5 = css`
-  font-size: 1.1rem; // 14
+export const body2 = css`
+  font-size: 1.1rem; // 11
   line-height: 2;
   font-weight: 400;
 `
 
-export const h6 = css`
-  font-size: 1rem; // 13
+export const body3 = css`
+  font-size: 1rem; // 10
   line-height: 2;
-  font-weight: 400;
-`
-
-export const p = css`
-  font-size: 0.9rem; // 12
-  line-height: 1.8;
   font-weight: 400;
 `

@@ -19,7 +19,7 @@ const SkillsSection: FC = () => {
               <ul className={styles.skillsItem}>
                 {skillsItem.skills.map((item, key) => (
                   <li key={key}>
-                    <Typography variant="body 1">{item.name}</Typography>
+                    <Typography variant="body 2">{item.name}</Typography>
                   </li>
                 ))}
               </ul>

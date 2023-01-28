@@ -34,12 +34,12 @@ const HeaderSection: FC = () => {
       <Transition in={inProp} timeout={duration}>
         {(state) => (
           <div style={{ ...defaultStyle, ...transitionStyles[state] }}>
-            {positions[index % positions.length]}
+            <Typography variant="title 2">{positions[index % positions.length]}</Typography>
           </div>
         )}
       </Transition>
       <Typography variant="subtitle 1">Yuma Kitamura</Typography>
-      <Typography variant="subtitle 2">Osaka, Kyoto in Japan</Typography>
+      <Typography variant="subtitle 3">Osaka, Kyoto in Japan</Typography>
     </div>
   )
 }

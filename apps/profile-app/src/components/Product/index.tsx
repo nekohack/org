@@ -80,7 +80,7 @@ const ProductSection: FC = () => {
                         key: number,
                       ) => (
                         <li key={key}>
-                          <Typography variant="body 1">{t(s.title)}</Typography>
+                          <Typography variant="body 2">{t(s.title)}</Typography>
                           <Typography variant="subtitle 3">
                             {t('product_technology_used')}
                           </Typography>
@@ -90,7 +90,7 @@ const ProductSection: FC = () => {
                               return <li key={key}>{`${s.name} (${s.category})`}</li>
                             })}
                           </ul>
-                          <Typography variant="body 1">{t('product_url')}</Typography>
+                          <Typography variant="body 3">{t('product_url')}</Typography>
                           <p>
                             <LinkText ariaLabel={s.url} url={s.url}>
                               {s.url}
