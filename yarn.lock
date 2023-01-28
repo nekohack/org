@@ -2294,6 +2294,18 @@
     rxjs "^6.5.4"
     tslib "^2.3.0"
 
+"@nrwl/storybook@15.4.8":
+  version "15.4.8"
+  resolved "https://registry.yarnpkg.com/@nrwl/storybook/-/storybook-15.4.8.tgz#facfb4051868ebbc5303184fa08845729d8fc1b0"
+  integrity sha512-wyW7vJMBqE0R1N5we+weE0nR8MCA2ZWD0KcchHqOgL++TxPxwPOU3gOP0u2+5rSP/42Bg9kjANm+PjLR81lV1w==
+  dependencies:
+    "@nrwl/cypress" "15.4.8"
+    "@nrwl/devkit" "15.4.8"
+    "@nrwl/linter" "15.4.8"
+    "@nrwl/workspace" "15.4.8"
+    dotenv "~10.0.0"
+    semver "7.3.4"
+
 "@nrwl/tao@15.4.8":
   version "15.4.8"
   resolved "https://registry.yarnpkg.com/@nrwl/tao/-/tao-15.4.8.tgz#47039c8d6b5da27de58924ff12d3a61863f02fad"
