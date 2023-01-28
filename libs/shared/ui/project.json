@@ -9,9 +9,7 @@
       "options": {
         "uiFramework": "@storybook/react",
         "outputPath": "dist/storybook/shared/ui",
-        "config": {
-          "configFolder": "libs/shared/ui/.storybook"
-        }
+        "configDir": "libs/shared/ui/.storybook"
       },
       "configurations": {
         "ci": {
@@ -24,9 +22,7 @@
       "options": {
         "uiFramework": "@storybook/react",
         "port": 4400,
-        "config": {
-          "configFolder": "libs/shared/ui/.storybook"
-        }
+        "configDir": "libs/shared/ui/.storybook"
       },
       "configurations": {
         "ci": {
