@@ -1999,11 +1999,6 @@
     eslint-plugin-react-hooks "4.3.0"
     prettier "2.5.1"
 
-"@nekohack/footer-ui@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@nekohack/footer-ui/-/footer-ui-1.0.0.tgz#ee910790717df7fae0067810e16ae32bf6645653"
-  integrity sha512-sAb9PE8Sk2ohn7hUX+d83uv7obJE00OgW1ElwYoybVKgnqAZ0DIBoSKwMzpUZ3fcVnQcjAQjt1Cuq/QFfFMuFA==
-
 "@nekohack/normalize.css@2.6.0":
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/@nekohack/normalize.css/-/normalize.css-2.6.0.tgz#d5ed73825bca32473b5d081cb4f1e516614a80b8"

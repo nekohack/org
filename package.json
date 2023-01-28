@@ -43,7 +43,6 @@
     "@markuplint/jsx-parser": "^3.0.1",
     "@markuplint/react-spec": "^3.0.1",
     "@nekohack/eslint-config-react": "0.10.0",
-    "@nekohack/footer-ui": "1.0.0",
     "@nekohack/normalize.css": "2.6.0",
     "@nrwl/cli": "15.4.8",
     "@nrwl/cypress": "15.4.8",
