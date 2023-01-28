@@ -15,7 +15,11 @@ const IntroductionSection: FC = () => {
       <Typography variant="subtitle 2">{t('labels.position')}</Typography>
       <ul>
         {positionList?.map((position: string, index: number) => {
-          return <li key={index}>{position}</li>
+          return (
+            <li key={index}>
+              <Typography variant="body 2">{position}</Typography>
+            </li>
+          )
         })}
       </ul>
     </div>
