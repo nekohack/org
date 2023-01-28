@@ -5,13 +5,9 @@ module.exports = {
     builder: '@storybook/builder-vite',
   },
 
-  stories: [
-    '../lib/**/*.stories.@(js|jsx|ts|tsx)',
-  ],
+  stories: ['../lib/**/*.stories.@(js|jsx|ts|tsx)'],
 
-  addons: [
-    '@nrwl/react/plugins/storybook',
-  ],
+  addons: ['@nrwl/react/plugins/storybook'],
 
   async viteFinal(config) {
     config.plugins = config.plugins.filter(
