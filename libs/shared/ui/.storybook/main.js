@@ -1,4 +1,6 @@
 const react = require('@vitejs/plugin-react')
+const Inspect = require('vite-plugin-inspect')
+const Unocss = require('unocss/vite')
 
 module.exports = {
   core: {
@@ -23,6 +25,9 @@ module.exports = {
         },
       }),
     )
+
+    config.plugins.push(Unocss.default())
+    config.plugins.push(Inspect())
 
     return config
   },
