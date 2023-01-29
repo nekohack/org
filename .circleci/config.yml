@@ -46,7 +46,7 @@ commands:
 
       - run: yarn company-app:build && yarn company-app:export
 
-      - run: yarn profile-app:build && yarn profile-app:export
+      - run: yarn profile-app:css && yarn profile-app:build && yarn profile-app:export
 
   company_and_deploy:
     description: Company Deploy

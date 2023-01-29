@@ -4330,7 +4330,7 @@
     "@unocss/reset" "0.49.1"
     "@unocss/vite" "0.49.1"
 
-"@unocss/cli@0.49.1":
+"@unocss/cli@0.49.1", "@unocss/cli@^0.49.1":
   version "0.49.1"
   resolved "https://registry.yarnpkg.com/@unocss/cli/-/cli-0.49.1.tgz#b9afe003b8e5b450551d442c2d1b012a15f68fb3"
   integrity sha512-fsGLCx4PpqL4mnFlP3MFd7xpp6K9k7O4zFxr9C1oBl2REcJcx1vc9AzyMKUuDuayl7beHDesRTjX5QOdE+bLAg==

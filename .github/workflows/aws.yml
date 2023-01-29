@@ -51,6 +51,7 @@ jobs:
 
       - name: Profile Transpile
         run: |
+          npx nx run profile-app:css
           npx nx run profile-app:build
           npx nx run profile-app:export
         env:
