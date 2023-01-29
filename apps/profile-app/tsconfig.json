@@ -26,6 +26,7 @@
       "public/*": ["./public/*"],
       "node_modules/@nekohack/normalize.css/*": ["../../node_modules/@nekohack/normalize.css/*"],
       "@org/shared/data": ["../../libs/shared/data/index.ts"],
+      "@org/shared/hooks": ["../../libs/shared/hooks/lib/index.ts"],
       "@org/shared/types": ["../../libs/shared/types/index.ts"],
       "@org/shared/ui": ["../../libs/shared/ui/index.ts"]
     }

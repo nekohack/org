@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 
-type ReturnType<T> = {
+interface UseEmitEvent<T> {
   event: CustomEvent<T> | null
   dispatch: () => boolean
 }
@@ -9,7 +9,7 @@ export function useEmitEvent<T = unknown>(
   eventName: string,
   payload?: T,
   options?: Omit<CustomEventInit, 'detail'>,
-): ReturnType<T> {
+): UseEmitEvent<T> {
   const [event, setEvent] = useState<CustomEvent | null>(null)
 
   useEffect(() => {

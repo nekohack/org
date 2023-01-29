@@ -8,7 +8,7 @@ import 'zenscroll/zenscroll-min'
 import 'css/globals.scss'
 import 'css/nprogress.scss'
 import 'css/fonts.scss'
-import { useScrollTop } from 'src/hooks/useScrollTop'
+import { useScrollTop } from '@org/shared/hooks'
 import { useGoogleAdsense } from 'src/hooks/useGoogleAdsense'
 
 function App({ Component, pageProps }: AppProps<{ language: string }>) {

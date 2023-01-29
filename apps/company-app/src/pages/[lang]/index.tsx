@@ -1,6 +1,6 @@
 import { t } from 'i18next'
+import { useEmitEvent } from '@org/shared/hooks'
 import { Icon, LinkText } from '@org/shared/ui'
-import { useEmitEvent } from '@hooks/useEmitEvent'
 import SkillsSection from '@sections/SkillsSection'
 import WorksSection from '@sections/WorksSection'
 import PortraitSection from '@sections/PortraitSection'
