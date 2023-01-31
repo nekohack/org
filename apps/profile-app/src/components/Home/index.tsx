@@ -3,11 +3,12 @@ import { PaymentSection } from '@components/Payment'
 import IntroductionSection from '@components/Introduction'
 import WorkSection from '@components/Work'
 import ProductSection from '@components/Product'
+import JobSection from '@components/Job'
 import TimelineSection from '@components/Timeline'
 import CommunitySection from '@components/Community'
 import SlideSection from '@components/Slide'
 import PortraitSection from '@components/Portrait'
-import { PAYMENT, SLIDE, TIMELINE } from '@utils/feature.constants'
+import { JOB, PAYMENT, SLIDE, TIMELINE } from '@utils/feature.constants'
 
 const Home: FC = () => {
   return (
@@ -17,6 +18,7 @@ const Home: FC = () => {
       <IntroductionSection />
       <WorkSection />
       <ProductSection />
+      {JOB && <JobSection />}
       {TIMELINE && <TimelineSection />}
       <CommunitySection />
       {SLIDE && <SlideSection />}

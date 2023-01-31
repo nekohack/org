@@ -28,6 +28,14 @@
         }
       }
     },
+    "css": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "commands": ["unocss 'src/**/*.tsx' --out-file=src/styles/uno.css"],
+        "cwd": "apps/company-app",
+        "parallel": false
+      }
+    },
     "export": {
       "executor": "@nrwl/next:export",
       "options": {

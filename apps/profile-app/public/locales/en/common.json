@@ -53,6 +53,8 @@
     "vscodeconjp_2021_description": "This year, the 10th anniversary of VS Code, will be held under the concept of Happy Extension. Also, unlike the previous VSCode Conference, I was in charge of VSCode Conference Japan 2021 teaser website production in response to the increased momentum for producing the official website for the first time.",
     "insight": "A website established to calculate the performance of each website that it operates as a quantitative numerical value on a daily basis. The numbers here are based on PageSpeed \u200B\u200BInsights v5 and are regularly observed daily using Google Cloud Run."
   },
+  "job_timeline": "Job Timeline",
+  "job_timeline_description": "The timeline was created on basis of projects and my own affiliation. The timeline is a rough overview of my personality, with two aspects: my main job and other.",
   "timeline": "Timeline",
   "timeline_description": "I usually write my own timeline on a basis of projects, and act without being trapped in an organization . I have created it including turning so far, and tried to put together non-technical elements into the timeline as much as possible.",
   "community": "Tech Community",

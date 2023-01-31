@@ -44,7 +44,7 @@ commands:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run: yarn company-app:build && yarn company-app:export
+      - run: yarn company-app:css && yarn company-app:build && yarn company-app:export
 
       - run: yarn profile-app:css && yarn profile-app:build && yarn profile-app:export
 

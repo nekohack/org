@@ -3,10 +3,12 @@ import { useEmitEvent } from '@org/shared/hooks'
 import { Icon, LinkText } from '@org/shared/ui'
 import SkillsSection from '@sections/SkillsSection'
 import WorksSection from '@sections/WorksSection'
+import JobSection from '@components/Job'
 import PortraitSection from '@sections/PortraitSection'
 import { Nav } from '@components/Nav'
 import { Footer } from '@components/Footer'
 import { SEO } from '@components/SEO'
+import { JOB } from '@utils/feature.constants'
 import mainStyles from 'css/main.module.scss'
 import { defaultLanguage, languages } from '../../../i18n.config'
 
@@ -60,6 +62,8 @@ export default function Home() {
       <SkillsSection />
 
       <WorksSection />
+
+      {JOB && <JobSection />}
 
       <PortraitSection />
 

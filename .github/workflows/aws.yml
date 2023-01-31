@@ -43,6 +43,7 @@ jobs:
 
       - name: Company Transpile
         run: |
+          npx nx run company-app:css
           npx nx run company-app:build
           npx nx run company-app:export
         env:
