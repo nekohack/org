@@ -5,18 +5,18 @@ import { Typography } from '../Typography'
 import { Card } from './Card'
 import * as styles from './index.styles'
 
-export interface TimelineProps {
-  data: {
-    date: string
-    fullDate?: string // eg: March 28, 2021
-    title: string
-    description?: string
-    url?: string
-    imageUrl?: string
-  }[]
+type Keys = 'primaryLeft' | 'primaryRight' | 'secondary'
+type KeyObj = { [key in Keys]: string }
+
+export interface TimelineProps<T> {
+  data: T[]
+  keyObj: KeyObj
+  alternate?: boolean
 }
 
-export function Timeline({ data }: TimelineProps) {
+export function Timeline<T>({ data, keyObj, alternate }: TimelineProps<T>) {
+  const { primaryLeft, primaryRight, secondary } = keyObj
+
   const [length, setLength] = useState(7)
   const [status, setStatus] = useState<'View more' | 'View less'>('View more')
 
@@ -33,10 +33,17 @@ export function Timeline({ data }: TimelineProps) {
   return (
     <div css={styles.root}>
       {data.slice(0, length).map((d, index) => (
-        <div key={index} css={[styles.list, index % 2 === 0 ? styles.leftItem : styles.rightItem]}>
-          <Card placement={index % 2 === 0 ? 'left' : 'right'} title={d.title} date={d.date}>
+        <div
+          key={index}
+          css={[styles.list, alternate && index % 2 === 0 ? styles.leftItem : styles.rightItem]}
+        >
+          <Card
+            placement={alternate && index % 2 === 0 ? 'left' : 'right'}
+            title={primaryLeft}
+            date={primaryRight}
+          >
             <div className="text-gray-300">
-              <Typography variant="body 3">{d.description}</Typography>
+              <Typography variant="body 3">{secondary}</Typography>
             </div>
           </Card>
         </div>

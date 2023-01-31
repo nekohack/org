@@ -1,4 +1,195 @@
 {
+  "talks": [
+    {
+      "title": "特にこれをやって Web 体験を向上した話",
+      "host": "PWA Night",
+      "url": "https://www.figma.com/proto/12yGlG2LfcrkJ3eWDot0vj/Slides?node-id=13%3A279&starting-point-node-id=13%3A279&scaling=scale-down-width",
+      "youtubeUrl": "",
+      "place": "Zoom",
+      "image": "googleio-wwdc-2022-recap",
+      "date": "2022/12/21"
+    },
+    {
+      "title": "モノレポについて",
+      "host": "EDG",
+      "url": "https://blog.nekohack.me/posts/monorepo-tutorial",
+      "youtubeUrl": "",
+      "place": "EventIn",
+      "image": "monorepo-tutorial",
+      "date": "2022/10/07"
+    },
+    {
+      "title": "Git & GitHub 連携で役立つ機能",
+      "host": "SOFTWARE DESIGN",
+      "url": "https://gihyo.jp/magazine/SD/archive/2022/202210",
+      "youtubeUrl": "",
+      "place": "Writing",
+      "image": "software-design-202210",
+      "date": "2022/09/16"
+    },
+    {
+      "title": "slides.カレンダーアプリで学ぶパッケージ開発",
+      "host": "Flutter Japan User Group",
+      "url": "https://zenn.dev/chooyan/books/calendar-package",
+      "youtubeUrl": "https://www.youtube.com/watch?v=dlAKk1VAQyA",
+      "place": "YouTube",
+      "image": "calendar_app_workshop_in_flutter_japan_user_group_2022",
+      "date": "2022/07/02"
+    },
+    {
+      "title": "わたしの OSS 活動について",
+      "host": "EDG",
+      "url": "https://docs.google.com/presentation/d/141tABAoz2LYozHC89fSwqqXJtGEX47mVXyJ5SEfYtZY/edit?usp=sharing",
+      "youtubeUrl": "",
+      "place": "EventIn",
+      "image": "oss_activities_2022",
+      "date": "2022/06/23"
+    },
+    {
+      "title": "Google I/O 2022 Recap × WWDC 2022 Recap について",
+      "host": "PWA Night",
+      "url": "https://blog.nekohack.me/posts/pwa-night-40",
+      "youtubeUrl": "",
+      "place": "Zoom",
+      "image": "22s-googleio-wwdc-recap",
+      "date": "2022/06/15"
+    },
+    {
+      "title": "markuplint をカスタマイズする",
+      "host": "EDG",
+      "url": "https://blog.nekohack.me/posts/customize-markuplint-to-audit-accessibility",
+      "youtubeUrl": "",
+      "place": "EventIn",
+      "image": "customize-markuplint-to-audit-accessibility",
+      "date": "2022/04/21"
+    },
+    {
+      "title": "markuplint の動作環境を構築する",
+      "host": "EDG",
+      "url": "https://blog.nekohack.me/posts/setup-markuplint-to-audit-accessibility",
+      "youtubeUrl": "",
+      "place": "EventIn",
+      "image": "setup-eslint-to-audit-accessibility",
+      "date": "2022/04/14"
+    },
+    {
+      "title": "アクセシビリティを基礎から学ぶ (第 2 版)",
+      "host": "EDG",
+      "url": "https://docs.google.com/presentation/d/1TGXqz-mg1mkKPRazb_jT5umxC98h6dXrhQqdJX4YJUE/edit?usp=sharing",
+      "youtubeUrl": "",
+      "place": "EventIn",
+      "image": "learn_accessibility_again",
+      "date": "2022/03/10"
+    },
+    {
+      "title": "React (Vite) × LIFF ハンズオン",
+      "host": "LINE Developer Community",
+      "url": "https://blog.nekohack.me/posts/the-answer-to-learn-react-with-line",
+      "youtubeUrl": "https://www.youtube.com/watch?v=D8GeQyrueEY",
+      "place": "YouTube",
+      "image": "the-answer-to-learn-react-with-line",
+      "date": "2022/03/03"
+    },
+    {
+      "title": "アクセシビリティを基礎から学ぶ (第 1 版)",
+      "host": "EDG",
+      "url": "https://docs.google.com/presentation/d/1z6OFNh3NnN9mP3Rh2wGhyOpy_QslKcZfR6I8K7blOEY/edit?usp=sharing",
+      "youtubeUrl": "",
+      "place": "EventIn",
+      "image": "learn_accessibility",
+      "date": "2022/01/20"
+    },
+    {
+      "title": "VSCondeCon JP 2021 の内幕",
+      "host": "VS Code Meetup",
+      "url": "https://blog.nekohack.me/posts/inside-the-website-in-vscodecon-jp-2021",
+      "youtubeUrl": "https://www.youtube.com/watch?v=Y8dl1y2qdG8",
+      "place": "YouTube",
+      "image": "inside-the-website-in-vscodecon-jp-2021",
+      "date": "2021/11/01"
+    },
+    {
+      "title": "GitHub issues を CMS として扱う",
+      "host": "microCMS",
+      "url": "https://blog.nekohack.me/posts/github-issues-usage-as-a-cms",
+      "youtubeUrl": "https://www.youtube.com/watch?v=qCPqheDPq6g",
+      "place": "YouTube",
+      "image": "github-issues-usage-as-a-cms",
+      "date": "2021/10/28"
+    },
+    {
+      "title": "コミュニティハンズオンにおける DevRel のすゝめ",
+      "host": "DevRel Meetup Tokyo",
+      "url": "https://blog.nekohack.me/posts/challenge-the-community-handson-2021",
+      "youtubeUrl": "https://www.youtube.com/watch?v=oUCGt-SNmfE",
+      "place": "YouTube",
+      "image": "challenge-the-community-handson-2021",
+      "date": "2021/04/12"
+    },
+    {
+      "title": "JAWS DAYS 2021 個人スポンサー",
+      "host": "JAWS UG",
+      "url": "https://jawsdays2021.jaws-ug.jp/individual-supporter/#016",
+      "youtubeUrl": "",
+      "place": "YouTube",
+      "image": "jaws_days_2021",
+      "date": "2021/03/21"
+    },
+    {
+      "title": "Slack を中心に世界は廻っている",
+      "host": "VR Study",
+      "url": "https://blog.nekohack.me/posts/recommend-tools-in-vr-study-3",
+      "youtubeUrl": "https://www.youtube.com/watch?v=l3BCTi3xSds",
+      "place": "YouTube",
+      "image": "recommend-tools-in-vr-study-3",
+      "date": "2020/06/21"
+    },
+    {
+      "title": "もっと身近にやってた PWA",
+      "host": "PWA Night",
+      "url": "https://blog.nekohack.me/posts/pwa-more-closer-2020",
+      "youtubeUrl": "https://www.youtube.com/watch?v=Phsf7hjQkAI",
+      "place": "YouTube",
+      "image": "",
+      "date": "2020/05/20"
+    },
+    {
+      "title": "Transition を実践的に使う",
+      "host": "Yumemi inc.",
+      "url": "https://blog.nekohack.me/posts/vue-transition-more-pratically",
+      "youtubeUrl": "",
+      "place": "Yumemi inc.",
+      "image": "vue-transition-more-pratically",
+      "date": "2020/01/23"
+    },
+    {
+      "title": "Composition API 勘所など",
+      "host": "v-okinawa",
+      "url": "https://blog.nekohack.me/posts/notices-of-composition-api-in-vue3-eve",
+      "youtubeUrl": "",
+      "place": "Zoom",
+      "image": "notices-of-composition-api-in-vue3-eve",
+      "date": "2019/12/16"
+    },
+    {
+      "title": "2019 年を振り返る",
+      "host": "v-kansai",
+      "url": "https://blog.nekohack.me/posts/feedback-2019",
+      "youtubeUrl": "",
+      "place": "Moneyforward",
+      "image": "feedback-2019",
+      "date": "2019/12/06"
+    },
+    {
+      "title": "Vue CLI テスト tips 集",
+      "host": "necco inc.",
+      "url": "https://slides.com/jiyuujin/20190817",
+      "youtubeUrl": "",
+      "place": "necco inc.",
+      "image": "vue_cli_test_tips",
+      "date": "2019/08/17"
+    }
+  ],
   "timelines": [
     {
       "date": "January 2023",
