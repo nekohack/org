@@ -24,7 +24,7 @@ export function Jobs({ data: _data }: JobsProps) {
     })
     .flat()
 
-  const length = 720
+  const length = 800
   const topMargin = 80
   const minYear = 2007
   const currentYear = new Date().getFullYear()
@@ -59,7 +59,7 @@ export function Jobs({ data: _data }: JobsProps) {
     <Fragment>
       <div className="flex-1 w-full overflow-hidden">
         <div className="bg-slate-800 rounded-lg text-gray-300 shadow-lg ring-white/5 overflow-hidden">
-          <div className="relative overflow-auto" style={{ height: `${length}px` }}>
+          <div className="relative" style={{ height: `${length}px` }}>
             <div className="flex justify-around text-lg bg-slate-700 z-30 font-semibold text-gray-300">
               <Typography variant="subtitle 3">Main</Typography>
               <Typography variant="subtitle 3">Side</Typography>
@@ -71,19 +71,21 @@ export function Jobs({ data: _data }: JobsProps) {
                 style={{
                   bottom: `${getTotal(minYear + i + 1, 1) * monthPx}px`,
                 }}
+                key={i}
               >
                 <span className="hidden md:block">
                   <Typography variant="body 3">{minYear + i + 1}</Typography>
                 </span>
               </div>
             ))}
-            {data.map(({ name, type, start, end, level = 0, comment, position = '' }) => (
+            {data.map(({ name, type, start, end, level = 0, comment, position = '' }, i) => (
               <div
                 className={`absolute h-full w-1/2 ${type === 'main' ? '' : 'translate-x-full'}`}
                 style={{
                   pointerEvents: 'none',
                   zIndex: 20 - level,
                 }}
+                key={i}
               >
                 <div
                   className={`absolute h-28 border-2 bg-opacity-60 w-4 ${

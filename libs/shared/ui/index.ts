@@ -1,4 +1,5 @@
 export { Icon } from './lib/Icon/index'
+export { Jobs } from './lib/Jobs/index'
 export { LinkPreview } from './lib/LinkPreview/index'
 export { LinkText } from './lib/LinkText/index'
 export { Modal } from './lib/Modal/index'

@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "company-app:dev": "nx run company-app:serve",
+    "company-app:css": "nx run company-app:css",
     "company-app:build": "nx run company-app:build",
     "company-app:export": "nx run company-app:export",
     "company-app:typecheck": "nx run company-app:typecheck",

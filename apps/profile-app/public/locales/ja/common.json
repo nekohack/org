@@ -53,6 +53,8 @@
     "vscodeconjp_2021_description": "VSCode 10 周年の年となる今年は Happy Extension というコンセプトの下開催される。またこれまでの VSCode Conference と違って、初めてティザーサイトを製作する機運が高まったことを受け VSCode Conference Japan 2021 ティザーサイト製作を担当した。",
     "insight": "自らが運営する各 Web サイトのパフォーマンスを日々定量的な数値として算出するため開設した Web サイト。ここでの数値は PageSpeed Insights v5 を採用しており Google Cloud Run を利用して毎日定期観測している。"
   },
+  "job_timeline": "ジョブ略歴",
+  "job_timeline_description": "所属並びにプロジェクトベースで自身のタイムラインを作成した。本業、それ以外という二つの側面をもって、自身のひととなりが大まかに分かる範囲内でタイムラインにまとめた。",
   "timeline": "タイムライン",
   "timeline_description": "プロジェクトベースで自身のタイムラインを作成し、組織にとらわれることなく行動する。またこれまでの方向転換も含めて作成、技術的ではない要素を可能な限りタイムラインにまとめた。",
   "community": "技術コミュニティ",

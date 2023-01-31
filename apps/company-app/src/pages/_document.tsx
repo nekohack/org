@@ -37,6 +37,7 @@ class NekohackMe extends Document {
             src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
             data-ad-client="ca-pub-7095980629133842"
           />
+          <script src="https://cdn.jsdelivr.net/npm/@unocss/runtime" />
         </Head>
         <body>
           <Main />
