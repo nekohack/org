@@ -29,10 +29,12 @@ export default function Home() {
       <p>{`${t('basic_biography')}`}</p>
 
       <div className={mainStyles.btnContainer}>
-        <a onClick={dispatch} className="btn btn__light btn__icon" href="#timeline">
-          <Icon name="person" />
-          Timeline
-        </a>
+        {JOB && (
+          <a onClick={dispatch} className="btn btn__light btn__icon" href="#job_timeline">
+            <Icon name="person" />
+            {`${t('job_timeline')}`}
+          </a>
+        )}
         <LinkText
           ariaLabel="contact"
           url="https://docs.google.com/forms/d/e/1FAIpQLSfFzwsCVnFbu-lV0Jz2fEYHR97hpBSK2g6kEwc-G1fo976ngA/viewform"
