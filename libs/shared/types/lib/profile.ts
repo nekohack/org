@@ -27,7 +27,7 @@ type Host =
   | 'Flutter Japan User Group'
   | 'JAWS UG'
   | 'LINE Developer Community'
-  | 'me'
+  | 'EDG'
   | 'microCMS'
   | 'necco inc.'
   | 'PWA Night'
@@ -85,22 +85,19 @@ export interface Community {
 }
 
 export interface Talk {
-  text: string
-  host: Host
+  title: string
+  host: Host | string // string を削除予定
   url: string | undefined
-  youtubeUrl: string | null
-  place: Place | RealPlace
+  youtubeUrl: string | undefined
+  place: Place | RealPlace | string // string を削除予定
   image: string | undefined
   date: string
-  enabled: boolean
 }
 
 export interface Timeline {
-  date: string
-  full_date?: string // eg: March 28, 2021
   title: string
   description?: string
-  imageName?: string
-  imageUrl?: string
+  fullDate?: string // eg: March 28, 2021
   url?: string
+  imageUrl?: string
 }

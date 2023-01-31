@@ -40,7 +40,7 @@ div[role='group'][tabindex] {
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 19;
+  z-index: 30;
   box-sizing: border-box;
   width: 100%;
   min-height: 40px;
@@ -70,6 +70,12 @@ div[role='group'][tabindex] {
   min-height: 120px;
   padding: 30px 0;
   margin-top: 24px;
+}
+
+.section-wrapper {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 @media (prefers-color-scheme: dark) {

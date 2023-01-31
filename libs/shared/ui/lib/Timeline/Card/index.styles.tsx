@@ -22,7 +22,7 @@ export const root = (placement: 'left' | 'right') => () =>
         z-index: 10;
         width: 25px;
         height: 25px;
-        border-color: #2a2a2a;
+        border-color: #5434fb;
         border-width: 10px 10px 10px 0;
         content: '';
         border-radius: 50%;
@@ -38,7 +38,7 @@ export const root = (placement: 'left' | 'right') => () =>
         z-index: 10;
         width: 25px;
         height: 25px;
-        border-color: #2a2a2a;
+        border-color: #5434fb;
         border-width: 10px 0 10px 10px;
         content: '';
         border-radius: 50%;
