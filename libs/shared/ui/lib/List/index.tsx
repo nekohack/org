@@ -13,9 +13,9 @@ export function List(props: React.PropsWithChildren<ListProps>) {
   return (
     <Fragment>
       <div css={styles.headerLabel}>
-        <Typography variant="subtitle 2" css={styles.headerLabelItem}>
-          {title}
-        </Typography>
+        <div css={styles.headerLabelItem}>
+          <Typography variant="subtitle 2">{title}</Typography>
+        </div>
       </div>
       <ul css={styles.list}>{children}</ul>
     </Fragment>

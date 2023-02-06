@@ -38,7 +38,7 @@ const HeaderSection: FC = () => {
           </div>
         )}
       </Transition>
-      <List title={'Yuma Kitamura'}>
+      <List title="Yuma Kitamura">
         <List.Item label={<Typography variant="subtitle 3">Osaka, Kyoto</Typography>}>
           <Typography variant="body 3">Japan</Typography>
         </List.Item>

@@ -12,9 +12,9 @@ export function Item(props: React.PropsWithChildren<ItemProps>) {
 
   return (
     <li css={styles.root}>
-      <Typography variant="body 2" css={styles.labelItem}>
-        {label}
-      </Typography>
+      <div css={styles.labelItem}>
+        <Typography variant="body 2">{label}</Typography>
+      </div>
       {children}
     </li>
   )
