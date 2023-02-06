@@ -1,25 +1,32 @@
 import { t } from 'i18next'
 import { communities } from '@org/shared/data'
-import { Community } from '@org/shared/types'
-import { LinkText, Typography } from '@org/shared/ui'
+import { LinkText, List, Typography } from '@org/shared/ui'
+import { Fragment } from 'react'
 
 const CommunitySection: FC = () => {
   return (
     <div className="section">
       <Typography variant="subtitle 1">{t('community')}</Typography>
-      <ul>
+      <List title={t('community')}>
         {communities
-          .filter((node: Community) => node.enabled === true && node.status === 'active')
-          .map((node: Community, index: number) => {
-            return (
-              <li key={index}>
-                <LinkText ariaLabel={node.text} url={node.url}>
-                  {node.text}
-                </LinkText>
-              </li>
-            )
-          })}
-      </ul>
+          .filter((node) => node.enabled === true && node.status === 'active')
+          .map((node, i) => (
+            <List.Item
+              key={i}
+              label={
+                <Fragment>
+                  <Typography variant="body 2">
+                    <LinkText ariaLabel={node.text} url={node.url}>
+                      {node.text}
+                    </LinkText>
+                  </Typography>
+                </Fragment>
+              }
+            >
+              <Typography variant="body 3">{node.location}</Typography>
+            </List.Item>
+          ))}
+      </List>
     </div>
   )
 }

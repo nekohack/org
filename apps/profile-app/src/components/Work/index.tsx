@@ -1,27 +1,28 @@
 import { t } from 'i18next'
 import { internalDocs } from '@org/shared/data'
-import { Link } from '@org/shared/types'
-import { LinkText, Typography } from '@org/shared/ui'
+import { LinkText, List, Typography } from '@org/shared/ui'
 
 const WorkSection: FC = () => {
   return (
     <div className="section">
-      <Typography variant="subtitle 1">{t('work')}</Typography>
-      <Typography variant="body 1">{t('work_experience')}</Typography>
-      <Typography variant="subtitle 2">{t('labels.related_links')}</Typography>
-      <ul>
+      <Typography variant="subtitle 2">{`${t('work')}`}</Typography>
+      <Typography variant="body 2">{`${t('work_experience')}`}</Typography>
+      <List title={`${t('labels.related_links')}`}>
         {internalDocs
-          .filter((node: Link) => node.enabled === true)
-          .map((node: Link, index: number) => {
+          .filter((node) => node.enabled === true)
+          .map((node, i) => {
             return (
-              <li key={index}>
-                <LinkText ariaLabel={t(node.text)} url={node.url}>
-                  {t(node.text)}
-                </LinkText>
-              </li>
+              <List.Item
+                key={i}
+                label={
+                  <LinkText ariaLabel={t(node.text)} url={node.url}>
+                    {`${t(node.text)}`}
+                  </LinkText>
+                }
+              />
             )
           })}
-      </ul>
+      </List>
     </div>
   )
 }
