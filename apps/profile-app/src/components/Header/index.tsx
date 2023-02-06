@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Transition } from 'react-transition-group'
 import { positions } from '@org/shared/data'
-import { Typography } from '@org/shared/ui'
+import { List, Typography } from '@org/shared/ui'
 
 const HeaderSection: FC = () => {
   const [index, setIndex] = useState(0)
@@ -38,8 +38,11 @@ const HeaderSection: FC = () => {
           </div>
         )}
       </Transition>
-      <Typography variant="subtitle 1">Yuma Kitamura</Typography>
-      <Typography variant="subtitle 3">Osaka, Kyoto in Japan</Typography>
+      <List title={'Yuma Kitamura'}>
+        <List.Item label={<Typography variant="subtitle 3">Osaka, Kyoto</Typography>}>
+          <Typography variant="body 3">Japan</Typography>
+        </List.Item>
+      </List>
     </div>
   )
 }

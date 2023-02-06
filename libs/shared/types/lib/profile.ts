@@ -41,6 +41,8 @@ type Host =
 type Place = 'Writing' | 'EventIn' | 'Meet' | 'YouTube' | 'Zoom'
 type RealPlace = 'Moneyforward' | 'necco inc.' | 'Yumemi inc.'
 
+type Location = 'Kyoto' | 'Osaka' | 'Tokyo' | 'Japan'
+
 export interface Technology {
   title: string
   skills: Skill[]
@@ -79,6 +81,7 @@ export interface Link {
 
 export interface Community {
   text: string
+  location: Location
   url: string
   status: Status
   enabled: boolean

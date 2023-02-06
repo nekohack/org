@@ -1,27 +1,22 @@
-import { useMemo } from 'react'
+import { Fragment } from 'react'
 import { t } from 'i18next'
-import { Typography } from '@org/shared/ui'
+import { degrees } from '@org/shared/data'
+import { List, Typography } from '@org/shared/ui'
 
 const IntroductionSection: FC = () => {
-  const positionList: string[] = useMemo(
-    () => 'Front-End Engineer,Web Developer,HR Adviser'.split(','),
-    [],
-  )
-
   return (
     <div className="section">
       <Typography variant="subtitle 1">{t('labels.basic_info')}</Typography>
       <Typography variant="body 1">{t('basic_biography')}</Typography>
-      <Typography variant="subtitle 2">{t('labels.position')}</Typography>
-      <ul>
-        {positionList?.map((position: string, index: number) => {
-          return (
-            <li key={index}>
-              <Typography variant="body 2">{position}</Typography>
-            </li>
-          )
-        })}
-      </ul>
+      <List title={t('labels.position')}>
+        <Fragment>
+          {degrees.map((d, i) => (
+            <List.Item key={i} label={<Typography variant="subtitle 3">{d.name}</Typography>}>
+              <Typography variant="body 3">{d.year}</Typography>
+            </List.Item>
+          ))}
+        </Fragment>
+      </List>
     </div>
   )
 }
