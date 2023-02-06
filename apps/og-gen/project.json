@@ -6,8 +6,8 @@
     "build": {
       "executor": "@nrwl/workspace:run-commands",
       "options": {
-        "commands": ["ts-node main.ts --project tsconfig.builder.json"],
-        "cwd": "libs/og-gen",
+        "commands": ["ts-node main.ts"],
+        "cwd": "apps/og-gen",
         "parallel": false
       }
     },
