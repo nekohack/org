@@ -12,13 +12,13 @@
       }
     },
     "typecheck": {
-      "executor": "@nrwl/workspace:run-commands",
+      "executor": "nx:run-commands",
       "options": {
         "commands": ["tsc --noEmit -p libs/shared/hooks/tsconfig.lib.json"]
       }
     },
     "lint": {
-      "executor": "@nrwl/workspace:run-commands",
+      "executor": "nx:run-commands",
       "options": {
         "commands": [
           "eslint --fix libs/shared/hooks/**/*.{ts,tsx}",
