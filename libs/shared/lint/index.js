@@ -25,10 +25,7 @@ module.exports = {
     'react/jsx-indent-props': ['warn', 2],
     'react/jsx-max-props-per-line': ['warn', { when: 'multiline' }],
     'react/jsx-no-bind': 'off', // 関数の bind を許容する
-    'react/jsx-curly-brace-presence': [
-      'warn',
-      { props: 'never', children: 'never' },
-    ],
+    'react/jsx-curly-brace-presence': ['warn', { props: 'never', children: 'never' }],
     'react/jsx-pascal-case': ['warn', { allowAllCaps: true }],
     'react/jsx-props-no-multi-spaces': 'warn',
     'react/jsx-tag-spacing': [
@@ -46,13 +43,7 @@ module.exports = {
     'react/sort-comp': [
       'warn',
       {
-        order: [
-          'everything-else',
-          'lifecycle',
-          'render',
-          'static-methods',
-          'type-annotations',
-        ],
+        order: ['everything-else', 'lifecycle', 'render', 'static-methods', 'type-annotations'],
       },
     ],
 
