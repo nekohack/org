@@ -4,7 +4,7 @@
   "projectType": "library",
   "architect": {
     "build": {
-      "builder": "@nrwl/workspace:run-commands",
+      "executor": "nx:run-commands",
       "outputs": ["dist/libs/wasm-renderer"],
       "options": {
         "command": "wasm-pack build --target nodejs --out-dir ../../dist/libs/wasm-renderer",
@@ -15,14 +15,14 @@
       }
     },
     "lint": {
-      "builder": "@nrwl/workspace:run-commands",
+      "executor": "nx:run-commands",
       "options": {
         "command": "cargo clippy",
         "cwd": "libs/wasm-renderer"
       }
     },
     "test": {
-      "builder": "@nrwl/workspace:run-commands",
+      "executor": "nx:run-commands",
       "options": {
         "command": "cargo test",
         "cwd": "libs/wasm-renderer"
