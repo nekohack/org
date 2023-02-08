@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import { CssResetButton } from '../CssResetButton'
-import { Icon } from '../Icon'
-import { Typography } from '../Typography'
+import { CssResetButton } from '../CssResetButton/CssResetButton'
+import { Icon } from '../Icon/Icon'
+import { Typography } from '../Typography/Typography'
 import { Card } from './Card'
 import * as styles from './index.styles'
 

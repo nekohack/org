@@ -1,5 +1,5 @@
 import { Fragment } from 'react'
-import { Typography } from '../Typography'
+import { Typography } from '../Typography/Typography'
 
 interface Job {
   name: string

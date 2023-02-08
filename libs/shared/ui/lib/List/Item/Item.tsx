@@ -1,4 +1,4 @@
-import { Typography } from '../../Typography/index'
+import { Typography } from '../../Typography/Typography'
 import * as styles from './Item.styles'
 
 type _ItemProps = React.HTMLProps<HTMLLIElement>

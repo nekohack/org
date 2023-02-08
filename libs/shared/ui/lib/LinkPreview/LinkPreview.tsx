@@ -1,5 +1,5 @@
 import React from 'react'
-import * as styles from './index.styles'
+import * as styles from './LinkPreview.styles'
 
 export interface LinkPreviewProps {
   title: string

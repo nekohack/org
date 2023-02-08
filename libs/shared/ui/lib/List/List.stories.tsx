@@ -1,8 +1,8 @@
 import { action } from '@storybook/addon-actions'
 import { Meta, Story } from '@storybook/react'
 import { Item as ListItem } from './Item/Item'
-import { List, ListProps } from './main'
-import { CssResetButton } from '../CssResetButton/index'
+import { List, ListProps } from '.'
+import { CssResetButton } from '../CssResetButton/CssResetButton'
 import React from 'react'
 
 export default {
