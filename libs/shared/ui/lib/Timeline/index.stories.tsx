@@ -9,6 +9,7 @@ export default {
   title: 'Timeline',
   args: {
     data: data.timelines,
+    keyObj: { primaryLeft: 'title', primaryRight: 'date', secondary: 'description' },
   },
 } as Meta
 

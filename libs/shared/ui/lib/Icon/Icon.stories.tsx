@@ -13,9 +13,9 @@ export default {
 export const Default: Story<IconProps> = (args) => (
   <Fragment>
     <Icon {...args} />
-    <Icon name="contact" {...args} />
-    <Icon name="github" {...args} />
-    <Icon name="person" {...args} />
-    <Icon name="twitter" {...args} />
+    <Icon {...args} name="contact" />
+    <Icon {...args} name="github" />
+    <Icon {...args} name="person" />
+    <Icon {...args} name="twitter" />
   </Fragment>
 )
