@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useRef } from 'react'
-import * as styles from './index.styles'
+import * as styles from './Modal.styles'
 
 export interface ModalProps {
   onClose: () => void

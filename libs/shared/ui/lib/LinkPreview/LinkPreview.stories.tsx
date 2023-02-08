@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react'
-import { LinkPreview, LinkPreviewProps } from './index'
+import { LinkPreview, LinkPreviewProps } from './LinkPreview'
 
 export default {
   component: LinkPreview,

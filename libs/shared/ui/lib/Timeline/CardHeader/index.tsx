@@ -1,4 +1,4 @@
-import { Typography } from '../../Typography'
+import { Typography } from '../../Typography/Typography'
 import * as styles from './index.styles'
 
 export interface CardHeaderProps {

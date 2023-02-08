@@ -1,7 +1,7 @@
 import React from 'react'
 import { Fragment } from 'react'
-import { Typography } from '../Typography/index'
-import * as styles from './index.styles'
+import { Typography } from '../Typography/Typography'
+import * as styles from './List.styles'
 
 export interface ListProps {
   title: string

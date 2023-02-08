@@ -1,5 +1,5 @@
 import { Meta, Story } from '@storybook/react'
-import { CssResetButton, CssResetButtonProps } from './index'
+import { CssResetButton, CssResetButtonProps } from './CssResetButton'
 import { action } from '@storybook/addon-actions'
 import React from 'react'
 

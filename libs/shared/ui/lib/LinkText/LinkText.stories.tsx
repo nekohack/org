@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react'
-import { LinkText, LinkTextProps } from './index'
+import { LinkText, LinkTextProps } from './LinkText'
 
 export default {
   component: LinkText,

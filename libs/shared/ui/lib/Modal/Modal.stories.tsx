@@ -1,6 +1,6 @@
 import { Story, Meta } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import { Modal, ModalProps } from './index'
+import { Modal, ModalProps } from './Modal'
 
 export default {
   component: Modal,
