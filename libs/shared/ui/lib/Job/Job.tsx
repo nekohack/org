@@ -10,11 +10,11 @@ interface Job {
   comment: string
 }
 
-export interface JobsProps {
+export interface JobProps {
   data: { main: Job[]; side: Job[] }
 }
 
-export function Jobs({ data: _data }: JobsProps) {
+export function Job({ data: _data }: JobProps) {
   const data = Object.entries(_data)
     .map(([type, value]) => {
       return value.map((v) => ({
