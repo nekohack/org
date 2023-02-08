@@ -1,6 +1,6 @@
 import React from 'react'
 import { match } from 'ts-pattern'
-import * as styles from './index.styles'
+import * as styles from './Typography.styles'
 
 export interface TypographyProps {
   variant:

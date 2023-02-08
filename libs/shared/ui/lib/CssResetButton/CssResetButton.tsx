@@ -1,5 +1,5 @@
 import React from 'react'
-import * as styles from './index.styles'
+import * as styles from './CssResetButton.styles'
 
 export type CssResetButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>
 

@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react'
-import { Icon, IconProps } from './index'
+import { Icon, IconProps } from './Icon'
 import { Fragment } from 'react'
 
 export default {

@@ -1,6 +1,6 @@
 import { Story, Meta } from '@storybook/react'
 import { Fragment } from 'react'
-import { Typography, TypographyProps } from './index'
+import { Typography, TypographyProps } from './Typography'
 
 export default {
   component: Typography,
