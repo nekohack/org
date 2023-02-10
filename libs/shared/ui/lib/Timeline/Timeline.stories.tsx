@@ -1,26 +1,34 @@
 import { Story, Meta } from '@storybook/react'
 import { Timeline, TimelineProps } from './index'
-import { Timeline as TimelineTypes } from '../../../types/index'
-import data from '../../../data/lib/json/activities.json'
+import { timelines, talks } from '../../../data/lib/json/activities.json'
 import React from 'react'
+import { Typography } from '../Typography/Typography'
 
 export default {
   component: Timeline,
   title: 'Timeline',
-  args: {
-    data: data.timelines,
-    keyObj: { primaryLeft: 'title', primaryRight: 'date', secondary: 'description' },
-  },
 } as Meta
 
-export const Default: Story<TimelineProps<TimelineTypes>> = (args) => (
-  <div className="bg-slate-700 rounded-lg shadow-lg">
-    <Timeline<TimelineTypes> {...args} />
-  </div>
+export const Default: Story<TimelineProps> = (args) => (
+  <Timeline {...args}>
+    {timelines.map((t, index) => (
+      <Timeline.Card key={index} title={t.title} date={t.date}>
+        <div className="text-gray-300">
+          <Typography variant="body 3">{t.description}</Typography>
+        </div>
+      </Timeline.Card>
+    ))}
+  </Timeline>
 )
 
-export const Alternate: Story<TimelineProps<TimelineTypes>> = (args) => (
-  <div className="bg-slate-700 rounded-lg shadow-lg">
-    <Timeline<TimelineTypes> {...args} alternate />
-  </div>
+export const Alternate: Story<TimelineProps> = (args) => (
+  <Timeline {...args}>
+    {talks.map((t, index) => (
+      <Timeline.Card key={index} title={t.title} date={t.date} alternate={index % 2 === 0}>
+        <div className="text-gray-300">
+          <Typography variant="body 3">{t.host}</Typography>
+        </div>
+      </Timeline.Card>
+    ))}
+  </Timeline>
 )
