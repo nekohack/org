@@ -1,6 +1,6 @@
 export { CssResetButton } from './lib/CssResetButton/CssResetButton'
 export { Icon } from './lib/Icon/Icon'
-export { Job } from './lib/Job/Job'
+export { Job } from './lib/Job'
 export { LinkPreview } from './lib/LinkPreview/LinkPreview'
 export { LinkText } from './lib/LinkText/LinkText'
 export { List } from './lib/List'
