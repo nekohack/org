@@ -7,7 +7,7 @@
     ".[jt]sx?$": "@markuplint/react-spec"
   },
   "rules": {
-    "attr-duplication": true,
+    "attr-duplication": false, /* lib/Icon/images/Share.tsx */
     "attr-equal-space-after": true,
     "attr-equal-space-before": true,
     "attr-spacing": true,

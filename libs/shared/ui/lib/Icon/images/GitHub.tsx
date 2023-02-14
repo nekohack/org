@@ -1,17 +1,6 @@
-import React from 'react'
-
-type Props = React.SVGAttributes<SVGElement>
-
-export const GitHub: React.FC<Props> = (props) => {
+export function GitHub({ size = 24 }) {
   return (
-    <svg
-      aria-hidden="true"
-      data-prefix="fab"
-      data-icon="github"
-      role="img"
-      viewBox="0 0 496 512"
-      {...props}
-    >
+    <svg role="img" width={size} height={size} viewBox="0 0 496 512">
       <title></title>
       <path
         fill="currentColor"
