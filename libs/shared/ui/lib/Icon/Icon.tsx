@@ -1,13 +1,32 @@
 import React from 'react'
 import { match } from 'ts-pattern'
 import { ArrowDown } from './images/ArrowDown'
-import { Contact } from './images/Contact'
+import { Email } from './images/Email'
+import { Facebook } from './images/Facebook'
 import { GitHub } from './images/GitHub'
+import { Linkedin } from './images/LinkedIn'
+import { Map } from './images/Map'
 import { Person } from './images/Person'
+import { Phone } from './images/Phone'
+import { Share } from './images/Share'
+import { Star } from './images/Star'
 import { Twitter } from './images/Twitter'
 
+type IconName =
+  | 'arrow-down'
+  | 'email'
+  | 'facebook'
+  | 'github'
+  | 'linkedin'
+  | 'map'
+  | 'person'
+  | 'phone'
+  | 'share'
+  | 'star'
+  | 'twitter'
+
 export interface IconProps {
-  name: 'arrow-down' | 'contact' | 'github' | 'person' | 'twitter'
+  name: IconName
   width?: string
   height?: string
 }
@@ -17,9 +36,15 @@ export const Icon: React.FC<IconProps> = (props) => {
 
   return match(name)
     .with('arrow-down', () => <ArrowDown />)
-    .with('contact', () => <Contact />)
+    .with('email', () => <Email />)
+    .with('facebook', () => <Facebook />)
     .with('github', () => <GitHub />)
+    .with('linkedin', () => <Linkedin />)
+    .with('map', () => <Map />)
     .with('person', () => <Person />)
+    .with('phone', () => <Phone />)
+    .with('share', () => <Share />)
+    .with('star', () => <Star />)
     .with('twitter', () => <Twitter />)
     .exhaustive()
 }

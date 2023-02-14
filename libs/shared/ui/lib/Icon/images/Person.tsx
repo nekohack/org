@@ -1,10 +1,12 @@
-import React from 'react'
-
-type Props = React.SVGAttributes<SVGElement>
-
-export const Person: React.FC<Props> = (props) => {
+export function Person({ size = 24 }) {
   return (
-    <svg viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet" {...props}>
+    <svg
+      role="img"
+      width={size}
+      height={size}
+      viewBox="0 0 512 512"
+      preserveAspectRatio="xMidYMid meet"
+    >
       <title></title>
       <g fill="#000000" stroke="none">
         <path

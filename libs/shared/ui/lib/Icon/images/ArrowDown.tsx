@@ -1,17 +1,6 @@
-import React from 'react'
-
-type Props = React.SVGAttributes<SVGElement>
-
-export const ArrowDown: React.FC<Props> = (props) => {
+export function ArrowDown({ size = 24 }) {
   return (
-    <svg
-      width="16"
-      height="16"
-      fill="currentColor"
-      className="bi bi-arrow-down"
-      viewBox="0 0 16 16"
-      {...props}
-    >
+    <svg role="img" width={size} height={size} viewBox="0 0 16 16" fill="currentColor">
       <title></title>
       <path
         fillRule="evenodd"

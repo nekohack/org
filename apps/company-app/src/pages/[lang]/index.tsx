@@ -40,7 +40,7 @@ export default function Home() {
           url="https://docs.google.com/forms/d/e/1FAIpQLSfFzwsCVnFbu-lV0Jz2fEYHR97hpBSK2g6kEwc-G1fo976ngA/viewform"
           customClass="btn btn__light btn__icon"
         >
-          <Icon name="contact" />
+          <Icon name="email" />
           Contact
         </LinkText>
         <LinkText
