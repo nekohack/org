@@ -16,7 +16,7 @@ export function Card(props: React.PropsWithChildren<CardProps>) {
     >
       <div
         css={styles.root(alternate !== undefined && alternate ? 'left' : 'right')}
-        className="bg-slate-800 rounded-lg text-gray-300 shadow-lg"
+        className="bg-indigo-900 rounded-lg text-gray-200 shadow-lg"
       >
         <CardHeader title={title} date={date} />
         {children}

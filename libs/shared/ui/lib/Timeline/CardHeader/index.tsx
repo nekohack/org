@@ -9,10 +9,10 @@ export interface CardHeaderProps {
 export function CardHeader({ title, date }: CardHeaderProps) {
   return (
     <div css={styles.root}>
-      <div className="text-cyan-300">
+      <div className="text-gray-200">
         <Typography variant="title 3">{title}</Typography>
       </div>
-      <div className="text-gray-300">
+      <div className="text-gray-200">
         <Typography variant="subtitle 3">{date}</Typography>
       </div>
     </div>
