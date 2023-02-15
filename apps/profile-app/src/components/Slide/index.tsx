@@ -24,7 +24,7 @@ const SlideSection: FC = () => {
       <div className="section-wrapper">
         <Timeline>
           {talks.slice(0, length).map((d, index) => (
-            <Timeline.Card key={index} title={d.title} date={d.date} alternate={index % 2 === 0}>
+            <Timeline.Card key={index} title={d.title} date={d.date}>
               <div className="text-gray-300">
                 <Typography variant="body 3">{d.host}</Typography>
               </div>
