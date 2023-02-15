@@ -25,7 +25,12 @@ const TimelineSection: FC = () => {
       <div className="section-wrapper">
         <Timeline>
           {timelines.slice(0, length).map((t, index) => (
-            <Timeline.Card key={index} title={t.title} date={t.fullDate}>
+            <Timeline.Card
+              key={index}
+              title={t.title}
+              date={t.fullDate}
+              alternate={index % 2 === 0}
+            >
               <div className="text-gray-300">
                 <Typography variant="body 3">{t.description}</Typography>
               </div>
