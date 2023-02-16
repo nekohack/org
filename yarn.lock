@@ -4339,15 +4339,36 @@
     "@unocss/core" "0.49.1"
     unconfig "^0.3.7"
 
+"@unocss/config@0.49.5":
+  version "0.49.5"
+  resolved "https://registry.yarnpkg.com/@unocss/config/-/config-0.49.5.tgz#8a673abc33f62b93da44328ec4fd1a48d4a78af6"
+  integrity sha512-QilkdXmHkI0qJKOxk3IQ8B9bo5ndh8m/BF8gmgqdPoPtN3g1eUqc3NRf73vyInRF0NScjPlRaj5tINX3NexXMw==
+  dependencies:
+    "@unocss/core" "0.49.5"
+    unconfig "^0.3.7"
+
 "@unocss/core@0.49.1":
   version "0.49.1"
   resolved "https://registry.yarnpkg.com/@unocss/core/-/core-0.49.1.tgz#77730be7baaa9f97793dc89f52f32679d5dab283"
   integrity sha512-l+L1c8eCwfaQA1sAYDE+xJ+r9ocfyTo9KzRUOIy5eV/wxC82HoLtJN8wIGuWaY8fGQh/gT74Czfq7g7BFNKhaw==
 
+"@unocss/core@0.49.5":
+  version "0.49.5"
+  resolved "https://registry.yarnpkg.com/@unocss/core/-/core-0.49.5.tgz#ca092f750ad1db65c5b9bf29a887e25c9f88ace0"
+  integrity sha512-8CSIZu8EIT8bulfyQ7OtUbKZpUSpPFMuqP17qvtAZlzolSt2xDM4pfY5hohISfu3toyApAJV6M7zLRAj0JFLuA==
+
 "@unocss/inspector@0.49.1":
   version "0.49.1"
   resolved "https://registry.yarnpkg.com/@unocss/inspector/-/inspector-0.49.1.tgz#aa0101a5bc6321cc9c69f32be062304bd54ae6a0"
   integrity sha512-oC/FOtOCcVP3Yp0me3/2+c/X5OVEnstFKmdEimuJB+z0G8j9l2SLHSqJfBMQm2TCH359sZkybk0kiMg5luwXPA==
+  dependencies:
+    gzip-size "^6.0.0"
+    sirv "^2.0.2"
+
+"@unocss/inspector@0.49.5":
+  version "0.49.5"
+  resolved "https://registry.yarnpkg.com/@unocss/inspector/-/inspector-0.49.5.tgz#3e4da417bd3654060a04aab0365951706cba1a09"
+  integrity sha512-FZZ5pVW+FsyRGE9cQj/gdzpk87yFNfHxs4tN92j3GM1/MJBXRyH1td4HuEAVjUj3ZZ1huAlxIpx4n6nng2pk1w==
   dependencies:
     gzip-size "^6.0.0"
     sirv "^2.0.2"
@@ -4429,6 +4450,11 @@
   resolved "https://registry.yarnpkg.com/@unocss/scope/-/scope-0.49.1.tgz#cb6087cabbb566704cba9989802d340c90d0276d"
   integrity sha512-tSgUbjsb7T2v5ZSYBd9YagoOn8riqx2Pxzk2+md3TnVlbOGtwV4G/BazJ96C2LBB9ldsIvsbNbaK+4S62w27jw==
 
+"@unocss/scope@0.49.5":
+  version "0.49.5"
+  resolved "https://registry.yarnpkg.com/@unocss/scope/-/scope-0.49.5.tgz#8341e63957329016f3ea860685eb9a09a25116d6"
+  integrity sha512-+dT7Q47oiHBfLT97qlXH37OqvD776djAFHjy4hua38yQnRdB/wsn0sSWyEx148yul5hBZxvEbKoYOGRreYCDjA==
+
 "@unocss/transformer-attributify-jsx@0.49.1":
   version "0.49.1"
   resolved "https://registry.yarnpkg.com/@unocss/transformer-attributify-jsx/-/transformer-attributify-jsx-0.49.1.tgz#7eef34645a885a8a10cae7837f104324848120d0"
@@ -4449,6 +4475,14 @@
   integrity sha512-CrhM3x9OuabzHbeTvmxLVvKODSZxYgM9XwV9E+WtYymicfGtn26JkID1Cl1mAfm5VswapaKoQFzbQf5uH5i1YA==
   dependencies:
     "@unocss/core" "0.49.1"
+    css-tree "^2.3.1"
+
+"@unocss/transformer-directives@0.49.5":
+  version "0.49.5"
+  resolved "https://registry.yarnpkg.com/@unocss/transformer-directives/-/transformer-directives-0.49.5.tgz#2bcaa4f6a4ba18386ea0bcfd54d969a7ae34e390"
+  integrity sha512-E5uprn2PWa++IsQdogF1Ak0wjKhO1A3ecs59GEc6tQhsLE7CCJPwcHpQHEOimV9YyRkIV6wLbxDSxJHwI9uLcw==
+  dependencies:
+    "@unocss/core" "0.49.5"
     css-tree "^2.3.1"
 
 "@unocss/transformer-variant-group@0.49.1":
@@ -4473,6 +4507,22 @@
     chokidar "^3.5.3"
     fast-glob "^3.2.12"
     magic-string "^0.27.0"
+
+"@unocss/vite@0.49.5":
+  version "0.49.5"
+  resolved "https://registry.yarnpkg.com/@unocss/vite/-/vite-0.49.5.tgz#08fd1d253b203b14af417d6d909bdeee6d290053"
+  integrity sha512-KFJRqKC6zygTcv6otkt581urxPU2KPw4jD84N7qwsdJkEwRPfsbRPeboBGCQeroMCpfntAojTdCXkJbEsu1jTA==
+  dependencies:
+    "@ampproject/remapping" "^2.2.0"
+    "@rollup/pluginutils" "^5.0.2"
+    "@unocss/config" "0.49.5"
+    "@unocss/core" "0.49.5"
+    "@unocss/inspector" "0.49.5"
+    "@unocss/scope" "0.49.5"
+    "@unocss/transformer-directives" "0.49.5"
+    chokidar "^3.5.3"
+    fast-glob "^3.2.12"
+    magic-string "^0.29.0"
 
 "@unocss/webpack@0.49.1":
   version "0.49.1"
@@ -11930,6 +11980,13 @@ magic-string@^0.27.0:
   version "0.27.0"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.27.0.tgz#e4a3413b4bab6d98d2becffd48b4a257effdbbf3"
   integrity sha512-8UnnX2PeRAPZuN12svgR9j7M1uWMovg/CEnIwIG0LFkXSJJe4PdfUGiTGl8V9bsBHFUtfVINcSyYxd7q+kx9fA==
+  dependencies:
+    "@jridgewell/sourcemap-codec" "^1.4.13"
+
+magic-string@^0.29.0:
+  version "0.29.0"
+  resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.29.0.tgz#f034f79f8c43dba4ae1730ffb5e8c4e084b16cf3"
+  integrity sha512-WcfidHrDjMY+eLjlU+8OvwREqHwpgCeKVBUpQ3OhYYuvfaYCUgcbuBzappNzZvg/v8onU3oQj+BYpkOJe9Iw4Q==
   dependencies:
     "@jridgewell/sourcemap-codec" "^1.4.13"
 
