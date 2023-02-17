@@ -27,6 +27,7 @@ export const avatar = css`
   right: 12px;
   top: 4px;
   img {
+    width: 60px;
     height: 60px;
     border-radius: 100%;
   }
@@ -37,6 +38,7 @@ export const qrcode = css`
   right: 12px;
   top: 4px;
   img {
+    width: 90px;
     height: 60px;
   }
 `
