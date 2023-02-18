@@ -43,6 +43,10 @@ type RealPlace = 'Moneyforward' | 'necco inc.' | 'Yumemi inc.'
 
 type Location = 'Kyoto' | 'Osaka' | 'Tokyo' | 'Japan'
 
+type Twitter = 'jiyuujinlab' | 'FlutterKaigi' | 'linedc' | 'vscodejp' | 'vuejs-jp'
+
+type Position = 'organizer' | 'contributor' | 'staff'
+
 export interface Technology {
   title: string
   skills: Skill[]
@@ -61,10 +65,12 @@ export interface Repo {
 }
 
 export interface Product {
-  title: string[]
-  description: string[]
-  url: string[]
-  image?: string[]
+  title: string
+  description: string
+  url: string
+  share: Twitter
+  position: Position
+  image?: string
   skills?: Skill[]
   repos?: Repo[]
   sub?: Array<{ title: string; skills: Skill[] }>

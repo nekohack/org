@@ -1,3 +1,5 @@
+export { Avatar } from './lib/Avatar/Avatar'
+export { Card } from './lib/Card/Card'
 export { CssResetButton } from './lib/CssResetButton/CssResetButton'
 export { Icon } from './lib/Icon/Icon'
 export { Job } from './lib/Job'

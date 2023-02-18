@@ -2,9 +2,11 @@ import { Product } from '@org/shared/types'
 
 export const products: Product[] = [
   {
-    title: ['products.design_system'],
-    description: ['products.design_system_description'],
-    url: ['https://normalize.nekohack.me/'],
+    title: 'products.design_system',
+    description: 'products.design_system_description',
+    url: 'https://normalize.nekohack.me/',
+    share: 'jiyuujinlab',
+    position: 'contributor',
     sub: [
       {
         title: 'products.react_design_system',
@@ -50,12 +52,8 @@ export const products: Product[] = [
     enabled: false,
   },
   {
-    title: ['products.profile'],
-    description: [
-      'products.profile_description_1',
-      'products.profile_description_2',
-      'products.profile_description_3',
-    ],
+    title: 'products.profile',
+    description: 'products.profile_description',
     skills: [
       {
         name: 'normalize.css',
@@ -65,10 +63,15 @@ export const products: Product[] = [
       {
         name: 'nekohack-ui',
         category: 'Build Tools',
-        status: 'active',
+        status: 'inactive',
       },
       {
         name: 'Gatsby.js',
+        category: 'JavaScript Framework',
+        status: 'archived',
+      },
+      {
+        name: 'Next.js',
         category: 'JavaScript Framework',
         status: 'active',
       },
@@ -97,20 +100,23 @@ export const products: Product[] = [
       {
         name: 'jiyuujin/kitten',
         url: 'https://github.com/jiyuujin/kitten',
+        status: 'inactive',
+      },
+      {
+        name: 'nekohack/org',
+        url: 'https://github.com/nekohack/org',
         status: 'active',
       },
     ],
-    image: ['top'],
-    url: ['https://yuma-kitamura.nekohack.me/'],
+    image: 'top',
+    url: 'https://yuma-kitamura.nekohack.me/',
+    share: 'jiyuujinlab',
+    position: 'contributor',
     enabled: true,
   },
   {
-    title: ['products.tech_blog'],
-    description: [
-      'products.tech_blog_description_1',
-      'products.tech_blog_description_2',
-      'products.tech_blog_description_3',
-    ],
+    title: 'products.tech_blog',
+    description: 'products.tech_blog_description',
     skills: [
       {
         name: 'j-stylebook',
@@ -120,12 +126,12 @@ export const products: Product[] = [
       {
         name: 'Nuxt.js',
         category: 'JavaScript Framework',
-        status: 'active',
+        status: 'inactive',
       },
       {
         name: 'Contentful',
         category: 'Headless CMS',
-        status: 'active',
+        status: 'inactive',
       },
       {
         name: 'AWS Fargate',
@@ -133,14 +139,14 @@ export const products: Product[] = [
         status: 'inactive',
       },
       {
-        name: 'AWS Amplify',
+        name: 'Deno Deploy',
         category: 'Static Website Hosting',
         status: 'active',
       },
       {
         name: 'AWS CloudFront',
         category: 'CDN',
-        status: 'active',
+        status: 'inactive',
       },
       {
         name: 'Travis CI',
@@ -165,52 +171,20 @@ export const products: Product[] = [
         status: 'inactive',
       },
       {
-        name: 'jiyuujin/webneko-blog-next',
-        url: 'https://github.com/jiyuujin/webneko-blog-next',
-        status: 'active',
+        name: 'nekohack/blog',
+        url: 'https://github.com/nekohack/blog',
+        status: 'inactive',
       },
     ],
-    image: ['webneko-blog'],
-    url: ['https://blog.nekohack.me/'],
+    image: 'webneko-blog',
+    url: 'https://blog.nekohack.me/',
+    share: 'jiyuujinlab',
+    position: 'contributor',
     enabled: true,
   },
   {
-    title: ['products.minna_de_blog'],
-    description: ['products.minna_de_blog_description'],
-    skills: [
-      {
-        name: 'Vite',
-        category: 'Build Tools',
-        status: 'active',
-      },
-      {
-        name: 'Vue',
-        category: 'JavaScript Framework',
-        status: 'active',
-      },
-      {
-        name: 'Github Issues',
-        category: 'CMS',
-        status: 'active',
-      },
-      {
-        name: 'Github Actions',
-        category: 'CI',
-        status: 'active',
-      },
-      {
-        name: 'Vercel',
-        category: 'Static Website Hosting',
-        status: 'active',
-      },
-    ],
-    image: [],
-    url: ['https://ohayo.nekohack.me/'],
-    enabled: true,
-  },
-  {
-    title: ['products.vuefes_2022'],
-    description: ['products.vuefes_2022_description'],
+    title: 'products.vuefes_2022',
+    description: 'products.vuefes_2022_description',
     skills: [
       {
         name: 'Nuxt.js',
@@ -235,13 +209,15 @@ export const products: Product[] = [
         status: 'active',
       },
     ],
-    image: ['vuefes-2022'],
-    url: ['https://vuefes.jp/2022'],
+    image: 'vuefes-2022',
+    url: 'https://vuefes.jp/2022',
+    share: 'vuejs-jp',
+    position: 'staff',
     enabled: true,
   },
   {
-    title: ['products.revup_2022'],
-    description: ['products.revup_2022_description'],
+    title: 'products.revup_2022',
+    description: 'products.revup_2022_description',
     skills: [
       {
         name: 'SvelteKit',
@@ -266,13 +242,15 @@ export const products: Product[] = [
         status: 'active',
       },
     ],
-    image: ['revup-2022'],
-    url: ['https://revup.jp/'],
+    image: 'revup-2022',
+    url: 'https://revup.jp/',
+    share: 'linedc',
+    position: 'contributor',
     enabled: true,
   },
   {
-    title: ['products.flutterkaigi_2022', 'products.flutterkaigi_2021'],
-    description: ['products.flutterkaigi_2021_description'],
+    title: 'products.flutterkaigi_2022',
+    description: 'products.flutterkaigi_2022_description',
     skills: [
       {
         name: 'Flutter',
@@ -301,19 +279,82 @@ export const products: Product[] = [
         url: 'https://github.com/FlutterKaigi/2022',
         status: 'active',
       },
+    ],
+    image: 'flutterkaigi-2022',
+    url: 'https://flutterkaigi.jp/2022',
+    share: 'FlutterKaigi',
+    position: 'organizer',
+    enabled: true,
+  },
+  {
+    title: 'products.flutterkaigi_2021',
+    description: 'products.flutterkaigi_2021_description',
+    skills: [
+      {
+        name: 'Flutter',
+        category: 'Cross Platform Framework',
+        status: 'active',
+      },
+      {
+        name: 'Firebase hosting',
+        category: 'Static Website Hosting',
+        status: 'inactive',
+      },
+      {
+        name: 'GitHub Page',
+        category: 'Static Website Hosting',
+        status: 'active',
+      },
+    ],
+    repos: [
       {
         name: 'FlutterKaigi/2021',
         url: 'https://github.com/FlutterKaigi/2021',
         status: 'active',
       },
     ],
-    image: ['flutterkaigi-2022', 'flutterkaigi-2021'],
-    url: ['https://flutterkaigi.jp/2022', 'https://flutterkaigi.jp/2021'],
+    image: 'flutterkaigi-2021',
+    url: 'https://flutterkaigi.jp/2021',
+    share: 'FlutterKaigi',
+    position: 'organizer',
     enabled: true,
   },
   {
-    title: ['products.vscodeconjp_2021'],
-    description: ['products.vscodeconjp_2021_description'],
+    title: 'products.vscodeconjp_2023',
+    description: 'products.vscodeconjp_2023_description',
+    skills: [
+      {
+        name: 'CSS modules',
+        category: 'Build Tools',
+        status: 'active',
+      },
+      {
+        name: 'Next.js',
+        category: 'JavaScript Framework',
+        status: 'active',
+      },
+      {
+        name: 'Github Pages',
+        category: 'CI',
+        status: 'active',
+      },
+    ],
+    repos: [
+      {
+        name: 'vscodejp/conference',
+        url: 'https://github.com/vscodejp/conference',
+        status: 'active',
+      },
+    ],
+    image: 'vscodeconjp-2023',
+    url: 'https://vscodejp.github.io/conference/2022-2023/ja',
+    share: 'vscodejp',
+    position: 'contributor',
+    enabled: true,
+  },
+  {
+    title: 'products.vscodeconjp_2021',
+    description: 'products.vscodeconjp_2021_description',
     skills: [
       {
         name: 'CSS modules',
@@ -338,8 +379,10 @@ export const products: Product[] = [
         status: 'active',
       },
     ],
-    image: ['vscodeconjp-2021'],
-    url: ['https://vscodejp.github.io/conference/2021/'],
+    image: 'vscodeconjp-2021',
+    url: 'https://vscodejp.github.io/conf2021/ja',
+    share: 'vscodejp',
+    position: 'contributor',
     enabled: true,
   },
 ]
