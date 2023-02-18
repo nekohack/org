@@ -9,7 +9,6 @@ export interface CardProps {
   qrcode: ReactNode
   subheader?: ReactNode
   options: {
-    free?: ReactNode
     star?: string
     phone?: string
     email?: string
@@ -18,8 +17,15 @@ export interface CardProps {
   }
 }
 
-export function Card({ name, avatar, qrcode, subheader, options }: CardProps) {
-  const { star, phone, email, shares, location, free } = options
+export function Card({
+  name,
+  avatar,
+  qrcode,
+  subheader,
+  options,
+  children,
+}: React.PropsWithChildren<CardProps>) {
+  const { star, phone, email, shares, location } = options
 
   return (
     <div css={styles.root}>
@@ -53,7 +59,7 @@ export function Card({ name, avatar, qrcode, subheader, options }: CardProps) {
           )}
           {shares && shares.length > 0 && (
             <li>
-              <Icon name="share" />{' '}
+              <Icon name="share" />
               {shares.map(([type, text]) => (
                 <Typography variant="body 3">{text}</Typography>
               ))}
@@ -65,7 +71,7 @@ export function Card({ name, avatar, qrcode, subheader, options }: CardProps) {
               <Typography variant="body 3">{location}</Typography>
             </li>
           )}
-          {free && <li>{free}</li>}
+          <li>{children}</li>
         </ul>
       </div>
     </div>

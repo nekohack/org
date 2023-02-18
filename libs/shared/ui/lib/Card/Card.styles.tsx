@@ -50,7 +50,6 @@ export const content = css`
 
 export const contentList = css`
   list-style: none;
-  width: calc(100% - 120px);
   padding: 0;
   margin: 0;
   li {

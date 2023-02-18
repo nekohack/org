@@ -1,3 +1,4 @@
+import React from 'react'
 import { Story, Meta } from '@storybook/react'
 import { Typography } from '../Typography/Typography'
 import { Card, CardProps } from './Card'
@@ -10,7 +11,7 @@ export default {
     avatar: <img width={60} height={60} alt="" src="https://i.imgur.com/X0CcoU9.jpg" />,
     qrcode: <img width={60} height={60} alt="" src="https://i.imgur.com/IyJU8VC.png" />,
     options: {
-      star: 'Web Developers, HR Adviser',
+      star: 'Web Developer, HR Adviser',
       phone: 'XXX-YYYY-ZZZZ', // (仮)
       email: 'xyz-test@gmail.com', // (仮)
       shares: [
@@ -30,5 +31,11 @@ export const WithTags: Story<CardProps> = (args) => (
     subheader={
       <Typography variant="body 3">TypeScript | React | NodeJS | Flutter | AWS</Typography>
     }
-  />
+  >
+    <Typography variant="body 3">
+      On the net, they live under the name of JIYUUJIN. Birthday is November 04, 1988. Born in
+      Toyonaka City, Osaka Prefecture. Gender is male. Currently, we are active mainly in the Kansai
+      area (Kyoto and Osaka).
+    </Typography>
+  </Card>
 )
