@@ -2,6 +2,13 @@ import { Community } from '@org/shared/types'
 
 export const communities: Community[] = [
   {
+    text: 'おはようエンジニア',
+    location: 'Japan',
+    url: 'https://ohayo.nekohack.me/',
+    status: 'active',
+    enabled: true,
+  },
+  {
     text: 'Vue.js Japan User Group',
     location: 'Japan',
     url: 'https://vuefes.jp/',
@@ -12,6 +19,20 @@ export const communities: Community[] = [
     text: 'v-kansai',
     location: 'Kyoto',
     url: 'https://vuekansai.connpass.com/',
+    status: 'archived',
+    enabled: false,
+  },
+  {
+    text: 'React.kyoto',
+    location: 'Kyoto',
+    url: 'https://react-kyoto.connpass.com/',
+    status: 'archived',
+    enabled: false,
+  },
+  {
+    text: 'kansai.ts',
+    location: 'Osaka',
+    url: 'https://kansaits.connpass.com/',
     status: 'archived',
     enabled: false,
   },
@@ -27,21 +48,7 @@ export const communities: Community[] = [
     location: 'Osaka',
     url: 'https://flutter-jp.connpass.com/',
     status: 'active',
-    enabled: false,
-  },
-  {
-    text: 'kansai.ts',
-    location: 'Osaka',
-    url: 'https://kansaits.connpass.com/',
-    status: 'archived',
-    enabled: false,
-  },
-  {
-    text: 'React.kyoto',
-    location: 'Kyoto',
-    url: 'https://react-kyoto.connpass.com/',
-    status: 'archived',
-    enabled: false,
+    enabled: true,
   },
   {
     text: 'PWA night',
