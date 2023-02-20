@@ -1,6 +1,7 @@
 import React from 'react'
 import { match } from 'ts-pattern'
 import { ArrowDown } from './images/ArrowDown'
+import { Carbon } from './images/Carbon'
 import { Email } from './images/Email'
 import { Facebook } from './images/Facebook'
 import { GitHub } from './images/GitHub'
@@ -14,6 +15,7 @@ import { Twitter } from './images/Twitter'
 
 type IconName =
   | 'arrow-down'
+  | 'carbon'
   | 'email'
   | 'facebook'
   | 'github'
@@ -36,6 +38,7 @@ export const Icon: React.FC<IconProps> = (props) => {
 
   return match(name)
     .with('arrow-down', () => <ArrowDown />)
+    .with('carbon', () => <Carbon />)
     .with('email', () => <Email />)
     .with('facebook', () => <Facebook />)
     .with('github', () => <GitHub />)
