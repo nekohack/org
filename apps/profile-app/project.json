@@ -30,12 +30,12 @@
     "_serve": {
       "executor": "@nrwl/next:server",
       "options": {
-        "buildTarget": "profile-app:build",
+        "buildTarget": "profile-app:_build",
         "dev": true
       },
       "configurations": {
         "production": {
-          "buildTarget": "profile-app:build:production",
+          "buildTarget": "profile-app:_build:production",
           "dev": false
         }
       }
