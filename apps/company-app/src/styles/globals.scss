@@ -49,13 +49,34 @@ body {
 }
 
 a {
-  color: inherit;
+  color: #303030;
   text-decoration: none;
+
+  &:visited {
+    color: #303030;
+
+    @media (prefers-color-scheme: dark) {
+      color: #fefefe;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: #fefefe;
+  }
 }
 
 * {
   box-sizing: border-box;
   font-family: Catamaran, sans-serif;
+}
+
+.navActive {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4rem;
+  box-shadow: 0 0 16px 0 rgb(0 0 0 / 10%);
+  transition: 300ms;
 }
 
 .section__title {

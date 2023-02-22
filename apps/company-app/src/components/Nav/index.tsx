@@ -1,16 +1,16 @@
 import { useEffect, useRef } from 'react'
 import Link from 'next/link'
-import styles from './index.module.scss'
+import { css } from '@emotion/react'
 
-export const Nav: FC = () => {
+export const NavSection: FC = () => {
   const ref = useRef<HTMLDivElement>()
 
   useEffect(() => {
     window.onscroll = function updateNav() {
       if (isPageOffset()) {
-        ref.current.classList.add(styles.navActive)
+        ref.current.classList.add('navActive')
       } else {
-        ref.current.classList.remove(styles.navActive)
+        ref.current.classList.remove('navActive')
       }
     }
   }, [])
@@ -22,20 +22,81 @@ export const Nav: FC = () => {
   }
 
   return (
-    <div className={styles.navContainer}>
-      <nav ref={ref} className={styles.nav} id="nav">
-        <div className={styles.navContent}>
-          <h2 className={styles.navIcon}>
+    <div
+      css={css`
+        width: 100%;
+        height: 6rem;
+      `}
+    >
+      <nav
+        ref={ref}
+        css={css`
+          z-index: 199;
+          width: 100%;
+          height: 6rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 200ms;
+        `}
+        id="nav"
+      >
+        <div
+          css={css`
+            width: 90%;
+            display: flex;
+            justify-content: space-between;
+          `}
+        >
+          <h2
+            css={css`
+              font-size: 2rem;
+              font-weight: 500;
+            `}
+          >
             <a href="/">
-              Yuma <span className={styles.navHidden}>Kitamura</span>
+              Yuma <span>Kitamura</span>
             </a>
           </h2>
 
-          <div className={styles.navLinks}>
-            <Link scroll href="https://blog.nekohack.me/" className={styles.navLink}>
+          <div
+            css={css`
+              display: flex;
+              align-items: center;
+            `}
+          >
+            <Link
+              scroll
+              href="https://blog.nekohack.me/"
+              css={css`
+                font-size: 1.2rem;
+                font-weight: 400;
+                background: transparent;
+                cursor: pointer;
+                filter: brightness(90%);
+                padding: 0.3rem 0.8rem;
+                &:hover {
+                  background-color: #474747;
+                }
+              `}
+            >
               Blog
             </Link>
-            <Link scroll href="https://yuma-kitamura.nekohack.me" className={styles.navLink}>
+            <Link
+              scroll
+              href="https://yuma-kitamura.nekohack.me"
+              css={css`
+                font-size: 1.2rem;
+                font-weight: 400;
+                background: transparent;
+                cursor: pointer;
+                filter: brightness(90%);
+                padding: 0.3rem 0.8rem;
+                &:hover {
+                  background-color: #474747;
+                }
+              `}
+            >
               Profile
             </Link>
           </div>
