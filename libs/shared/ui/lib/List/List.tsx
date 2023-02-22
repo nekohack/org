@@ -9,6 +9,7 @@ export interface ListProps {
 
 export function List(props: React.PropsWithChildren<ListProps>) {
   const { children, title } = props
+  const childItems = React.Children.toArray(children)
 
   return (
     <Fragment>
@@ -17,7 +18,11 @@ export function List(props: React.PropsWithChildren<ListProps>) {
           <Typography variant="subtitle 2">{title}</Typography>
         </div>
       </div>
-      <ul css={styles.list}>{children}</ul>
+      <ul css={styles.list}>
+        {childItems.map((child, index) => (
+          <li key={index}>{child}</li>
+        ))}
+      </ul>
     </Fragment>
   )
 }
