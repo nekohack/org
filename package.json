@@ -83,6 +83,7 @@
     "@vitejs/plugin-react": "^2.2.0",
     "concurrently": "6.5.1",
     "dayjs": "1.11.7",
+    "env-cmd": "10.1.0",
     "esbuild": "0.16.12",
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.1",

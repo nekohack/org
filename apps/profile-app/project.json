@@ -4,6 +4,12 @@
   "projectType": "application",
   "targets": {
     "build": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "env-cmd -f apps/profile-app/.env nx run profile-app:_build"
+      }
+    },
+    "_build": {
       "executor": "@nrwl/next:build",
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
@@ -16,6 +22,12 @@
       }
     },
     "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "env-cmd -f apps/profile-app/.env nx run profile-app:_serve"
+      }
+    },
+    "_serve": {
       "executor": "@nrwl/next:server",
       "options": {
         "buildTarget": "profile-app:build",
@@ -37,9 +49,15 @@
       }
     },
     "export": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "env-cmd -f apps/profile-app/.env nx run profile-app:_export"
+      }
+    },
+    "_export": {
       "executor": "@nrwl/next:export",
       "options": {
-        "buildTarget": "profile-app:build:production"
+        "buildTarget": "profile-app:_build:production"
       }
     },
     "typecheck": {
