@@ -79,53 +79,6 @@ a {
   transition: 300ms;
 }
 
-.section__title {
-  padding-top: 5rem;
-  margin-bottom: 1rem;
-  font-size: clamp(2rem, 7vw, 3rem);
-}
-
-.btn {
-  padding: 0.3rem 1.5rem;
-  font-size: 1rem;
-  color: white;
-  cursor: pointer;
-  border: none;
-  border-radius: 0.2rem;
-  transition: 300ms filter;
-
-  &:disabled {
-    cursor: not-allowed;
-    opacity: 0.7;
-  }
-
-  &:hover:enabled {
-    filter: brightness(150%);
-  }
-}
-
-.btn__light {
-  color: #000;
-  background: #ddd;
-
-  @media (prefers-color-scheme: dark) {
-    color: #fff;
-    background: #1e2126;
-  }
-}
-
-.btn__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  svg {
-    width: 1.2rem;
-    margin-right: 10px;
-    fill: var(--secondary);
-  }
-}
-
 .tooltip-overwrite {
   font-size: 1rem !important;
   color: var(--text-color) !important;

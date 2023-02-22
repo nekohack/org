@@ -1,6 +1,7 @@
+import { css } from '@emotion/react'
 import { t } from 'i18next'
 import { useEmitEvent } from '@org/shared/hooks'
-import { Icon, LinkText } from '@org/shared/ui'
+import { Icon } from '@org/shared/ui'
 import SkillsSection from '@sections/SkillsSection'
 import WorksSection from '@sections/WorksSection'
 import JobSection from '@components/Job'
@@ -9,7 +10,6 @@ import { NavSection } from '@components/Nav'
 import { FooterSection } from '@components/Footer'
 import { SEO } from '@components/SEO'
 import { JOB } from '@utils/feature.constants'
-import mainStyles from 'css/main.module.scss'
 import { defaultLanguage, languages } from '../../../i18n.config'
 
 export default function Home() {
@@ -21,44 +21,191 @@ export default function Home() {
 
       <NavSection />
 
-      <div className={mainStyles.mainTitle}>
-        <h1>I am Yuma</h1>
-        <h2>Web Developer</h2>
+      <div
+        css={css`
+          max-height: 200px;
+        `}
+      >
+        <h1
+          css={css`
+            margin: 0;
+            font-size: clamp(2rem, 10vw, 5.5rem);
+            line-height: 55pt;
+            text-align: center;
+            text-transform: uppercase;
+          `}
+        >
+          I am Yuma
+        </h1>
+        <h2
+          css={css`
+            margin: 0;
+            font-size: clamp(1.2rem, 6vw, 2.5rem);
+            font-weight: 400;
+            text-align: center;
+            text-transform: uppercase;
+          `}
+        >
+          Web Developer
+        </h2>
       </div>
 
       <p>{`${t('basic_biography')}`}</p>
 
-      <div className={mainStyles.btnContainer}>
+      <div
+        css={css`
+          display: flex;
+          justify-content: center;
+          gap: 0.5rem;
+          margin: 1.5rem 0;
+          &:nth-child(2n + 2) {
+            margin: 0 10px;
+          }
+
+          @media (max-width: 320px) {
+            grid-template-columns: auto;
+          }
+        `}
+      >
         {JOB && (
-          <a onClick={dispatch} className="btn btn__light btn__icon" href="#job_timeline">
-            <Icon name="person" />
+          <a
+            onClick={dispatch}
+            href="#job_timeline"
+            css={css`
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: #000;
+              background: #ddd;
+              padding: 0.3rem 1.5rem;
+              font-size: 1rem;
+              color: white;
+              cursor: pointer;
+              border-radius: 0.2rem;
+              &:hover,
+              &:focus {
+                filter: brightness(150%);
+                transform: translateY(-0.2rem);
+              }
+              @media (prefers-color-scheme: dark) {
+                color: #fff;
+                background: #1e2126;
+              }
+            `}
+          >
+            <Icon
+              name="person"
+              css={css`
+                width: 1.2rem;
+                margin-right: 1.2rem;
+              `}
+            />
             {`${t('job_timeline')}`}
           </a>
         )}
-        <LinkText
-          ariaLabel="contact"
-          url="https://docs.google.com/forms/d/e/1FAIpQLSfFzwsCVnFbu-lV0Jz2fEYHR97hpBSK2g6kEwc-G1fo976ngA/viewform"
-          customClass="btn btn__light btn__icon"
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfFzwsCVnFbu-lV0Jz2fEYHR97hpBSK2g6kEwc-G1fo976ngA/viewform"
+          target="_blank"
+          rel="noopener noreferrer"
+          css={css`
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            background: #ddd;
+            padding: 0.3rem 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 0.2rem;
+            &:hover,
+            &:focus {
+              filter: brightness(150%);
+              transform: translateY(-0.2rem);
+            }
+            @media (prefers-color-scheme: dark) {
+              color: #fff;
+              background: #1e2126;
+            }
+          `}
         >
-          <Icon name="email" />
+          <Icon
+            name="email"
+            css={css`
+              width: 1.2rem;
+              margin-right: 1.2rem;
+            `}
+          />
           Contact
-        </LinkText>
-        <LinkText
-          ariaLabel="github"
-          url="https://github.com/jiyuujin"
-          customClass="btn btn__light btn__icon"
+        </a>
+        <a
+          href="https://github.com/jiyuujin"
+          target="_blank"
+          rel="noopener noreferrer"
+          css={css`
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            background: #ddd;
+            padding: 0.3rem 1.5rem;
+            font-size: 1rem;
+            color: white;
+            cursor: pointer;
+            border-radius: 0.2rem;
+            &:hover,
+            &:focus {
+              filter: brightness(150%);
+              transform: translateY(-0.2rem);
+            }
+            @media (prefers-color-scheme: dark) {
+              color: #fff;
+              background: #1e2126;
+            }
+          `}
         >
-          <Icon name="github" />
+          <Icon
+            name="github"
+            css={css`
+              width: 1.2rem;
+              margin-right: 1.2rem;
+            `}
+          />
           GitHub
-        </LinkText>
-        <LinkText
-          ariaLabel="twitter"
-          url="https://twitter.com/jiyuujinlab"
-          customClass="btn btn__light btn__icon"
+        </a>
+        <a
+          href="https://twitter.com/jiyuujinlab"
+          target="_blank"
+          rel="noopener noreferrer"
+          css={css`
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            background: #ddd;
+            padding: 0.3rem 1.5rem;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 0.2rem;
+            &:hover,
+            &:focus {
+              filter: brightness(150%);
+              transform: translateY(-0.2rem);
+            }
+            @media (prefers-color-scheme: dark) {
+              color: #fff;
+              background: #1e2126;
+            }
+          `}
         >
-          <Icon name="twitter" />
+          <Icon
+            name="twitter"
+            css={css`
+              width: 1.2rem;
+              margin-right: 1.2rem;
+            `}
+          />
           Twitter
-        </LinkText>
+        </a>
       </div>
 
       <SkillsSection />
