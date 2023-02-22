@@ -1,7 +1,7 @@
-import { css } from '@emotion/react'
-import { Story, Meta } from '@storybook/react'
 import React, { useState } from 'react'
 import { useEffectOnce } from 'react-use'
+import { css } from '@emotion/react'
+import { Story, Meta } from '@storybook/react'
 import { ChatInput } from '../ChatInput/ChatInput'
 import { Chat, ChatProps } from './'
 

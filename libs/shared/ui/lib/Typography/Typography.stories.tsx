@@ -1,5 +1,5 @@
+import React, { Fragment } from 'react'
 import { Story, Meta } from '@storybook/react'
-import { Fragment } from 'react'
 import { Typography, TypographyProps } from './Typography'
 
 export default {

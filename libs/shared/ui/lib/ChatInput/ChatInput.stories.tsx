@@ -1,7 +1,6 @@
+import React, { Fragment } from 'react'
 import { action } from '@storybook/addon-actions'
 import { Story, Meta } from '@storybook/react'
-import React from 'react'
-import { Fragment } from 'react'
 import { ChatInput, ChatInputProps } from '../ChatInput/ChatInput'
 
 export default {

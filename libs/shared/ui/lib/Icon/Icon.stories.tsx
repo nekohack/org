@@ -1,7 +1,7 @@
+import React, { Fragment } from 'react'
+import { css } from '@emotion/react'
 import { Story, Meta } from '@storybook/react'
 import { Icon, IconProps } from './Icon'
-import { css } from '@emotion/react'
-import { Fragment } from 'react'
 
 export default {
   component: Icon,

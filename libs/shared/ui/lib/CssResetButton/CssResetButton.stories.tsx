@@ -1,14 +1,11 @@
+import React from 'react'
 import { Meta, Story } from '@storybook/react'
 import { CssResetButton, CssResetButtonProps } from './CssResetButton'
 import { action } from '@storybook/addon-actions'
-import React from 'react'
 
 export default {
   component: CssResetButton,
   title: 'CssResetButton',
-  args: {
-    //
-  },
 } as Meta
 
 export const Default: Story<CssResetButtonProps> = (args) => (
