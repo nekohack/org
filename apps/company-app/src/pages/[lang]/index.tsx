@@ -5,8 +5,8 @@ import SkillsSection from '@sections/SkillsSection'
 import WorksSection from '@sections/WorksSection'
 import JobSection from '@components/Job'
 import PortraitSection from '@sections/PortraitSection'
-import { Nav } from '@components/Nav'
-import { Footer } from '@components/Footer'
+import { NavSection } from '@components/Nav'
+import { FooterSection } from '@components/Footer'
 import { SEO } from '@components/SEO'
 import { JOB } from '@utils/feature.constants'
 import mainStyles from 'css/main.module.scss'
@@ -19,7 +19,7 @@ export default function Home() {
     <main>
       <SEO title="nekohack.me | Yuma Kitamura - Web Developer" />
 
-      <Nav />
+      <NavSection />
 
       <div className={mainStyles.mainTitle}>
         <h1>I am Yuma</h1>
@@ -69,7 +69,7 @@ export default function Home() {
 
       <PortraitSection />
 
-      <Footer />
+      <FooterSection />
     </main>
   )
 }
