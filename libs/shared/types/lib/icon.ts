@@ -1,0 +1,13 @@
+export type IconName =
+  | 'arrow-down'
+  | 'carbon'
+  | 'email'
+  | 'facebook'
+  | 'github'
+  | 'linkedin'
+  | 'map'
+  | 'person'
+  | 'phone'
+  | 'share'
+  | 'star'
+  | 'twitter'

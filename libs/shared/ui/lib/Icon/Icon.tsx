@@ -1,3 +1,4 @@
+import { IconName } from '@org/shared/types'
 import React from 'react'
 import { match } from 'ts-pattern'
 import { ArrowDown } from './images/ArrowDown'
@@ -12,20 +13,6 @@ import { Phone } from './images/Phone'
 import { Share } from './images/Share'
 import { Star } from './images/Star'
 import { Twitter } from './images/Twitter'
-
-type IconName =
-  | 'arrow-down'
-  | 'carbon'
-  | 'email'
-  | 'facebook'
-  | 'github'
-  | 'linkedin'
-  | 'map'
-  | 'person'
-  | 'phone'
-  | 'share'
-  | 'star'
-  | 'twitter'
 
 export interface IconProps {
   name: IconName
