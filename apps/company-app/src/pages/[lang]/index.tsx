@@ -1,5 +1,6 @@
 import { css } from '@emotion/react'
 import { t } from 'i18next'
+import { social as _social } from '@org/shared/data'
 import { useEmitEvent } from '@org/shared/hooks'
 import { Icon } from '@org/shared/ui'
 import SkillsSection from '@sections/SkillsSection'
@@ -14,6 +15,8 @@ import { defaultLanguage, languages } from '../../../i18n.config'
 
 export default function Home() {
   const { dispatch } = useEmitEvent('focusOnContact', true)
+
+  const social = JOB ? _social : _social.filter((s) => s.text !== 'person')
 
   return (
     <main>
@@ -61,16 +64,18 @@ export default function Home() {
           &:nth-child(2n + 2) {
             margin: 0 10px;
           }
-
           @media (max-width: 320px) {
             grid-template-columns: auto;
           }
         `}
       >
-        {JOB && (
+        {social.map((s, index) => (
           <a
-            onClick={dispatch}
-            href="#job_timeline"
+            key={index}
+            onClick={s.text === 'person' ? dispatch : null}
+            href={s.url}
+            target="_blank"
+            rel="noopener noreferrer"
             css={css`
               display: flex;
               align-items: center;
@@ -79,7 +84,6 @@ export default function Home() {
               background: #ddd;
               padding: 0.3rem 1.5rem;
               font-size: 1rem;
-              color: white;
               cursor: pointer;
               border-radius: 0.2rem;
               &:hover,
@@ -94,118 +98,15 @@ export default function Home() {
             `}
           >
             <Icon
-              name="person"
+              name={s.text}
               css={css`
                 width: 1.2rem;
                 margin-right: 1.2rem;
               `}
             />
-            {`${t('job_timeline')}`}
+            {s.description}
           </a>
-        )}
-        <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSfFzwsCVnFbu-lV0Jz2fEYHR97hpBSK2g6kEwc-G1fo976ngA/viewform"
-          target="_blank"
-          rel="noopener noreferrer"
-          css={css`
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #000;
-            background: #ddd;
-            padding: 0.3rem 1.5rem;
-            font-size: 1rem;
-            cursor: pointer;
-            border-radius: 0.2rem;
-            &:hover,
-            &:focus {
-              filter: brightness(150%);
-              transform: translateY(-0.2rem);
-            }
-            @media (prefers-color-scheme: dark) {
-              color: #fff;
-              background: #1e2126;
-            }
-          `}
-        >
-          <Icon
-            name="email"
-            css={css`
-              width: 1.2rem;
-              margin-right: 1.2rem;
-            `}
-          />
-          Contact
-        </a>
-        <a
-          href="https://github.com/jiyuujin"
-          target="_blank"
-          rel="noopener noreferrer"
-          css={css`
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #000;
-            background: #ddd;
-            padding: 0.3rem 1.5rem;
-            font-size: 1rem;
-            color: white;
-            cursor: pointer;
-            border-radius: 0.2rem;
-            &:hover,
-            &:focus {
-              filter: brightness(150%);
-              transform: translateY(-0.2rem);
-            }
-            @media (prefers-color-scheme: dark) {
-              color: #fff;
-              background: #1e2126;
-            }
-          `}
-        >
-          <Icon
-            name="github"
-            css={css`
-              width: 1.2rem;
-              margin-right: 1.2rem;
-            `}
-          />
-          GitHub
-        </a>
-        <a
-          href="https://twitter.com/jiyuujinlab"
-          target="_blank"
-          rel="noopener noreferrer"
-          css={css`
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #000;
-            background: #ddd;
-            padding: 0.3rem 1.5rem;
-            font-size: 1rem;
-            cursor: pointer;
-            border-radius: 0.2rem;
-            &:hover,
-            &:focus {
-              filter: brightness(150%);
-              transform: translateY(-0.2rem);
-            }
-            @media (prefers-color-scheme: dark) {
-              color: #fff;
-              background: #1e2126;
-            }
-          `}
-        >
-          <Icon
-            name="twitter"
-            css={css`
-              width: 1.2rem;
-              margin-right: 1.2rem;
-            `}
-          />
-          Twitter
-        </a>
+        ))}
       </div>
 
       <SkillsSection />

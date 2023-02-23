@@ -1,3 +1,5 @@
+import { IconName } from "./icon"
+
 type Status = 'active' | 'inactive' | 'archived'
 
 type Category =
@@ -83,6 +85,10 @@ export interface Link {
   url: string
   enabled: boolean
   image?: string
+}
+
+export interface SocialLink extends Link {
+  text: IconName
 }
 
 export interface Community {
