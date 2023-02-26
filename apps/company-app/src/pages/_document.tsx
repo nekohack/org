@@ -23,7 +23,7 @@ class NekohackMe extends Document {
             content="A personal website that provides a wide range of information regardless of technology."
           />
           <meta property="og:type" content="website" />
-          <meta property="og:image" content="https://nekohack.me/og/top.jpg" />
+          <meta property="og:image" content="https://nekohack.me/og/nekohack-top.jpg" />
           <meta property="og:url" content="https://nekohack.me" />
           <meta name="twitter:title" content="nekohack.me | Yuma Kitamura - Web Developer" />
           <meta name="twitter:description" content="Hi, I am Yuma Kitamura! A Web Developer." />
@@ -31,7 +31,7 @@ class NekohackMe extends Document {
           <meta name="twitter:site" content="@jiyuujinlaab" />
           <meta name="twitter:creator" content="@jiyuujinlaab" />
           <meta name="twitter:site" content="@jiyuujinlaab" />
-          <meta name="twitter:image" content="https://nekohack.me/og/top.jpg" />
+          <meta name="twitter:image" content="https://nekohack.me/og/nekohack-top.jpg" />
           <script
             async
             src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
