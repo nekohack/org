@@ -1,4 +1,5 @@
 export type IconName =
+  | 'arrow-up'
   | 'arrow-down'
   | 'carbon'
   | 'email'
