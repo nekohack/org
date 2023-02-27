@@ -92,7 +92,7 @@
     "astro": "2.0.15",
     "autoprefixer": "10.4.13",
     "clsx": "1.2.1",
-    "concurrently": "6.5.1",
+    "concurrently": "7.6.0",
     "dayjs": "1.11.7",
     "env-cmd": "10.1.0",
     "esbuild": "0.16.12",
