@@ -46,9 +46,9 @@ commands:
 
       - run: yarn company-app:css && yarn company-app:build && yarn company-app:export
 
-      - run: touch apps/profile-app/.env && echo "NEXT_LIVE_STRIPE_PUBLIC_KEY="$NEXT_LIVE_STRIPE_PUBLIC_KEY >> apps/profile-app/.env && echo "NEXT_LIVE_STRIPE_SECRET_KEY="$NEXT_LIVE_STRIPE_SECRET_KEY >> apps/profile-app/.env && echo "NEXT_LIVE_LAMBDA_ENDPOINT="$NEXT_LIVE_LAMBDA_ENDPOINT >> apps/profile-app/.env
+      - run: touch apps/portfolio-legacyapp/.env && echo "NEXT_LIVE_STRIPE_PUBLIC_KEY="$NEXT_LIVE_STRIPE_PUBLIC_KEY >> apps/portfolio-legacyapp/.env && echo "NEXT_LIVE_STRIPE_SECRET_KEY="$NEXT_LIVE_STRIPE_SECRET_KEY >> apps/portfolio-legacyapp/.env && echo "NEXT_LIVE_LAMBDA_ENDPOINT="$NEXT_LIVE_LAMBDA_ENDPOINT >> apps/portfolio-legacyapp/.env
 
-      - run: yarn profile-app:css && yarn profile-app:build && yarn profile-app:export
+      - run: yarn portfolio-legacyapp:css && yarn portfolio-legacyapp:build && yarn portfolio-legacyapp:export
 
   company_and_deploy:
     description: Company Deploy
@@ -64,7 +64,7 @@ commands:
     description: Profile Deploy
     steps:
       - aws-s3/sync:
-          from: dist/apps/profile-app/exported/
+          from: dist/apps/portfolio-legacyapp/exported/
           to: s3://yuma-kitamura.nekohack.me
           arguments: |
             --acl public-read \

@@ -52,7 +52,7 @@ jobs:
 
       - shell: bash
         run: |
-          touch apps/profile-app/.env
+          touch apps/portfolio-legacyapp/.env
           echo "SENTRY_DSN=${{ secrets.SENTRY_DSN }}" >> .env
           echo "LHCI_GITHUB_APP_TOKEN=${{ secrets.LHCI_GITHUB_APP_TOKEN }}" >> .env
           echo "CTF_BLOG_POST_TYPE_ID=${{ secrets.CTF_BLOG_POST_TYPE_ID }}" >> .env
@@ -61,9 +61,9 @@ jobs:
 
       - name: Profile Transpile
         run: |
-          npx nx run profile-app:css
-          npx nx run profile-app:build
-          npx nx run profile-app:export
+          npx nx run portfolio-legacyapp:css
+          npx nx run portfolio-legacyapp:build
+          npx nx run portfolio-legacyapp:export
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}

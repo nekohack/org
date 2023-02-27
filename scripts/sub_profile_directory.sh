@@ -1,16 +1,16 @@
 bucket_name="yuma-kitamura.nekohack.me"
 
 # next export で出来る HTML から拡張子を取り除く
-html_filepaths=$(find ./dist/apps/profile-app/exported/ -name "*.html" ! -path "*/index.html")
+html_filepaths=$(find ./dist/apps/portfolio-legacyapp/exported/ -name "*.html" ! -path "*/index.html")
 for filepath in $html_filepaths; do
   mv $filepath ${filepath%\.html}
 done
 
-aws s3 sync ./dist/apps/profile-app/exported/ s3://$bucket_name/ --delete --acl public-read
+aws s3 sync ./dist/apps/portfolio-legacyapp/exported/ s3://$bucket_name/ --delete --acl public-read
 
 # S3 上のオブジェクトに対し Content-Type を付与する
 for filepath in $html_filepaths; do
-  path=${filepath#\.\/dist/apps/profile-app/exported\/}
+  path=${filepath#\.\/dist/apps/portfolio-legacyapp/exported\/}
   key=${path%\.html}
 
   aws s3api copy-object \
@@ -23,7 +23,7 @@ for filepath in $html_filepaths; do
 done
 
 # コピー用に空の index.html を作成する
-empty_index_html_directory=./dist/apps/profile-app/exported/tmp/
+empty_index_html_directory=./dist/apps/portfolio-legacyapp/exported/tmp/
 empty_index_html=${empty_index_html_directory}index.html
 mkdir -p $empty_index_html_directory
 touch $empty_index_html
@@ -39,7 +39,7 @@ done
 
 # Location ヘッダがついた空の index.html オブジェクトを作成する
 for index_html_path in $target_index_html_paths; do
-  key=${index_html_path#\.\/dist/apps/profile-app/exported\/}
+  key=${index_html_path#\.\/dist/apps/portfolio-legacyapp/exported\/}
 
   # 末尾に /index.html が存在しない URL となる
   destination=https://$bucket_name/${key%\/index.html}

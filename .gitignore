@@ -52,13 +52,19 @@ apps/company-app/public/*.js
 apps/company-app/public/*.js.map
 apps/company-app/public/sitemap.xml
 
+apps/portfolio-app/node_modules
+apps/portfolio-app/node_modules/**
+apps/portfolio-app/dist
+apps/portfolio-app/dist/**
+apps/portfolio-app/src/uno.css
+
 #apps/company-app/public/og/*.jpg
 #!apps/company-app/public/og/top.jpg
-apps/profile-app/.next
-apps/profile-app/src/styles/uno.css
-apps/profile-app/public/*.js
-apps/profile-app/public/*.js.map
-apps/profile-app/public/sitemap.xml
+apps/portfolio-legacyapp/.next
+apps/portfolio-legacyapp/src/styles/uno.css
+apps/portfolio-legacyapp/public/*.js
+apps/portfolio-legacyapp/public/*.js.map
+apps/portfolio-legacyapp/public/sitemap.xml
 
-#apps/profile-app/public/og/*.jpg
-#!apps/profile-app/public/og/top.jpg
+#apps/portfolio-legacyapp/public/og/*.jpg
+#!apps/portfolio-legacyapp/public/og/top.jpg
