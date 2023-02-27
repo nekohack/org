@@ -1,7 +1,7 @@
 import { IconName } from '@org/shared/types'
 import React from 'react'
 import { match } from 'ts-pattern'
-import { ArrowDown } from './images/ArrowDown'
+import { ArrowUp, ArrowDown } from './images/Arrow'
 import { Carbon } from './images/Carbon'
 import { Email } from './images/Email'
 import { Facebook } from './images/Facebook'
@@ -24,6 +24,7 @@ export const Icon: React.FC<IconProps> = (props) => {
   const { name } = props
 
   return match(name)
+    .with('arrow-up', () => <ArrowUp />)
     .with('arrow-down', () => <ArrowDown />)
     .with('carbon', () => <Carbon />)
     .with('email', () => <Email />)

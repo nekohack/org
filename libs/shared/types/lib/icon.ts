@@ -1,4 +1,5 @@
 export type IconName =
+  | 'arrow-up'
   | 'arrow-down'
   | 'carbon'
   | 'email'
@@ -11,3 +12,4 @@ export type IconName =
   | 'share'
   | 'star'
   | 'twitter'
+  | 'youtube'

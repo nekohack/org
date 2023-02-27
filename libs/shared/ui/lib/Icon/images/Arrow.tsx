@@ -1,3 +1,14 @@
+export function ArrowUp({ size = 24 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 12 12" className="mr-2" fill="none">
+      <path
+        d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z"
+        fill="currentColor"
+      />
+    </svg>
+  )
+}
+
 export function ArrowDown({ size = 24 }) {
   return (
     <svg role="img" width={size} height={size} viewBox="0 0 16 16" fill="currentColor">
