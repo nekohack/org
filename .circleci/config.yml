@@ -60,8 +60,8 @@ commands:
             --acl public-read \
             --cache-control "max-age=86400"
 
-  profile_and_deploy:
-    description: Profile Deploy
+  portfolio_and_deploy:
+    description: Portfolio (Legacy) Deploy
     steps:
       - aws-s3/sync:
           from: dist/apps/portfolio-legacyapp/exported/
@@ -87,7 +87,7 @@ jobs:
       - aws-cli/setup
       - prepare_node_dependency
       # - company_and_deploy
-      # - profile_and_deploy
+      # - portfolio_and_deploy
 
 workflows:
   version: 2

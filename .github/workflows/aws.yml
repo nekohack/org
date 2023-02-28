@@ -59,7 +59,7 @@ jobs:
           echo "CTF_SPACE_ID=${{ secrets.CTF_SPACE_ID }}" >> .env
           echo "CTF_CDA_ACCESS_TOKEN=${{ secrets.CTF_CDA_ACCESS_TOKEN }}" >> .env
 
-      - name: Profile Transpile
+      - name: Portfolio (Legacy) Transpile
         run: |
           npx nx run portfolio-legacyapp:css
           npx nx run portfolio-legacyapp:build
@@ -87,5 +87,5 @@ jobs:
       - name: Deploy Company to S3
         run: bash scripts/sub_company_directory.sh
 
-      - name: Deploy Profile to S3
-        run: bash scripts/sub_profile_directory.sh
+      - name: Deploy Portfolio (Legacy) to S3
+        run: bash scripts/sub_portfolio_legacy_directory.sh
