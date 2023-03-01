@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - main
-  #  pull_request:
-  #    branches:
-  #      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   deploy:
@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - uses: nrwl/nx-set-shas@v3
+      # - uses: nrwl/nx-set-shas@v3
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
