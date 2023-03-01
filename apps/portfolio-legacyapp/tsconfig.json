@@ -24,7 +24,6 @@
       "@icons/*": ["./src/components/icons/*"],
       "@lib/*": ["./src/lib/*"],
       "public/*": ["./public/*"],
-      "node_modules/@nekohack/normalize.css/*": ["../../node_modules/@nekohack/normalize.css/*"],
       "@org/shared/data": ["../../libs/shared/data/index.ts"],
       "@org/shared/hooks": ["../../libs/shared/hooks/index.ts"],
       "@org/shared/types": ["../../libs/shared/types/index.ts"],
