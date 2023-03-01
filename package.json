@@ -89,7 +89,7 @@
     "@unocss/vite": "0.50.3",
     "@unocss/webpack": "0.49.7",
     "@vitejs/plugin-react": "^2.2.0",
-    "astro": "2.0.15",
+    "astro": "2.0.16",
     "autoprefixer": "10.4.13",
     "clsx": "1.2.1",
     "concurrently": "6.5.1",
