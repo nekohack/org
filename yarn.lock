@@ -4007,17 +4007,17 @@
   dependencies:
     tslib "^2.4.0"
 
-"@tanstack/react-virtual@3.0.0-beta.49":
-  version "3.0.0-beta.49"
-  resolved "https://registry.yarnpkg.com/@tanstack/react-virtual/-/react-virtual-3.0.0-beta.49.tgz#ea17058135fa71162948390e13c25246d091e39c"
-  integrity sha512-bd7WBHu1LUBbs3qYZnvWSo4AhcSysc/QyBoHpGK2XOMTXzP9D4FVISMfCvdIbi+JoTqdZqhtaV7c1WY5gzZRlQ==
+"@tanstack/react-virtual@3.0.0-beta.52":
+  version "3.0.0-beta.52"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-virtual/-/react-virtual-3.0.0-beta.52.tgz#cbc8e4e6dfb664029bc0062915618758fca95783"
+  integrity sha512-8CahZpH2CV3gRj02MVxOfw561n0yHAuW5D8YW8YyZ8GRZTKnbF4boijc+gy8jn8hiHMTvS5AQvdjf4RkOIl8Yw==
   dependencies:
-    "@tanstack/virtual-core" "3.0.0-beta.49"
+    "@tanstack/virtual-core" "3.0.0-beta.52"
 
-"@tanstack/virtual-core@3.0.0-beta.49":
-  version "3.0.0-beta.49"
-  resolved "https://registry.yarnpkg.com/@tanstack/virtual-core/-/virtual-core-3.0.0-beta.49.tgz#058d876a4ccdb1c980b24b39824a8eae2a438791"
-  integrity sha512-tPmuUiQwUW3PdQirBjlqeZD1JMn7bcyNE6stS50RUu5vyopzLFALnN0uTBftrZOcHpkRtYVa0ifz9fB9yKKJYw==
+"@tanstack/virtual-core@3.0.0-beta.52":
+  version "3.0.0-beta.52"
+  resolved "https://registry.yarnpkg.com/@tanstack/virtual-core/-/virtual-core-3.0.0-beta.52.tgz#5375bef6f14926b75e77bd2b0060e8606a4dc881"
+  integrity sha512-70208CgTPIf6tonbl2wmpGpeZ9geflhZKMMPddBG2dbF5XUkmuskdWDXG/H/x/Uv/K3bphl/FpbClts5GfdedA==
 
 "@trysound/sax@0.2.0":
   version "0.2.0"
