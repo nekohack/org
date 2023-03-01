@@ -46,9 +46,11 @@ commands:
 
       - run: yarn company-app:css && yarn company-app:build && yarn company-app:export
 
-      - run: touch apps/portfolio-legacyapp/.env && echo "NEXT_LIVE_STRIPE_PUBLIC_KEY="$NEXT_LIVE_STRIPE_PUBLIC_KEY >> apps/portfolio-legacyapp/.env && echo "NEXT_LIVE_STRIPE_SECRET_KEY="$NEXT_LIVE_STRIPE_SECRET_KEY >> apps/portfolio-legacyapp/.env && echo "NEXT_LIVE_LAMBDA_ENDPOINT="$NEXT_LIVE_LAMBDA_ENDPOINT >> apps/portfolio-legacyapp/.env
+      - run: yarn portfolio-app:css && yarn portfolio-app:build
 
-      - run: yarn portfolio-legacyapp:css && yarn portfolio-legacyapp:build && yarn portfolio-legacyapp:export
+      # - run: touch apps/portfolio-legacyapp/.env && echo "NEXT_LIVE_STRIPE_PUBLIC_KEY="$NEXT_LIVE_STRIPE_PUBLIC_KEY >> apps/portfolio-legacyapp/.env && echo "NEXT_LIVE_STRIPE_SECRET_KEY="$NEXT_LIVE_STRIPE_SECRET_KEY >> apps/portfolio-legacyapp/.env && echo "NEXT_LIVE_LAMBDA_ENDPOINT="$NEXT_LIVE_LAMBDA_ENDPOINT >> apps/portfolio-legacyapp/.env
+
+      # - run: yarn portfolio-legacyapp:css && yarn portfolio-legacyapp:build && yarn portfolio-legacyapp:export
 
   company_and_deploy:
     description: Company Deploy
@@ -61,14 +63,24 @@ commands:
             --cache-control "max-age=86400"
 
   portfolio_and_deploy:
-    description: Portfolio (Legacy) Deploy
+    description: Portfolio Deploy
     steps:
       - aws-s3/sync:
-          from: dist/apps/portfolio-legacyapp/exported/
+          from: apps/portfolio-app/dist/
           to: s3://yuma-kitamura.nekohack.me
           arguments: |
             --acl public-read \
             --cache-control "max-age=86400"
+
+  # portfolio_legacy_and_deploy:
+  #   description: Portfolio (Legacy) Deploy
+  #   steps:
+  #     - aws-s3/sync:
+  #         from: dist/apps/portfolio-app/exported/
+  #         to: s3://yuma-kitamura.nekohack.me
+  #         arguments: |
+  #           --acl public-read \
+  #           --cache-control "max-age=86400"
 
 jobs:
   install_and_setup_cli:
@@ -88,6 +100,7 @@ jobs:
       - prepare_node_dependency
       # - company_and_deploy
       # - portfolio_and_deploy
+      # - portfolio_legacy_and_deploy
 
 workflows:
   version: 2

@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - main
-  #  pull_request:
-  #    branches:
-  #      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   deploy:
@@ -59,19 +59,27 @@ jobs:
           echo "CTF_SPACE_ID=${{ secrets.CTF_SPACE_ID }}" >> .env
           echo "CTF_CDA_ACCESS_TOKEN=${{ secrets.CTF_CDA_ACCESS_TOKEN }}" >> .env
 
-      - name: Portfolio (Legacy) Transpile
+      - name: Portfolio Transpile
         run: |
-          npx nx run portfolio-legacyapp:css
-          npx nx run portfolio-legacyapp:build
-          npx nx run portfolio-legacyapp:export
+          npx nx run portfolio-app:css
+          npx nx run portfolio-app:build
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          NEXT_LIVE_LAMBDA_ENDPOINT: ${{ secrets.NEXT_LIVE_LAMBDA_ENDPOINT }}
-          NEXT_LIVE_STRIPE_PUBLIC_KEY: ${{ secrets.NEXT_LIVE_STRIPE_PUBLIC_KEY }}
-          NEXT_TEST_LAMBDA_ENDPOINT: ${{ secrets.NEXT_TEST_LAMBDA_ENDPOINT }}
-          NEXT_TEST_STRIPE_PUBLIC_KEY: ${{ secrets.NEXT_TEST_STRIPE_PUBLIC_KEY }}
-          NEXT_LHCI_GITHUB_APP_TOKEN: ${{ secrets.NEXT_LHCI_GITHUB_APP_TOKEN }}
+
+      # - name: Portfolio (Legacy) Transpile
+      #   run: |
+      #     npx nx run portfolio-legacyapp:css
+      #     npx nx run portfolio-legacyapp:build
+      #     npx nx run portfolio-legacyapp:export
+      #   env:
+      #     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      #     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      #     NEXT_LIVE_LAMBDA_ENDPOINT: ${{ secrets.NEXT_LIVE_LAMBDA_ENDPOINT }}
+      #     NEXT_LIVE_STRIPE_PUBLIC_KEY: ${{ secrets.NEXT_LIVE_STRIPE_PUBLIC_KEY }}
+      #     NEXT_TEST_LAMBDA_ENDPOINT: ${{ secrets.NEXT_TEST_LAMBDA_ENDPOINT }}
+      #     NEXT_TEST_STRIPE_PUBLIC_KEY: ${{ secrets.NEXT_TEST_STRIPE_PUBLIC_KEY }}
+      #     NEXT_LHCI_GITHUB_APP_TOKEN: ${{ secrets.NEXT_LHCI_GITHUB_APP_TOKEN }}
 
       # - name: Deploy Payment to Lambda
       #   run: |
