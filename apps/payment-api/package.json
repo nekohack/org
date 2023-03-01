@@ -1,0 +1,14 @@
+{
+  "name": "payment-api",
+  "version": "0.1.0",
+  "description": "Stripe project",
+  "author": "yuukit <yuma.kitamura@ponos.co.jp>",
+  "private": true,
+  "scripts": {
+    "deploy": "NODE_ENV=live sls deploy --stage live"
+  },
+  "dependencies": {
+    "dotenv": "16.0.3",
+    "stripe": "11.5.0"
+  }
+}
