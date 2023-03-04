@@ -1,6 +1,6 @@
 import { css } from '@emotion/react'
 import { t } from 'i18next'
-import { social as _social } from '@org/shared/data'
+import { socialLinks as _socialLinks } from '@org/shared/data'
 import { useEmitEvent } from '@org/shared/hooks'
 import { Icon } from '@org/shared/ui'
 import SkillsSection from '@sections/SkillsSection'
@@ -16,7 +16,7 @@ import { defaultLanguage, languages } from '../../../i18n.config'
 export default function Home() {
   const { dispatch } = useEmitEvent('focusOnContact', true)
 
-  const social = JOB ? _social : _social.filter((s) => s.text !== 'person')
+  const socialLinks = JOB ? _socialLinks : _socialLinks.filter((s) => s.text !== 'person')
 
   return (
     <main>
@@ -69,7 +69,7 @@ export default function Home() {
           }
         `}
       >
-        {social.map((s, index) => (
+        {socialLinks.map((s, index) => (
           <a
             key={index}
             onClick={s.text === 'person' ? dispatch : null}
