@@ -1,6 +1,6 @@
 import { Story, Meta } from '@storybook/react'
 import { Timeline, TimelineProps } from './index'
-import { timelines, talks } from '../../../data/lib/json/activities.json'
+import { talks, timelines } from '../../../data/lib/legacy/activity.constants'
 import React from 'react'
 import { Typography } from '../Typography/Typography'
 

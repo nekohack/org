@@ -1,10 +1,8 @@
-export { communities } from './lib/community.constants'
-export { degrees } from './lib/degree.constants'
-export { jobs } from './lib/job.constants'
-export { docsForExternal, internalDocs } from './lib/link.constants'
-export { positions } from './lib/position.constants'
-export { products } from './lib/product.constants'
-export { social } from './lib/social.constants'
-export { talks } from './lib/talk.constants'
 export { technologies } from './lib/technology.constants'
-export { timelines } from './lib/timeline.constants'
+
+// Legacy
+export { talks, timelines } from './lib/legacy/activity.constants'
+export { communities } from './lib/legacy/community.constants'
+export { jobs } from './lib/legacy/job.constants'
+export { projectLinks, resumeLinks, socialLinks } from './lib/legacy/link.constants'
+export { products } from './lib/legacy/product.constants'

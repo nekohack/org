@@ -1,5 +1,5 @@
 import i18next, { t } from 'i18next'
-import { docsForExternal } from '@org/shared/data'
+import { projectLinks } from '@org/shared/data'
 import { LinkPreview, Typography } from '@org/shared/ui'
 
 const WorksSection = () => {
@@ -8,7 +8,7 @@ const WorksSection = () => {
       <Typography variant="subtitle 1">{`${t('works')}`}</Typography>
       <Typography variant="body 1">{`${t('works_description')}`}</Typography>
       <div>
-        {docsForExternal.map((work, index) => {
+        {projectLinks.map((work, index) => {
           return (
             <div key={index}>
               <Typography variant="subtitle 2">{work.text}</Typography>
