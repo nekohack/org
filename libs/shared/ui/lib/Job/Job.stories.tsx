@@ -1,6 +1,6 @@
 import { Story, Meta } from '@storybook/react'
 import { Job, JobProps } from '.'
-import data from '../../../data/lib/json/jobs.json'
+import { jobs as _jobs } from '../../../data/lib/legacy/job.constants'
 import React from 'react'
 
 export default {
@@ -9,7 +9,7 @@ export default {
 } as Meta
 
 export const Default: Story<JobProps> = (args) => {
-  const jobs = Object.entries(data)
+  const jobs = Object.entries(_jobs)
     .map(([type, value]) => {
       return value.map((v) => ({
         type,
