@@ -2172,13 +2172,13 @@
   resolved "https://registry.yarnpkg.com/@ljharb/has-package-exports-patterns/-/has-package-exports-patterns-0.0.2.tgz#c1718939b65efa1f45f53686c2fcfa992b9fb68f"
   integrity sha512-4/RWEeXDO6bocPONheFe6gX/oQdP/bEpv0oL4HqjPP5DCenBSt0mHgahppY49N0CpsaqffdwPq+TlX9CYOq2Dw==
 
-"@markuplint/astro-parser@3.3.0":
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/@markuplint/astro-parser/-/astro-parser-3.3.0.tgz#37ec0dc5f79ee28c6cf549a4c8e24e3ddbe11cd7"
-  integrity sha512-V0GKI+NbJ8Y8KCM4dg+wlTtCSg5mtqKUlfeI6Sre66C0kfnufJmXzPpzCf37bd++I/YJLoRPUB2vFFwa14DOIg==
+"@markuplint/astro-parser@3.3.1":
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/@markuplint/astro-parser/-/astro-parser-3.3.1.tgz#c1179c3963a209952bb60453ee696628e6466fb4"
+  integrity sha512-eRKmQ2Q474jDDi78Fop7QBMXEQNrkfQX4C7opXLaPH7vGCLeryTKVSofK+joA36a3e4ZK2e1wOQutFNZeCnrVg==
   dependencies:
     "@astrojs/parser" "0.20"
-    "@markuplint/html-parser" "3.3.0"
+    "@markuplint/html-parser" "3.3.1"
     "@markuplint/ml-ast" "3.0.0"
     "@markuplint/parser-utils" "3.3.0"
     tslib "^2.4.1"
@@ -2225,10 +2225,10 @@
     parse5 "7.1.2"
     tslib "^2.4.1"
 
-"@markuplint/html-parser@3.3.0":
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/@markuplint/html-parser/-/html-parser-3.3.0.tgz#139073192355171bc23fc2f47898fec41adace82"
-  integrity sha512-Av2g6MDf48ZMWvwTCPxMw50JhszBnMVZb04FVVtQiyqr6Zr03VRCCAc2+XZ8rz3cPnGajqlF4gFDHan0aTCdag==
+"@markuplint/html-parser@3.3.1":
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/@markuplint/html-parser/-/html-parser-3.3.1.tgz#afe5ae958786fa50ac694ce91a6fddaa3ec94307"
+  integrity sha512-FX+P+HTwSnm6QWSaSN3ENSoEopOci4QM3GwDV8b5u2aGh4wt7DYkh+2X+MtKST2qc6YbZQEuLiYvqrlkHypZ8w==
   dependencies:
     "@markuplint/ml-ast" "3.0.0"
     "@markuplint/parser-utils" "3.3.0"
