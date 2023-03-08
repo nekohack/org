@@ -24,9 +24,17 @@ const SlideSection: FC = () => {
       <div className="section-wrapper">
         <Timeline>
           {talks.slice(0, length).map((d, index) => (
-            <Timeline.Card key={index} title={d.title} date={d.date}>
-              <div className="text-gray-300">
-                <Typography variant="body 3">{d.host}</Typography>
+            <Timeline.Card key={index}>
+              <div className="p-2 sm:p-4 rounded-lg border shadow-sm bg-gray-700 border-gray-600 text-gray-300">
+                <div className="justify-between mb-3 sm:flex items-baseline gap-2">
+                  <div className="text-sm font-normal flex-1">{d.title}</div>
+                  <time className="mb-1 text-xs font-normal sm:order-last sm:mb-0 block">
+                    {d.date}
+                  </time>
+                </div>
+                <div className="text-gray-300">
+                  <Typography variant="body 3">{d.host}</Typography>
+                </div>
               </div>
             </Timeline.Card>
           ))}

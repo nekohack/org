@@ -7,5 +7,11 @@ export const root = css`
   display: flex;
   flex-direction: column;
   gap: 4px;
+  position: relative;
   padding: 0 8px;
+  border-left: 1px solid #6b7280;
+`
+
+export const listItem = css`
+  margin-bottom: 8px;
 `
