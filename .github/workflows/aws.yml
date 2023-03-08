@@ -95,8 +95,8 @@ jobs:
       - name: Deploy Company to S3
         run: bash scripts/sub_company_directory.sh
 
-      - name: Deploy Portfolio to S3
-        run: bash scripts/sub_portfolio_directory.sh
+      # - name: Deploy Portfolio to S3
+      #   run: bash scripts/sub_portfolio_directory.sh
 
-      # - name: Deploy Portfolio (Legacy) to S3
-      #   run: bash scripts/sub_portfolio_legacy_directory.sh
+      - name: Deploy Portfolio (Legacy) to S3
+        run: bash scripts/sub_portfolio_legacy_directory.sh
