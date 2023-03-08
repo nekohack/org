@@ -74,7 +74,7 @@ export function Item(props: ItemProps) {
         >
           <div className="relative">
             <span>{name}</span>
-            <div className="rounded px-2 py-1 absolute -top-12 -translate-x-1/2 left-1/2 bg-gray-800 opacity-0 group-hover:opacity-100 transition pointer-events-none min-w-max text-center text-gray-300 z-20">
+            <div className="rounded px-2 py-1 absolute -top-12 -translate-x-1/2 left-1/2 bg-gray-800 opacity-0 group-hover:opacity-100 transition pointer-events-none min-w-max text-center text-gray-300">
               <Typography variant="body 3">
                 {`${start} ~ ${end === '-' ? '' : end}`.trim()}
               </Typography>

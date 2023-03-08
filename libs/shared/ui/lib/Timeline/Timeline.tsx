@@ -10,9 +10,11 @@ export function Timeline(props: React.PropsWithChildren<TimelineProps>) {
   const childItems = React.Children.toArray(children)
 
   return (
-    <ul css={styles.root}>
+    <ul className="relative border-l border-gray-500">
       {childItems.map((child, index) => (
-        <li key={index}>{child}</li>
+        <li key={index} className="mb-10 ml-6 relative">
+          {child}
+        </li>
       ))}
     </ul>
   )

@@ -1,25 +1,16 @@
 import React from 'react'
-import { CardHeader } from '../CardHeader'
 import * as styles from './index.styles'
 
 export interface CardProps {
-  title: string
-  date: string
-  alternate?: boolean
+  //
 }
 
 export function Card(props: React.PropsWithChildren<CardProps>) {
-  const { children, title, date, alternate = undefined } = props
+  const { children } = props
   return (
-    <div
-      css={[styles.item, alternate !== undefined && alternate ? styles.leftItem : styles.rightItem]}
-    >
-      <div
-        css={styles.root(alternate !== undefined && alternate ? 'left' : 'right')}
-        className="bg-indigo-900 rounded-lg text-gray-200 shadow-lg"
-      >
-        <CardHeader title={title} date={date} />
-        {children}
+    <div className="mt-4 flex gap-5 break-all">
+      <div className="flex-1">
+        <p className="text-gray-100 text-xs">{children}</p>
       </div>
     </div>
   )
