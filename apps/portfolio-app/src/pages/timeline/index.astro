@@ -3,6 +3,11 @@ import Root from 'src/layouts/Root.astro'
 import { jobs as _jobs } from '@org/shared/data'
 import { Job } from '@org/shared/ui'
 
+export const metadata = {
+  title: 'About',
+  description: 'YUMA Kitamura\'s timeline.',
+}
+
 const jobs = Object.entries(_jobs)
   .map(([type, value]) => {
     return value.map((v) => ({
