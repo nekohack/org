@@ -1,0 +1,27 @@
+{
+  "name": "payment-api",
+  "version": "0.1.0",
+  "description": "Stripe project",
+  "author": "yuukit <yuma.kitamura@ponos.co.jp>",
+  "private": true,
+  "scripts": {
+    "test": "NODE_ENV=live sls deploy --stage test",
+    "deploy": "NODE_ENV=live sls deploy --stage live"
+  },
+  "dependencies": {
+    "dotenv": "16.0.3",
+    "stripe": "11.5.0"
+  },
+  "devDependencies": {
+    "@serverless/typescript": "3.27.0",
+    "@types/aws-lambda": "8.10.111",
+    "@types/node": "18.14.4",
+    "esbuild": "0.17.10",
+    "serverless": "3.28.1",
+    "serverless-esbuild": "1.39.0",
+    "serverless-layers": "2.6.1"
+  },
+  "engines": {
+    "node": ">=16.18.0"
+  }
+}
