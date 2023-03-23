@@ -8,7 +8,7 @@
       "outputs": ["{options.outputPath}"],
       "options": {
         "uiFramework": "@storybook/react",
-        "outputPath": "dist/storybook/shared/ui",
+        "outputDir": "dist/storybook/shared/ui",
         "configDir": "libs/shared/ui/.storybook"
       },
       "configurations": {
