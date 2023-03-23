@@ -2380,10 +2380,10 @@
     eslint-plugin-react-hooks "4.3.0"
     prettier "2.5.1"
 
-"@nekohack/normalize.css@2.6.0":
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/@nekohack/normalize.css/-/normalize.css-2.6.0.tgz#d5ed73825bca32473b5d081cb4f1e516614a80b8"
-  integrity sha512-UVuFi+LjF2L0eMKFJoBUHbhwXdLduZiKayRj22zCpyao67Kob4cdKfmgHEJi/PcBda+Qozp0iUuT0997AKFVLg==
+"@nekohack/normalize.css@2.7.0":
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/@nekohack/normalize.css/-/normalize.css-2.7.0.tgz#ebaae91358d55e872d6e2fd62da12b45558c9657"
+  integrity sha512-ValIwyOfF5OEyik8DyH2npsraGv/Uj0tCOlKIP/seOQzV+lR0yqKB4QxNYbydxC9hcvz4cCuyNe17QYOAd+Z1w==
 
 "@next/env@13.1.1":
   version "13.1.1"
