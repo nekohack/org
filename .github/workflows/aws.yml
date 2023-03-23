@@ -43,9 +43,9 @@ jobs:
 
       - name: Company Transpile
         run: |
-          npx nx run company-app:css
-          npx nx run company-app:build
-          npx nx run company-app:export
+          yarn nx run company-app:css
+          yarn nx run company-app:build
+          yarn nx run company-app:export
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -69,9 +69,9 @@ jobs:
 
       - name: Portfolio (Legacy) Transpile
         run: |
-          npx nx run portfolio-legacyapp:css
-          npx nx run portfolio-legacyapp:build
-          npx nx run portfolio-legacyapp:export
+          yarn nx run portfolio-legacyapp:css
+          yarn nx run portfolio-legacyapp:build
+          yarn nx run portfolio-legacyapp:export
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
