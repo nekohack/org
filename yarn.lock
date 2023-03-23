@@ -2277,9 +2277,9 @@
     uuid "^9.0.0"
 
 "@markuplint/react-spec@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@markuplint/react-spec/-/react-spec-3.0.1.tgz#0c9c83e0e93c72df552efd55c8c9bd85f66ec032"
-  integrity sha512-v8gruIQrSGGG5JRvLKjtNUTPAaBYhbo8zb5ix85JXU3opPaes1xUY7cb/EAzAhozZKyCtDScyKD2jAuPbSGttg==
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@markuplint/react-spec/-/react-spec-3.4.0.tgz#e78e3b9256d91fe7d5f6b69d44657398c928fc48"
+  integrity sha512-VRV19JYoGDTLTz5BUjplh+buwA/WPt7RBn3vEM5FqUuJ2sNxHRfUZvjRPAYUB/ylTjlZ2l+kEZSyyTblQWjYIg==
 
 "@markuplint/rules@3.0.0":
   version "3.0.0"
