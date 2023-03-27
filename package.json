@@ -33,7 +33,7 @@
     "@nrwl/workspace": "15.6.3",
     "@storybook/addon-essentials": "^6.5.13",
     "@storybook/addon-links": "^6.5.13",
-    "@storybook/builder-vite": "^0.2.5",
+    "@storybook/builder-vite": "^0.4.0",
     "@storybook/react": "^6.5.13",
     "@stripe/react-stripe-js": "1.16.5",
     "@stripe/stripe-js": "1.46.0",
