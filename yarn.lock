@@ -2048,16 +2048,15 @@
     "@types/yargs" "^17.0.8"
     chalk "^4.0.0"
 
-"@joshwooding/vite-plugin-react-docgen-typescript@0.0.5":
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/@joshwooding/vite-plugin-react-docgen-typescript/-/vite-plugin-react-docgen-typescript-0.0.5.tgz#67f6a6e0b532febdd04cf809b3d4ce2fd593e1a5"
-  integrity sha512-HwAEj/vAP1+hzBfIv9DTCyg+1O0/LG48Up7j1RmJ+pFwjb/wRxzUBco4LqKFKe7SZ0M6IyASNh1oKP3yHnJElA==
+"@joshwooding/vite-plugin-react-docgen-typescript@0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@joshwooding/vite-plugin-react-docgen-typescript/-/vite-plugin-react-docgen-typescript-0.2.1.tgz#930f6f0382520e4ba349eea1b152f9ae49364516"
+  integrity sha512-ou4ZJSXMMWHqGS4g8uNRbC5TiTWxAgQZiVucoUrOCWuPrTbkpJbmVyIi9jU72SBry7gQtuMEDp4YR8EEXAg7VQ==
   dependencies:
-    "@rollup/pluginutils" "^4.2.1"
     glob "^7.2.0"
     glob-promise "^4.2.0"
-    magic-string "^0.26.1"
-    react-docgen-typescript "^2.1.1"
+    magic-string "^0.27.0"
+    react-docgen-typescript "^2.2.2"
 
 "@jridgewell/gen-mapping@^0.1.0":
   version "0.1.1"
@@ -2927,7 +2926,7 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
-"@rollup/pluginutils@^4.1.2", "@rollup/pluginutils@^4.2.1":
+"@rollup/pluginutils@^4.1.2":
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/@rollup/pluginutils/-/pluginutils-4.2.1.tgz#e6c6c3aba0744edce3fb2074922d3776c0af2a6d"
   integrity sha512-iKnFXr7NkdZAIHiIWE+BX5ULi/ucVFYWD6TbAV+rZctiRTY2PL6tsIKhoIOaoskiWAkgu+VsbXgUVDNLHf+InQ==
@@ -3248,18 +3247,17 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/builder-vite@^0.2.5":
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/@storybook/builder-vite/-/builder-vite-0.2.6.tgz#d2ad32b979015fc6f033511309ed7e466de542c8"
-  integrity sha512-TwlqJykq5KfM8SmDXWQtUHrYg4XySxwOe3RKud4iGZDYmqPc/ayB9XSF6DR50WgC7gKK7WIVIN+ZcGPphy5zWg==
+"@storybook/builder-vite@^0.4.0":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@storybook/builder-vite/-/builder-vite-0.4.2.tgz#e4524da1d9fd141ebde3a10cac6c1214de6856eb"
+  integrity sha512-KBBiDdYCK0BCOns8iCVrtzaIiYQF9NjwQ7u3HY/a0bmAuaXPd9m3t6Tvp2jNwmdRAtHOHXnM+d6ROJAI77DCYg==
   dependencies:
-    "@joshwooding/vite-plugin-react-docgen-typescript" "0.0.5"
+    "@joshwooding/vite-plugin-react-docgen-typescript" "0.2.1"
     "@storybook/core-common" "^6.4.3"
-    "@storybook/mdx1-csf" "^0.0.4"
+    "@storybook/mdx1-csf" "1.0.0-next.0"
     "@storybook/node-logger" "^6.4.3"
     "@storybook/semver" "^7.3.2"
     "@storybook/source-loader" "^6.4.3"
-    "@vitejs/plugin-react" "^2.0.0"
     ast-types "^0.14.2"
     es-module-lexer "^0.9.3"
     glob "^7.2.0"
@@ -3712,6 +3710,14 @@
     webpack-dev-middleware "^3.7.3"
     webpack-virtual-modules "^0.2.2"
 
+"@storybook/mdx1-csf@1.0.0-next.0":
+  version "1.0.0-next.0"
+  resolved "https://registry.yarnpkg.com/@storybook/mdx1-csf/-/mdx1-csf-1.0.0-next.0.tgz#6745d974037f5c2d3e1cd38f285d92919e69fda5"
+  integrity sha512-zrv5yRKSOQum69DU+5+wK1VcfmHv8xdqLsACeVOHJp1Mq2eG8s3/WuEA0L3wljoebbuKasZecn2Eu/TQCt+0og==
+  dependencies:
+    "@mdx-js/mdx" "^1.6.22"
+    "@mdx-js/react" "^1.6.22"
+
 "@storybook/mdx1-csf@^0.0.1":
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/@storybook/mdx1-csf/-/mdx1-csf-0.0.1.tgz#d4184e3f6486fade9f7a6bfaf934d9bc07718d5b"
@@ -3722,24 +3728,6 @@
     "@babel/preset-env" "^7.12.11"
     "@babel/types" "^7.12.11"
     "@mdx-js/mdx" "^1.6.22"
-    "@types/lodash" "^4.14.167"
-    js-string-escape "^1.0.1"
-    loader-utils "^2.0.0"
-    lodash "^4.17.21"
-    prettier ">=2.2.1 <=2.3.0"
-    ts-dedent "^2.0.0"
-
-"@storybook/mdx1-csf@^0.0.4":
-  version "0.0.4"
-  resolved "https://registry.yarnpkg.com/@storybook/mdx1-csf/-/mdx1-csf-0.0.4.tgz#02b1b3f34b476de90fc034948029dd46d16cf755"
-  integrity sha512-xxUEMy0D+0G1aSYxbeVNbs+XBU5nCqW4I7awpBYSTywXDv/MJWeC6FDRpj5P1pgfq8j8jWDD5ZDvBQ7syFg0LQ==
-  dependencies:
-    "@babel/generator" "^7.12.11"
-    "@babel/parser" "^7.12.11"
-    "@babel/preset-env" "^7.12.11"
-    "@babel/types" "^7.12.11"
-    "@mdx-js/mdx" "^1.6.22"
-    "@mdx-js/react" "^1.6.22"
     "@types/lodash" "^4.14.167"
     js-string-escape "^1.0.1"
     loader-utils "^2.0.0"
@@ -5150,7 +5138,7 @@
     unplugin "^1.1.0"
     webpack-sources "^3.2.3"
 
-"@vitejs/plugin-react@^2.0.0", "@vitejs/plugin-react@^2.2.0":
+"@vitejs/plugin-react@^2.2.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@vitejs/plugin-react/-/plugin-react-2.2.0.tgz#1b9f63b8b6bc3f56258d20cd19b33f5cc761ce6e"
   integrity sha512-FFpefhvExd1toVRlokZgxgy2JtnBOdp4ZDsq7ldCWaqGSGn9UhWMAVm/1lxPL14JfNS5yGz+s9yFrQY6shoStA==
@@ -16317,7 +16305,7 @@ raw-loader@^4.0.2:
     loader-utils "^2.0.0"
     schema-utils "^3.0.0"
 
-react-docgen-typescript@^2.1.1:
+react-docgen-typescript@^2.1.1, react-docgen-typescript@^2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/react-docgen-typescript/-/react-docgen-typescript-2.2.2.tgz#4611055e569edc071204aadb20e1c93e1ab1659c"
   integrity sha512-tvg2ZtOpOi6QDwsb3GZhOjDkkX0h8Z2gipvTg6OVMUyoYoURhEiRNePT8NZItTVCDh39JJHnLdfCOkzoLbFnTg==
