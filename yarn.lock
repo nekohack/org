@@ -5094,10 +5094,10 @@
   resolved "https://registry.yarnpkg.com/@unocss/reset/-/reset-0.49.1.tgz#27559c3c827ddec35387ba53455051d034bab9b5"
   integrity sha512-T1027YK21UDzhgA4qB+L1E8jhNY3dGHqCB15HqB63V5zgVLyw10Hmh0koinrkwtPhxDhLluURuu0tDm7/isvcA==
 
-"@unocss/reset@0.49.7":
-  version "0.49.7"
-  resolved "https://registry.yarnpkg.com/@unocss/reset/-/reset-0.49.7.tgz#db360137168065b6c7e04efcae3e83a3bf09ea46"
-  integrity sha512-dodJ+4LLyBJVLNZZyZNGRnEF/Sepb2n4q+JC+TZ1SjxGpiYGxeDvPFw9kE1M7DZ0XshWE+j31HhojQXc1GDsBA==
+"@unocss/reset@0.50.6":
+  version "0.50.6"
+  resolved "https://registry.yarnpkg.com/@unocss/reset/-/reset-0.50.6.tgz#edbc1127f848013b894f744cc4abe2295149cf66"
+  integrity sha512-e1fuSEgp1p7FgpsIZKNejOKgq4gyZcDGDvi+6544x458hInM6MfiMQNP95UBJEG4JZXq6qCZ8t7tRVWS2m5IXg==
 
 "@unocss/scope@0.49.1":
   version "0.49.1"
