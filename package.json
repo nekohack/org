@@ -9,7 +9,7 @@
     "dotenv": "16.0.3"
   },
   "devDependencies": {
-    "@astrojs/react": "2.1.0",
+    "@astrojs/react": "2.1.1",
     "@astrojs/tailwind": "3.1.1",
     "@emotion/babel-plugin": "11.10.6",
     "@emotion/react": "11.10.6",
