@@ -49,7 +49,7 @@
     "@unocss/cli": "^0.50.0",
     "@unocss/reset": "0.50.6",
     "@unocss/vite": "0.50.6",
-    "@unocss/webpack": "0.49.7",
+    "@unocss/webpack": "0.50.6",
     "@vitejs/plugin-react": "^2.2.0",
     "astro": "2.0.16",
     "autoprefixer": "10.4.14",
