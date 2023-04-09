@@ -2129,10 +2129,10 @@
   resolved "https://registry.yarnpkg.com/@ljharb/has-package-exports-patterns/-/has-package-exports-patterns-0.0.2.tgz#c1718939b65efa1f45f53686c2fcfa992b9fb68f"
   integrity sha512-4/RWEeXDO6bocPONheFe6gX/oQdP/bEpv0oL4HqjPP5DCenBSt0mHgahppY49N0CpsaqffdwPq+TlX9CYOq2Dw==
 
-"@markuplint/astro-parser@3.6.1":
-  version "3.6.1"
-  resolved "https://registry.yarnpkg.com/@markuplint/astro-parser/-/astro-parser-3.6.1.tgz#4c849edbe339666d8ea5ce16698de3c82480c712"
-  integrity sha512-U75E9AmHLVhcKgVIkIXryExRLPBDGw90OTTlsvpW682X+xWEXfu2vGHjciYcC+SRAGMxIBuATF1ZSAl6inBDqA==
+"@markuplint/astro-parser@3.6.2":
+  version "3.6.2"
+  resolved "https://registry.yarnpkg.com/@markuplint/astro-parser/-/astro-parser-3.6.2.tgz#f50dfcd5cd66316ff7f10daa8e4f8deb34e9c510"
+  integrity sha512-uQmIr3tMbIQv3PompHaqt4/9CZJBe/Ycc3TlqqBUfflldrOEkeXPvkLNladTkQZs8HOLz/19TrPFxratN3nPKg==
   dependencies:
     "@astrojs/parser" "0.20"
     "@markuplint/html-parser" "3.6.1"
