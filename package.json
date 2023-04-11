@@ -96,7 +96,7 @@
     "typescript": "4.9.5",
     "unocss": "0.49.1",
     "vite": "^3.2.2",
-    "vite-plugin-inspect": "0.7.18",
+    "vite-plugin-inspect": "0.7.20",
     "zenscroll": "4.0.2"
   },
   "resolutions": {
