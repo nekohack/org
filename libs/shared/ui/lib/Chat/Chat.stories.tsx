@@ -9,9 +9,6 @@ export default {
   component: Chat,
   title: 'Chat',
   subcomponents: {
-    Date: Chat.Date,
-    NewMessageBar: Chat.NewMessageBar,
-    Time: Chat.Time,
     User: Chat.User,
     UserMessage: Chat.UserMessage,
   },
@@ -36,14 +33,7 @@ export const Default: Story<ChatProps> = (args) => {
         height: 576px;
       `}
     >
-      <Chat
-        {...args}
-        width={392}
-        height={512}
-        renderNewMessage={(onClick: React.MouseEventHandler<HTMLButtonElement> | undefined) => (
-          <Chat.NewMessageBar onClick={onClick}>新しいメッセージがあります</Chat.NewMessageBar>
-        )}
-      >
+      <Chat {...args} width={392} height={512}>
         {Array.from({ length: count }).map((_, i) => (
           <Chat.User
             key={i}
@@ -61,7 +51,9 @@ export const Default: Story<ChatProps> = (args) => {
             time="12:00"
             who={i % 2 === 0 ? 'me' : 'other'}
           >
-            <Chat.UserMessage who="me">{'text message'.repeat((i % 10) + 1)}</Chat.UserMessage>
+            <Chat.UserMessage who={i % 2 === 0 ? 'me' : 'other'}>
+              {'text message'.repeat((i % 10) + 1)}
+            </Chat.UserMessage>
           </Chat.User>
         ))}
       </Chat>

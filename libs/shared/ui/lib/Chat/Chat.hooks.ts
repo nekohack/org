@@ -1,18 +1,12 @@
-import { Children, useRef, useState, useEffect, useCallback } from 'react'
+import { Children, ReactNode, useRef, useState, useCallback, useEffect } from 'react'
+import { useEffectOnce } from 'react-use'
 import { useVirtualizer } from '@tanstack/react-virtual'
-import { useEffectOnce, usePrevious } from 'react-use'
 
-export function useChat(children: React.ReactNode[]) {
+export function useChat(children: ReactNode[]) {
+  const count = Children.count(children)
   const parentRef = useRef<HTMLDivElement>(null)
   const isAtBottomRef = useRef(false)
   const [calculating, setCalculating] = useState(true)
-
-  const count = Children.count(children)
-
-  const prevCount = usePrevious(count)
-  const newMessageArrived = count !== prevCount
-
-  const renderingTime = 50
 
   const virtualizer = useVirtualizer({
     count,
@@ -22,15 +16,10 @@ export function useChat(children: React.ReactNode[]) {
 
   function getScrollTop() {
     if (!parentRef?.current) return 0
-
     return 99999999999999
   }
 
   const scrollToBottom = useCallback(async () => {
-    parentRef?.current?.scrollTo({ top: getScrollTop() })
-
-    await sleep(renderingTime)
-
     parentRef?.current?.scrollTo({ top: getScrollTop() })
   }, [])
 
@@ -47,9 +36,9 @@ export function useChat(children: React.ReactNode[]) {
   async function scrollToBottomUnlessAtBottom() {
     if (!isAtBottomRef.current) {
       await scrollToBottom()
-      await sleep(renderingTime)
+      // await sleep(renderingTime)
       handleScroll()
-      await scrollToBottomUnlessAtBottom()
+      // await scrollToBottomUnlessAtBottom()
     }
   }
 
@@ -58,10 +47,10 @@ export function useChat(children: React.ReactNode[]) {
   })
 
   useEffect(() => {
-    if (newMessageArrived && isAtBottomRef.current) {
+    if (isAtBottomRef.current) {
       scrollToBottom()
     }
-  }, [newMessageArrived, scrollToBottom])
+  }, [scrollToBottom])
 
   return {
     calculating,
@@ -71,8 +60,4 @@ export function useChat(children: React.ReactNode[]) {
     virtualizer,
     isAtBottomRef,
   }
-}
-
-function sleep(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms))
 }

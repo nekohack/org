@@ -8,14 +8,10 @@ export interface ChatProps {
   type?: 'chat'
   width: number
   height: number
-  renderNewMessage: (
-    onClick: React.MouseEventHandler<HTMLButtonElement> | undefined,
-    onClose: () => void,
-  ) => React.ReactElement
 }
 
 export const Chat = forwardRef((props: React.PropsWithChildren<ChatProps>, ref) => {
-  const { type = 'chat', width, height, renderNewMessage } = props
+  const { type = 'chat', width, height } = props
   const children = React.Children.toArray(props.children)
   const { calculating, parentRef, handleScroll, scrollToBottom, virtualizer, isAtBottomRef } =
     useChat(children)
@@ -46,9 +42,6 @@ export const Chat = forwardRef((props: React.PropsWithChildren<ChatProps>, ref) 
           })}
         </ul>
       </SimpleBar>
-      {!isAtBottomRef.current && (
-        <div css={styles.newMessage(width)}>{renderNewMessage(scrollToBottom, () => {})}</div>
-      )}
     </div>
   )
 })
