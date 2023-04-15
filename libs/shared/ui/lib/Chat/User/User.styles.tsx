@@ -44,9 +44,18 @@ export const options = css`
   width: 32px;
 `
 
+export const date = css`
+  background-color: #e2e2e2;
+  padding: 0 16px;
+  font-weight: 300;
+  color: #2d2d2d;
+`
+
 export const time = css`
   display: grid;
   place-items: end;
+  color: #2d2d2d;
+  font-weight: 300;
 `
 
 export const wrapper = {
