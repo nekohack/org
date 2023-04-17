@@ -1,6 +1,6 @@
 import { Story, Meta } from '@storybook/react'
 import { Job, JobProps } from '.'
-import { jobs as _jobs } from '../../../data/lib/legacy/job.constants'
+import { jobs as _jobs } from '../../../data/lib/legacy/constants'
 import React from 'react'
 
 export default {
