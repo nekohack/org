@@ -39,7 +39,7 @@
     "@tanstack/react-virtual": "3.0.0-beta.54",
     "@types/node": "18.15.11",
     "@types/puppeteer": "5.4.7",
-    "@types/react": "18.0.37",
+    "@types/react": "18.0.38",
     "@types/react-dom": "18.0.11",
     "@types/react-linkify": "1.0.1",
     "@types/styled-components": "5.1.26",
@@ -100,6 +100,6 @@
     "zenscroll": "4.0.2"
   },
   "resolutions": {
-    "@types/react": "18.0.37"
+    "@types/react": "18.0.38"
   }
 }
