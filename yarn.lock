@@ -2130,14 +2130,14 @@
   resolved "https://registry.npmjs.org/@markuplint/i18n/-/i18n-3.0.0-rc.5.tgz"
   integrity sha512-fqsLJdH+b/E5OxjHP4GjKUZUOk+zJ74rGe8ciTPbtSw2gwpHDpfTPUA4MvKHBoEN8OYmrZvOSixrzLKPmjSr8g==
 
-"@markuplint/jsx-parser@3.0.1":
-  version "3.0.1"
-  resolved "https://registry.npmjs.org/@markuplint/jsx-parser/-/jsx-parser-3.0.1.tgz"
-  integrity sha512-CDgsbKQQSpsOmXk8jqOheKSNcUwhlyOYv5o8A4CIAK51rMqNGSyKmPfK1N9bjd+4e91W88azGRUwhGdwXk6ETg==
+"@markuplint/jsx-parser@3.6.1":
+  version "3.6.1"
+  resolved "https://registry.npmjs.org/@markuplint/jsx-parser/-/jsx-parser-3.6.1.tgz"
+  integrity sha512-wKZM6D/Mr98SEeX+W77xkLphWO7RYLTzkJzDBQ6SgP11/sgz1O4ag8KUAHDbG8vIdMHL1YG8V5VJo9KH4/RZeg==
   dependencies:
-    "@markuplint/html-parser" "3.0.0"
-    "@markuplint/ml-ast" "3.0.0-rc.5"
-    "@markuplint/parser-utils" "3.0.0"
+    "@markuplint/html-parser" "3.6.1"
+    "@markuplint/ml-ast" "3.1.0"
+    "@markuplint/parser-utils" "3.6.1"
     "@typescript-eslint/types" "^5.46.1"
     "@typescript-eslint/typescript-estree" "^5.46.1"
     tslib "^2.4.1"
