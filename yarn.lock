@@ -2206,10 +2206,10 @@
     tslib "^2.4.1"
     uuid "^9.0.0"
 
-"@markuplint/react-spec@3.0.1":
-  version "3.0.1"
-  resolved "https://registry.npmjs.org/@markuplint/react-spec/-/react-spec-3.0.1.tgz"
-  integrity sha512-v8gruIQrSGGG5JRvLKjtNUTPAaBYhbo8zb5ix85JXU3opPaes1xUY7cb/EAzAhozZKyCtDScyKD2jAuPbSGttg==
+"@markuplint/react-spec@3.7.0":
+  version "3.7.0"
+  resolved "https://registry.npmjs.org/@markuplint/react-spec/-/react-spec-3.7.0.tgz"
+  integrity sha512-WUOXWJ8UiHFRaf7Tkq80+3AfYnWUNRh7tiTUFWkgwVn45sL70qS9v8VYOQdkXscqfHoagcLuzHc+kU37dveWAQ==
 
 "@markuplint/rules@3.0.0":
   version "3.0.0"
