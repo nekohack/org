@@ -6,12 +6,14 @@ interface MediaSectionProps {
 }
 
 const MediaSection = ({ medias }: MediaSectionProps) => {
+  const length = 12
+
   return (
     <section id="media">
       <Typography variant="subtitle 2">{t('media')}</Typography>
       <div className="section-wrapper">
         <Timeline>
-          {medias.slice(0, 10).map((item, index) => (
+          {medias.slice(0, length).map((item, index) => (
             <Timeline.Card key={index}>
               <span className="flex absolute -left-11 justify-center items-center w-10 h-10 bg-slate-700 rounded-full text-lg border-gray-500 border-2">
                 {item.link.startsWith('https://blog.nekohack.me/') && '🐈'}
