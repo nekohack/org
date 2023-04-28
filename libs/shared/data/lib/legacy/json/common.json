@@ -108,6 +108,7 @@
   "talks": [
     {
       "title": "特にこれをやって Web 体験を向上した話",
+      "description": "",
       "host": "PWA Night",
       "url": "https://www.figma.com/proto/12yGlG2LfcrkJ3eWDot0vj/Slides?node-id=13%3A279&starting-point-node-id=13%3A279&scaling=scale-down-width",
       "youtubeUrl": "",
@@ -117,6 +118,7 @@
     },
     {
       "title": "モノレポについて",
+      "description": "",
       "host": "EDG",
       "url": "https://blog.nekohack.me/posts/monorepo-tutorial",
       "youtubeUrl": "",
@@ -126,6 +128,7 @@
     },
     {
       "title": "Git & GitHub 連携で役立つ機能",
+      "description": "",
       "host": "SOFTWARE DESIGN",
       "url": "https://gihyo.jp/magazine/SD/archive/2022/202210",
       "youtubeUrl": "",
@@ -135,6 +138,7 @@
     },
     {
       "title": "slides.カレンダーアプリで学ぶパッケージ開発",
+      "description": "",
       "host": "Flutter Japan User Group",
       "url": "https://zenn.dev/chooyan/books/calendar-package",
       "youtubeUrl": "https://www.youtube.com/watch?v=dlAKk1VAQyA",
@@ -144,6 +148,7 @@
     },
     {
       "title": "わたしの OSS 活動について",
+      "description": "",
       "host": "EDG",
       "url": "https://docs.google.com/presentation/d/141tABAoz2LYozHC89fSwqqXJtGEX47mVXyJ5SEfYtZY/edit?usp=sharing",
       "youtubeUrl": "",
@@ -153,6 +158,7 @@
     },
     {
       "title": "Google I/O 2022 Recap × WWDC 2022 Recap について",
+      "description": "",
       "host": "PWA Night",
       "url": "https://blog.nekohack.me/posts/pwa-night-40",
       "youtubeUrl": "",
@@ -162,6 +168,7 @@
     },
     {
       "title": "markuplint をカスタマイズする",
+      "description": "",
       "host": "EDG",
       "url": "https://blog.nekohack.me/posts/customize-markuplint-to-audit-accessibility",
       "youtubeUrl": "",
@@ -171,6 +178,7 @@
     },
     {
       "title": "markuplint の動作環境を構築する",
+      "description": "",
       "host": "EDG",
       "url": "https://blog.nekohack.me/posts/setup-markuplint-to-audit-accessibility",
       "youtubeUrl": "",
@@ -180,6 +188,7 @@
     },
     {
       "title": "アクセシビリティを基礎から学ぶ (第 2 版)",
+      "description": "",
       "host": "EDG",
       "url": "https://docs.google.com/presentation/d/1TGXqz-mg1mkKPRazb_jT5umxC98h6dXrhQqdJX4YJUE/edit?usp=sharing",
       "youtubeUrl": "",
@@ -189,6 +198,7 @@
     },
     {
       "title": "React (Vite) × LIFF ハンズオン",
+      "description": "",
       "host": "LINE Developer Community",
       "url": "https://blog.nekohack.me/posts/the-answer-to-learn-react-with-line",
       "youtubeUrl": "https://www.youtube.com/watch?v=D8GeQyrueEY",
@@ -198,6 +208,7 @@
     },
     {
       "title": "アクセシビリティを基礎から学ぶ (第 1 版)",
+      "description": "",
       "host": "EDG",
       "url": "https://docs.google.com/presentation/d/1z6OFNh3NnN9mP3Rh2wGhyOpy_QslKcZfR6I8K7blOEY/edit?usp=sharing",
       "youtubeUrl": "",
@@ -207,6 +218,7 @@
     },
     {
       "title": "VSCondeCon JP 2021 の内幕",
+      "description": "",
       "host": "VS Code Meetup",
       "url": "https://blog.nekohack.me/posts/inside-the-website-in-vscodecon-jp-2021",
       "youtubeUrl": "https://www.youtube.com/watch?v=Y8dl1y2qdG8",
@@ -216,6 +228,7 @@
     },
     {
       "title": "GitHub issues を CMS として扱う",
+      "description": "",
       "host": "microCMS",
       "url": "https://blog.nekohack.me/posts/github-issues-usage-as-a-cms",
       "youtubeUrl": "https://www.youtube.com/watch?v=qCPqheDPq6g",
@@ -225,6 +238,7 @@
     },
     {
       "title": "コミュニティハンズオンにおける DevRel のすゝめ",
+      "description": "",
       "host": "DevRel Meetup Tokyo",
       "url": "https://blog.nekohack.me/posts/challenge-the-community-handson-2021",
       "youtubeUrl": "https://www.youtube.com/watch?v=oUCGt-SNmfE",
@@ -234,6 +248,7 @@
     },
     {
       "title": "JAWS DAYS 2021 個人スポンサー",
+      "description": "",
       "host": "JAWS UG",
       "url": "https://jawsdays2021.jaws-ug.jp/individual-supporter/#016",
       "youtubeUrl": "",
@@ -243,6 +258,7 @@
     },
     {
       "title": "Slack を中心に世界は廻っている",
+      "description": "",
       "host": "VR Study",
       "url": "https://blog.nekohack.me/posts/recommend-tools-in-vr-study-3",
       "youtubeUrl": "https://www.youtube.com/watch?v=l3BCTi3xSds",
@@ -252,6 +268,7 @@
     },
     {
       "title": "もっと身近にやってた PWA",
+      "description": "",
       "host": "PWA Night",
       "url": "https://blog.nekohack.me/posts/pwa-more-closer-2020",
       "youtubeUrl": "https://www.youtube.com/watch?v=Phsf7hjQkAI",
@@ -261,6 +278,7 @@
     },
     {
       "title": "Transition を実践的に使う",
+      "description": "",
       "host": "Yumemi inc.",
       "url": "https://blog.nekohack.me/posts/vue-transition-more-pratically",
       "youtubeUrl": "",
@@ -270,6 +288,7 @@
     },
     {
       "title": "Composition API 勘所など",
+      "description": "",
       "host": "v-okinawa",
       "url": "https://blog.nekohack.me/posts/notices-of-composition-api-in-vue3-eve",
       "youtubeUrl": "",
@@ -279,6 +298,7 @@
     },
     {
       "title": "2019 年を振り返る",
+      "description": "",
       "host": "v-kansai",
       "url": "https://blog.nekohack.me/posts/feedback-2019",
       "youtubeUrl": "",
@@ -288,6 +308,7 @@
     },
     {
       "title": "Vue CLI テスト tips 集",
+      "description": "",
       "host": "necco inc.",
       "url": "https://slides.com/jiyuujin/20190817",
       "youtubeUrl": "",
@@ -298,158 +319,239 @@
   ],
   "timelines": [
     {
-      "date": "January 2023",
+      "date": "2023/03/03",
+      "title": "\"AI.info\" ウェブサイトの製作",
+      "description": "毎週金曜、雑談した内容をいつでも振り返ることができるようにしています。",
+      "url": "https://ohayo-ai.nekohack.me/"
+    },
+    {
+      "date": "2023/01/13",
       "title": "LINE API Expert 認定",
       "description": "LINE (Developers Community) さまより認定を受けました。"
     },
     {
-      "date": "January 2023",
+      "date": "2023/01/06",
       "title": "\"金曜日のエンジニアのつどい\" ウェブサイトの製作",
       "description": "毎週金曜、雑談した内容をいつでも振り返ることができるようにしています。",
-      "url": "https://friday.nekohack.me/"
+      "url": "https://ohayo-friday.nekohack.me/"
     },
     {
-      "date": "December 2022",
+      "date": "2022/12/01",
       "title": "一般社団法人 FlutterKaigi 設立",
+      "description": "",
       "url": "https://association.flutterkaigi.jp/"
     },
     {
-      "date": "September 2022",
+      "date": "2022/09/01",
       "title": "VS Code Conference JP 2022-2023 ウェブサイトの製作",
       "description": "モノレポを考慮して、公式ウェブサイト製作を手掛けさせていただきました。",
       "url": "https://vscodejp.github.io/conference/2022-2023/ja"
     },
     {
-      "date": "August 2022",
+      "date": "2022/08/01",
       "title": "Rev Up 2022 ウェブサイトの製作",
       "description": "LINE (Developers Community) さまより製作依頼を受け、ウェブサイト製作を担当させていただきました。",
       "url": "https://revup.jp/2022"
     },
     {
-      "date": "July 2022",
+      "date": "2022/07/01",
       "title": "FlutterKaigi 2022 ウェブサイトの製作",
       "description": "昨年に続いて Flutter をメインテーマに扱った技術カンファレンスで、そのオーガナイズを担当させていただきました。",
       "url": "https://flutterkaigi.jp/2022"
     },
     {
-      "date": "October 2021",
+      "date": "2021/10/01",
       "title": "\"おはようエンジニア\" ウェブサイトの製作",
       "description": "平日毎朝、雑談した内容をいつでも振り返ることができるようにしています。",
       "url": "https://ohayo.nekohack.me/"
     },
     {
-      "date": "July 2021",
+      "date": "2021/07/01",
       "title": "VS Code Conference JP 2021 ウェブサイトの製作",
       "description": "VS Code Meetup 史上、初めて公式ウェブサイト製作を手掛けさせていただきました。",
       "url": "https://vscodejp.github.io/conf2021/ja"
     },
     {
-      "date": "June 2021",
-      "title": "EventIn の機能開発"
+      "date": "2021/06/01",
+      "title": "EventIn の機能開発",
+      "description": ""
     },
     {
-      "date": "May 2021",
+      "date": "2021/05/06",
       "title": "Twitter スペース上で \"おはようエンジニア\" を開始",
       "description": "平日毎朝、ゆるふわ雑談する場として開発者が集って語り合う「オハヨーエンジニア」を開始しました。"
     },
     {
-      "date": "April 2021",
+      "date": "2021/04/01",
       "title": "FlutterKaigi 2021 ウェブサイトの製作",
       "description": "日本で初めて Flutter をメインテーマに扱った技術カンファレンスで、そのオーガナイズを担当させていただきました。",
       "url": "https://flutterkaigi.jp/2021"
     },
     {
-      "date": "Spring 2021",
+      "date": "2021/03/31",
       "title": "一年間の休眠期間を終了",
       "description": "色々なお誘いを受け、これまで 1 年間の我慢を打破すべく休眠期間の幕を閉じることを明言しました。"
     },
     {
-      "date": "Spring 2020",
+      "date": "2020/03/09",
       "title": "登壇や執筆、コミュニティ運営などの休眠期間を開始",
       "description": "COVID19 の状況を考え、幅広い形で休眠期間に入ることを決意しました。"
     },
     {
-      "date": "February 2020",
+      "date": "2020/02/17",
       "title": "プロフィールサイトを製作",
       "description": "技術ブログと切り分けるため、自身を紹介する用のウェブサイトを開設しました。",
       "url": "https://yuma-kitamura.nekohack.me"
     },
     {
-      "date": "February 2020",
+      "date": "2020/02/03",
       "title": "スマレジアプリマーケットの機能開発",
       "description": "スマレジ 4 公開に向け新たにアプリマーケットを開発、それに伴う UI コンポーネントの機能開発に取り組みます。"
     },
     {
-      "date": "November 2019",
+      "date": "2019/11/30",
       "fullDate": "November 30, 2019",
-      "title": "JS Conf JP 2019 に参加"
+      "title": "JS Conf JP 2019 に参加",
+      "description": ""
     },
     {
-      "date": "November 2019",
+      "date": "2019/11/16",
       "fullDate": "November 16, 2019",
-      "title": "フロントエンドカンファレンス福岡 2019 に参加"
+      "title": "フロントエンドカンファレンス福岡 2019 に参加",
+      "description": ""
     },
     {
-      "date": "November 2019",
+      "date": "2019/11/02",
       "fullDate": "November 2, 2019",
-      "title": "フロントエンドカンファレンス関西 2019 に参加"
+      "title": "フロントエンドカンファレンス関西 2019 に参加",
+      "description": ""
     },
     {
-      "date": "October 2019",
+      "date": "2019/10/01",
       "title": "スマレジの技術広報として活動を開始",
       "description": "初めて DevRel を認識しました"
     },
     {
-      "date": "July 2019",
+      "date": "2019/07/01",
       "title": "スマレジ POS の改善",
       "description": "UX 改善に伴う UI 作り直しを積極的に推進しました。"
     },
     {
-      "date": "February 2019",
+      "date": "2019/02/01",
       "title": "Agent Bank (旧: SARDINE) の機能開発",
       "description": "新機能の設計と開発を積極的に推進しました。"
     },
     {
-      "date": "November 2018",
+      "date": "2018/11/03",
       "fullDate": "November 3, 2018",
       "title": "Vue Fes Japan 2018 に参加",
+      "description": "",
       "url": "https://vuefes.jp/2018"
     },
     {
-      "date": "September 2018",
+      "date": "2018/09/03",
       "title": "技術ブログの製作",
       "description": "知見を発信するため、個人ドメインの下開設しました。",
       "url": "https://blog.nekohack.me/"
     },
     {
-      "date": "May 2017",
+      "date": "2017/05/08",
       "fullDate": "May 8, 2017",
       "title": "Unite Tokyo 2017 に参加",
       "description": "自身最初に参加した技術カンファレンス。"
     },
     {
-      "date": "October 2016",
+      "date": "2016/10/01",
       "title": "なめすたの機能開発",
+      "description": "",
       "imageUrl": "https://i.imgur.com/Cb9sWiz.jpg"
     },
     {
-      "date": "January 2016",
+      "date": "2016/01/04",
       "title": "にゃんこ大戦争の機能開発、サポートに伴う機能改修",
+      "description": "",
       "imageUrl": "https://i.imgur.com/WAvevMW.jpg"
     },
     {
-      "date": "November 2014",
+      "date": "2014/11/10",
       "fullDate": "November 10, 2014",
-      "title": "GitHub 利用開始"
+      "title": "GitHub 利用開始",
+      "description": ""
     },
     {
-      "date": "October 2014",
-      "title": "受託開発"
+      "date": "2014/10/01",
+      "title": "受託開発",
+      "description": ""
     },
     {
-      "date": "Summer 2014",
+      "date": "2014/09/30",
       "title": "Tokyo >>> Osaka",
       "description": "Moved back to Osaka."
+    }
+  ],
+  "communities": [
+    {
+      "text":"おはようエンジニア",
+      "location": "Japan",
+      "url": "https://twitter.com/ohayo_eng",
+      "status": "active",
+      "enabled": true
+    },
+    {
+      "text": "Vue.js Japan User Group",
+      "location": "Japan",
+      "url": "https://vuefes.jp/",
+      "status": "active",
+      "enabled": true
+    },
+    {
+      "text": "v-kansai",
+      "location": "Kyoto",
+      "url": "https://vuekansai.connpass.com/",
+      "status": "archived",
+      "enabled": false
+    },
+    {
+      "text": "React.kyoto",
+      "location": "Kyoto",
+      "url": "https://react-kyoto.connpass.com/",
+      "status": "archived",
+      "enabled": false
+    },
+    {
+      "text": "kansai.ts",
+      "location": "Osaka",
+      "url": "https://kansaits.connpass.com/",
+      "status": "archived",
+      "enabled": false
+    },
+    {
+      "text": "FlutterKaigi Executive Committee",
+      "location": "Japan",
+      "url": "https://flutterkaigi.jp/",
+      "status": "active",
+      "enabled": true
+    },
+    {
+      "text": "Flutter Japan User Group",
+      "location": "Osaka",
+      "url": "https://flutter-jp.connpass.com/",
+      "status": "active",
+      "enabled": true
+    },
+    {
+      "text": "PWA Night",
+      "location": "Japan",
+      "url": "https://pwanight.connpass.com/",
+      "status": "active",
+      "enabled": true
+    },
+    {
+      "text": "VS Code Meetup",
+      "location": "Japan",
+      "url": "https://vscode.connpass.com/",
+      "status": "active",
+      "enabled": true
     }
   ]
 }

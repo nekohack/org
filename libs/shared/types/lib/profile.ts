@@ -1,4 +1,4 @@
-import { IconName } from "./icon"
+import { IconName } from './icon'
 
 type Status = 'active' | 'inactive' | 'archived'
 
@@ -101,6 +101,7 @@ export interface Community {
 
 export interface Talk {
   title: string
+  description: string
   host: Host | string // string を削除予定
   url: string | undefined
   youtubeUrl: string | undefined
@@ -112,6 +113,7 @@ export interface Talk {
 export interface Timeline {
   title: string
   description?: string
+  date: string
   fullDate?: string // eg: March 28, 2021
   url?: string
   imageUrl?: string
