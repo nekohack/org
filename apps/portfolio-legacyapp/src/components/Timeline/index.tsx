@@ -26,15 +26,18 @@ const TimelineSection: FC = () => {
         <Timeline>
           {timelines.slice(0, length).map((t, index) => (
             <Timeline.Card key={index}>
-              <div className="p-2 sm:p-4 rounded-lg border shadow-sm bg-gray-700 border-gray-600 text-gray-300">
-                <div className="justify-between mb-3 sm:flex items-baseline gap-2">
-                  <div className="text-sm font-normal flex-1">{t.title}</div>
-                  <time className="mb-1 text-xs font-normal sm:order-last sm:mb-0 block">
-                    {t.fullDate}
-                  </time>
-                </div>
-                <div className="text-gray-300">
-                  <Typography variant="body 3">{t.description}</Typography>
+              <span className="flex absolute -left-11 justify-center items-center w-10 h-10 bg-slate-700 rounded-full text-lg border-gray-500 border-2">
+                {t.type === 'timeline' && '📚'}
+                {t.type === 'talk' && '🎙'}
+              </span>
+              <div className="ml-2">
+                <div className="p-2 sm:p-4 rounded-lg border shadow-sm bg-gray-700 border-gray-600 text-gray-300">
+                  <div className="justify-between mb-3 sm:flex items-baseline gap-2">
+                    <div className="text-sm font-semibold text-blue-300">{t.title}</div>
+                  </div>
+                  <div className="text-gray-300">
+                    <Typography variant="body 3">{t.description}</Typography>
+                  </div>
                 </div>
               </div>
             </Timeline.Card>

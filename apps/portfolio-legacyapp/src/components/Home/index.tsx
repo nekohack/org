@@ -7,9 +7,8 @@ import ProductSection from '@components/Product'
 import JobSection from '@components/Job'
 import TimelineSection from '@components/Timeline'
 import CommunitySection from '@components/Community'
-import SlideSection from '@components/Slide'
 import PortraitSection from '@components/Portrait'
-import { JOB, MEDIA, PAYMENT_APP, PRODUCT, SLIDE, TIMELINE } from '@utils/feature.constants'
+import { JOB, MEDIA, PAYMENT_APP, PRODUCT, TIMELINE } from '@utils/feature.constants'
 
 interface HomeProps {
   medias: any
@@ -27,7 +26,6 @@ const Home = ({ medias }: HomeProps) => {
       {JOB && <JobSection />}
       {TIMELINE && <TimelineSection />}
       <CommunitySection />
-      {SLIDE && <SlideSection />}
       <PortraitSection />
     </main>
   )
