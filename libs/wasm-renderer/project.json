@@ -1,5 +1,6 @@
 {
-  "root": "wasm-renderer",
+  "name": "wasm-renderer",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/wasm-renderer",
   "projectType": "library",
   "architect": {
