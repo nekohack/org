@@ -45,7 +45,7 @@
     "@types/styled-components": "5.1.26",
     "@typescript-eslint/eslint-plugin": "5.47.1",
     "@typescript-eslint/parser": "5.47.1",
-    "@unocss/cli": "0.50.0",
+    "@unocss/cli": "0.51.8",
     "@unocss/reset": "0.50.6",
     "@unocss/vite": "0.50.6",
     "@unocss/webpack": "0.50.6",
