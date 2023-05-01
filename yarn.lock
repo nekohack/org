@@ -84,14 +84,15 @@
     unist-util-visit "^4.1.0"
     vfile "^5.3.2"
 
-"@astrojs/parser@0.20":
-  version "0.20.3"
-  resolved "https://registry.npmjs.org/@astrojs/parser/-/parser-0.20.3.tgz"
-  integrity sha512-GyNWuVJU/VecbhDMlGFP+bNfvXvkN8w9fwOehNUa26fT3ONwb/qBS+TRQW034N05y/N5it0wGFT0MU+wzq+XSw==
+"@astrojs/parser@0.22.2":
+  version "0.22.2"
+  resolved "https://registry.npmjs.org/@astrojs/parser/-/parser-0.22.2.tgz"
+  integrity sha512-j4p5a1BXDObVsrNyDvooJQPWoomb0WZk63rKeE3MaZcqq4g9x50sqq+EPMkesgDvCcWFgHSo07i4y1Do3Qj69A==
   dependencies:
-    acorn "^7.4.0"
+    "@types/node" "^14.18.12"
+    acorn "^8.7.0"
     locate-character "^2.0.5"
-    magic-string "^0.25.3"
+    magic-string "^0.25.9"
 
 "@astrojs/prism@^2.1.0":
   version "2.1.1"
@@ -2039,15 +2040,15 @@
   resolved "https://registry.npmjs.org/@ljharb/has-package-exports-patterns/-/has-package-exports-patterns-0.0.2.tgz"
   integrity sha512-4/RWEeXDO6bocPONheFe6gX/oQdP/bEpv0oL4HqjPP5DCenBSt0mHgahppY49N0CpsaqffdwPq+TlX9CYOq2Dw==
 
-"@markuplint/astro-parser@3.6.2":
-  version "3.6.2"
-  resolved "https://registry.npmjs.org/@markuplint/astro-parser/-/astro-parser-3.6.2.tgz"
-  integrity sha512-uQmIr3tMbIQv3PompHaqt4/9CZJBe/Ycc3TlqqBUfflldrOEkeXPvkLNladTkQZs8HOLz/19TrPFxratN3nPKg==
+"@markuplint/astro-parser@3.6.3":
+  version "3.6.3"
+  resolved "https://registry.npmjs.org/@markuplint/astro-parser/-/astro-parser-3.6.3.tgz"
+  integrity sha512-CroZHb8gmmtwAXyTDBCkwI0Ceq9AEuZfeVKJ4mxqlyYo3OB6GNvbnQM33f3PvMP05DA/RvaZVS5OXy1uN4P5RQ==
   dependencies:
-    "@astrojs/parser" "0.20"
-    "@markuplint/html-parser" "3.6.1"
+    "@astrojs/parser" "0.22.2"
+    "@markuplint/html-parser" "3.7.0"
     "@markuplint/ml-ast" "3.1.0"
-    "@markuplint/parser-utils" "3.6.1"
+    "@markuplint/parser-utils" "3.7.0"
     astro-eslint-parser "^0.13.2"
     tslib "^2.4.1"
 
@@ -2102,6 +2103,17 @@
     "@markuplint/parser-utils" "3.6.1"
     parse5 "7.1.2"
     tslib "^2.4.1"
+
+"@markuplint/html-parser@3.7.0":
+  version "3.7.0"
+  resolved "https://registry.npmjs.org/@markuplint/html-parser/-/html-parser-3.7.0.tgz"
+  integrity sha512-W0NPFRQhIE2fIbNLf+MMcu00c4yeiqamlgZy6wmXI33HP+2uNru8/2ffex7vwUyuzgt0BM0qaH+JQiS1GMiDjA==
+  dependencies:
+    "@markuplint/ml-ast" "3.1.0"
+    "@markuplint/parser-utils" "3.7.0"
+    parse5 "7.1.2"
+    tslib "^2.4.1"
+    type-fest "^3.8.0"
 
 "@markuplint/html-spec@3.0.0":
   version "3.0.0"
@@ -2191,6 +2203,18 @@
     tslib "^2.4.1"
     uuid "^9.0.0"
 
+"@markuplint/parser-utils@3.7.0":
+  version "3.7.0"
+  resolved "https://registry.npmjs.org/@markuplint/parser-utils/-/parser-utils-3.7.0.tgz"
+  integrity sha512-vl919E0uIhbY8YERSlSxb6sKXYtaeVtg1wu7PjoElIIN2KZR4Ng/Azc6jfCvd6pGCrzFLxaUNpqDKJd5m611jg==
+  dependencies:
+    "@markuplint/ml-ast" "3.1.0"
+    "@markuplint/types" "3.6.0"
+    "@types/uuid" "^9.0.0"
+    tslib "^2.4.1"
+    type-fest "^3.8.0"
+    uuid "^9.0.0"
+
 "@markuplint/react-spec@3.7.0":
   version "3.7.0"
   resolved "https://registry.npmjs.org/@markuplint/react-spec/-/react-spec-3.7.0.tgz"
@@ -2240,6 +2264,22 @@
     debug "^4.3.4"
     leven "3"
     whatwg-mimetype "2"
+
+"@markuplint/types@3.6.0":
+  version "3.6.0"
+  resolved "https://registry.npmjs.org/@markuplint/types/-/types-3.6.0.tgz"
+  integrity sha512-cZOSi4tJFUQj9aFjW6/hK26VJdjr/EQjL85JZ6kX8jCkofQYYrN1kJDk66HkqxRy/ApO2YyHln2izJllKY7j0w==
+  dependencies:
+    "@types/bcp-47" "1"
+    "@types/css-tree" "^2.0.1"
+    "@types/debug" "^4.1.7"
+    "@types/whatwg-mimetype" "3.0.0"
+    bcp-47 "1"
+    css-tree "^2.3.1"
+    debug "^4.3.4"
+    leven "3"
+    type-fest "^3.8.0"
+    whatwg-mimetype "^3.0.0"
 
 "@mdx-js/mdx@^1.6.22":
   version "1.6.22"
@@ -3831,7 +3871,17 @@
   dependencies:
     "@babel/types" "^7.3.0"
 
-"@types/debug@^4.0.0":
+"@types/bcp-47@1":
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/@types/bcp-47/-/bcp-47-1.0.0.tgz"
+  integrity sha512-KNuP/hxVUX2+H5Gps3kCm1QtBWczQ82P2GEK61bcKqk7L0UkXWnsLOBoLm6lwmntnQwcGGSl/V3qwAtQM+aGhg==
+
+"@types/css-tree@^2.0.1":
+  version "2.3.1"
+  resolved "https://registry.npmjs.org/@types/css-tree/-/css-tree-2.3.1.tgz"
+  integrity sha512-3m636Jz4d9d+lHVMp6FNLsUWQrfOx1xpm1SBxPbQYSNNgXMe+XswcsDeo1ldyULiuzYyWKk1kmvkLTgNq+215Q==
+
+"@types/debug@^4.0.0", "@types/debug@^4.1.7":
   version "4.1.7"
   resolved "https://registry.npmjs.org/@types/debug/-/debug-4.1.7.tgz"
   integrity sha512-9AonUzyTjXXhEOa0DnqpzZi6VHlqKMswga9EXjpXnnqxwLtdvPPtlO8evrI5D9S6asFRCQ6v+wpiUKbw+vKqyg==
@@ -3998,6 +4048,11 @@
   resolved "https://registry.npmjs.org/@types/node/-/node-16.18.24.tgz"
   integrity sha512-zvSN2Esek1aeLdKDYuntKAYjti9Z2oT4I8bfkLLhIxHlv3dwZ5vvATxOc31820iYm4hQRCwjUgDpwSMFjfTUnw==
 
+"@types/node@^14.18.12":
+  version "14.18.43"
+  resolved "https://registry.npmjs.org/@types/node/-/node-14.18.43.tgz"
+  integrity sha512-n3eFEaoem0WNwLux+k272P0+aq++5o05bA9CfiwKPdYPB5ZambWKdWoeHy7/OJiizMhzg27NLaZ6uzjLTzXceQ==
+
 "@types/normalize-package-data@^2.4.0":
   version "2.4.1"
   resolved "https://registry.npmjs.org/@types/normalize-package-data/-/normalize-package-data-2.4.1.tgz"
@@ -4136,6 +4191,11 @@
   resolved "https://registry.npmjs.org/@types/unist/-/unist-2.0.6.tgz"
   integrity sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==
 
+"@types/uuid@^9.0.0":
+  version "9.0.1"
+  resolved "https://registry.npmjs.org/@types/uuid/-/uuid-9.0.1.tgz"
+  integrity sha512-rFT3ak0/2trgvp4yYZo5iKFEPsET7vKydKF+VRCxlQ9bpheehyAJH89dAkaLEq/j/RZXJIqcgsmPJKUP1Z28HA==
+
 "@types/webpack-env@^1.16.0":
   version "1.18.0"
   resolved "https://registry.npmjs.org/@types/webpack-env/-/webpack-env-1.18.0.tgz"
@@ -4161,6 +4221,11 @@
     "@types/webpack-sources" "*"
     anymatch "^3.0.0"
     source-map "^0.6.0"
+
+"@types/whatwg-mimetype@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.npmjs.org/@types/whatwg-mimetype/-/whatwg-mimetype-3.0.0.tgz"
+  integrity sha512-xHFOhd41VpUR6Y0k8ZinlyFv5cyhC/r2zghJgWWN8oNxqNo45Nf0qCBInJsFeifLeoHcIF4voEfap4A2GYHWkw==
 
 "@types/yargs-parser@*", "@types/yargs-parser@^21.0.0":
   version "21.0.0"
@@ -4836,12 +4901,12 @@ acorn@^6.4.1:
   resolved "https://registry.npmjs.org/acorn/-/acorn-6.4.2.tgz"
   integrity sha512-XtGIhXwF8YM8bJhGxG5kXgjkEuNGLTkoYqVE+KMR+aspr4KGYmKYg7yUe3KghyQ9yheNwLnjmzh/7+gfDBmHCQ==
 
-acorn@^7.0.0, acorn@^7.4.0, acorn@^7.4.1:
+acorn@^7.0.0, acorn@^7.4.1:
   version "7.4.1"
   resolved "https://registry.npmjs.org/acorn/-/acorn-7.4.1.tgz"
   integrity sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==
 
-acorn@^8.4.1, acorn@^8.5.0, acorn@^8.6.0, acorn@^8.8.0, acorn@^8.8.1, acorn@^8.8.2:
+acorn@^8.4.1, acorn@^8.5.0, acorn@^8.6.0, acorn@^8.7.0, acorn@^8.8.0, acorn@^8.8.1, acorn@^8.8.2:
   version "8.8.2"
   resolved "https://registry.npmjs.org/acorn/-/acorn-8.8.2.tgz"
   integrity sha512-xjIYgE8HBrkpd/sJqOGNspf8uHG+NOHGOw6a/Urj8taM2EXfdNAH2oFcPeIFfsv3+kz/mJrS5VuMqbNLjCa2vw==
@@ -7860,9 +7925,9 @@ entities@^2.0.0, entities@^2.0.3:
   integrity sha512-p92if5Nz619I0w+akJrLZH0MX0Pb5DX39XOwQTtXSdQQOaYH03S1uIQp4mhOZtAXrxq4ViO67YTiLBo2638o9A==
 
 entities@^4.4.0:
-  version "4.4.0"
-  resolved "https://registry.npmjs.org/entities/-/entities-4.4.0.tgz"
-  integrity sha512-oYp7156SP8LkeGD0GF85ad1X9Ai79WtRsZ2gxJqtBuzH+98YUV6jkHEKlZkMbcrjJjIVJNIDP/3WL9wQkoPbWA==
+  version "4.5.0"
+  resolved "https://registry.npmjs.org/entities/-/entities-4.5.0.tgz"
+  integrity sha512-V0hjH4dGPh9Ao5p0MoRY6BVqtwCjhz6vI5LT8AJ55H+4g9/4vbHx1I54fS0XuclLhDHArPQCiMjDxjaL8fPxhw==
 
 env-cmd@10.1.0:
   version "10.1.0"
@@ -12102,7 +12167,7 @@ lru-queue@^0.1.0:
   dependencies:
     es5-ext "~0.10.2"
 
-magic-string@^0.25.0, magic-string@^0.25.3, magic-string@^0.25.7:
+magic-string@^0.25.0, magic-string@^0.25.7, magic-string@^0.25.9:
   version "0.25.9"
   resolved "https://registry.npmjs.org/magic-string/-/magic-string-0.25.9.tgz"
   integrity sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==
@@ -17351,6 +17416,11 @@ type-fest@^2.5.0:
   resolved "https://registry.npmjs.org/type-fest/-/type-fest-2.19.0.tgz"
   integrity sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==
 
+type-fest@^3.8.0:
+  version "3.9.0"
+  resolved "https://registry.npmjs.org/type-fest/-/type-fest-3.9.0.tgz"
+  integrity sha512-hR8JP2e8UiH7SME5JZjsobBlEiatFoxpzCP+R3ZeCo7kAaG1jXQE5X/buLzogM6GJu8le9Y4OcfNuIQX0rZskA==
+
 type-is@~1.6.18:
   version "1.6.18"
   resolved "https://registry.npmjs.org/type-is/-/type-is-1.6.18.tgz"
@@ -18284,6 +18354,11 @@ whatwg-mimetype@2:
   version "2.3.0"
   resolved "https://registry.npmjs.org/whatwg-mimetype/-/whatwg-mimetype-2.3.0.tgz"
   integrity sha512-M4yMwr6mAnQz76TbJm914+gPpB/nCwvZbJU28cUD6dR004SAxDLOOSUaB1JDRqLtaOV/vi0IC5lEAGFgrjGv/g==
+
+whatwg-mimetype@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.npmjs.org/whatwg-mimetype/-/whatwg-mimetype-3.0.0.tgz"
+  integrity sha512-nt+N2dzIutVRxARx1nghPKGv1xHikU7HKdfafKkLNLindmPU/ch3U31NOCGGA/dmPcmb1VlofO0vnKAcsm0o/Q==
 
 whatwg-url@^5.0.0:
   version "5.0.0"
