@@ -2173,6 +2173,18 @@
     dom-accessibility-api "^0.5.14"
     tslib "^2.4.1"
 
+"@markuplint/ml-spec@3.8.0":
+  version "3.8.0"
+  resolved "https://registry.npmjs.org/@markuplint/ml-spec/-/ml-spec-3.8.0.tgz"
+  integrity sha512-B3l6XVQ2KO/NYucdizXNHM/XHBDFqCpBFQ3p8CKEw9CY7FNd4qqyxa4jDgnOmCLM3yD6l5+SiWTbj2IMBv+/BQ==
+  dependencies:
+    "@markuplint/ml-ast" "3.1.0"
+    "@markuplint/types" "3.6.0"
+    dom-accessibility-api "^0.5.14"
+    is-plain-object "^5.0.0"
+    tslib "^2.4.1"
+    type-fest "^3.8.0"
+
 "@markuplint/parser-utils@3.0.0":
   version "3.0.0"
   resolved "https://registry.npmjs.org/@markuplint/parser-utils/-/parser-utils-3.0.0.tgz"
@@ -2195,10 +2207,12 @@
     type-fest "^3.8.0"
     uuid "^9.0.0"
 
-"@markuplint/react-spec@3.7.0":
-  version "3.7.0"
-  resolved "https://registry.npmjs.org/@markuplint/react-spec/-/react-spec-3.7.0.tgz"
-  integrity sha512-WUOXWJ8UiHFRaf7Tkq80+3AfYnWUNRh7tiTUFWkgwVn45sL70qS9v8VYOQdkXscqfHoagcLuzHc+kU37dveWAQ==
+"@markuplint/react-spec@3.7.1":
+  version "3.7.1"
+  resolved "https://registry.npmjs.org/@markuplint/react-spec/-/react-spec-3.7.1.tgz"
+  integrity sha512-LQu0tCTZybMUR1Y3En2TYTYVFoCSn9RBEy10Vz53SZ1r527kpURcGBMFrKs96GNjLcuR7/J3Dl29XbMoIm11CA==
+  dependencies:
+    "@markuplint/ml-spec" "3.8.0"
 
 "@markuplint/rules@3.0.0":
   version "3.0.0"

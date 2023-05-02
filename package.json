@@ -14,7 +14,7 @@
     "@emotion/react": "11.10.6",
     "@markuplint/astro-parser": "3.6.3",
     "@markuplint/jsx-parser": "3.6.2",
-    "@markuplint/react-spec": "3.7.0",
+    "@markuplint/react-spec": "3.7.1",
     "@nekohack/eslint-config-react": "0.10.0",
     "@nekohack/normalize.css": "2.7.0",
     "@nrwl/cli": "15.9.3",
