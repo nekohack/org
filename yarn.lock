@@ -2094,16 +2094,6 @@
     parse5 "7.1.2"
     tslib "^2.4.1"
 
-"@markuplint/html-parser@3.6.1":
-  version "3.6.1"
-  resolved "https://registry.npmjs.org/@markuplint/html-parser/-/html-parser-3.6.1.tgz"
-  integrity sha512-C92toyo8vQ16o75KljANUYncTG9pg3rYgfZKKtlgS+q1QJTEsISbC96mmRrOYYvpWmx5wFR6xPo9U0wUsYkg/Q==
-  dependencies:
-    "@markuplint/ml-ast" "3.1.0"
-    "@markuplint/parser-utils" "3.6.1"
-    parse5 "7.1.2"
-    tslib "^2.4.1"
-
 "@markuplint/html-parser@3.7.0":
   version "3.7.0"
   resolved "https://registry.npmjs.org/@markuplint/html-parser/-/html-parser-3.7.0.tgz"
@@ -2127,16 +2117,16 @@
   resolved "https://registry.npmjs.org/@markuplint/i18n/-/i18n-3.0.0-rc.5.tgz"
   integrity sha512-fqsLJdH+b/E5OxjHP4GjKUZUOk+zJ74rGe8ciTPbtSw2gwpHDpfTPUA4MvKHBoEN8OYmrZvOSixrzLKPmjSr8g==
 
-"@markuplint/jsx-parser@3.6.1":
-  version "3.6.1"
-  resolved "https://registry.npmjs.org/@markuplint/jsx-parser/-/jsx-parser-3.6.1.tgz"
-  integrity sha512-wKZM6D/Mr98SEeX+W77xkLphWO7RYLTzkJzDBQ6SgP11/sgz1O4ag8KUAHDbG8vIdMHL1YG8V5VJo9KH4/RZeg==
+"@markuplint/jsx-parser@3.6.2":
+  version "3.6.2"
+  resolved "https://registry.npmjs.org/@markuplint/jsx-parser/-/jsx-parser-3.6.2.tgz"
+  integrity sha512-74VqFqdOkTiHmvnngSTtn6ZXM0eixIXtSvl4f9P71F8s/XYdJZesz2n7rRKzZrGvBDgTHqM5eIXZcRRULRprcQ==
   dependencies:
-    "@markuplint/html-parser" "3.6.1"
+    "@markuplint/html-parser" "3.7.0"
     "@markuplint/ml-ast" "3.1.0"
-    "@markuplint/parser-utils" "3.6.1"
-    "@typescript-eslint/types" "^5.46.1"
-    "@typescript-eslint/typescript-estree" "^5.46.1"
+    "@markuplint/parser-utils" "3.7.0"
+    "@typescript-eslint/types" "^5.59.0"
+    "@typescript-eslint/typescript-estree" "^5.59.0"
     tslib "^2.4.1"
 
 "@markuplint/ml-ast@3.0.0-rc.5":
@@ -2193,16 +2183,6 @@
     tslib "^2.4.1"
     uuid "^9.0.0"
 
-"@markuplint/parser-utils@3.6.1":
-  version "3.6.1"
-  resolved "https://registry.npmjs.org/@markuplint/parser-utils/-/parser-utils-3.6.1.tgz"
-  integrity sha512-m8Ce2pxd3LDg9EZOTxnV9wRJO7tS/R81oJU0LFKg1DN7Wzvr2DVqBRtLjqg0ROoLtbsT7vvl49z81f54m5Z7kQ==
-  dependencies:
-    "@markuplint/ml-ast" "3.1.0"
-    "@markuplint/types" "3.5.1"
-    tslib "^2.4.1"
-    uuid "^9.0.0"
-
 "@markuplint/parser-utils@3.7.0":
   version "3.7.0"
   resolved "https://registry.npmjs.org/@markuplint/parser-utils/-/parser-utils-3.7.0.tgz"
@@ -2250,17 +2230,6 @@
   dependencies:
     bcp-47 "1"
     css-tree "1"
-    debug "^4.3.4"
-    leven "3"
-    whatwg-mimetype "2"
-
-"@markuplint/types@3.5.1":
-  version "3.5.1"
-  resolved "https://registry.npmjs.org/@markuplint/types/-/types-3.5.1.tgz"
-  integrity sha512-84pKd75zikqT5b1YvWcEQ6fh1sZm5JMUjt88h2Wn+q9Ic9qpGeQycdxPfhyQVDBz8NPSQzRgb/0m550Ql+JbeA==
-  dependencies:
-    bcp-47 "1"
-    css-tree "^2.3.1"
     debug "^4.3.4"
     leven "3"
     whatwg-mimetype "2"
@@ -4319,10 +4288,15 @@
   resolved "https://registry.npmjs.org/@typescript-eslint/types/-/types-5.47.1.tgz"
   integrity sha512-CmALY9YWXEpwuu6377ybJBZdtSAnzXLSQcxLSqSQSbC7VfpMu/HLVdrnVJj7ycI138EHqocW02LPJErE35cE9A==
 
-"@typescript-eslint/types@5.57.1", "@typescript-eslint/types@^5.25.0", "@typescript-eslint/types@^5.46.1":
+"@typescript-eslint/types@5.57.1", "@typescript-eslint/types@^5.25.0":
   version "5.57.1"
   resolved "https://registry.npmjs.org/@typescript-eslint/types/-/types-5.57.1.tgz"
   integrity sha512-bSs4LOgyV3bJ08F5RDqO2KXqg3WAdwHCu06zOqcQ6vqbTJizyBhuh1o1ImC69X4bV2g1OJxbH71PJqiO7Y1RuA==
+
+"@typescript-eslint/types@5.59.2", "@typescript-eslint/types@^5.59.0":
+  version "5.59.2"
+  resolved "https://registry.npmjs.org/@typescript-eslint/types/-/types-5.59.2.tgz"
+  integrity sha512-LbJ/HqoVs2XTGq5shkiKaNTuVv5tTejdHgfdjqRUGdYhjW1crm/M7og2jhVskMt8/4wS3T1+PfFvL1K3wqYj4w==
 
 "@typescript-eslint/typescript-estree@5.47.1":
   version "5.47.1"
@@ -4337,13 +4311,26 @@
     semver "^7.3.7"
     tsutils "^3.21.0"
 
-"@typescript-eslint/typescript-estree@5.57.1", "@typescript-eslint/typescript-estree@^5.46.1":
+"@typescript-eslint/typescript-estree@5.57.1":
   version "5.57.1"
   resolved "https://registry.npmjs.org/@typescript-eslint/typescript-estree/-/typescript-estree-5.57.1.tgz"
   integrity sha512-A2MZqD8gNT0qHKbk2wRspg7cHbCDCk2tcqt6ScCFLr5Ru8cn+TCfM786DjPhqwseiS+PrYwcXht5ztpEQ6TFTw==
   dependencies:
     "@typescript-eslint/types" "5.57.1"
     "@typescript-eslint/visitor-keys" "5.57.1"
+    debug "^4.3.4"
+    globby "^11.1.0"
+    is-glob "^4.0.3"
+    semver "^7.3.7"
+    tsutils "^3.21.0"
+
+"@typescript-eslint/typescript-estree@^5.59.0":
+  version "5.59.2"
+  resolved "https://registry.npmjs.org/@typescript-eslint/typescript-estree/-/typescript-estree-5.59.2.tgz"
+  integrity sha512-+j4SmbwVmZsQ9jEyBMgpuBD0rKwi9RxRpjX71Brr73RsYnEr3Lt5QZ624Bxphp8HUkSKfqGnPJp1kA5nl0Sh7Q==
+  dependencies:
+    "@typescript-eslint/types" "5.59.2"
+    "@typescript-eslint/visitor-keys" "5.59.2"
     debug "^4.3.4"
     globby "^11.1.0"
     is-glob "^4.0.3"
@@ -4392,6 +4379,14 @@
   integrity sha512-RjQrAniDU0CEk5r7iphkm731zKlFiUjvcBS2yHAg8WWqFMCaCrD0rKEVOMUyMMcbGPZ0bPp56srkGWrgfZqLRA==
   dependencies:
     "@typescript-eslint/types" "5.57.1"
+    eslint-visitor-keys "^3.3.0"
+
+"@typescript-eslint/visitor-keys@5.59.2":
+  version "5.59.2"
+  resolved "https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-5.59.2.tgz"
+  integrity sha512-EEpsO8m3RASrKAHI9jpavNv9NlEUebV4qmF1OWxSTtKSFBpC1NCmWazDQHFivRf0O1DV11BA645yrLEVQ0/Lig==
+  dependencies:
+    "@typescript-eslint/types" "5.59.2"
     eslint-visitor-keys "^3.3.0"
 
 "@ungap/structured-clone@^1.0.1":

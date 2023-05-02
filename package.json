@@ -13,7 +13,7 @@
     "@emotion/babel-plugin": "11.10.6",
     "@emotion/react": "11.10.6",
     "@markuplint/astro-parser": "3.6.3",
-    "@markuplint/jsx-parser": "3.6.1",
+    "@markuplint/jsx-parser": "3.6.2",
     "@markuplint/react-spec": "3.7.0",
     "@nekohack/eslint-config-react": "0.10.0",
     "@nekohack/normalize.css": "2.7.0",
