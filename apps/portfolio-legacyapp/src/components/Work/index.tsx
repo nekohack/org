@@ -1,5 +1,5 @@
 import { t } from 'i18next'
-import { resumeLinks } from '@org/shared/data'
+import { links } from '@org/shared/data'
 import { LinkText, List, Typography } from '@org/shared/ui'
 
 const WorkSection: FC = () => {
@@ -8,7 +8,7 @@ const WorkSection: FC = () => {
       <Typography variant="subtitle 2">{`${t('work')}`}</Typography>
       <Typography variant="body 2">{`${t('work_experience')}`}</Typography>
       <List title={`${t('labels.related_links')}`}>
-        {resumeLinks
+        {links
           .filter((node) => node.enabled === true)
           .map((node, i) => {
             return (

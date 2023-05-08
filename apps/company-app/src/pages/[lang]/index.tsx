@@ -12,11 +12,21 @@ import { FooterSection } from '@components/Footer'
 import { SEO } from '@components/SEO'
 import { JOB } from '@utils/feature.constants'
 import { defaultLanguage, languages } from '../../../i18n.config'
+import { useEffectOnce } from 'react-use'
 
 export default function Home() {
   const { dispatch } = useEmitEvent('focusOnContact', true)
 
-  const socialLinks = JOB ? _socialLinks : _socialLinks.filter((s) => s.text !== 'person')
+  useEffectOnce(() => {
+    if (JOB) {
+      _socialLinks.unshift({
+        text: 'person',
+        description: 'Timeline',
+        url: '#job_timeline',
+        enabled: true,
+      })
+    }
+  })
 
   return (
     <main>
@@ -69,7 +79,7 @@ export default function Home() {
           }
         `}
       >
-        {socialLinks.map((s, index) => (
+        {_socialLinks.map((s, index) => (
           <a
             key={index}
             onClick={s.text === 'person' ? dispatch : null}
@@ -97,13 +107,14 @@ export default function Home() {
               }
             `}
           >
-            <Icon
-              name={s.text}
+            <div
               css={css`
                 width: 1.2rem;
                 margin-right: 1.2rem;
               `}
-            />
+            >
+              <Icon name={s.text} />
+            </div>
             {s.description}
           </a>
         ))}

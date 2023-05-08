@@ -1,6 +1,6 @@
 import { Link, SocialLink } from '@org/shared/types'
 
-export const projectLinks: Link[] = [
+export const projects: Link[] = [
   {
     text: 'Tech Blog',
     description: 'tech_blog',
@@ -17,7 +17,7 @@ export const projectLinks: Link[] = [
   },
 ]
 
-export const resumeLinks: Link[] = [
+export const links: Link[] = [
   {
     text: 'labels.curriculum_vitae',
     url: 'https://github.com/jiyuujin/Curriculum-Vitae',
@@ -36,12 +36,6 @@ export const resumeLinks: Link[] = [
 ]
 
 export const socialLinks: SocialLink[] = [
-  {
-    text: 'person',
-    description: 'Timeline',
-    url: '#job_timeline',
-    enabled: true,
-  },
   {
     text: 'email',
     description: 'Contact',

@@ -17,5 +17,5 @@ export const timelines = [
   })),
 ].sort((a, b) => (a.date > b.date ? -1 : 1))
 export { communities, jobs } from './lib/legacy/constants'
-export { projectLinks, resumeLinks, socialLinks } from './lib/legacy/link.constants'
+export { projects, links, socialLinks } from './lib/legacy/link.constants'
 export { products } from './lib/legacy/product.constants'
