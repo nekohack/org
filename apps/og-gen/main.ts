@@ -5,7 +5,15 @@ const fs = require('fs')
 
 const OG_SOURCE_DIR_PATH = path.join(__dirname, 'data')
 const OG_SOURCE_HTML_FILE_PATH = path.join(OG_SOURCE_DIR_PATH, 'og.html')
-const COMPANY_OG_DIR_PATH = path.join(__dirname, '..', '..', 'apps', 'company-app', 'public', 'og')
+const COMPANY_OG_DIR_PATH = path.join(
+  __dirname,
+  '..',
+  '..',
+  'apps',
+  'company-legacyapp',
+  'public',
+  'og',
+)
 const PROFILE_OG_DIR_PATH = path.join(
   __dirname,
   '..',
