@@ -41,7 +41,7 @@
       }
     }
   },
-  "defaultProject": "company-app",
+  "defaultProject": "company-legacyapp",
   "namedInputs": {
     "default": [
       "{projectRoot}/**/*",

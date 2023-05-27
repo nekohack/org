@@ -43,9 +43,9 @@ jobs:
 
       - name: Company Transpile
         run: |
-          yarn nx run company-app:css
-          yarn nx run company-app:build
-          yarn nx run company-app:export
+          yarn nx run company-legacyapp:css
+          yarn nx run company-legacyapp:build
+          yarn nx run company-legacyapp:export
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -92,8 +92,8 @@ jobs:
       #     NEXT_LIVE_STRIPE_SECRET_KEY: ${{ secrets.NEXT_LIVE_STRIPE_SECRET_KEY }}
       #     NEXT_LIVE_LAMBDA_ENDPOINT: ${{ secrets.NEXT_LIVE_LAMBDA_ENDPOINT }}
 
-      - name: Deploy Company to S3
-        run: bash scripts/sub_company_directory.sh
+      - name: Deploy Company (Legacy) to S3
+        run: bash scripts/sub_company_legacy_directory.sh
 
       # - name: Deploy Portfolio to S3
       #   run: bash scripts/sub_portfolio_directory.sh

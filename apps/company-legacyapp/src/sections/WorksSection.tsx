@@ -14,7 +14,7 @@ const WorksSection = () => {
               <Typography variant="subtitle 2">{work.text}</Typography>
               <LinkPreview
                 title={i18next.exists(work.text) ? t(work.text) : work.text}
-                description={t(work.description ?? '')}
+                description={t(work.description ?? '') as string}
                 url={work.url}
                 image={`/og/${work.image || ''}.jpg`}
               />

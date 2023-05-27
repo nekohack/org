@@ -44,7 +44,7 @@ commands:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run: yarn nx run company-app:css && yarn nx run company-app:build && yarn nx run company-app:export
+      - run: yarn nx run company-legacyapp:css && yarn nx run company-legacyapp:build && yarn nx run company-legacyapp:export
 
       # - run: yarn portfolio-app:css && yarn portfolio-app:build
 
@@ -56,7 +56,7 @@ commands:
     description: Company Deploy
     steps:
       - aws-s3/sync:
-          from: dist/apps/company-app/exported/
+          from: dist/apps/company-legacyapp/exported/
           to: s3://nekohack.me
           arguments: |
             --acl public-read \

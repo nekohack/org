@@ -82,7 +82,7 @@ export default function Home() {
         {_socialLinks.map((s, index) => (
           <a
             key={index}
-            onClick={s.text === 'person' ? dispatch : null}
+            onClick={s.text === 'person' ? dispatch : undefined}
             href={s.url}
             target="_blank"
             rel="noopener noreferrer"

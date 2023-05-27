@@ -34,7 +34,7 @@ export const FooterSection: FC = () => {
             `}
           >
             <LinkText
-              ariaLabel={t('at_once_read_privacy_policy')}
+              ariaLabel={t('at_once_read_privacy_policy') as string}
               url="https://nekohack-privacy-policy.netlify.app/"
             >
               {`${t('at_once_read_privacy_policy')}`}
@@ -51,7 +51,7 @@ export const FooterSection: FC = () => {
             `}
           >
             <LinkText
-              ariaLabel={t('at_once_read_privacy_policy')}
+              ariaLabel={t('at_once_read_privacy_policy') as string}
               url="https://docs.google.com/forms/d/e/1FAIpQLSfFzwsCVnFbu-lV0Jz2fEYHR97hpBSK2g6kEwc-G1fo976ngA/viewform"
             >
               {`${t('please_contact_easily_from_the_survey_form')}`}

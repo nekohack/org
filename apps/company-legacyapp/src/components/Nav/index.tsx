@@ -3,20 +3,20 @@ import Link from 'next/link'
 import { css } from '@emotion/react'
 
 export const NavSection: FC = () => {
-  const ref = useRef<HTMLDivElement>()
+  const ref = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     window.onscroll = function updateNav() {
       if (isPageOffset()) {
-        ref.current.classList.add('navActive')
+        ref.current?.classList.add('navActive')
       } else {
-        ref.current.classList.remove('navActive')
+        ref.current?.classList.remove('navActive')
       }
     }
   }, [])
 
   function isPageOffset(): boolean {
-    const offset = ref.current?.offsetTop
+    const offset = ref.current?.offsetTop ?? 0
 
     return window.pageYOffset > offset
   }

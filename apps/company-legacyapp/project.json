@@ -1,6 +1,6 @@
 {
-  "name": "company-app",
-  "sourceRoot": "apps/company-app",
+  "name": "company-legacyapp",
+  "sourceRoot": "apps/company-legacyapp",
   "projectType": "application",
   "targets": {
     "build": {
@@ -8,8 +8,8 @@
       "outputs": ["{options.outputPath}"],
       "defaultConfiguration": "production",
       "options": {
-        "root": "apps/company-app",
-        "outputPath": "dist/apps/company-app"
+        "root": "apps/company-legacyapp",
+        "outputPath": "dist/apps/company-legacyapp"
       },
       "configurations": {
         "production": {}
@@ -18,12 +18,12 @@
     "serve": {
       "executor": "@nrwl/next:server",
       "options": {
-        "buildTarget": "company-app:build",
+        "buildTarget": "company-legacyapp:build",
         "dev": true
       },
       "configurations": {
         "production": {
-          "buildTarget": "company-app:build:production",
+          "buildTarget": "company-legacyapp:build:production",
           "dev": false
         }
       }
@@ -32,27 +32,27 @@
       "executor": "nx:run-commands",
       "options": {
         "commands": ["unocss 'src/**/*.tsx' --out-file=src/styles/uno.css"],
-        "cwd": "apps/company-app",
+        "cwd": "apps/company-legacyapp",
         "parallel": false
       }
     },
     "export": {
       "executor": "@nrwl/next:export",
       "options": {
-        "buildTarget": "company-app:build:production"
+        "buildTarget": "company-legacyapp:build:production"
       }
     },
     "typecheck": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "tsc --noEmit -p apps/company-app/tsconfig.lib.json"
+        "command": "tsc --noEmit -p apps/company-legacyapp/tsconfig.lib.json"
       }
     },
     "tsm": {
       "executor": "nx:run-commands",
       "options": {
         "command": "typed-scss-modules src",
-        "cwd": "apps/company-app",
+        "cwd": "apps/company-legacyapp",
         "parallel": false
       }
     },
@@ -65,7 +65,7 @@
           "stylelint --config .stylelintrc.yml 'src/styles/**/*.scss' --fix",
           "markuplint \"./src/**/*.tsx\" --config .markuplintrc --format"
         ],
-        "cwd": "apps/company-app",
+        "cwd": "apps/company-legacyapp",
         "parallel": false
       }
     }

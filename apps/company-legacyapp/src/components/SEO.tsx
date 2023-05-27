@@ -36,7 +36,7 @@ export const SEO = (props: Props) => {
       <link rel="canonical" href={tags.url} />
       <meta property="og:url" content={tags.url} />
 
-      <meta name="keywords" content={[...DEFAULT_KEYWORDS, ...tags.keywords].join(', ')} />
+      <meta name="keywords" content={[...DEFAULT_KEYWORDS].join(', ')} />
     </Head>
   )
 }

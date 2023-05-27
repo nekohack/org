@@ -30,8 +30,22 @@
       "@org/shared/hooks": ["../../libs/shared/hooks/index.ts"],
       "@org/shared/types": ["../../libs/shared/types/index.ts"],
       "@org/shared/ui": ["../../libs/shared/ui/index.ts"]
-    }
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "strictNullChecks": true
   },
-  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "next-env.d.ts", "react-app-env.d.ts"],
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx",
+    "next-env.d.ts",
+    "react-app-env.d.ts",
+    "../../dist/apps/company-legacyapp/.next/types/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }
