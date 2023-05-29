@@ -11,7 +11,17 @@
 You can be launched
 
 ```bash
-yarn dev
+# company-app
+yarn nx run company-app:serve
+
+# company-legacyapp
+yarn nx run company-legacyapp:serve
+
+# portfolio-app
+yarn nx run portfolio-app:serve
+
+# portfolio-legacyapp
+yarn nx run portfolio-legacyapp:serve
 ```
 
 ## Skills
