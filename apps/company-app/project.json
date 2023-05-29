@@ -1,0 +1,72 @@
+{
+  "name": "company-app",
+  "sourceRoot": "apps/company-app",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "root": "apps/company-app",
+        "outputPath": "dist/apps/company-app"
+      },
+      "configurations": {
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/next:server",
+      "options": {
+        "buildTarget": "company-app:build",
+        "dev": true
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "company-app:build:production",
+          "dev": false
+        }
+      }
+    },
+    "css": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["unocss 'src/**/*.tsx' --out-file=src/styles/uno.css"],
+        "cwd": "apps/company-app",
+        "parallel": false
+      }
+    },
+    "export": {
+      "executor": "@nrwl/next:export",
+      "options": {
+        "buildTarget": "company-app:build:production"
+      }
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tsc --noEmit -p apps/company-app/tsconfig.lib.json"
+      }
+    },
+    "tsm": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "typed-scss-modules src",
+        "cwd": "apps/company-app",
+        "parallel": false
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss,sass}\" --ignore-path .gitignore",
+          "eslint ./app --ext .tsx,.ts,.jsx,.js --fix"
+        ],
+        "cwd": "apps/company-app",
+        "parallel": false
+      }
+    }
+  },
+  "tags": []
+}
