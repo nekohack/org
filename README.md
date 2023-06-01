@@ -1,12 +1,29 @@
-<p align="center">
-  <img src='https://github.com/nekohack/org/blob/master/nekohack.svg?sanitize=true' alt="Me" title="Me" width="256px" height='256px'/>
-</p>
+# org
 
-<div align="center">
-  <h2>nekohack.me | Web Developer - Yuma Kitamura</h2>
-</div>
+This repository is the source code for nekohack inc. website.
 
-## Work on localhost
+## Setup
+
+```bash
+# yarn
+yarn
+```
+
+### Development
+
+```bash
+# company-app
+
+# company-legacyapp
+cp apps/company-legacyapp/.env.example apps/company-legacyapp/.env
+yarn nx run company-legacyapp:css
+
+# portfolio-app
+
+# portfolio-legacyapp
+cp apps/portfolio-legacyapp/.env.example apps/portfolio-legacyapp/.env
+yarn nx run portfolio-legacyapp:css
+```
 
 You can be launched
 
