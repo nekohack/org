@@ -8,7 +8,7 @@ type Category =
   | 'IDE'
   | 'Language'
   | 'Cross Platform Framework'
-  | 'Scala Framework'
+  | 'Scala/Java Framework'
   | 'PHP Framework'
   | 'JavaScript Framework'
   | 'JavaScript Library'
@@ -23,6 +23,7 @@ type Category =
   | 'Static Website Hosting'
   | 'Container'
   | 'CDN'
+  | 'Design'
 
 type Host =
   | 'DevRel Meetup Tokyo'

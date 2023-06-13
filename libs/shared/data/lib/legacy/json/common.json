@@ -63,21 +63,21 @@
         "start": "2022-12-01",
         "end": "-",
         "position": "vice representative",
-        "comment": "FlutterKaigi",
+        "comment": "FlutterKaigi の法人の役員になって",
         "level": 1
       },
       {
         "name": "rev up",
         "start": "2022-07-01",
         "end": "2022-10-31",
-        "comment": "LINE developers community",
+        "comment": "LINE developers community より依頼を受けて",
         "level": 2
       },
       {
         "name": "Conf",
         "start": "2021-03-01",
         "end": "-",
-        "comment": "FlutterKaigi, VueFes and VSCodeCon JP",
+        "comment": "FlutterKaigi や VueFes、VSCodeCon JP のカンファレンススタッフちょこちょこ",
         "level": 6
       },
       {
@@ -92,7 +92,7 @@
         "start": "2012-10-01",
         "end": "2014-09-30",
         "position": "委託",
-        "comment": "ゲームアプリの開発、DevOpsの改善",
+        "comment": "ゲームアプリの開発、DevOps の改善",
         "level": 8
       },
       {
@@ -106,6 +106,16 @@
     ]
   },
   "talks": [
+    {
+      "title": "React で LIFF アプリを作ろう (設計重視編)",
+      "description": "",
+      "host": "LINE Developer Community",
+      "url": "https://blog.nekohack.me/posts/answer-to-make-react-hooks-with-line",
+      "youtubeUrl": "https://www.youtube.com/watch?v=7xhXbpCwy3Q",
+      "place": "YouTube",
+      "image": "the-answer-to-learn-react-with-line",
+      "date": "2023/05/17"
+    },
     {
       "title": "特にこれをやって Web 体験を向上した話",
       "description": "",
@@ -160,7 +170,7 @@
       "title": "Google I/O 2022 Recap × WWDC 2022 Recap について",
       "description": "",
       "host": "PWA Night",
-      "url": "https://blog.nekohack.me/posts/pwa-night-40",
+      "url": "https://blog.nekohack.me/posts/pwanight-40",
       "youtubeUrl": "",
       "place": "Zoom",
       "image": "22s-googleio-wwdc-recap",
@@ -200,7 +210,7 @@
       "title": "React (Vite) × LIFF ハンズオン",
       "description": "",
       "host": "LINE Developer Community",
-      "url": "https://blog.nekohack.me/posts/the-answer-to-learn-react-with-line",
+      "url": "https://blog.nekohack.me/posts/answer-to-learn-react-with-line",
       "youtubeUrl": "https://www.youtube.com/watch?v=D8GeQyrueEY",
       "place": "YouTube",
       "image": "the-answer-to-learn-react-with-line",
@@ -320,8 +330,8 @@
   "timelines": [
     {
       "date": "2023/03/03",
-      "title": "\"AI.info\" ウェブサイトの製作",
-      "description": "毎週金曜、雑談した内容をいつでも振り返ることができるようにしています。",
+      "title": "\"AI エンジニアのつどい\" ウェブサイトの製作",
+      "description": "毎週金曜、AI (ChatGPT) 関連に特化して雑談した内容を、いつでも振り返ることができるようにしています。",
       "url": "https://ohayo-ai.nekohack.me/"
     },
     {
@@ -332,7 +342,7 @@
     {
       "date": "2023/01/06",
       "title": "\"金曜日のエンジニアのつどい\" ウェブサイトの製作",
-      "description": "毎週金曜、雑談した内容をいつでも振り返ることができるようにしています。",
+      "description": "毎週金曜に技術ネタを持ち寄りつつ、いつでも振り返ることができるようにしています。",
       "url": "https://ohayo-friday.nekohack.me/"
     },
     {
@@ -429,7 +439,7 @@
     {
       "date": "2019/10/01",
       "title": "スマレジの技術広報として活動を開始",
-      "description": "初めて DevRel を認識しました"
+      "description": "初めて DevRel を認識しました。"
     },
     {
       "date": "2019/07/01",
@@ -495,7 +505,7 @@
       "location": "Japan",
       "url": "https://twitter.com/ohayo_eng",
       "status": "active",
-      "enabled": true
+      "enabled": false
     },
     {
       "text": "Vue.js Japan User Group",
@@ -544,14 +554,14 @@
       "location": "Japan",
       "url": "https://pwanight.connpass.com/",
       "status": "active",
-      "enabled": true
+      "enabled": false
     },
     {
       "text": "VS Code Meetup",
       "location": "Japan",
       "url": "https://vscode.connpass.com/",
       "status": "active",
-      "enabled": true
+      "enabled": false
     }
   ]
 }

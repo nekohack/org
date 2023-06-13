@@ -91,7 +91,7 @@ export const products: Product[] = [
         status: 'inactive',
       },
       {
-        name: 'Github Actions',
+        name: 'GitHub Actions',
         category: 'CI',
         status: 'active',
       },
@@ -159,7 +159,7 @@ export const products: Product[] = [
         status: 'inactive',
       },
       {
-        name: 'Github Actions',
+        name: 'GitHub Actions',
         category: 'CI',
         status: 'active',
       },
@@ -334,7 +334,7 @@ export const products: Product[] = [
         status: 'active',
       },
       {
-        name: 'Github Pages',
+        name: 'GitHub Pages',
         category: 'CI',
         status: 'active',
       },
@@ -367,7 +367,7 @@ export const products: Product[] = [
         status: 'active',
       },
       {
-        name: 'Github Pages',
+        name: 'GitHub Pages',
         category: 'CI',
         status: 'active',
       },
