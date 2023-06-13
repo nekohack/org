@@ -25,6 +25,11 @@ export const technologies: Technology[] = [
         status: 'active',
       },
       {
+        name: 'vanilla-extract',
+        category: 'Build Tools',
+        status: 'active',
+      },
+      {
         name: 'emotion (CSS-in-JS)',
         category: 'Build Tools',
         status: 'active',
@@ -45,16 +50,6 @@ export const technologies: Technology[] = [
         status: 'active',
       },
       {
-        name: 'Vue',
-        category: 'JavaScript Framework',
-        status: 'active',
-      },
-      {
-        name: 'Nuxt.js',
-        category: 'JavaScript Framework',
-        status: 'active',
-      },
-      {
         name: 'React',
         category: 'JavaScript Framework',
         status: 'active',
@@ -66,6 +61,21 @@ export const technologies: Technology[] = [
       },
       {
         name: 'Gatsby.js',
+        category: 'JavaScript Framework',
+        status: 'active',
+      },
+      {
+        name: 'Vue',
+        category: 'JavaScript Framework',
+        status: 'active',
+      },
+      {
+        name: 'Nuxt.js',
+        category: 'JavaScript Framework',
+        status: 'active',
+      },
+      {
+        name: 'Astro',
         category: 'JavaScript Framework',
         status: 'active',
       },
@@ -151,7 +161,7 @@ export const technologies: Technology[] = [
       },
       {
         name: 'Play Framework',
-        category: 'Scala Framework',
+        category: 'Scala/Java Framework',
         status: 'active',
       },
       {
@@ -163,6 +173,11 @@ export const technologies: Technology[] = [
         name: 'Java',
         category: 'Language',
         status: 'inactive',
+      },
+      {
+        name: 'Rust',
+        category: 'Language',
+        status: 'active',
       },
       {
         name: 'Laravel',
@@ -180,24 +195,24 @@ export const technologies: Technology[] = [
         status: 'active',
       },
       {
-        name: 'GraphQL APIs',
-        category: 'API',
-        status: 'active',
-      },
-      {
         name: 'REST APIs',
         category: 'API',
         status: 'active',
       },
       {
-        name: 'MySQL',
-        category: 'Database',
+        name: 'GraphQL APIs',
+        category: 'API',
         status: 'active',
       },
       {
         name: 'PostgreSQL',
         category: 'Database',
         status: 'inactive',
+      },
+      {
+        name: 'MySQL',
+        category: 'Database',
+        status: 'active',
       },
       {
         name: 'MongoDB',
@@ -215,18 +230,13 @@ export const technologies: Technology[] = [
     title: 'Others',
     skills: [
       {
-        name: 'AWS CloudFront',
-        category: 'CDN',
-        status: 'active',
-      },
-      {
-        name: 'AWS ECS (Fargate)',
-        category: 'Container',
-        status: 'active',
-      },
-      {
         name: 'AWS Lambda',
         category: 'Serverless',
+        status: 'active',
+      },
+      {
+        name: 'AWS CloudFront',
+        category: 'CDN',
         status: 'active',
       },
       {
@@ -235,7 +245,22 @@ export const technologies: Technology[] = [
         status: 'active',
       },
       {
+        name: 'AWS ECS (Fargate)',
+        category: 'Container',
+        status: 'active',
+      },
+      {
+        name: 'AWS App Runner',
+        category: 'Container',
+        status: 'active',
+      },
+      {
         name: 'GCP Cloud Run',
+        category: 'Container',
+        status: 'active',
+      },
+      {
+        name: 'GCP EC2',
         category: 'Container',
         status: 'active',
       },
@@ -252,6 +277,11 @@ export const technologies: Technology[] = [
       {
         name: 'Vim',
         category: 'IDE',
+        status: 'active',
+      },
+      {
+        name: 'Figma / FigJam',
+        category: 'Design',
         status: 'active',
       },
       {
