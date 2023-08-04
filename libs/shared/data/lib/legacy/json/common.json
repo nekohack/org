@@ -16,7 +16,7 @@
         "comment": "Smaregi/POS team"
       },
       {
-        "name": "ROXX",
+        "name": "ROXX (SCOUTER)",
         "start": "2019-02-01",
         "end": "2019-06-30",
         "position": "Developer",
@@ -63,28 +63,28 @@
         "start": "2022-12-01",
         "end": "-",
         "position": "vice representative",
-        "comment": "FlutterKaigi の法人の役員になって",
+        "comment": "一般社団法人FlutterKaigiの役員として",
         "level": 1
       },
       {
         "name": "rev up",
         "start": "2022-07-01",
         "end": "2022-10-31",
-        "comment": "LINE developers community より依頼を受けて",
+        "comment": "LINE developers community もっちゃんさんより依頼を受けて",
         "level": 2
       },
       {
         "name": "Conf",
         "start": "2021-03-01",
         "end": "-",
-        "comment": "FlutterKaigi や VueFes、VSCodeCon JP のカンファレンススタッフちょこちょこ",
+        "comment": "FlutterKaigi や VueFes、VSCodeCon JP のカンファレンスウェブサイトをリードして",
         "level": 6
       },
       {
         "name": "Local Community",
         "start": "2018-09-01",
         "end": "2020-02-28",
-        "comment": "主に Kyoto や Osaka で",
+        "comment": "主にKyotoやOsakaで技術コミュニティを運営",
         "level": 2
       },
       {
@@ -92,7 +92,7 @@
         "start": "2012-10-01",
         "end": "2014-09-30",
         "position": "委託",
-        "comment": "ゲームアプリの開発、DevOps の改善",
+        "comment": "ゲームアプリの開発、DevOpsの改善",
         "level": 8
       },
       {
@@ -108,7 +108,7 @@
   "talks": [
     {
       "title": "React で LIFF アプリを作ろう (設計重視編)",
-      "description": "",
+      "description": "React でカスタムフックを作ることを学びます。",
       "host": "LINE Developer Community",
       "url": "https://blog.nekohack.me/posts/answer-to-make-react-hooks-with-line",
       "youtubeUrl": "https://www.youtube.com/watch?v=7xhXbpCwy3Q",
@@ -118,7 +118,7 @@
     },
     {
       "title": "特にこれをやって Web 体験を向上した話",
-      "description": "",
+      "description": "1 年間のふりかえり。",
       "host": "PWA Night",
       "url": "https://www.figma.com/proto/12yGlG2LfcrkJ3eWDot0vj/Slides?node-id=13%3A279&starting-point-node-id=13%3A279&scaling=scale-down-width",
       "youtubeUrl": "",
@@ -128,7 +128,7 @@
     },
     {
       "title": "モノレポについて",
-      "description": "",
+      "description": "勉強会の開催経緯として、これまでのマルレポ運用から切り替えたことが挙げられます。",
       "host": "EDG",
       "url": "https://blog.nekohack.me/posts/monorepo-tutorial",
       "youtubeUrl": "",
@@ -138,7 +138,7 @@
     },
     {
       "title": "Git & GitHub 連携で役立つ機能",
-      "description": "",
+      "description": "VS Code Meetup もっちゃんさんより依頼を受けて",
       "host": "SOFTWARE DESIGN",
       "url": "https://gihyo.jp/magazine/SD/archive/2022/202210",
       "youtubeUrl": "",
@@ -147,8 +147,8 @@
       "date": "2022/09/16"
     },
     {
-      "title": "slides.カレンダーアプリで学ぶパッケージ開発",
-      "description": "",
+      "title": "カレンダーアプリで学ぶパッケージ開発",
+      "description": "Flutter におけるパッケージ開発を学びます。",
       "host": "Flutter Japan User Group",
       "url": "https://zenn.dev/chooyan/books/calendar-package",
       "youtubeUrl": "https://www.youtube.com/watch?v=dlAKk1VAQyA",
@@ -158,7 +158,7 @@
     },
     {
       "title": "わたしの OSS 活動について",
-      "description": "",
+      "description": "FlutterKaigi オーガナイズについて知見をまとめました。",
       "host": "EDG",
       "url": "https://docs.google.com/presentation/d/141tABAoz2LYozHC89fSwqqXJtGEX47mVXyJ5SEfYtZY/edit?usp=sharing",
       "youtubeUrl": "",
@@ -168,7 +168,7 @@
     },
     {
       "title": "Google I/O 2022 Recap × WWDC 2022 Recap について",
-      "description": "",
+      "description": "Google I/O と WWDC のふりかえり。",
       "host": "PWA Night",
       "url": "https://blog.nekohack.me/posts/pwanight-40",
       "youtubeUrl": "",
@@ -178,7 +178,7 @@
     },
     {
       "title": "markuplint をカスタマイズする",
-      "description": "",
+      "description": "社内勉強会の一環として、markuplint を布教しました。",
       "host": "EDG",
       "url": "https://blog.nekohack.me/posts/customize-markuplint-to-audit-accessibility",
       "youtubeUrl": "",
@@ -188,7 +188,7 @@
     },
     {
       "title": "markuplint の動作環境を構築する",
-      "description": "",
+      "description": "社内勉強会の一環として、markuplint を布教しました。",
       "host": "EDG",
       "url": "https://blog.nekohack.me/posts/setup-markuplint-to-audit-accessibility",
       "youtubeUrl": "",
@@ -198,7 +198,7 @@
     },
     {
       "title": "アクセシビリティを基礎から学ぶ (第 2 版)",
-      "description": "",
+      "description": "社内勉強会の一環として、アクセシビリティの啓蒙に勤しみました。",
       "host": "EDG",
       "url": "https://docs.google.com/presentation/d/1TGXqz-mg1mkKPRazb_jT5umxC98h6dXrhQqdJX4YJUE/edit?usp=sharing",
       "youtubeUrl": "",
@@ -208,7 +208,7 @@
     },
     {
       "title": "React (Vite) × LIFF ハンズオン",
-      "description": "",
+      "description": "LINE Developer Community もっちゃんさんより依頼を受けて",
       "host": "LINE Developer Community",
       "url": "https://blog.nekohack.me/posts/answer-to-learn-react-with-line",
       "youtubeUrl": "https://www.youtube.com/watch?v=D8GeQyrueEY",
@@ -218,7 +218,7 @@
     },
     {
       "title": "アクセシビリティを基礎から学ぶ (第 1 版)",
-      "description": "",
+      "description": "社内勉強会の一環として、アクセシビリティの啓蒙に勤しみました。",
       "host": "EDG",
       "url": "https://docs.google.com/presentation/d/1z6OFNh3NnN9mP3Rh2wGhyOpy_QslKcZfR6I8K7blOEY/edit?usp=sharing",
       "youtubeUrl": "",
@@ -228,7 +228,7 @@
     },
     {
       "title": "VSCondeCon JP 2021 の内幕",
-      "description": "",
+      "description": "VS Code Conference JP 2021 のプレイベント企画のひとつ。",
       "host": "VS Code Meetup",
       "url": "https://blog.nekohack.me/posts/inside-the-website-in-vscodecon-jp-2021",
       "youtubeUrl": "https://www.youtube.com/watch?v=Y8dl1y2qdG8",
@@ -337,7 +337,7 @@
     {
       "date": "2023/01/13",
       "title": "LINE API Expert 認定",
-      "description": "LINE (Developers Community) さまより認定を受けました。"
+      "description": "LINE Developers Community さまより認定を受けました。"
     },
     {
       "date": "2023/01/06",
@@ -347,20 +347,20 @@
     },
     {
       "date": "2022/12/01",
-      "title": "一般社団法人 FlutterKaigi 設立",
-      "description": "",
+      "title": "一般社団法人FlutterKaigi 設立",
+      "description": "Flutter を取り巻く社会環境から、カンファレンスの円滑な運営を目指すにあたって、法人設立へ運ぶことになりました。",
       "url": "https://association.flutterkaigi.jp/"
     },
     {
       "date": "2022/09/01",
       "title": "VS Code Conference JP 2022-2023 ウェブサイトの製作",
       "description": "モノレポを考慮して、公式ウェブサイト製作を手掛けさせていただきました。",
-      "url": "https://vscodejp.github.io/conference/2022-2023/ja"
+      "url": "https://vscodejp.github.io/conference/2022-2023/ja/"
     },
     {
       "date": "2022/08/01",
       "title": "Rev Up 2022 ウェブサイトの製作",
-      "description": "LINE (Developers Community) さまより製作依頼を受け、ウェブサイト製作を担当させていただきました。",
+      "description": "LINE Developers Community さまより製作依頼を受け、ウェブサイト製作を担当させていただきました。",
       "url": "https://revup.jp/2022"
     },
     {
@@ -501,7 +501,7 @@
   ],
   "communities": [
     {
-      "text":"おはようエンジニア",
+      "text": "おはようエンジニア",
       "location": "Japan",
       "url": "https://twitter.com/ohayo_eng",
       "status": "active",

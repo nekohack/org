@@ -33,7 +33,19 @@ const TimelineSection: FC = () => {
               <div className="ml-2">
                 <div className="p-2 sm:p-4 rounded-lg border shadow-sm bg-gray-700 border-gray-600 text-gray-300">
                   <div className="justify-between mb-3 sm:flex items-baseline gap-2">
-                    <div className="text-sm font-semibold text-blue-300">{t.title}</div>
+                    <div className="text-sm font-semibold text-blue-300">
+                      {t.url && (
+                        <a
+                          href={t.url}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-white hover:text-neutral-200 visited:text-white"
+                        >
+                          {t.title}
+                        </a>
+                      )}
+                      {!t.url && <div className="text-white">{t.title}</div>}
+                    </div>
                     <div className="text-sm font-semibold text-blue-300">
                       {`${new Date(t.date).getFullYear()}/${
                         new Date(t.date).getMonth() + 1
