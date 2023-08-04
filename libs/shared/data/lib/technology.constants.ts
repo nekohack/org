@@ -20,24 +20,24 @@ export const technologies: Technology[] = [
         status: 'active',
       },
       {
-        name: 'linaria (Zero-runtime CSS-in-JS)',
-        category: 'Build Tools',
+        name: 'linaria',
+        category: 'Build Tools (CSS-in-JS)',
         status: 'active',
       },
       {
         name: 'vanilla-extract',
-        category: 'Build Tools',
+        category: 'Build Tools (CSS-in-JS)',
         status: 'active',
       },
       {
-        name: 'emotion (CSS-in-JS)',
-        category: 'Build Tools',
+        name: 'emotion',
+        category: 'Build Tools (CSS-in-JS)',
         status: 'active',
       },
       {
         name: 'styled-components',
-        category: 'Build Tools',
-        status: 'active',
+        category: 'Build Tools (CSS-in-JS)',
+        status: 'inactive',
       },
       {
         name: 'TypeScript',
@@ -85,8 +85,18 @@ export const technologies: Technology[] = [
         status: 'active',
       },
       {
-        name: 'Angular.js',
+        name: 'SvelteKit',
         category: 'JavaScript Framework',
+        status: 'active',
+      },
+      {
+        name: 'React.js',
+        category: 'JavaScript Library',
+        status: 'inactive',
+      },
+      {
+        name: 'Angular.js',
+        category: 'JavaScript Library',
         status: 'inactive',
       },
       {
@@ -102,7 +112,7 @@ export const technologies: Technology[] = [
       {
         name: 'Swift',
         category: 'Language',
-        status: 'inactive',
+        status: 'active',
       },
       {
         name: 'Objective-C',
@@ -110,9 +120,9 @@ export const technologies: Technology[] = [
         status: 'inactive',
       },
       {
-        name: 'Kotlin',
+        name: 'Kotlin (Android)',
         category: 'Language',
-        status: 'inactive',
+        status: 'active',
       },
       {
         name: 'Java (Android)',
@@ -125,9 +135,14 @@ export const technologies: Technology[] = [
         status: 'active',
       },
       {
+        name: 'Provider',
+        category: 'State management',
+        status: 'inactive',
+      },
+      {
         name: 'Pinia',
         category: 'State management',
-        status: 'active',
+        status: 'inactive',
       },
       {
         name: 'Vuex',
@@ -160,22 +175,32 @@ export const technologies: Technology[] = [
         status: 'active',
       },
       {
-        name: 'Play Framework',
-        category: 'Scala/Java Framework',
-        status: 'active',
-      },
-      {
         name: 'Scala',
         category: 'Language',
         status: 'active',
       },
       {
-        name: 'Java',
+        name: 'Play Framework',
+        category: 'Scala/Java Framework',
+        status: 'active',
+      },
+      {
+        name: 'Kotlin (Server)',
+        category: 'Language',
+        status: 'inactive',
+      },
+      {
+        name: 'Java (Server)',
         category: 'Language',
         status: 'inactive',
       },
       {
         name: 'Rust',
+        category: 'Language',
+        status: 'active',
+      },
+      {
+        name: 'PHP',
         category: 'Language',
         status: 'active',
       },
@@ -187,12 +212,7 @@ export const technologies: Technology[] = [
       {
         name: 'CakePHP',
         category: 'PHP Framework',
-        status: 'active',
-      },
-      {
-        name: 'PHP',
-        category: 'Language',
-        status: 'active',
+        status: 'inactive',
       },
       {
         name: 'REST APIs',
@@ -207,12 +227,12 @@ export const technologies: Technology[] = [
       {
         name: 'PostgreSQL',
         category: 'Database',
-        status: 'inactive',
+        status: 'active',
       },
       {
         name: 'MySQL',
         category: 'Database',
-        status: 'active',
+        status: 'inactive',
       },
       {
         name: 'MongoDB',
@@ -220,9 +240,14 @@ export const technologies: Technology[] = [
         status: 'active',
       },
       {
-        name: 'Firestore',
+        name: 'Supabase',
         category: 'Database',
         status: 'active',
+      },
+      {
+        name: 'Firebase',
+        category: 'Database',
+        status: 'inactive',
       },
     ],
   },

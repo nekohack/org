@@ -4,6 +4,7 @@ type Status = 'active' | 'inactive' | 'archived'
 
 type Category =
   | 'Build Tools'
+  | 'Build Tools (CSS-in-JS)'
   | 'CLI'
   | 'IDE'
   | 'Language'
