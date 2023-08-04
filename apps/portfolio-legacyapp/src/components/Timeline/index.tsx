@@ -34,6 +34,11 @@ const TimelineSection: FC = () => {
                 <div className="p-2 sm:p-4 rounded-lg border shadow-sm bg-gray-700 border-gray-600 text-gray-300">
                   <div className="justify-between mb-3 sm:flex items-baseline gap-2">
                     <div className="text-sm font-semibold text-blue-300">{t.title}</div>
+                    <div className="text-sm font-semibold text-blue-300">
+                      {`${new Date(t.date).getFullYear()}/${
+                        new Date(t.date).getMonth() + 1
+                      }/${new Date(t.date).getDay()}`}
+                    </div>
                   </div>
                   <div className="text-gray-300">
                     <Typography variant="body 3">{t.description}</Typography>
