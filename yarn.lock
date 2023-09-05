@@ -3784,17 +3784,17 @@
   dependencies:
     tslib "^2.4.0"
 
-"@tanstack/react-virtual@3.0.0-beta.58":
-  version "3.0.0-beta.58"
-  resolved "https://registry.npmjs.org/@tanstack/react-virtual/-/react-virtual-3.0.0-beta.58.tgz"
-  integrity sha512-onDOoQvB3aDnTdS2NAT/y8QTEFLS5PdQgJs4SXv1elfFI5/F1uYLkB61+NogVaAIRLUjCZNNMvL7bM6927GyvA==
+"@tanstack/react-virtual@3.0.0-beta.59":
+  version "3.0.0-beta.59"
+  resolved "https://registry.npmjs.org/@tanstack/react-virtual/-/react-virtual-3.0.0-beta.59.tgz"
+  integrity sha512-6t0813V/yiY/rWSwW5TEHMn97LJPDYv6aW75KVJnt5o14Y3ghqFnbX3nJ3icQXfsqYjPoIgXH4TAr8v/w0cZqA==
   dependencies:
-    "@tanstack/virtual-core" "3.0.0-beta.58"
+    "@tanstack/virtual-core" "3.0.0-beta.59"
 
-"@tanstack/virtual-core@3.0.0-beta.58":
-  version "3.0.0-beta.58"
-  resolved "https://registry.npmjs.org/@tanstack/virtual-core/-/virtual-core-3.0.0-beta.58.tgz"
-  integrity sha512-6i8+ziIAeWdeGI2UxMUxDc08Kjnm+Rg7w+9GI5GGRPBhdrxWFZqnNpeexbuRa75iasjfMayjp6Ii+aiC63EWvQ==
+"@tanstack/virtual-core@3.0.0-beta.59":
+  version "3.0.0-beta.59"
+  resolved "https://registry.npmjs.org/@tanstack/virtual-core/-/virtual-core-3.0.0-beta.59.tgz"
+  integrity sha512-Z6V6VXk8D4jaRHx8klvL6jUOYWIkWUODTyVQJSfnxAVu8vnuz99FgBXhY/mLZ5qjEX5OPESZZVKRTKqGpMEQKw==
 
 "@trysound/sax@0.2.0":
   version "0.2.0"
