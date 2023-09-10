@@ -12,7 +12,7 @@
     "@astrojs/tailwind": "3.1.1",
     "@emotion/babel-plugin": "11.10.6",
     "@emotion/react": "11.10.6",
-    "@markuplint/astro-parser": "3.9.0",
+    "@markuplint/astro-parser": "3.9.1",
     "@markuplint/jsx-parser": "3.6.2",
     "@markuplint/react-spec": "3.7.1",
     "@nekohack/eslint-config-react": "0.10.0",
