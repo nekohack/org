@@ -2145,11 +2145,6 @@
   resolved "https://registry.npmjs.org/@markuplint/ml-ast/-/ml-ast-3.0.0-rc.5.tgz"
   integrity sha512-h9Dbu2eXmQraewMtrKVr6tMVLXYx56HP3FMqe3d2vW3U41SNcy9VpartnBLUbP2tWH7swavs6ONsuVCl3/S5sA==
 
-"@markuplint/ml-ast@3.1.0":
-  version "3.1.0"
-  resolved "https://registry.npmjs.org/@markuplint/ml-ast/-/ml-ast-3.1.0.tgz"
-  integrity sha512-RDk7V16ObmqtAY8jTS1vgFTly1BNVW/tAlYZcah7Y0OJF9itE42nufYmwKdTNKRS9pq09vMHS39icXBYxpXPZw==
-
 "@markuplint/ml-ast@3.2.0":
   version "3.2.0"
   resolved "https://registry.npmjs.org/@markuplint/ml-ast/-/ml-ast-3.2.0.tgz"
@@ -2189,17 +2184,17 @@
     dom-accessibility-api "^0.5.14"
     tslib "^2.4.1"
 
-"@markuplint/ml-spec@3.8.0":
-  version "3.8.0"
-  resolved "https://registry.npmjs.org/@markuplint/ml-spec/-/ml-spec-3.8.0.tgz"
-  integrity sha512-B3l6XVQ2KO/NYucdizXNHM/XHBDFqCpBFQ3p8CKEw9CY7FNd4qqyxa4jDgnOmCLM3yD6l5+SiWTbj2IMBv+/BQ==
+"@markuplint/ml-spec@3.11.1":
+  version "3.11.1"
+  resolved "https://registry.npmjs.org/@markuplint/ml-spec/-/ml-spec-3.11.1.tgz"
+  integrity sha512-yCEnl2ivWNWTD5KYI9PTgQLlg3bBWQPoP/bBJGibgjTyxJMSgVLoej+lkZb32P8LHXBD1Ah2QAvjQwwMYyyvVA==
   dependencies:
-    "@markuplint/ml-ast" "3.1.0"
-    "@markuplint/types" "3.6.0"
-    dom-accessibility-api "^0.5.14"
+    "@markuplint/ml-ast" "3.2.0"
+    "@markuplint/types" "3.9.1"
+    dom-accessibility-api "^0.6.1"
     is-plain-object "^5.0.0"
-    tslib "^2.4.1"
-    type-fest "^3.8.0"
+    tslib "^2.6.2"
+    type-fest "^4.3.1"
 
 "@markuplint/parser-utils@3.0.0":
   version "3.0.0"
@@ -2223,12 +2218,12 @@
     type-fest "^4.3.1"
     uuid "^9.0.0"
 
-"@markuplint/react-spec@3.7.1":
-  version "3.7.1"
-  resolved "https://registry.npmjs.org/@markuplint/react-spec/-/react-spec-3.7.1.tgz"
-  integrity sha512-LQu0tCTZybMUR1Y3En2TYTYVFoCSn9RBEy10Vz53SZ1r527kpURcGBMFrKs96GNjLcuR7/J3Dl29XbMoIm11CA==
+"@markuplint/react-spec@3.10.1":
+  version "3.10.1"
+  resolved "https://registry.npmjs.org/@markuplint/react-spec/-/react-spec-3.10.1.tgz"
+  integrity sha512-QW5MDpOvIVDtgLmqxUjUfyxxdiHN8b3714X0Aaq42wE/eoJd5BFD9g+VxbnjMlB33FvVkYtX93dVgfkl4mhQRw==
   dependencies:
-    "@markuplint/ml-spec" "3.8.0"
+    "@markuplint/ml-spec" "3.11.1"
 
 "@markuplint/rules@3.0.0":
   version "3.0.0"
@@ -2263,22 +2258,6 @@
     debug "^4.3.4"
     leven "3"
     whatwg-mimetype "2"
-
-"@markuplint/types@3.6.0":
-  version "3.6.0"
-  resolved "https://registry.npmjs.org/@markuplint/types/-/types-3.6.0.tgz"
-  integrity sha512-cZOSi4tJFUQj9aFjW6/hK26VJdjr/EQjL85JZ6kX8jCkofQYYrN1kJDk66HkqxRy/ApO2YyHln2izJllKY7j0w==
-  dependencies:
-    "@types/bcp-47" "1"
-    "@types/css-tree" "^2.0.1"
-    "@types/debug" "^4.1.7"
-    "@types/whatwg-mimetype" "3.0.0"
-    bcp-47 "1"
-    css-tree "^2.3.1"
-    debug "^4.3.4"
-    leven "3"
-    type-fest "^3.8.0"
-    whatwg-mimetype "^3.0.0"
 
 "@markuplint/types@3.9.1":
   version "3.9.1"
@@ -3891,12 +3870,12 @@
   resolved "https://registry.npmjs.org/@types/bcp-47/-/bcp-47-1.0.0.tgz"
   integrity sha512-KNuP/hxVUX2+H5Gps3kCm1QtBWczQ82P2GEK61bcKqk7L0UkXWnsLOBoLm6lwmntnQwcGGSl/V3qwAtQM+aGhg==
 
-"@types/css-tree@^2.0.1", "@types/css-tree@^2.3.2":
+"@types/css-tree@^2.3.2":
   version "2.3.2"
   resolved "https://registry.npmjs.org/@types/css-tree/-/css-tree-2.3.2.tgz"
   integrity sha512-B5nF6h7xxpMLvZ1pzugAYUGj1aw4KgTpXZzOijkDMRzey4SlFi0jVWb3o0SS1CVSxyBciltVgjt67CwrgjmlWA==
 
-"@types/debug@^4.0.0", "@types/debug@^4.1.7", "@types/debug@^4.1.8":
+"@types/debug@^4.0.0", "@types/debug@^4.1.8":
   version "4.1.8"
   resolved "https://registry.npmjs.org/@types/debug/-/debug-4.1.8.tgz"
   integrity sha512-/vPO1EPOs306Cvhwv7KfVfYvOJqA/S/AXjaHQiJboCZzcNDb+TIJFN9/2C9DZ//ijSKWioNyUxD792QmDJ+HKQ==
@@ -7701,6 +7680,11 @@ dom-accessibility-api@^0.5.14:
   version "0.5.16"
   resolved "https://registry.npmjs.org/dom-accessibility-api/-/dom-accessibility-api-0.5.16.tgz"
   integrity sha512-X7BJ2yElsnOJ30pZF4uIIDfBEVgF4XEBxL9Bxhy6dnrm5hkzqmsWHGTiHqRiITNhMyFLyAiWndIJP7Z1NTteDg==
+
+dom-accessibility-api@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.npmjs.org/dom-accessibility-api/-/dom-accessibility-api-0.6.1.tgz"
+  integrity sha512-WbiG8jCZESbcSwxLmbUiv3WZurc6H4opBIbBkBe/I3OSZvWCXXj+wxPueWodM/p4gegM1CqEr0iFY5DqyrncxA==
 
 dom-converter@^0.2.0:
   version "0.2.0"
@@ -17463,11 +17447,6 @@ type-fest@^2.5.0:
   version "2.19.0"
   resolved "https://registry.npmjs.org/type-fest/-/type-fest-2.19.0.tgz"
   integrity sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==
-
-type-fest@^3.8.0:
-  version "3.9.0"
-  resolved "https://registry.npmjs.org/type-fest/-/type-fest-3.9.0.tgz"
-  integrity sha512-hR8JP2e8UiH7SME5JZjsobBlEiatFoxpzCP+R3ZeCo7kAaG1jXQE5X/buLzogM6GJu8le9Y4OcfNuIQX0rZskA==
 
 type-fest@^4.3.1:
   version "4.3.1"
