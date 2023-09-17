@@ -37,7 +37,7 @@
     "@stripe/react-stripe-js": "1.16.5",
     "@stripe/stripe-js": "1.54.2",
     "@tanstack/react-virtual": "3.0.0-beta.60",
-    "@types/node": "18.17.15",
+    "@types/node": "18.17.17",
     "@types/puppeteer": "5.4.7",
     "@types/react": "18.0.38",
     "@types/react-dom": "18.0.11",
