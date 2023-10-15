@@ -5,6 +5,7 @@ import { useEmitEvent } from '@org/shared/hooks'
 import { Icon } from '@org/shared/ui'
 import SkillsSection from '@sections/SkillsSection'
 import WorksSection from '@sections/WorksSection'
+import { Layout } from '@components/Layout'
 import JobSection from '@components/Job'
 import PortraitSection from '@sections/PortraitSection'
 import { NavSection } from '@components/Nav'
@@ -29,107 +30,109 @@ export default function Home() {
   })
 
   return (
-    <main>
-      <SEO title="nekohack.me | Yuma Kitamura - Web Developer" />
+    <Layout>
+      <main>
+        <SEO title="nekohack.me | Yuma Kitamura - Web Developer" />
 
-      <NavSection />
+        <NavSection />
 
-      <div
-        css={css`
-          max-height: 200px;
-        `}
-      >
-        <h1
+        <div
           css={css`
-            margin: 0;
-            font-size: clamp(2rem, 10vw, 5.5rem);
-            line-height: 55pt;
-            text-align: center;
-            text-transform: uppercase;
+            max-height: 200px;
           `}
         >
-          I am Yuma
-        </h1>
-        <h2
-          css={css`
-            margin: 0;
-            font-size: clamp(1.2rem, 6vw, 2.5rem);
-            font-weight: 400;
-            text-align: center;
-            text-transform: uppercase;
-          `}
-        >
-          Web Developer
-        </h2>
-      </div>
-
-      <p>{`${t('basic_biography')}`}</p>
-
-      <div
-        css={css`
-          display: flex;
-          justify-content: center;
-          gap: 0.5rem;
-          margin: 1.5rem 0;
-          &:nth-child(2n + 2) {
-            margin: 0 10px;
-          }
-          @media (max-width: 320px) {
-            grid-template-columns: auto;
-          }
-        `}
-      >
-        {_socialLinks.map((s, index) => (
-          <a
-            key={index}
-            onClick={s.text === 'person' ? dispatch : undefined}
-            href={s.url}
-            target="_blank"
-            rel="noopener noreferrer"
+          <h1
             css={css`
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              color: #000;
-              background: #ddd;
-              padding: 0.3rem 1.5rem;
-              font-size: 1rem;
-              cursor: pointer;
-              border-radius: 0.2rem;
-              &:hover,
-              &:focus {
-                filter: brightness(150%);
-                transform: translateY(-0.2rem);
-              }
-              @media (prefers-color-scheme: dark) {
-                color: #fff;
-                background: #1e2126;
-              }
+              margin: 0;
+              font-size: clamp(2rem, 10vw, 5.5rem);
+              line-height: 55pt;
+              text-align: center;
+              text-transform: uppercase;
             `}
           >
-            <div
+            I am Yuma
+          </h1>
+          <h2
+            css={css`
+              margin: 0;
+              font-size: clamp(1.2rem, 6vw, 2.5rem);
+              font-weight: 400;
+              text-align: center;
+              text-transform: uppercase;
+            `}
+          >
+            Web Developer
+          </h2>
+        </div>
+
+        <p>{`${t('basic_biography')}`}</p>
+
+        <div
+          css={css`
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin: 1.5rem 0;
+            &:nth-child(2n + 2) {
+              margin: 0 10px;
+            }
+            @media (max-width: 320px) {
+              grid-template-columns: auto;
+            }
+          `}
+        >
+          {_socialLinks.map((s, index) => (
+            <a
+              key={index}
+              onClick={s.text === 'person' ? dispatch : undefined}
+              href={s.url}
+              target="_blank"
+              rel="noopener noreferrer"
               css={css`
-                width: 1.2rem;
-                margin-right: 1.2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #000;
+                background: #ddd;
+                padding: 0.3rem 1.5rem;
+                font-size: 1rem;
+                cursor: pointer;
+                border-radius: 0.2rem;
+                &:hover,
+                &:focus {
+                  filter: brightness(150%);
+                  transform: translateY(-0.2rem);
+                }
+                @media (prefers-color-scheme: dark) {
+                  color: #fff;
+                  background: #1e2126;
+                }
               `}
             >
-              <Icon name={s.text} />
-            </div>
-            {s.description}
-          </a>
-        ))}
-      </div>
+              <div
+                css={css`
+                  width: 1.2rem;
+                  margin-right: 1.2rem;
+                `}
+              >
+                <Icon name={s.text} />
+              </div>
+              {s.description}
+            </a>
+          ))}
+        </div>
 
-      <SkillsSection />
+        <SkillsSection />
 
-      <WorksSection />
+        <WorksSection />
 
-      {JOB && <JobSection />}
+        {JOB && <JobSection />}
 
-      <PortraitSection />
+        <PortraitSection />
 
-      <FooterSection />
-    </main>
+        <FooterSection />
+      </main>
+    </Layout>
   )
 }
 
