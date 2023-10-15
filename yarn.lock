@@ -17778,10 +17778,10 @@ typed-array-length@^1.0.4:
     for-each "^0.3.3"
     is-typed-array "^1.1.9"
 
-typed-scss-modules@6.6.0:
-  version "6.6.0"
-  resolved "https://registry.npmjs.org/typed-scss-modules/-/typed-scss-modules-6.6.0.tgz"
-  integrity sha512-0Igy9DKPGNsmCbKv2BM80DVVQY2cuOJVt4LWDD4QSnd0BvIIujlRD37+flP+xiRwtR5a3lqRSOhA1TxuCOR/gQ==
+typed-scss-modules@7.1.4:
+  version "7.1.4"
+  resolved "https://registry.yarnpkg.com/typed-scss-modules/-/typed-scss-modules-7.1.4.tgz#b2f9017b3d45c5014bd284ef3e4402d34337568f"
+  integrity sha512-7IjCBxxnNPV5iY1b6Vz2HufXku04iYF8EmWIPkqWtVlM6cX+azKbSVhIIGImQtJSgMWUsOwdlcs0HoqFcYKYsw==
   dependencies:
     bundle-require "^3.0.4"
     chalk "4.1.2"
