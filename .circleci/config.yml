@@ -22,7 +22,7 @@ executors:
   default:
     working_directory: ~/workspace
     docker:
-      - image: circleci/node:16
+      - image: circleci/node:18
 
 commands:
   prepare_node_dependency:
