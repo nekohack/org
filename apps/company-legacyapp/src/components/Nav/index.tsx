@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react'
-import Link from 'next/link'
 import { css } from '@emotion/react'
 
 export const NavSection: FC = () => {
@@ -65,8 +64,7 @@ export const NavSection: FC = () => {
               align-items: center;
             `}
           >
-            <Link
-              scroll
+            <a
               href="https://blog.nekohack.me/"
               css={css`
                 font-size: 1.2rem;
@@ -81,9 +79,8 @@ export const NavSection: FC = () => {
               `}
             >
               Blog
-            </Link>
-            <Link
-              scroll
+            </a>
+            <a
               href="https://yuma-kitamura.nekohack.me"
               css={css`
                 font-size: 1.2rem;
@@ -98,7 +95,7 @@ export const NavSection: FC = () => {
               `}
             >
               Profile
-            </Link>
+            </a>
           </div>
         </div>
       </nav>
