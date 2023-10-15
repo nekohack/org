@@ -1,3 +1,5 @@
+import { JSX } from '@emotion/react/jsx-runtime'
+
 declare module '*.scss' {
   const content: { [className: string]: string }
   export = content
@@ -45,5 +47,11 @@ declare namespace JSX {
       title: string
       url: string
     }
+  }
+}
+
+declare module '@emotion/react/jsx-runtime' {
+  namespace JSX {
+    type ElementType = React.JSX.ElementType;
   }
 }

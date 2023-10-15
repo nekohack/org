@@ -10,8 +10,8 @@
   "devDependencies": {
     "@astrojs/react": "2.3.2",
     "@astrojs/tailwind": "3.1.3",
-    "@emotion/babel-plugin": "11.10.6",
-    "@emotion/react": "11.10.6",
+    "@emotion/babel-plugin": "11.11.0",
+    "@emotion/react": "11.11.1",
     "@markuplint/astro-parser": "3.9.1",
     "@markuplint/jsx-parser": "3.9.1",
     "@markuplint/react-spec": "3.10.1",
