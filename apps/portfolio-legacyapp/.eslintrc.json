@@ -1,6 +1,6 @@
 {
   "extends": [
-    "plugin:@nrwl/nx/react-typescript",
+    "plugin:@nx/react-typescript",
     "../../.eslintrc.json",
     "../../libs/shared/lint/index.js",
     "next"

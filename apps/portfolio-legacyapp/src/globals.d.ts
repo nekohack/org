@@ -52,6 +52,6 @@ declare namespace JSX {
 
 declare module '@emotion/react/jsx-runtime' {
   namespace JSX {
-    type ElementType = React.JSX.ElementType;
+    type ElementType = React.JSX.ElementType
   }
 }

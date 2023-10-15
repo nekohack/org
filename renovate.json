@@ -6,7 +6,7 @@
   },
   "packageRules": [
     {
-      "packageNames": ["@nrwl/workspace"],
+      "packageNames": ["@nx/workspace"],
       "packagePatterns": ["^@nrwl/", "nx"],
       "groupName": "Nrwl Workspace",
       "postUpgradeTasks": {
