@@ -100,7 +100,7 @@
     "zenscroll": "4.0.2"
   },
   "resolutions": {
-    "@types/react": "18.0.38"
+    "@types/react": "18.2.28"
   }
 }
 
