@@ -46,6 +46,12 @@ yarn-error.log*
 .vscode
 
 # remove service workers, will be present when running `npm run build`.
+apps/company-app/node_modules
+apps/company-app/node_modules/**
+apps/company-app/dist
+apps/company-app/dist/**
+apps/company-app/src/uno.css
+
 apps/company-legacyapp/.next
 apps/company-legacyapp/src/styles/uno.css
 apps/company-legacyapp/public/*.js

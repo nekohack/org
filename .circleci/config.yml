@@ -46,13 +46,11 @@ commands:
 
       - run: yarn nx run company-legacyapp:css && yarn nx run company-legacyapp:build && yarn nx run company-legacyapp:export
 
-      # - run: yarn portfolio-app:css && yarn portfolio-app:build
-
       - run: touch apps/portfolio-legacyapp/.env && echo "NEXT_LIVE_STRIPE_PUBLIC_KEY="$NEXT_LIVE_STRIPE_PUBLIC_KEY >> apps/portfolio-legacyapp/.env && echo "NEXT_LIVE_STRIPE_SECRET_KEY="$NEXT_LIVE_STRIPE_SECRET_KEY >> apps/portfolio-legacyapp/.env && echo "NEXT_LIVE_LAMBDA_ENDPOINT="$NEXT_LIVE_LAMBDA_ENDPOINT >> apps/portfolio-legacyapp/.env
 
       - run: yarn nx run portfolio-legacyapp:css && yarn nx run portfolio-legacyapp:build && yarn nx run portfolio-legacyapp:export
 
-  company_and_deploy:
+  company_legacy_and_deploy:
     description: Company Deploy
     steps:
       - aws-s3/sync:
@@ -62,25 +60,15 @@ commands:
             --acl public-read \
             --cache-control "max-age=86400"
 
-  portfolio_and_deploy:
-    description: Portfolio Deploy
+  portfolio_legacy_and_deploy:
+    description: Portfolio (Legacy) Deploy
     steps:
       - aws-s3/sync:
-          from: apps/portfolio-app/dist/
+          from: apps/portfolio-legacyapp/dist/
           to: s3://yuma-kitamura.nekohack.me
           arguments: |
             --acl public-read \
             --cache-control "max-age=86400"
-
-  # portfolio_legacy_and_deploy:
-  #   description: Portfolio (Legacy) Deploy
-  #   steps:
-  #     - aws-s3/sync:
-  #         from: dist/apps/portfolio-app/exported/
-  #         to: s3://yuma-kitamura.nekohack.me
-  #         arguments: |
-  #           --acl public-read \
-  #           --cache-control "max-age=86400"
 
 jobs:
   install_and_setup_cli:
@@ -98,8 +86,7 @@ jobs:
       - aws-cli/install
       - aws-cli/setup
       - prepare_node_dependency
-      # - company_and_deploy
-      # - portfolio_and_deploy
+      # - company_legacy_and_deploy
       # - portfolio_legacy_and_deploy
 
 workflows:
