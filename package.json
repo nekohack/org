@@ -17,6 +17,7 @@
     "@markuplint/react-spec": "3.10.1",
     "@nekohack/eslint-config-react": "0.10.0",
     "@nekohack/normalize.css": "2.7.0",
+    "@nrwl/nx-cloud": "16.0.5",
     "@nx/cypress": "16.0.3",
     "@nx/eslint-plugin-nx": "16.0.0-beta.4",
     "@nx/jest": "16.0.3",
