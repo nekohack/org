@@ -4,9 +4,6 @@
   "description": "Next.js project",
   "author": "yuukit <yuma.kitamura@ponos.co.jp>",
   "private": true,
-  "engines": {
-    "node": "16.20.0"
-  },
   "scripts": {
     "nx": "nx"
   },
