@@ -9,7 +9,7 @@ module.exports = {
 
   stories: ['../lib/**/*.stories.@(js|jsx|ts|tsx)'],
 
-  addons: ['@nrwl/react/plugins/storybook'],
+  addons: ['@nx/react/plugins/storybook'],
 
   async viteFinal(config) {
     config.plugins = config.plugins.filter(
