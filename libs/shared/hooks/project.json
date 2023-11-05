@@ -1,22 +1,9 @@
 {
+  "name": "shared-hooks",
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/shared/hooks/lib",
   "projectType": "library",
   "targets": {
-    "lint": {
-      "executor": "@nx/linter:eslint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": ["libs/shared/hooks/**/*.ts"],
-        "maxWarnings": 0
-      }
-    },
-    "typecheck": {
-      "executor": "nx:run-commands",
-      "options": {
-        "commands": ["tsc --noEmit -p libs/shared/hooks/tsconfig.lib.json"]
-      }
-    },
     "lint": {
       "executor": "nx:run-commands",
       "options": {
@@ -25,8 +12,13 @@
           "prettier --write --no-error-on-unmatched-pattern \"libs/shared/hooks/**/*.{ts,tsx,js,jsx,json,md,mdx,css,html,yml,yaml}\""
         ]
       }
+    },
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": ["tsc --noEmit -p libs/shared/hooks/tsconfig.lib.json"]
+      }
     }
   },
-  "tags": [],
-  "name": "shared-hooks"
+  "tags": []
 }

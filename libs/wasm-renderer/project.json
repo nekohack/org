@@ -6,7 +6,9 @@
   "architect": {
     "build": {
       "executor": "nx:run-commands",
-      "outputs": ["dist/libs/wasm-renderer"],
+      "outputs": [
+        "dist/libs/wasm-renderer"
+      ],
       "options": {
         "command": "wasm-pack build --target nodejs --out-dir ../../dist/libs/wasm-renderer",
         "cwd": "libs/wasm-renderer"
