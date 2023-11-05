@@ -6,10 +6,11 @@
   "targets": {
     "build": {
       "executor": "@nx/next:build",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "defaultConfiguration": "production",
       "options": {
-        "root": "apps/company-legacyapp",
         "outputPath": "dist/apps/company-legacyapp"
       },
       "configurations": {
@@ -32,7 +33,9 @@
     "css": {
       "executor": "nx:run-commands",
       "options": {
-        "commands": ["unocss 'src/**/*.tsx' --out-file=src/styles/uno.css"],
+        "commands": [
+          "unocss 'src/**/*.tsx' --out-file=src/styles/uno.css"
+        ],
         "cwd": "apps/company-legacyapp",
         "parallel": false
       }

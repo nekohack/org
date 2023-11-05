@@ -12,10 +12,11 @@
     },
     "_build": {
       "executor": "@nx/next:build",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "defaultConfiguration": "production",
       "options": {
-        "root": "apps/portfolio-legacyapp",
         "outputPath": "dist/apps/portfolio-legacyapp"
       },
       "configurations": {
@@ -44,7 +45,9 @@
     "css": {
       "executor": "nx:run-commands",
       "options": {
-        "commands": ["unocss 'src/**/*.tsx' --out-file=src/styles/uno.css"],
+        "commands": [
+          "unocss 'src/**/*.tsx' --out-file=src/styles/uno.css"
+        ],
         "cwd": "apps/portfolio-legacyapp",
         "parallel": false
       }
