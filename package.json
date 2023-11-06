@@ -47,7 +47,7 @@
     "@unocss/reset": "0.57.2",
     "@unocss/vite": "0.57.2",
     "@unocss/webpack": "0.57.2",
-    "@vitejs/plugin-react": "4.1.1",
+    "@vitejs/plugin-react": "3.0.0",
     "astro": "2.10.15",
     "autoprefixer": "10.4.15",
     "clsx": "1.2.1",
