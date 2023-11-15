@@ -74,3 +74,5 @@ apps/portfolio-legacyapp/public/sitemap.xml
 
 #apps/portfolio-legacyapp/public/og/*.jpg
 #!apps/portfolio-legacyapp/public/og/top.jpg
+
+.nx/cache
