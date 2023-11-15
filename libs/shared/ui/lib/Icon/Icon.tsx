@@ -12,6 +12,8 @@ import { Person } from './images/Person'
 import { Phone } from './images/Phone'
 import { Share } from './images/Share'
 import { Star } from './images/Star'
+import { Mastodon } from './images/Mastodon'
+import { Bluesky } from './images/Bluesky'
 import { Twitter } from './images/Twitter'
 import { YouTube } from './images/YouTube'
 
@@ -37,7 +39,9 @@ export const Icon: React.FC<IconProps> = (props) => {
     .with('phone', () => <Phone />)
     .with('share', () => <Share />)
     .with('star', () => <Star />)
-    .with('twitter', () => <Twitter />)
+    .with('mastodon', () => <Mastodon />)
+    .with('bluesky', () => <Bluesky />)
+    .with('x_twitter', () => <Twitter />)
     .with('youtube', () => <YouTube />)
     .exhaustive()
 }

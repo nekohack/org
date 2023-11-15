@@ -11,5 +11,7 @@ export type IconName =
   | 'phone'
   | 'share'
   | 'star'
-  | 'twitter'
+  | 'mastodon'
+  | 'bluesky'
+  | 'x_twitter'
   | 'youtube'
