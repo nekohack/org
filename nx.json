@@ -1,24 +1,6 @@
 {
-  "npmScope": "org",
   "affected": {
     "defaultBase": "master"
-  },
-  "cli": {
-    "defaultCollection": "@nx/next"
-  },
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "nx-cloud",
-      "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ],
-        "accessToken": "NThiNWFhYzUtOTE2Ni00YjBmLTg1MjMtMTIwOWYwNTRiNzNhfHJlYWQtd3JpdGU="
-      }
-    }
   },
   "targetDependencies": {
     "build": [
@@ -64,7 +46,8 @@
       "inputs": [
         "production",
         "^production"
-      ]
+      ],
+      "cache": true
     },
     "build-storybook": {
       "inputs": [
@@ -73,6 +56,16 @@
         "{projectRoot}/.storybook/**/*",
         "{projectRoot}/tsconfig.storybook.json"
       ]
+    },
+    "lint": {
+      "cache": true
+    },
+    "test": {
+      "cache": true
+    },
+    "e2e": {
+      "cache": true
     }
-  }
+  },
+  "nxCloudAccessToken": "NThiNWFhYzUtOTE2Ni00YjBmLTg1MjMtMTIwOWYwNTRiNzNhfHJlYWQtd3JpdGU="
 }
