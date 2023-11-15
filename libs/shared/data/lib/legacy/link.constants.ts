@@ -49,9 +49,21 @@ export const socialLinks: SocialLink[] = [
     enabled: true,
   },
   {
-    text: 'twitter',
-    description: 'Twitter',
-    url: 'https://twitter.com/jiyuujinlab',
+    text: 'mastodon',
+    description: 'Mastodon',
+    url: 'https://times.nekohack.me/@admin',
+    enabled: true,
+  },
+  {
+    text: 'bluesky',
+    description: 'Bluesky',
+    url: 'https://bsky.app/profile/jiyuujin.bsky.social',
+    enabled: true,
+  },
+  {
+    text: 'x_twitter',
+    description: 'X (Twitter)',
+    url: 'https://x.com/jiyuujinlab',
     enabled: true,
   },
 ]
