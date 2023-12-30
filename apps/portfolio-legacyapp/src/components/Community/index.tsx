@@ -6,7 +6,6 @@ import { Fragment } from 'react'
 const CommunitySection: FC = () => {
   return (
     <div className="section">
-      <Typography variant="subtitle 1">{t('community')}</Typography>
       <List title={t('community')}>
         {communities
           .filter((node) => node.enabled === true && node.status === 'active')

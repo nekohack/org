@@ -39,6 +39,9 @@ div[role='group'][tabindex] {
 
 .section {
   padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .section img {

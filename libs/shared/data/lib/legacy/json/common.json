@@ -59,7 +59,7 @@
         "level": 10
       },
       {
-        "name": "Officer",
+        "name": "FlutterKaigi Chief Officer",
         "start": "2022-12-01",
         "end": "-",
         "position": "vice representative",
@@ -67,24 +67,35 @@
         "level": 1
       },
       {
-        "name": "rev up",
+        "name": "Rev Up (LINE Developers)",
         "start": "2022-07-01",
         "end": "2022-10-31",
         "comment": "LINE developers community もっちゃんさんより依頼を受けて",
         "level": 2
       },
       {
-        "name": "Conf",
+        "name": "Vue Fes Core Staff",
+        "start": "2021-02-01",
+        "end": "-",
+        "level": 4
+      },
+      {
+        "name": "FlutterKaigi Core Staff",
         "start": "2021-03-01",
         "end": "-",
-        "comment": "FlutterKaigi や VueFes、VSCodeCon JP のカンファレンスウェブサイトをリードして",
         "level": 6
+      },
+      {
+        "name": "VS Code Meetup Core Staff",
+        "start": "2021-07-01",
+        "end": "2022-01-31",
+        "level": 8
       },
       {
         "name": "Local Community",
         "start": "2018-09-01",
-        "end": "2020-02-28",
-        "comment": "主にKyotoやOsakaで技術コミュニティを運営",
+        "end": "-",
+        "comment": "主に Kyoto や Osaka で技術コミュニティを運営",
         "level": 2
       },
       {
@@ -532,8 +543,8 @@
       "text": "kansai.ts",
       "location": "Osaka",
       "url": "https://kansaits.connpass.com/",
-      "status": "archived",
-      "enabled": false
+      "status": "active",
+      "enabled": true
     },
     {
       "text": "FlutterKaigi Executive Committee",
