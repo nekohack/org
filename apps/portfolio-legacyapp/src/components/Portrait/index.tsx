@@ -4,7 +4,7 @@ import * as SC from './index.module.scss'
 
 const PortraitSection: FC = () => {
   return (
-    <section id="portrait">
+    <div className="section">
       <Typography variant="subtitle 1">{t('portrait')}</Typography>
       <Typography variant="body 1">{t('portrait_description')}</Typography>
       <div className={SC.photosContainer}>
@@ -15,7 +15,7 @@ const PortraitSection: FC = () => {
           <img alt="" src="/images/vuefes.jpg" />
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 
