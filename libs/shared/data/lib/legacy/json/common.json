@@ -2,9 +2,16 @@
   "jobs": {
     "main": [
       {
+        "name": "wevnal",
+        "start": "2023-10-01",
+        "end": "-",
+        "position": "Developer",
+        "comment": "Engagement/Relation team"
+      },
+      {
         "name": "V-cube",
         "start": "2021-06-01",
-        "end": "-",
+        "end": "2023-09-30",
         "position": "Developer",
         "comment": "EventIn team"
       },
@@ -59,43 +66,24 @@
         "level": 10
       },
       {
-        "name": "FlutterKaigi Chief Officer",
-        "start": "2022-12-01",
-        "end": "-",
-        "position": "vice representative",
-        "comment": "一般社団法人FlutterKaigiの役員として",
-        "level": 1
-      },
-      {
         "name": "Rev Up (LINE Developers)",
         "start": "2022-07-01",
         "end": "2022-10-31",
-        "comment": "LINE developers community もっちゃんさんより依頼を受けて",
-        "level": 2
-      },
-      {
-        "name": "Vue Fes Core Staff",
-        "start": "2021-02-01",
-        "end": "-",
+        "comment": "LINE Developers Community もっちゃんさんより依頼を受けて",
         "level": 4
       },
       {
-        "name": "FlutterKaigi Core Staff",
-        "start": "2021-03-01",
+        "name": "Local",
+        "start": "2023-11-22",
         "end": "-",
-        "level": 6
+        "comment": "kansai.ts など、主に Kyoto や Osaka で運営",
+        "level": 2
       },
       {
-        "name": "VS Code Meetup Core Staff",
-        "start": "2021-07-01",
-        "end": "2022-01-31",
-        "level": 8
-      },
-      {
-        "name": "Local Community",
+        "name": "Local",
         "start": "2018-09-01",
-        "end": "-",
-        "comment": "主に Kyoto や Osaka で技術コミュニティを運営",
+        "end": "2020-03-06",
+        "comment": "v-kansai など、主に Kyoto や Osaka で運営",
         "level": 2
       },
       {
@@ -160,7 +148,7 @@
     {
       "title": "カレンダーアプリで学ぶパッケージ開発",
       "description": "Flutter におけるパッケージ開発を学びます。",
-      "host": "Flutter Japan User Group",
+      "host": "Flutter Meetup Osaka (Flutter Japan User Group)",
       "url": "https://zenn.dev/chooyan/books/calendar-package",
       "youtubeUrl": "https://www.youtube.com/watch?v=dlAKk1VAQyA",
       "place": "YouTube",
@@ -554,7 +542,7 @@
       "enabled": true
     },
     {
-      "text": "Flutter Japan User Group",
+      "text": "Flutter Meetup Osaka (Flutter Japan User Group)",
       "location": "Osaka",
       "url": "https://flutter-jp.connpass.com/",
       "status": "active",

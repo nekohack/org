@@ -28,7 +28,7 @@ type Category =
 
 type Host =
   | 'DevRel Meetup Tokyo'
-  | 'Flutter Japan User Group'
+  | 'Flutter Meetup Osaka (Flutter Japan User Group)'
   | 'JAWS UG'
   | 'LINE Developer Community'
   | 'EDG'
