@@ -17,7 +17,7 @@ const JobSection: FC = () => {
       <Typography variant="subtitle 2">{t('job_timeline')}</Typography>
       <Typography variant="body 2">{t('job_timeline_description')}</Typography>
       <div className="section-wrapper">
-        <Job>
+        <Job headerColor="gray-500" color="gray-300" borderColor="gray-500">
           {jobs.map((j, index) => (
             <Job.Item key={index} {...j} description={`${j.position}: ${j.comment}`} />
           ))}
