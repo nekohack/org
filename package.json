@@ -17,6 +17,7 @@
     "@nekohack/eslint-config-react": "0.10.0",
     "@nekohack/normalize.css": "2.7.0",
     "@nx/cypress": "17.2.8",
+    "@nx/eslint": "17.2.8",
     "@nx/eslint-plugin-nx": "16.0.0-beta.4",
     "@nx/jest": "17.2.8",
     "@nx/js": "17.2.8",
@@ -91,8 +92,7 @@
     "unocss": "0.57.2",
     "vite": "5.0.11",
     "vite-plugin-inspect": "0.7.41",
-    "zenscroll": "4.0.2",
-    "@nx/eslint": "17.2.8"
+    "zenscroll": "4.0.2"
   },
   "resolutions": {
     "@types/react": "18.2.28"
