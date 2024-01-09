@@ -1,5 +1,4 @@
 import { useEffect } from 'react'
-import { AppProps } from 'next/app'
 import Router from 'next/router'
 import NProgress from 'nprogress'
 import i18next from 'i18next'
@@ -11,12 +10,10 @@ import 'css/globals.scss'
 import 'css/nprogress.scss'
 import 'css/fonts.scss'
 import { useScrollTop } from '@org/shared/hooks'
-import { useGoogleAdsense } from 'src/hooks/useGoogleAdsense'
 
 function App({ Component, pageProps }) {
   i18next.changeLanguage(pageProps.language)
   useScrollTop()
-  useGoogleAdsense()
 
   useEffect(() => {
     function handleRouteStart() {
