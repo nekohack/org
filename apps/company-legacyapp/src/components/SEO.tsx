@@ -10,8 +10,8 @@ interface Props {
 const DEFAULT_KEYWORDS = ['nekohack', 'yuma kitamura', 'ghostybot', 'snaily cad', 'kyoto', 'osaka']
 
 const defaults: Props = {
-  title: 'nekohack.me | Yuma Kitamura - Web Developer',
-  url: 'https://nekohack.me',
+  title: 'nekohack.me (Under Construction)',
+  url: 'https://nekohack.me/',
   description: 'Hi, I am Yuma Kitamura! A Web Developer.',
   keywords: [],
 }
