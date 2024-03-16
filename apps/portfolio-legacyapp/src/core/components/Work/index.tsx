@@ -1,7 +1,7 @@
 import { t } from 'i18next'
 import { links, jobs as _jobs } from '@org/shared/data'
 import { Job, LinkText, List, Typography } from '@org/shared/ui'
-import { JOB as jobFeature, WORK as workFeature } from '@utils/feature.constants'
+import { JOB as jobFeature, WORK as workFeature } from '@core/feature.constants'
 import { Fragment } from 'react'
 
 const WorkSection: FC = () => {

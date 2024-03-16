@@ -3,7 +3,7 @@ import { css } from '@emotion/react'
 import { CardElement, useElements } from '@stripe/react-stripe-js'
 import * as stripeJs from '@stripe/stripe-js'
 import { CssResetButton, Modal, Payment } from '@org/shared/ui'
-import { PAYMENT_API } from '@utils/feature.constants'
+import { PAYMENT_API } from '@core/feature.constants'
 
 interface PaymentSectionProps {
   stripe: stripeJs.Stripe | Promise<stripeJs.Stripe | null> | null

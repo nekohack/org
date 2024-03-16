@@ -1,7 +1,7 @@
 import { defaultLanguage, languages } from '../../../i18n.config'
-import { Layout } from '@components/Layout'
+import { Layout } from '@common/Layout'
 import { Index as NoticeBar } from '@components/Notice'
-import Home from '@components/Home'
+import Home from '@common/Home'
 import { FooterSection } from '@components/Footer'
 
 export default function Lang() {
