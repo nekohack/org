@@ -18,9 +18,9 @@ yarn
 cp apps/company-legacyapp/.env.example apps/company-legacyapp/.env
 yarn nx run company-legacyapp:css
 
-# portfolio-app
+# portfolio-app (App Router)
 
-# portfolio-legacyapp
+# portfolio-legacyapp (Page Router)
 cp apps/portfolio-legacyapp/.env.example apps/portfolio-legacyapp/.env
 yarn nx run portfolio-legacyapp:css
 ```
@@ -33,9 +33,10 @@ You can be launched
 # company-legacyapp
 yarn nx run company-legacyapp:serve
 
-# portfolio-app
+# portfolio-app (App Router)
+yarn nx run portfolio-app:serve
 
-# portfolio-legacyapp
+# portfolio-legacyapp (Page Router)
 yarn nx run portfolio-legacyapp:serve
 ```
 

@@ -1,0 +1,8 @@
+{
+  "extends": [
+    "../../.eslintrc.json",
+    "../../libs/shared/lint/index.js",
+    "next",
+    "next/core-web-vitals"
+  ]
+}
