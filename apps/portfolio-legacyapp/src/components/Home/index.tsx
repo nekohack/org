@@ -6,7 +6,7 @@ import ProductSection from '@components/Product'
 import TimelineSection from '@components/Timeline'
 import CommunitySection from '@components/Community'
 import PortraitSection from '@components/Portrait'
-import { PAYMENT_APP, PRODUCT, TIMELINE } from '@utils/feature.constants'
+import { PAYMENT_APP, PRODUCT, TIMELINE } from '@core/feature.constants'
 
 const Home = () => {
   return (

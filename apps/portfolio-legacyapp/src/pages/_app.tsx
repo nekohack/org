@@ -11,7 +11,7 @@ import 'css/globals.scss'
 import 'css/nprogress.scss'
 import 'css/fonts.scss'
 import { useScrollTop } from '@org/shared/hooks'
-import { useGoogleAdsense } from 'src/hooks/useGoogleAdsense'
+import { useGoogleAdsense } from '@hooks/useGoogleAdsense'
 
 function App({ Component, pageProps }: AppProps<{ language: string }>) {
   i18next.changeLanguage(pageProps.language)
