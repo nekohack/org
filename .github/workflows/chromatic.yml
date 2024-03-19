@@ -46,4 +46,4 @@ jobs:
         if: ${{ steps.diff.outputs.changed != '0' }}
         run: |
           yarn nx run shared-ui:build-storybook
-          yarn chromatic -d ./libs/shared/ui/storybook-static --project-token ${{ secrets.CHROMATIC_PROJECT_TOKEN }} --exit-zero-on-changes --only-changed
+          yarn chromatic -d ./dist/storybook/shared/ui --project-token ${{ secrets.CHROMATIC_PROJECT_TOKEN }} --exit-zero-on-changes --only-changed

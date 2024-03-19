@@ -51,6 +51,7 @@
     "@vitejs/plugin-react": "3.0.0",
     "astro": "2.10.15",
     "autoprefixer": "10.4.15",
+    "chromatic": "11.1.0",
     "clsx": "1.2.1",
     "concurrently": "6.5.1",
     "dayjs": "1.11.10",
