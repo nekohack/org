@@ -25,6 +25,7 @@
     "@nx/react": "17.2.8",
     "@nx/storybook": "17.2.8",
     "@nx/web": "17.2.8",
+    "@nx/webpack": "17.2.8",
     "@nx/workspace": "17.2.8",
     "@storybook/addon-essentials": "7.6.7",
     "@storybook/addon-links": "7.6.7",
