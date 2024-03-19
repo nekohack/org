@@ -7,6 +7,11 @@ module.exports = {
     builder: '@storybook/builder-vite',
   },
 
+  framework: {
+    name: '@storybook/react-vite',
+    options: {},
+  },
+
   stories: ['../lib/**/*.stories.@(js|jsx|ts|tsx)'],
 
   addons: ['@nx/react/plugins/storybook'],
