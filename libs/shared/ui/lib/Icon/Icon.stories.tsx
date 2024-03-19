@@ -36,6 +36,6 @@ export const Default: Story<IconProps> = (args) => (
     <Icon {...args} name="phone" />
     <Icon {...args} name="share" />
     <Icon {...args} name="star" />
-    <Icon {...args} name="twitter" />
+    <Icon {...args} name="x_twitter" />
   </Fragment>
 )
