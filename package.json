@@ -35,7 +35,7 @@
     "@storybook/react-vite": "7.6.17",
     "@stripe/react-stripe-js": "1.16.5",
     "@stripe/stripe-js": "1.54.2",
-    "@tanstack/react-virtual": "3.0.0-beta.60",
+    "@tanstack/react-virtual": "3.2.0",
     "@types/node": "20.10.7",
     "@types/puppeteer": "7.0.4",
     "@types/react": "18.2.73",
