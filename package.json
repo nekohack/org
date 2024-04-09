@@ -71,7 +71,7 @@
     "nprogress": "0.2.0",
     "nx": "17.2.8",
     "postcss-scss": "4.0.9",
-    "preact": "10.18.1",
+    "preact": "10.20.2",
     "prettier": "2.8.1",
     "prettier-plugin-astro": "0.8.0",
     "puppeteer": "10.4.0",
