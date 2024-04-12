@@ -17,7 +17,7 @@
     "@types/aws-lambda": "8.10.137",
     "@types/node": "18.19.31",
     "esbuild": "0.20.2",
-    "serverless": "3.28.1",
+    "serverless": "3.38.0",
     "serverless-esbuild": "1.39.0",
     "serverless-layers": "2.6.1"
   },
