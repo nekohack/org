@@ -19,7 +19,7 @@
     "esbuild": "0.20.2",
     "serverless": "3.38.0",
     "serverless-esbuild": "1.52.1",
-    "serverless-layers": "2.6.1"
+    "serverless-layers": "2.8.5"
   },
   "engines": {
     "node": ">=16.18.0"
