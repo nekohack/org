@@ -3653,10 +3653,10 @@ serverless-esbuild@1.52.1:
     ramda "^0.28.0"
     semver "^7.3.8"
 
-serverless-layers@2.6.1:
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/serverless-layers/-/serverless-layers-2.6.1.tgz#fd7c50a128b8e82f17bed734d0ecc96a30407237"
-  integrity sha512-jE7SO1//SHJbm/KiZd2WzZXrhGUxAki3AmubQqq5C1fMe61lHMy2om+QlvIccGZ0+MUuLIWhDcFiwW25ncH97w==
+serverless-layers@2.8.5:
+  version "2.8.5"
+  resolved "https://registry.yarnpkg.com/serverless-layers/-/serverless-layers-2.8.5.tgz#fef9ed97c9fe8257c281e58247b4195bc4ebad7a"
+  integrity sha512-PgEH8C4NngudA7S6SRos3uZ5RSv9BAWpzSqq4UV5fFMjYAgPXOnmF7JUgejLqgvOIQpK8GknUPsXo9ACCqeVzA==
   dependencies:
     "@babel/runtime" "^7.3.1"
     archiver "^3.0.0"
