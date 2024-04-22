@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "dotenv": "16.4.5",
-    "stripe": "11.5.0"
+    "stripe": "11.18.0"
   },
   "devDependencies": {
     "@serverless/typescript": "3.38.0",
