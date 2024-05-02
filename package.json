@@ -95,7 +95,7 @@
     "typescript": "5.4.5",
     "unocss": "0.59.4",
     "url-loader": "4.1.1",
-    "vite": "5.2.10",
+    "vite": "5.2.11",
     "vite-plugin-inspect": "0.8.4",
     "zenscroll": "4.0.2"
   },
