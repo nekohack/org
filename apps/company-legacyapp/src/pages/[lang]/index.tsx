@@ -47,13 +47,13 @@ export default function Home() {
             css={css`
               width: 340px;
               margin: 0;
-              font-size: clamp(2.8rem, 10vw, 5.5rem);
+              font-size: clamp(4.8rem, 10vw, 7.5rem);
               line-height: 124px;
               text-align: center;
               text-transform: uppercase;
             `}
           >
-            Hi, I am camera fan
+            I am Yuma
           </h1>
           <h2
             css={css`
