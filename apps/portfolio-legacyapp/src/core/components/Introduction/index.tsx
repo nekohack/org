@@ -1,5 +1,5 @@
 import { t } from 'i18next'
-import { Icon, Typography } from '@org/shared/ui'
+import { Icon, Link, Typography } from '@org/shared/ui'
 import { socialLinks, technologies } from '@org/shared/data'
 import { css } from '@emotion/react'
 
@@ -24,32 +24,7 @@ const IntroductionSection: FC = () => {
         `}
       >
         {socialLinks.map((s, key) => (
-          <a
-            key={key}
-            href={s.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            css={css`
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              color: #000;
-              background: #ddd;
-              padding: 0.3rem 1.5rem;
-              font-size: 1rem;
-              cursor: pointer;
-              border-radius: 0.2rem;
-              &:hover,
-              &:focus {
-                filter: brightness(150%);
-                transform: translateY(-0.2rem);
-              }
-              @media (prefers-color-scheme: dark) {
-                color: #fff;
-                background: #1e2126;
-              }
-            `}
-          >
+          <Link key={key} href={s.url}>
             <div
               css={css`
                 width: 1.2rem;
@@ -59,7 +34,7 @@ const IntroductionSection: FC = () => {
               <Icon name={s.text} />
             </div>
             {s.description}
-          </a>
+          </Link>
         ))}
       </div>
 
