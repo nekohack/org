@@ -23,10 +23,8 @@
     "indentation": 2,
     "invalid-attr": {
       "option": {
+        "ignoreAttrNamePrefix": "css",
         "attrs": {
-          "css": {
-            "disallowed": false
-          },
           "controlslist": {
             "enum": ["nodownload"]
           },

@@ -1,10 +1,5 @@
 {
-  "extends": [
-    "plugin:@nx/nx/react-typescript",
-    "../../.eslintrc.json",
-    "../../libs/shared/lint/index.js",
-    "next"
-  ],
+  "extends": ["plugin:@nx/nx/react-typescript", "../../libs/shared/lint/index.js", "next"],
   "ignorePatterns": ["!**/*"],
   "overrides": [
     {
@@ -27,7 +22,14 @@
   },
   "rules": {
     "@next/next/no-img-element": 0,
+    "@typescript-eslint/no-unused-expressions": 0,
+    "@typescript-eslint/no-useless-constructor": 0,
+    "@typescript-eslint/no-unused-vars": 0,
+    "@typescript-eslint/no-use-before-define": 0,
+    "@typescript-eslint/no-namespace": 0,
     "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/no-array-constructor": 0,
+    "@typescript-eslint/consistent-type-assertions": 0,
     "@typescript-eslint/ban-ts-comment": 0,
     "react/display-name": 0
   }
