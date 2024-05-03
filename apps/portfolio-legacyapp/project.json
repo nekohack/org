@@ -74,7 +74,7 @@
         "commands": [
           "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss,sass}\" --ignore-path .gitignore",
           "eslint ./src --ext .tsx,.ts,.jsx,.js --fix",
-          "stylelint --config .stylelintrc.yml 'src/components/**/*.scss' --fix",
+          "stylelint --allow-empty-input --config .stylelintrc.yml 'src/components/**/*.scss' --fix",
           "markuplint \"./src/**/*.tsx\" --config .markuplintrc --format"
         ],
         "cwd": "apps/portfolio-legacyapp",
