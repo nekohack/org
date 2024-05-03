@@ -1,8 +1,6 @@
 import { useEffect } from 'react'
 import Router from 'next/router'
 import NProgress from 'nprogress'
-import i18next from 'i18next'
-import '../../i18n.init'
 import 'zenscroll/zenscroll-min'
 import '@unocss/reset/tailwind.css'
 import 'css/uno.css'
@@ -12,7 +10,6 @@ import 'css/fonts.scss'
 import { useScrollTop } from '@org/shared/hooks'
 
 function App({ Component, pageProps }) {
-  i18next.changeLanguage(pageProps.language)
   useScrollTop()
 
   useEffect(() => {
