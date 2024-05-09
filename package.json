@@ -67,7 +67,7 @@
     "nprogress": "0.2.0",
     "nx": "17.2.8",
     "postcss-scss": "4.0.9",
-    "preact": "10.20.2",
+    "preact": "10.21.0",
     "prettier": "2.8.8",
     "puppeteer": "10.4.0",
     "react": "18.2.0",
