@@ -2472,12 +2472,12 @@
     type-fest "4.20.0"
     uuid "9.0.1"
 
-"@markuplint/react-spec@4.5.2":
-  version "4.5.2"
-  resolved "https://registry.yarnpkg.com/@markuplint/react-spec/-/react-spec-4.5.2.tgz#ec78f9580a6c80cdb96fdb4b375807b3a43ffa21"
-  integrity sha512-UTRo8GZ6PDVKpl7v8FwNBI31lHN3D4syG22L/Zr2+eBfW4WG1DFSN5pWm7QdyBraLMChSs+Jv+bi6ElxSWfLBw==
+"@markuplint/react-spec@4.5.4":
+  version "4.5.4"
+  resolved "https://registry.yarnpkg.com/@markuplint/react-spec/-/react-spec-4.5.4.tgz#55a18fdfeac999b5e5f8f80160cc72b64042ac2e"
+  integrity sha512-OamKNOcLIZ4hn9PUYRqQICp8dwVNgW09+Z9H71TEemZQ9t9Ir8SfTz6lyCpy6eIkq4pkZz5y4fnCHD3CLc8cRg==
   dependencies:
-    "@markuplint/ml-spec" "4.6.0"
+    "@markuplint/ml-spec" "4.6.2"
 
 "@markuplint/rules@4.9.0":
   version "4.9.0"
