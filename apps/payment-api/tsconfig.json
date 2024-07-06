@@ -2,11 +2,10 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "jsx": "preserve",
-    "jsxImportSource": "@emotion/react",
     "allowJs": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "types": ["node", "@emotion/react/types/css-prop"],
+    "types": ["node"],
     "strict": false,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
@@ -15,10 +14,7 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "root": ["."],
-      "@org/shared/data": ["../../libs/shared/data/index.ts"],
-      "@org/shared/types": ["../../libs/shared/types/index.ts"],
-      "@org/shared/ui": ["../../libs/shared/ui/index.ts"]
+      "root": ["."]
     }
   },
   "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"],

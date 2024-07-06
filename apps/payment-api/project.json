@@ -4,16 +4,10 @@
   "sourceRoot": "apps/payment-api",
   "projectType": "application",
   "targets": {
-    "deploy": {
-      "executor": "nx:run-commands",
-      "options": {
-        "command": "NODE_ENV=live sls deploy --stage live"
-      }
-    },
     "typecheck": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "tsc --noEmit -p apps/payment-api/tsconfig.lib.json"
+        "command": "tsc --noEmit -p apps/payment-api/tsconfig.json"
       }
     },
     "lint": {
