@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - main
-  #  pull_request:
-  #    branches:
-  #      - main
+  # pull_request:
+  #   branches:
+  #     - main
 
 jobs:
   deploy:
@@ -38,7 +38,6 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          npm i serverless@2.11 -g
           yarn
 
       - name: Company (Legacy) Transpile
@@ -72,17 +71,6 @@ jobs:
           NEXT_TEST_LAMBDA_ENDPOINT: ${{ secrets.NEXT_TEST_LAMBDA_ENDPOINT }}
           NEXT_TEST_STRIPE_PUBLIC_KEY: ${{ secrets.NEXT_TEST_STRIPE_PUBLIC_KEY }}
           NEXT_LHCI_GITHUB_APP_TOKEN: ${{ secrets.NEXT_LHCI_GITHUB_APP_TOKEN }}
-
-      # - name: Deploy Payment to Lambda
-      #   run: |
-      #     tsc apps/payment-api/lib/checkout.ts
-      #     yarn payment-api:deploy
-      #   env:
-      #     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      #     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      #     NEXT_LIVE_STRIPE_PUBLIC_KEY: ${{ secrets.NEXT_LIVE_STRIPE_PUBLIC_KEY }}
-      #     NEXT_LIVE_STRIPE_SECRET_KEY: ${{ secrets.NEXT_LIVE_STRIPE_SECRET_KEY }}
-      #     NEXT_LIVE_LAMBDA_ENDPOINT: ${{ secrets.NEXT_LIVE_LAMBDA_ENDPOINT }}
 
       - name: Deploy Company (Legacy) to S3
         run: bash scripts/sub_company_legacy_directory.sh

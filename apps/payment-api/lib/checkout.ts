@@ -1,14 +1,9 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-require('dotenv').config()
+import Stripe from 'stripe'
+import * as dotenv from 'dotenv'
 
-const stripe =
-  process.env.NODE_ENV === 'test'
-    ? // eslint-disable-next-line @typescript-eslint/no-var-requires
-      require('stripe')(process.env.NEXT_TEST_STRIPE_SECRET_KEY)
-    : // eslint-disable-next-line @typescript-eslint/no-var-requires
-      require('stripe')(process.env.NEXT_LIVE_STRIPE_SECRET_KEY)
+dotenv.config()
 
-exports.handler = (event: unknown, context: unknown, callback: any) => {
+exports.handler = async (event, context, callback) => {
   const headers = {
     'Content-Type': 'application/json',
     'Access-Control-Allow-Headers': 'Content-Type',
@@ -16,30 +11,36 @@ exports.handler = (event: unknown, context: unknown, callback: any) => {
     'Access-Control-Allow-Origin': '*',
   }
 
-  stripe.paymentIntents.create(
-    {
-      amount: 500,
-      currency: 'jpy',
-    },
-    (err: any, charge: unknown) => {
-      if (err) {
-        callback(null, {
-          headers,
-          statusCode: 500,
-          body: JSON.stringify({
-            error: err.message,
-          }),
-        })
-      } else {
-        callback(null, {
-          headers,
-          statusCode: 200,
-          body: JSON.stringify({
-            message: 'Charged successful',
-            charge,
-          }),
-        })
-      }
-    },
-  )
+  const secretKey = process.env.NODE_ENV === 'test'
+    ? process.env.NEXT_TEST_STRIPE_SECRET_KEY
+    : process.env.NEXT_LIVE_STRIPE_SECRET_KEY
+  const price = event.queryStringParameters.price
+
+  const stripe = new Stripe(secretKey)
+  const customer = await stripe.paymentIntents.create({
+    amount: price,
+    currency: 'jpy',
+  })
+
+  if (!customer) {
+    callback(null, {
+      headers,
+      statusCode: 500,
+      body: JSON.stringify({
+        error: 'Error occurred while charging the customer.',
+      }),
+    })
+    return
+  }
+
+  console.log(customer.id)
+
+  callback(null, {
+    headers,
+    statusCode: 200,
+    body: JSON.stringify({
+      message: 'Payment success',
+      res: customer.id,
+    }),
+  })
 }

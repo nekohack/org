@@ -1,0 +1,43 @@
+name: Deploy to Stripe
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: deploy
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      # - uses: nrwl/nx-set-shas@v3
+
+      - name: Install Dependencies
+        run: |
+          yarn
+
+      - name: Deploy Payment to Lambda (live)
+        run: |
+          cd apps/payment-api
+          yarn tsc
+          yarn deploy-live
+        env:
+          LIVE_STRIPE_PUBLIC_KEY: ${{ secrets.LIVE_STRIPE_PUBLIC_KEY }}
+          LIVE_STRIPE_SECRET_KEY: ${{ secrets.LIVE_STRIPE_SECRET_KEY }}
