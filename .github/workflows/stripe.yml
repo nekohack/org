@@ -31,11 +31,11 @@ jobs:
 
       - name: Install Dependencies
         run: |
+          cd apps/payment-api
           yarn
 
       - name: Deploy Payment to Lambda (live)
         run: |
-          cd apps/payment-api
           yarn tsc
           yarn deploy-live
         env:
