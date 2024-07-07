@@ -11,9 +11,7 @@ exports.handler = async (event, context, callback) => {
     'Access-Control-Allow-Origin': '*',
   }
 
-  const secretKey = process.env.NODE_ENV === 'test'
-    ? process.env.TEST_STRIPE_SECRET_KEY
-    : process.env.LIVE_STRIPE_SECRET_KEY
+  const secretKey = process.env.LIVE_STRIPE_SECRET_KEY
   const price = event.queryStringParameters.price
 
   const stripe = new Stripe(secretKey)
