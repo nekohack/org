@@ -12,8 +12,8 @@ exports.handler = async (event, context, callback) => {
   }
 
   const secretKey = process.env.NODE_ENV === 'test'
-    ? process.env.NEXT_TEST_STRIPE_SECRET_KEY
-    : process.env.NEXT_LIVE_STRIPE_SECRET_KEY
+    ? process.env.TEST_STRIPE_SECRET_KEY
+    : process.env.LIVE_STRIPE_SECRET_KEY
   const price = event.queryStringParameters.price
 
   const stripe = new Stripe(secretKey)
