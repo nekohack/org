@@ -5,6 +5,7 @@
   "author": "yuukit <yuma.kitamura@ponos.co.jp>",
   "private": true,
   "scripts": {
+    "tsc": "tsc lib/checkout.ts",
     "deploy-test": "NODE_ENV=test sls deploy --stage test",
     "deploy-live": "NODE_ENV=live sls deploy --stage live"
   },
@@ -17,7 +18,8 @@
     "esbuild": "0.23.0",
     "serverless": "3.39.0",
     "serverless-esbuild": "1.52.1",
-    "serverless-layers": "2.8.5"
+    "serverless-layers": "2.8.5",
+    "typescript": "5.5.3"
   },
   "type": "module",
   "engines": {
