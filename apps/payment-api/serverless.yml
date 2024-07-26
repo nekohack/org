@@ -9,16 +9,16 @@ plugins:
 provider:
   name: aws
   region: ap-northeast-1
-  runtime: nodejs16.x
+  runtime: nodejs18.x
   stage: ${opt:stage, self:custom.defaultStage}
 
 custom:
   defaultStage: live
   environment:
     test:
-      NEXT_TEST_STRIPE_SECRET_KEY: ${env:NEXT_TEST_STRIPE_SECRET_KEY}
+      TEST_STRIPE_SECRET_KEY: ${env:TEST_STRIPE_SECRET_KEY}
     live:
-      NEXT_LIVE_STRIPE_SECRET_KEY: ${env:NEXT_LIVE_STRIPE_SECRET_KEY}
+      LIVE_STRIPE_SECRET_KEY: ${env:LIVE_STRIPE_SECRET_KEY}
 
 functions:
   checkout:
