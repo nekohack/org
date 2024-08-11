@@ -73,9 +73,21 @@ jobs:
           NEXT_TEST_STRIPE_PUBLIC_KEY: ${{ secrets.NEXT_TEST_STRIPE_PUBLIC_KEY }}
           NEXT_LHCI_GITHUB_APP_TOKEN: ${{ secrets.NEXT_LHCI_GITHUB_APP_TOKEN }}
 
-      # - name: Deploy Payment to Lambda
+      # - name: Deploy Payment to Lambda (v2)
       #   run: |
-      #     tsc apps/payment-api/lib/checkout.ts
+      #     cd apps/payment-api-v2/
+      #     yarn deploy
+      #   env:
+      #     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      #     AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      #     NEXT_LIVE_STRIPE_PUBLIC_KEY: ${{ secrets.NEXT_LIVE_STRIPE_PUBLIC_KEY }}
+      #     NEXT_LIVE_STRIPE_SECRET_KEY: ${{ secrets.NEXT_LIVE_STRIPE_SECRET_KEY }}
+      #     NEXT_LIVE_LAMBDA_ENDPOINT: ${{ secrets.NEXT_LIVE_LAMBDA_ENDPOINT }}
+
+      # - name: Deploy Payment to Lambda (v1)
+      #   run: |
+      #     cd apps/payment-api/
+      #     tsc lib/checkout.ts
       #     yarn payment-api:deploy
       #   env:
       #     AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}

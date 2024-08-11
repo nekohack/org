@@ -1,0 +1,26 @@
+{
+  "name": "payment-api-v2",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/payment-api-v2",
+  "projectType": "application",
+  "targets": {
+    "typecheck": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tsc --noEmit -p apps/payment-api-v2/tsconfig.json"
+      }
+    },
+    "lint": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "prettier --write \"**/*.{js,jsx,json,ts,tsx,md,mdx,css,html,yml,yaml,scss,sass}\" --ignore-path .gitignore",
+          "eslint ./lib --ext .tsx,.ts,.jsx,.js --fix"
+        ],
+        "cwd": "apps/payment-api-v2",
+        "parallel": false
+      }
+    }
+  },
+  "tags": []
+}
