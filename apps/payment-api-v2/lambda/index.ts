@@ -1,22 +1,22 @@
-import { Hono } from 'hono'
-import { handle } from 'hono/aws-lambda'
-import Stripe from 'stripe'
+import { Hono } from "hono";
+import { handle } from "hono/aws-lambda";
+import Stripe from "stripe";
 
-type Bindings ={
-  LIVE_STRIPE_PUBLIC_KEY: string
-  LIVE_STRIPE_SECRET_KEY: string
-}
+type Bindings = {
+  LIVE_STRIPE_PUBLIC_KEY: string;
+  LIVE_STRIPE_SECRET_KEY: string;
+};
 
-const SHOW_TEMPLATE = false
+const SHOW_TEMPLATE = false;
 
-const app = new Hono<{ Bindings: Bindings }>()
+const app = new Hono<{ Bindings: Bindings }>();
 
-app.post('/checkout', async (c) => {
-  const stripe = new Stripe(c.env.LIVE_STRIPE_SECRET_KEY)
+app.post("/checkout", async (c) => {
+  const stripe = new Stripe(c.env.LIVE_STRIPE_SECRET_KEY);
   const paymentIntent = await stripe.paymentIntents.create({
     amount: 198000,
-    currency: 'jpy',
-  })
+    currency: "jpy",
+  });
 
   if (SHOW_TEMPLATE) {
     return c.html(`
@@ -74,13 +74,13 @@ app.post('/checkout', async (c) => {
           </script>
         </body>
       </html>    
-    `)
+    `);
   }
 
   return c.json({
-    message: 'Charged successful',
+    message: "Charged successful",
     paymentIntent,
-  })
-})
+  });
+});
 
-export const handler = handle(app)
+export const handler = handle(app);
