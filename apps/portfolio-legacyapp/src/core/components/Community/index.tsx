@@ -13,13 +13,11 @@ const CommunitySection: FC = () => {
             <List.Item
               key={i}
               label={
-                <Fragment>
-                  <Typography variant="body 2">
-                    <LinkText ariaLabel={node.text} url={node.url}>
-                      {node.text}
-                    </LinkText>
-                  </Typography>
-                </Fragment>
+                <Typography variant="body 2">
+                  <LinkText ariaLabel={node.text} url={node.url}>
+                    {node.text}
+                  </LinkText>
+                </Typography>
               }
             >
               <Typography variant="body 3">{node.location}</Typography>
