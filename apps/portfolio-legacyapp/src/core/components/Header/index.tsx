@@ -37,7 +37,7 @@ const HeaderSection: FC = () => {
         )}
       </Transition>
       <List title="Yuma Kitamura">
-        <List.Item label={<Typography variant="subtitle 3">Osaka, Kyoto</Typography>}>
+        <List.Item label={<Typography variant="body 2">Osaka, Kyoto</Typography>}>
           <Typography variant="body 3">Japan</Typography>
         </List.Item>
       </List>
