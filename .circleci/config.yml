@@ -91,13 +91,13 @@ jobs:
 
 workflows:
   version: 2
-  # push:
-  #   jobs:
-  #     - main_build:
-  #         filters:
-  #           branches:
-  #             only: main
-  # pull_request:
-  #   when: << pipeline.parameters.pull_request >>
-  #   jobs:
-  #     - main_build
+  push:
+    jobs:
+      - main_build:
+          filters:
+            branches:
+              only: main
+  pull_request:
+    when: << pipeline.parameters.pull_request >>
+    jobs:
+      - main_build
