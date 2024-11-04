@@ -1,7 +1,4 @@
 {
-  "affected": {
-    "defaultBase": "master"
-  },
   "targetDependencies": {
     "build": [
       {
@@ -67,5 +64,7 @@
       "cache": true
     }
   },
-  "nxCloudAccessToken": "NThiNWFhYzUtOTE2Ni00YjBmLTg1MjMtMTIwOWYwNTRiNzNhfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "NThiNWFhYzUtOTE2Ni00YjBmLTg1MjMtMTIwOWYwNTRiNzNhfHJlYWQtd3JpdGU=",
+  "useInferencePlugins": false,
+  "defaultBase": "master"
 }
