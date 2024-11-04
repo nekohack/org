@@ -48,12 +48,6 @@
         "parallel": false
       }
     },
-    "export": {
-      "executor": "@nx/next:export",
-      "options": {
-        "buildTarget": "portfolio-legacyapp:_build:production"
-      }
-    },
     "typecheck": {
       "executor": "nx:run-commands",
       "options": {
