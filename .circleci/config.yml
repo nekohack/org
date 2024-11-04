@@ -44,11 +44,11 @@ commands:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run: yarn nx run company-legacyapp:css && yarn nx run company-legacyapp:build && yarn nx run company-legacyapp:export
+      - run: yarn nx run company-legacyapp:css && yarn nx run company-legacyapp:build
 
       - run: touch apps/portfolio-legacyapp/.env && echo "NEXT_PUBLIC_LIVE_STRIPE_PUBLIC_KEY="$NEXT_PUBLIC_LIVE_STRIPE_PUBLIC_KEY >> apps/portfolio-legacyapp/.env && echo "echo "NEXT_PUBLIC_LIVE_LAMBDA_ENDPOINT="$NEXT_PUBLIC_LIVE_LAMBDA_ENDPOINT >> apps/portfolio-legacyapp/.env
 
-      - run: yarn nx run portfolio-legacyapp:css && yarn nx run portfolio-legacyapp:build && yarn nx run portfolio-legacyapp:export
+      - run: yarn nx run portfolio-legacyapp:css && yarn nx run portfolio-legacyapp:build
 
   company_legacy_and_deploy:
     description: Company Deploy

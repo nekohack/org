@@ -38,6 +38,7 @@ module.exports = withNx(
   withPWA(
     withOptimizedImages({
       ...config,
+      output: 'export',
       reactStrictMode: true,
       trailingSlash: true,
       pwa: {
