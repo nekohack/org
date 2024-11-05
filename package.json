@@ -11,7 +11,7 @@
     "@emotion/babel-plugin": "11.11.0",
     "@emotion/react": "11.11.4",
     "@markuplint/jsx-parser": "4.7.12",
-    "@markuplint/react-spec": "4.5.5",
+    "@markuplint/react-spec": "4.5.12",
     "@nekohack/normalize.css": "2.7.0",
     "@nx/cypress": "19.8.10",
     "@nx/eslint": "19.8.10",
