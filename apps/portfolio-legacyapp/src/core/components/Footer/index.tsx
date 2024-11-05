@@ -10,6 +10,9 @@ export const FooterSection: FC = () => {
       >
         {t('contact')}
       </LinkText>
+      <LinkText ariaLabel={t('privacy_policy')} url="https://policy.nekohack.me/privacy">
+        {t('privacy_policy')}
+      </LinkText>
       <Typography variant="body 1">
         Created © 2020-2023 jiyuujin LAB. All Rights Reserved.
       </Typography>
