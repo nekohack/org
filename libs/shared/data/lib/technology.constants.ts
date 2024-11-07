@@ -40,59 +40,14 @@ export const technologies: Technology[] = [
         status: 'inactive',
       },
       {
-        name: 'TypeScript',
-        category: 'Language',
-        status: 'active',
-      },
-      {
         name: 'JavaScript',
         category: 'Language',
         status: 'active',
       },
       {
-        name: 'React',
-        category: 'JavaScript Framework',
+        name: 'TypeScript',
+        category: 'Language',
         status: 'active',
-      },
-      {
-        name: 'Next.js',
-        category: 'JavaScript Framework',
-        status: 'active',
-      },
-      {
-        name: 'Gatsby.js',
-        category: 'JavaScript Framework',
-        status: 'active',
-      },
-      {
-        name: 'Vue',
-        category: 'JavaScript Framework',
-        status: 'active',
-      },
-      {
-        name: 'Nuxt.js',
-        category: 'JavaScript Framework',
-        status: 'active',
-      },
-      {
-        name: 'Astro',
-        category: 'JavaScript Framework',
-        status: 'active',
-      },
-      {
-        name: 'Svelte',
-        category: 'JavaScript Framework',
-        status: 'active',
-      },
-      {
-        name: 'SvelteKit',
-        category: 'JavaScript Framework',
-        status: 'active',
-      },
-      {
-        name: 'React.js',
-        category: 'JavaScript Library',
-        status: 'inactive',
       },
       {
         name: 'Angular.js',
@@ -105,13 +60,58 @@ export const technologies: Technology[] = [
         status: 'inactive',
       },
       {
-        name: 'Flutter',
-        category: 'Cross Platform Framework',
+        name: 'React.js',
+        category: 'JavaScript Library',
+        status: 'inactive',
+      },
+      {
+        name: 'React',
+        category: 'JavaScript Framework',
         status: 'active',
       },
       {
-        name: 'Swift',
+        name: 'Next.js',
+        category: 'JavaScript/React Framework',
+        status: 'active',
+      },
+      {
+        name: 'Gatsby.js',
+        category: 'JavaScript/React Framework',
+        status: 'inactive',
+      },
+      {
+        name: 'Vue',
+        category: 'JavaScript Framework',
+        status: 'active',
+      },
+      {
+        name: 'Nuxt.js',
+        category: 'JavaScript/Vue Framework',
+        status: 'active',
+      },
+      {
+        name: 'Svelte',
+        category: 'JavaScript Framework',
+        status: 'active',
+      },
+      {
+        name: 'SvelteKit',
+        category: 'JavaScript/Svelte Framework',
+        status: 'active',
+      },
+      {
+        name: 'Astro',
+        category: 'JavaScript Framework',
+        status: 'active',
+      },
+      {
+        name: 'Dart',
         category: 'Language',
+        status: 'active',
+      },
+      {
+        name: 'Flutter',
+        category: 'Cross Platform Framework',
         status: 'active',
       },
       {
@@ -120,7 +120,7 @@ export const technologies: Technology[] = [
         status: 'inactive',
       },
       {
-        name: 'Kotlin (Android)',
+        name: 'Swift',
         category: 'Language',
         status: 'active',
       },
@@ -130,34 +130,39 @@ export const technologies: Technology[] = [
         status: 'inactive',
       },
       {
-        name: 'Riverpod',
+        name: 'Kotlin (Android)',
+        category: 'Language',
+        status: 'active',
+      },
+      {
+        name: 'Redux (React)',
+        category: 'State management',
+        status: 'inactive',
+      },
+      {
+        name: 'MobX (React)',
+        category: 'State management',
+        status: 'inactive',
+      },
+      {
+        name: 'Vuex (Vue 2.x)',
+        category: 'State management',
+        status: 'inactive',
+      },
+      {
+        name: 'Pinia (Vue 3.x)',
+        category: 'State management',
+        status: 'inactive',
+      },
+      {
+        name: 'Provider (Flutter)',
         category: 'State management',
         status: 'active',
       },
       {
-        name: 'Provider',
+        name: 'Riverpod (Flutter)',
         category: 'State management',
-        status: 'inactive',
-      },
-      {
-        name: 'Pinia',
-        category: 'State management',
-        status: 'inactive',
-      },
-      {
-        name: 'Vuex',
-        category: 'State management',
-        status: 'inactive',
-      },
-      {
-        name: 'MobX',
-        category: 'State management',
-        status: 'inactive',
-      },
-      {
-        name: 'Redux',
-        category: 'State management',
-        status: 'inactive',
+        status: 'active',
       },
     ],
   },
@@ -165,13 +170,13 @@ export const technologies: Technology[] = [
     title: 'Backend',
     skills: [
       {
-        name: 'Nest.js',
-        category: 'JavaScript Framework',
+        name: 'Express',
+        category: 'JavaScript Library',
         status: 'active',
       },
       {
-        name: 'Express',
-        category: 'JavaScript Library',
+        name: 'Nest.js',
+        category: 'JavaScript Framework',
         status: 'active',
       },
       {
@@ -180,17 +185,17 @@ export const technologies: Technology[] = [
         status: 'active',
       },
       {
-        name: 'Play Framework',
+        name: 'Play',
         category: 'Scala/Java Framework',
         status: 'active',
       },
       {
-        name: 'Kotlin (Server)',
+        name: 'Java (Server)',
         category: 'Language',
         status: 'inactive',
       },
       {
-        name: 'Java (Server)',
+        name: 'Kotlin (Server)',
         category: 'Language',
         status: 'inactive',
       },
@@ -225,6 +230,11 @@ export const technologies: Technology[] = [
         status: 'active',
       },
       {
+        name: 'Supabase',
+        category: 'BaaS Tools',
+        status: 'active',
+      },
+      {
         name: 'PostgreSQL',
         category: 'Database',
         status: 'active',
@@ -235,19 +245,19 @@ export const technologies: Technology[] = [
         status: 'inactive',
       },
       {
+        name: 'Prisma',
+        category: 'Database',
+        status: 'active',
+      },
+      {
         name: 'MongoDB',
         category: 'Database',
         status: 'active',
       },
       {
-        name: 'Supabase',
-        category: 'Database',
-        status: 'active',
-      },
-      {
         name: 'Firebase',
-        category: 'Database',
-        status: 'inactive',
+        category: 'BaaS Tools',
+        status: 'active',
       },
     ],
   },
@@ -267,6 +277,11 @@ export const technologies: Technology[] = [
       {
         name: 'AWS S3',
         category: 'Static Website Hosting',
+        status: 'active',
+      },
+      {
+        name: 'AWS Lightsail',
+        category: 'Container',
         status: 'active',
       },
       {
