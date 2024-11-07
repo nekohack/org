@@ -27,7 +27,7 @@
     "aws-cdk": "2.151.0",
     "constructs": "10.3.0",
     "esbuild": "0.23.0",
-    "npm-run-all2": "5.0.0",
+    "npm-run-all2": "5.0.2",
     "ts-node": "10.9.2",
     "typescript": "5.5.4"
   }
