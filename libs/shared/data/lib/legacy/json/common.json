@@ -509,7 +509,7 @@
     {
       "text": "Vue.js Japan User Group",
       "location": "Japan",
-      "url": "https://vuefes.jp/",
+      "url": "https://vuejs-jp.org/",
       "status": "active",
       "enabled": true
     },
@@ -518,7 +518,7 @@
       "location": "Kyoto",
       "url": "https://vuekansai.connpass.com/",
       "status": "archived",
-      "enabled": false
+      "enabled": true
     },
     {
       "text": "React.kyoto",
@@ -535,9 +535,9 @@
       "enabled": true
     },
     {
-      "text": "FlutterKaigi Executive Committee",
+      "text": "FlutterKaigi",
       "location": "Japan",
-      "url": "https://flutterkaigi.jp/",
+      "url": "https://association.flutterkaigi.jp/",
       "status": "active",
       "enabled": true
     },

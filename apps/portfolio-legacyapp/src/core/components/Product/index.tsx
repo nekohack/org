@@ -39,7 +39,8 @@ const ProductSection: FC = () => {
                   qrcode={<img width={90} height={60} alt="" src={`/og/${node.image}.jpg`} />}
                   options={{
                     star: node.position,
-                    shares: [['twitter', `@${node.share}`]],
+                    urls: node.urls,
+                    shares: node.shares,
                   }}
                 >
                   <Typography variant="body 3">{t(node.description)}</Typography>
