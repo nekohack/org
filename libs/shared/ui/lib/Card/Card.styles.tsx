@@ -3,11 +3,9 @@ import { css } from '@emotion/react'
 export const root = css`
   background: #fff;
   border-radius: 8px;
-  box-shadow: #9e9e9e 0px 0px 4px;
 `
 
 export const header = css`
-  background: #312e81;
   padding: 12px;
   position: relative;
   border-top-left-radius: 4px;
@@ -50,6 +48,10 @@ export const contentList = css`
   list-style: none;
   padding: 0;
   margin: 0;
+  a {
+    color: #303030;
+    text-decoration: none;
+  }
   li {
     display: flex;
     align-items: center;

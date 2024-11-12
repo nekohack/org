@@ -75,8 +75,8 @@ export interface Repo {
 export interface Product {
   title: string
   description: string
-  url: string
-  share: Twitter
+  urls: string[]
+  shares: string[][]
   position: Position
   image?: string
   skills?: Skill[]
