@@ -16,7 +16,7 @@
   "confirm_policy": "Confirm Policy",
   "enter_payment_method": "Enter Payment Method",
   "work": "Work",
-  "work_experience": "I started my career as a developer in iOS native applications. While acquiring basic coding skills through my work as an application developer, I also worked on improving the UX of the administration website (PHP) that runs behind the applications. I was attracted to this part of the web improvement process, and gradually entered the realm of front-end engineering, including Node.js, CSS design, and the use of JavaScript frameworks. And now, while considering the optimal solution for the overall design of applications including the Cloud (Azure/AWS), I am practicing daily to improve their quality and add aggressive features.",
+  "work_experience": "My career started as an iOS native app engineer. Through my work as an app engineer, I gained fundamental coding skills while also working on improving the UX of the management website (PHP) that ran behind the scenes. I found the process of improving the web side of things particularly appealing, which led me to gradually explore the front-end engineering field, including technologies like Node.js, CSS design, and JavaScript frameworks.\nCurrently, I focus on optimizing the design of entire applications, including cloud services (Azure / AWS), while working daily to enhance their quality and proactively add new features. Additionally, as a member of the LINE Developers Community's API Expert group, I actively promote LINE's front-end framework and Messaging API. For the REV UP 2022 conference organized by LINE Developers, I was responsible for creating the official website.\nIn the future, I plan to continue sharing knowledge and contributing to communities not only through my personal blog but also through platforms like Zenn.",
   "about_me": "About Me",
   "skill": "Skill",
   "skill_set": "Skill Set",
@@ -42,7 +42,7 @@
   "community_role": "Participating in the following community as a staff member",
   "slide": "Stage Slide / Writing",
   "portrait": "Portrait",
-  "portrait_description": "I often wear event T-shirts at offline events such as conferences. Until now, I had been at Vue Fes, JSConf, and Front-End conferences. Basically my appearance is NG in online, but please feel free to contact us.",
+  "portrait_description": "At offline events like tech conferences, I often wear event T-shirts. Since attending Vue Fes Japan 2018, I have also participated in JS Conf JP, Frontend Conference (Kansai/Fukuoka), and others. Due to my deep interest in photography, I’m not particularly accustomed to being photographed, and as a general rule, I prefer not to have my appearance shared on social media or other platforms. However, this is not always the case, so please feel free to reach out if you have any questions.",
   "contact": "Contact",
   "privacy_policy": "Privacy Policy",
   "covid19": {
