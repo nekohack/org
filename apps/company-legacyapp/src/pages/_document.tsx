@@ -17,6 +17,7 @@ class NekohackMe extends Document {
           <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
           <link rel="mask-icon" href="/favicons//safari-pinned-tab.svg" color="#161b22" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <meta property="og:title" content="nekohack.me (Under Construction)" />
           <meta
             property="og:description"
