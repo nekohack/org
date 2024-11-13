@@ -36,6 +36,12 @@
         "parallel": false
       }
     },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "company-legacyapp:build:production"
+      }
+    },
     "typecheck": {
       "executor": "nx:run-commands",
       "options": {

@@ -38,8 +38,8 @@ module.exports = withNx(
   withPWA(
     withOptimizedImages({
       ...config,
-      distDir: 'exported',
-      output: 'export',
+      // distDir: 'exported',
+      // output: 'export', // Next.js 14+ only
       reactStrictMode: true,
       trailingSlash: true,
       pwa: {
