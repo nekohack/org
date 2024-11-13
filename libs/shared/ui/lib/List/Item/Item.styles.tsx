@@ -5,9 +5,11 @@ export const root = () => css`
   flex-wrap: nowrap;
   list-style: none;
   margin: 0;
-  align-items: center;
   column-gap: 20px;
   justify-content: space-between;
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
 `
 
 export const labelItem = css`
