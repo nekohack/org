@@ -3,11 +3,12 @@ import { Layout } from '@common/Layout'
 import { Index as NoticeBar } from '@components/Notice'
 import Home from '@common/Home'
 import { FooterSection } from '@components/Footer'
+import { UKRAINE } from '@core/feature.constants'
 
 export default function Lang() {
   return (
     <Layout>
-      <NoticeBar />
+      {UKRAINE && <NoticeBar />}
       <main>
         <Home />
         <FooterSection />
