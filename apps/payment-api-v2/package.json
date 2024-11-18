@@ -19,13 +19,13 @@
   },
   "dependencies": {
     "aws-cdk-lib": "2.167.1",
-    "constructs": "10.3.0",
+    "constructs": "10.4.2",
     "hono": "4.5.5",
     "stripe": "16.7.0"
   },
   "devDependencies": {
     "aws-cdk": "2.167.1",
-    "constructs": "10.3.0",
+    "constructs": "10.4.2",
     "esbuild": "0.23.0",
     "npm-run-all2": "5.0.2",
     "ts-node": "10.9.2",
