@@ -15,7 +15,7 @@
     "@serverless/typescript": "3.38.0",
     "esbuild": "0.24.0",
     "serverless": "3.39.0",
-    "serverless-esbuild": "1.52.1",
+    "serverless-esbuild": "1.54.6",
     "serverless-layers": "2.8.5"
   },
   "engines": {
