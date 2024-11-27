@@ -85,7 +85,7 @@
     "ts-node": "10.9.2",
     "ts-pattern": "4.3.0",
     "typed-scss-modules": "6.6.0",
-    "typescript": "5.5.3",
+    "typescript": "5.7.2",
     "unocss": "0.61.3",
     "url-loader": "4.1.1",
     "vite": "5.3.3",
