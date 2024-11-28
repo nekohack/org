@@ -17755,10 +17755,10 @@ vary@^1.1.2, vary@~1.1.2:
   resolved "https://registry.npmjs.org/vary/-/vary-1.1.2.tgz"
   integrity sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==
 
-vite-plugin-inspect@0.8.8:
-  version "0.8.8"
-  resolved "https://registry.yarnpkg.com/vite-plugin-inspect/-/vite-plugin-inspect-0.8.8.tgz#b9857007ce4f79c9c6b0565936c474f64109b756"
-  integrity sha512-aZlBuXsWUPJFmMK92GIv6lH7LrwG2POu4KJ+aEdcqnu92OAf+rhBnfMDQvxIJPEB7hE2t5EyY/PMgf5aDLT8EA==
+vite-plugin-inspect@0.10.1:
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/vite-plugin-inspect/-/vite-plugin-inspect-0.10.1.tgz#7093c001aa6910dad7d06b746696fdbf130dea97"
+  integrity sha512-psgxZmE3qL5w/B9sgG+AEG06VhO/SDqf+Rd2Zztu5YdigIjBPdvA86z8yaLj5S/HXfYTk2Y3zu58QiwuLf/jqw==
   dependencies:
     "@antfu/utils" "^0.7.10"
     "@rollup/pluginutils" "^5.1.3"
