@@ -8,8 +8,8 @@
     "nx": "nx"
   },
   "devDependencies": {
-    "@emotion/babel-plugin": "11.11.0",
-    "@emotion/react": "11.11.4",
+    "@emotion/babel-plugin": "11.13.5",
+    "@emotion/react": "11.13.5",
     "@markuplint/jsx-parser": "4.7.13",
     "@markuplint/react-spec": "4.5.13",
     "@nekohack/normalize.css": "2.7.0",
