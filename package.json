@@ -50,7 +50,7 @@
     "clsx": "1.2.1",
     "concurrently": "6.5.1",
     "dayjs": "1.11.13",
-    "dotenv": "16.4.5",
+    "dotenv": "16.4.6",
     "env-cmd": "10.1.0",
     "eslint": "8.57.1",
     "eslint-config-next": "14.2.18",

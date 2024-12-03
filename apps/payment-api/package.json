@@ -8,7 +8,7 @@
     "deploy": "NODE_ENV=live sls deploy --stage live"
   },
   "dependencies": {
-    "dotenv": "16.4.5",
+    "dotenv": "16.4.6",
     "stripe": "11.18.0"
   },
   "devDependencies": {
