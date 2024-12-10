@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@emotion/babel-plugin": "11.13.5",
-    "@emotion/react": "11.13.5",
+    "@emotion/react": "11.14.0",
     "@markuplint/jsx-parser": "4.7.14",
     "@markuplint/react-spec": "4.5.14",
     "@nekohack/normalize.css": "2.7.0",
