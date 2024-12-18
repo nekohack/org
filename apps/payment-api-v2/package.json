@@ -18,13 +18,13 @@
     "cdk-deploy": "run-s cdk-deploy:*"
   },
   "dependencies": {
-    "aws-cdk-lib": "2.171.1",
+    "aws-cdk-lib": "2.173.2",
     "constructs": "10.4.2",
     "hono": "4.6.14",
     "stripe": "16.12.0"
   },
   "devDependencies": {
-    "aws-cdk": "2.171.1",
+    "aws-cdk": "2.173.2",
     "constructs": "10.4.2",
     "esbuild": "0.24.0",
     "npm-run-all2": "5.0.2",
