@@ -29,8 +29,8 @@ export default {
       }),
     )
 
-    config.plugins.push(() => import('unocss/vite'))
-    config.plugins.push(() => import('vite-plugin-inspect'))
+    // config.plugins.push(() => import('unocss/vite'))
+    // config.plugins.push(() => import('vite-plugin-inspect'))
 
     return config
   },
