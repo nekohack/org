@@ -1,8 +1,6 @@
-const react = require('@vitejs/plugin-react')
-const Inspect = require('vite-plugin-inspect')
-const Unocss = require('unocss/vite')
+import react from '@vitejs/plugin-react'
 
-module.exports = {
+export default {
   core: {
     builder: '@storybook/builder-vite',
   },
@@ -31,8 +29,8 @@ module.exports = {
       }),
     )
 
-    config.plugins.push(Unocss.default())
-    config.plugins.push(Inspect())
+    // config.plugins.push(() => import('unocss/vite'))
+    // config.plugins.push(() => import('vite-plugin-inspect'))
 
     return config
   },
