@@ -1,5 +1,4 @@
-import { Story, Meta } from '@storybook/react'
-import { Timeline, TimelineProps } from './index'
+import { Timeline } from './index'
 import { timelines } from '../../../data/lib/legacy/constants'
 import React from 'react'
 import { Typography } from '../Typography/Typography'
@@ -7,9 +6,9 @@ import { Typography } from '../Typography/Typography'
 export default {
   component: Timeline,
   title: 'Timeline',
-} as Meta
+}
 
-export const Default: Story<TimelineProps> = (args) => (
+export const Default = (args) => (
   <Timeline {...args}>
     {timelines.map((t, index) => (
       <Timeline.Card key={index}>

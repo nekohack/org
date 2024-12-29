@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react'
 import { css } from '@emotion/react'
-import { Story, Meta } from '@storybook/react'
-import { Icon, IconProps } from './Icon'
+import { Icon } from './Icon'
 
 export default {
   component: Icon,
@@ -22,9 +21,9 @@ export default {
       </div>
     ),
   ],
-} as Meta
+}
 
-export const Default: Story<IconProps> = (args) => (
+export const Default = (args) => (
   <Fragment>
     <Icon {...args} />
     <Icon {...args} name="email" />

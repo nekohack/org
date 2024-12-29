@@ -1,7 +1,6 @@
 import React from 'react'
-import { Story, Meta } from '@storybook/react'
 import { Typography } from '../Typography/Typography'
-import { Card, CardProps } from './Card'
+import { Card } from './Card'
 
 export default {
   component: Card,
@@ -21,11 +20,11 @@ export default {
       location: '{ Kyoto, Osaka }, Japan',
     },
   },
-} as Meta
+}
 
-export const Default: Story<CardProps> = (args) => <Card {...args} />
+export const Default = (args) => <Card {...args} />
 
-export const WithTags: Story<CardProps> = (args) => (
+export const WithTags = (args) => (
   <Card
     {...args}
     subheader={

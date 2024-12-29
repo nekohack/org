@@ -1,7 +1,6 @@
 import React from 'react'
 import { css } from '@emotion/react'
-import { Meta, Story } from '@storybook/react'
-import { Avatar, AvatarProps } from './Avatar'
+import { Avatar } from './Avatar'
 
 export default {
   component: Avatar,
@@ -11,11 +10,11 @@ export default {
     src: 'https://i.imgur.com/X0CcoU9.jpg',
     size: 'medium',
   },
-} as Meta
+}
 
-export const Default: Story<AvatarProps> = (args) => <Avatar {...args} />
+export const Default = (args) => <Avatar {...args} />
 
-export const Sizes: Story<AvatarProps> = (args) => (
+export const Sizes = (args) => (
   <div
     css={css`
       display: flex;

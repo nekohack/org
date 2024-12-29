@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react'
-import { Story, Meta } from '@storybook/react'
-import { Typography, TypographyProps } from './Typography'
+import { Typography } from './Typography'
 
 export default {
   component: Typography,
@@ -8,9 +7,9 @@ export default {
   args: {
     variant: 'title 1',
   },
-} as Meta
+}
 
-export const Default: Story<TypographyProps> = (args) => (
+export const Default = (args) => (
   <Fragment>
     <Typography {...args}>H1</Typography>
     <Typography {...args} variant="subtitle 1">

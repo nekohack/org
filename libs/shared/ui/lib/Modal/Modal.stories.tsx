@@ -1,7 +1,6 @@
 import React from 'react'
-import { Story, Meta } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import { Modal, ModalProps } from './Modal'
+import { Modal } from './Modal'
 
 export default {
   component: Modal,
@@ -9,6 +8,6 @@ export default {
   args: {
     onClose: action('closed'),
   },
-} as Meta
+}
 
-export const Default: Story<ModalProps> = (args) => <Modal {...args}>Test</Modal>
+export const Default = (args) => <Modal {...args}>Test</Modal>

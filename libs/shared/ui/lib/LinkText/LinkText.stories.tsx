@@ -1,6 +1,5 @@
-import { Story, Meta } from '@storybook/react'
 import React from 'react'
-import { LinkText, LinkTextProps } from './LinkText'
+import { LinkText } from './LinkText'
 
 export default {
   component: LinkText,
@@ -9,6 +8,6 @@ export default {
     ariaLabel: 'ブログ',
     url: 'https://blog.nekohack.me/',
   },
-} as Meta
+}
 
-export const Default: Story<LinkTextProps> = (args) => <LinkText {...args}>ブログ</LinkText>
+export const Default = (args) => <LinkText {...args}>ブログ</LinkText>

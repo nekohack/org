@@ -1,7 +1,6 @@
 import { action } from '@storybook/addon-actions'
-import { Meta, Story } from '@storybook/react'
 import { Item as ListItem } from './Item/Item'
-import { List, ListProps } from '.'
+import { List } from '.'
 import { CssResetButton } from '../CssResetButton/CssResetButton'
 import React from 'react'
 
@@ -12,9 +11,9 @@ export default {
   args: {
     title: 'コミュニティ',
   },
-} as Meta
+}
 
-export const Default: Story<ListProps> = (args) => (
+export const Default = (args) => (
   <div style={{ width: '800px' }}>
     <List {...args}>
       <List.Item label={<div>テスト1</div>}>

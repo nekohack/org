@@ -1,6 +1,5 @@
 import React from 'react'
-import { Story, Meta } from '@storybook/react'
-import { LinkPreview, LinkPreviewProps } from './LinkPreview'
+import { LinkPreview } from './LinkPreview'
 
 export default {
   component: LinkPreview,
@@ -12,6 +11,6 @@ export default {
     url: 'https://vuefes.jp/2022',
     image: 'https://i.imgur.com/IFYXj64.png',
   },
-} as Meta
+}
 
-export const Default: Story<LinkPreviewProps> = (args) => <LinkPreview {...args} />
+export const Default = (args) => <LinkPreview {...args} />

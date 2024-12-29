@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import { useEffectOnce } from 'react-use'
 import { css } from '@emotion/react'
-import { Story, Meta } from '@storybook/react'
 import { ChatInput } from '../ChatInput/ChatInput'
-import { Chat, ChatProps } from './'
+import { Chat } from './'
 
 export default {
   component: Chat,
@@ -12,9 +11,9 @@ export default {
     User: Chat.User,
     UserMessage: Chat.UserMessage,
   },
-} as Meta
+}
 
-export const Default: Story<ChatProps> = (args) => {
+export const Default = (args) => {
   const [count, setCount] = useState(0)
 
   useEffectOnce(() => {
