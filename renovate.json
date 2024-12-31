@@ -16,6 +16,10 @@
         ],
         "fileFilters": ["**/**"]
       }
+    },
+    {
+      "matchPackageNames": ["next"],
+      "enabled": false
     }
   ]
 }
