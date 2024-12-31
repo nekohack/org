@@ -39,7 +39,7 @@ module.exports = withNx(
     withOptimizedImages({
       ...config,
       // distDir: 'exported',
-      output: 'export', // Next.js 13.3+ only
+      // output: 'export', // Next.js 13.3+ only
       reactStrictMode: true,
       trailingSlash: true,
       pwa: {
