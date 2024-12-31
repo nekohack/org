@@ -106,6 +106,16 @@
   },
   "talks": [
     {
+      "title": "モノレポ開発における Nuxt module の利活用について",
+      "description": "Vue Fes Japan 2024 で導入予定のモノレポについて学びます。",
+      "host": "v-kansai",
+      "url": "https://www.figma.com/proto/12yGlG2LfcrkJ3eWDot0vj/Slides?node-id=404-170&starting-point-node-id=404%3A170",
+      "youtubeUrl": "",
+      "place": "コミュニティスペース 5.6",
+      "image": "",
+      "date": "2024/02/29"
+    },
+    {
       "title": "React で LIFF アプリを作ろう (設計重視編)",
       "description": "React でカスタムフックを作ることを学びます。",
       "host": "LINE Developer Community",
