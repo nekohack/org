@@ -106,6 +106,16 @@
   },
   "talks": [
     {
+      "title": "モノレポ開発における Nuxt module の利活用について",
+      "description": "Vue Fes Japan 2024 で導入予定のモノレポについて学びます。",
+      "host": "v-kansai",
+      "url": "https://www.figma.com/proto/12yGlG2LfcrkJ3eWDot0vj/Slides?node-id=404-170&starting-point-node-id=404%3A170",
+      "youtubeUrl": "",
+      "place": "コミュニティスペース 5.6",
+      "image": "",
+      "date": "2024/02/29"
+    },
+    {
       "title": "React で LIFF アプリを作ろう (設計重視編)",
       "description": "React でカスタムフックを作ることを学びます。",
       "host": "LINE Developer Community",
@@ -328,6 +338,11 @@
   ],
   "timelines": [
     {
+      "date": "2023/10/01",
+      "title": "BOTCHAN の機能開発",
+      "description": ""
+    },
+    {
       "date": "2023/03/03",
       "title": "\"AI エンジニアのつどい\" ウェブサイトの製作",
       "description": "毎週金曜、AI (ChatGPT) 関連に特化して雑談した内容を、いつでも振り返ることができるようにしています。",
@@ -500,14 +515,14 @@
   ],
   "communities": [
     {
-      "text": "おはようエンジニア",
+      "text": "おはようエンジニア in Twitter Spaces",
       "location": "Japan",
       "url": "https://twitter.com/ohayo_eng",
       "status": "active",
       "enabled": false
     },
     {
-      "text": "Vue.js Japan User Group",
+      "text": "Vue Fes (Vue.js Japan User Group)",
       "location": "Japan",
       "url": "https://vuejs-jp.org/",
       "status": "active",
@@ -517,7 +532,14 @@
       "text": "v-kansai",
       "location": "Kyoto",
       "url": "https://vuekansai.connpass.com/",
-      "status": "archived",
+      "status": "active",
+      "enabled": true
+    },
+    {
+      "text": "kansai.ts",
+      "location": "Osaka",
+      "url": "https://kansaits.connpass.com/",
+      "status": "active",
       "enabled": true
     },
     {
@@ -526,13 +548,6 @@
       "url": "https://react-kyoto.connpass.com/",
       "status": "archived",
       "enabled": false
-    },
-    {
-      "text": "kansai.ts",
-      "location": "Osaka",
-      "url": "https://kansaits.connpass.com/",
-      "status": "active",
-      "enabled": true
     },
     {
       "text": "FlutterKaigi",
@@ -552,14 +567,14 @@
       "text": "PWA Night",
       "location": "Japan",
       "url": "https://pwanight.connpass.com/",
-      "status": "active",
+      "status": "inactive",
       "enabled": false
     },
     {
       "text": "VS Code Meetup",
       "location": "Japan",
       "url": "https://vscode.connpass.com/",
-      "status": "active",
+      "status": "inactive",
       "enabled": false
     }
   ]
