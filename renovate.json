@@ -18,7 +18,7 @@
       }
     },
     {
-      "matchPackageNames": ["next"],
+      "matchPackageNames": ["next", "storybook"],
       "enabled": false
     }
   ]
