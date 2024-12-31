@@ -500,14 +500,14 @@
   ],
   "communities": [
     {
-      "text": "おはようエンジニア",
+      "text": "おはようエンジニア in Twitter Spaces",
       "location": "Japan",
       "url": "https://twitter.com/ohayo_eng",
       "status": "active",
       "enabled": false
     },
     {
-      "text": "Vue.js Japan User Group",
+      "text": "Vue Fes (Vue.js Japan User Group)",
       "location": "Japan",
       "url": "https://vuejs-jp.org/",
       "status": "active",
@@ -517,7 +517,14 @@
       "text": "v-kansai",
       "location": "Kyoto",
       "url": "https://vuekansai.connpass.com/",
-      "status": "archived",
+      "status": "active",
+      "enabled": true
+    },
+    {
+      "text": "kansai.ts",
+      "location": "Osaka",
+      "url": "https://kansaits.connpass.com/",
+      "status": "active",
       "enabled": true
     },
     {
@@ -526,13 +533,6 @@
       "url": "https://react-kyoto.connpass.com/",
       "status": "archived",
       "enabled": false
-    },
-    {
-      "text": "kansai.ts",
-      "location": "Osaka",
-      "url": "https://kansaits.connpass.com/",
-      "status": "active",
-      "enabled": true
     },
     {
       "text": "FlutterKaigi",
@@ -552,14 +552,14 @@
       "text": "PWA Night",
       "location": "Japan",
       "url": "https://pwanight.connpass.com/",
-      "status": "active",
+      "status": "inactive",
       "enabled": false
     },
     {
       "text": "VS Code Meetup",
       "location": "Japan",
       "url": "https://vscode.connpass.com/",
-      "status": "active",
+      "status": "inactive",
       "enabled": false
     }
   ]
