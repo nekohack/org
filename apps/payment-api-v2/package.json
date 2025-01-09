@@ -20,7 +20,7 @@
   "dependencies": {
     "aws-cdk-lib": "2.173.2",
     "constructs": "10.4.2",
-    "hono": "4.6.14",
+    "hono": "4.6.16",
     "stripe": "16.12.0"
   },
   "devDependencies": {
