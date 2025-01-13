@@ -17,12 +17,12 @@
   resolved "https://registry.yarnpkg.com/@aws-cdk/asset-node-proxy-agent-v6/-/asset-node-proxy-agent-v6-2.1.0.tgz#6d3c7860354d4856a7e75375f2f0ecab313b4989"
   integrity sha512-7bY3J8GCVxLupn/kNmpPc5VJz8grx+4RKfnnJiO1LG+uxkZfANZG3RMHhE+qQxxwkyQ9/MfPtTpf748UhR425A==
 
-"@aws-cdk/cloud-assembly-schema@^38.0.1":
-  version "38.0.1"
-  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-38.0.1.tgz#cdf4684ae8778459e039cd44082ea644a3504ca9"
-  integrity sha512-KvPe+NMWAulfNVwY7jenFhzhuLhLqJ/OPy5jx7wUstbjnYnjRVLpUHPU3yCjXFE0J8cuJVdx95BJ4rOs66Pi9w==
+"@aws-cdk/cloud-assembly-schema@^39.0.1":
+  version "39.1.44"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/cloud-assembly-schema/-/cloud-assembly-schema-39.1.44.tgz#4ae982212d9d711b812858a1a3986c77d979f1c0"
+  integrity sha512-iW9qAEsRj22a9/ZRBXBgK5O671Lnecsa1I89I7pswZk8d9+LrOj4rBXl+vjioB8vBjXIyi9Fevvz3lLt3Jiw7w==
   dependencies:
-    jsonschema "^1.4.1"
+    jsonschema "~1.4.1"
     semver "^7.6.3"
 
 "@babel/code-frame@^7.0.0":
@@ -275,15 +275,15 @@ astral-regex@^2.0.0:
   resolved "https://registry.yarnpkg.com/astral-regex/-/astral-regex-2.0.0.tgz#483143c567aeed4785759c0865786dc77d7d2e31"
   integrity sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==
 
-aws-cdk-lib@2.173.2:
-  version "2.173.2"
-  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.173.2.tgz#9e51332973163eb0d0a89cb67973a89b75c5f0b1"
-  integrity sha512-cL9+z8Pl3VZGoO7BwdsrFAOeud/vSl3at7OvmhihbNprMN15XuFUx/rViAU5OI1m92NbV4NBzYSLbSeCwYLNyw==
+aws-cdk-lib@2.175.1:
+  version "2.175.1"
+  resolved "https://registry.yarnpkg.com/aws-cdk-lib/-/aws-cdk-lib-2.175.1.tgz#cad037b83a7156f751e4d01ee7df9f7e6454c978"
+  integrity sha512-2OiZDUeuAA5nBrWKxQVT0CHrQmLLx7SIpUeqyKRLEdiYPFlj3nCd/0KcVpsy6hPKS+IZp7Qm1kghmGMsV6JGoA==
   dependencies:
     "@aws-cdk/asset-awscli-v1" "^2.2.208"
     "@aws-cdk/asset-kubectl-v20" "^2.1.3"
     "@aws-cdk/asset-node-proxy-agent-v6" "^2.1.0"
-    "@aws-cdk/cloud-assembly-schema" "^38.0.1"
+    "@aws-cdk/cloud-assembly-schema" "^39.0.1"
     "@balena/dockerignore" "^1.0.2"
     case "1.6.3"
     fs-extra "^11.2.0"
@@ -296,10 +296,10 @@ aws-cdk-lib@2.173.2:
     table "^6.8.2"
     yaml "1.10.2"
 
-aws-cdk@2.173.2:
-  version "2.173.2"
-  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.173.2.tgz#e564bd8d0e5b316ad510b467b7e336df6052cacf"
-  integrity sha512-qyMU4FoRJdZDUpsOBqyRBALBjf5A2N/MaHKX9iJUkbTET+d+nR07x3ai4TcEES+8pqPFHMTKpQMRDXs9Py/15w==
+aws-cdk@2.175.1:
+  version "2.175.1"
+  resolved "https://registry.yarnpkg.com/aws-cdk/-/aws-cdk-2.175.1.tgz#802760774a0959fb8640be765fe04195486195d2"
+  integrity sha512-duvy0FtGAAYqJi/x0MjBfCp60ZlDYl0X5/GrADwMz4AfHQ8aTXCyaVsdJuCxz0ZMHSNaFRuCNkAlc2Xu43zQmQ==
   optionalDependencies:
     fsevents "2.3.2"
 
@@ -574,7 +574,7 @@ jsonfile@^6.0.1:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
-jsonschema@^1.4.1:
+jsonschema@^1.4.1, jsonschema@~1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/jsonschema/-/jsonschema-1.4.1.tgz#cc4c3f0077fb4542982973d8a083b6b34f482dab"
   integrity sha512-S6cATIPVv1z0IlxdN+zUk5EPjkGCdnhN4wVSBlvoUO1tOLJootbo9CquNJmbIh4yikWHiUedhRYrNPn1arpEmQ==
