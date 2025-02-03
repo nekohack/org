@@ -522,6 +522,13 @@
       "enabled": false
     },
     {
+      "text": "関西開発者会議",
+      "location": "Osaka",
+      "url": "https://k3jp.org/",
+      "status": "active",
+      "enabled": true
+    },
+    {
       "text": "Vue Fes (Vue.js Japan User Group)",
       "location": "Japan",
       "url": "https://vuejs-jp.org/",
