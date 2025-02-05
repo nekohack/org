@@ -3357,12 +3357,12 @@
     type-fest "4.33.0"
     uuid "11.0.5"
 
-"@markuplint/react-spec@4.5.14":
-  version "4.5.14"
-  resolved "https://registry.yarnpkg.com/@markuplint/react-spec/-/react-spec-4.5.14.tgz#aee2c136c0e2599cf2319bfa2f90e69e3600d56f"
-  integrity sha512-W4t2Uidt9wXh7GIcx7vaLqPeEXz+u43H7MkFu5Od0sgm5iAPfLMM7UheiHRMulPQlDShbaihOc75jMRrAGbhLw==
+"@markuplint/react-spec@4.5.15":
+  version "4.5.15"
+  resolved "https://registry.yarnpkg.com/@markuplint/react-spec/-/react-spec-4.5.15.tgz#513c0ec3f997766201139ddfb01e74fb246c11e8"
+  integrity sha512-F4lWHOigtgqbULES1dsS7LirBbrutt19dOGiJJvR5RVfwYmBFcORBv2+utu4o85q92+o3ExiosDZInSWVco8Cg==
   dependencies:
-    "@markuplint/ml-spec" "4.9.1"
+    "@markuplint/ml-spec" "4.9.2"
 
 "@markuplint/rules@4.10.7":
   version "4.10.7"
