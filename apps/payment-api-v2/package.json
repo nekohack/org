@@ -24,7 +24,7 @@
     "stripe": "16.12.0"
   },
   "devDependencies": {
-    "aws-cdk": "2.175.1",
+    "aws-cdk": "2.1000.2",
     "constructs": "10.4.2",
     "esbuild": "0.25.0",
     "npm-run-all2": "5.0.2",
