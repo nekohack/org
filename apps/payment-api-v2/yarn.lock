@@ -513,10 +513,10 @@ hasown@^2.0.0, hasown@^2.0.2:
   dependencies:
     function-bind "^1.1.2"
 
-hono@4.6.20:
-  version "4.6.20"
-  resolved "https://registry.yarnpkg.com/hono/-/hono-4.6.20.tgz#9cf3d89e50484d3cd13d867a4fb094f09c9a9c20"
-  integrity sha512-5qfNQeaIptMaJKyoJ6N/q4gIq0DBp2FCRaLNuUI3LlJKL4S37DY/rLL1uAxA4wrPB39tJ3s+f7kgI79O4ScSug==
+hono@4.7.2:
+  version "4.7.2"
+  resolved "https://registry.yarnpkg.com/hono/-/hono-4.7.2.tgz#8d8285060d318e71d75fd5c886572e021b8fcb54"
+  integrity sha512-8V5XxoOF6SI12jkHkzX/6aLBMU5GEF5g387EjVSQipS0DlxWgWGSMeEayY3CRBjtTUQYwLHx9JYouWqKzy2Vng==
 
 hosted-git-info@^2.1.4:
   version "2.8.9"
