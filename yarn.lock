@@ -5324,10 +5324,10 @@
   dependencies:
     prop-types "^15.7.2"
 
-"@stripe/stripe-js@1.54.2":
-  version "1.54.2"
-  resolved "https://registry.npmjs.org/@stripe/stripe-js/-/stripe-js-1.54.2.tgz"
-  integrity sha512-R1PwtDvUfs99cAjfuQ/WpwJ3c92+DAMy9xGApjqlWQMj0FKQabUAys2swfTRNzuYAYJh7NqK2dzcYVNkKLEKUg==
+"@stripe/stripe-js@5.8.0":
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/@stripe/stripe-js/-/stripe-js-5.8.0.tgz#4149b4b0235bcfd68933660de21e0156320e1774"
+  integrity sha512-o41SYzMDu/aE7iXSW6dNH9XGLfMJyj5sfazbkMz6LdNI1vDPs1h1aldtXJNLKH22RGxjvFUd5AlEw2G2OA7bug==
 
 "@surma/rollup-plugin-off-main-thread@^2.2.3":
   version "2.2.3"
