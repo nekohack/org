@@ -33,7 +33,7 @@
     "@stripe/react-stripe-js": "1.16.5",
     "@stripe/stripe-js": "1.54.2",
     "@tanstack/react-virtual": "3.13.2",
-    "@types/node": "22.13.5",
+    "@types/node": "22.13.9",
     "@types/react": "18.3.18",
     "@types/react-dom": "18.3.5",
     "@types/react-linkify": "1.0.4",
