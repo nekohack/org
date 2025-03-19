@@ -46,7 +46,7 @@
     "@unocss/webpack": "0.65.4",
     "@vitejs/plugin-react": "4.3.4",
     "autoprefixer": "10.4.21",
-    "chromatic": "11.25.2",
+    "chromatic": "11.27.0",
     "clsx": "2.1.1",
     "concurrently": "9.1.2",
     "dayjs": "1.11.13",
