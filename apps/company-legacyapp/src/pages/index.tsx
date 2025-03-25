@@ -1,5 +1,3 @@
-'use client'
-
 import { css } from '@emotion/react'
 import { Icon, Link } from '@org/shared/ui'
 import { socialLinks as _socialLinks } from '@org/shared/data'
