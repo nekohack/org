@@ -47,7 +47,7 @@ type Host =
   | 'SOFTWARE DESIGN'
 
 type Place = 'Writing' | 'EventIn' | 'Meet' | 'YouTube' | 'Zoom'
-type RealPlace = 'Moneyforward' | 'necco inc.' | 'Yumemi inc.' | 'コミュニティスペース 5.6'
+type RealPlace = 'Moneyforward' | 'necco inc.' | 'Yumemi inc.' | 'コミュニティスペース 5.6' | 'SBI日本少額短期保険株式会社'
 
 type Location = 'Kyoto' | 'Osaka' | 'Tokyo' | 'Japan'
 
