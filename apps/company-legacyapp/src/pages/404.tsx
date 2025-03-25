@@ -1,9 +1,7 @@
-'use client'
-
 import Head from 'next/head'
 import { Typography } from '@org/shared/ui'
 
-export default function NotFound() {
+const Custom404 = () => {
   return (
     <main>
       <Head>
@@ -16,3 +14,5 @@ export default function NotFound() {
     </main>
   )
 }
+
+export default Custom404
