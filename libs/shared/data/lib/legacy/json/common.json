@@ -106,6 +106,16 @@
   },
   "talks": [
     {
+      "title": "Vue Fes Japan 2024 ウェブサイト 3年間リードさせてもらっていました",
+      "description": "Vue Fes Japan 2024 までの 3年間をふりかえります。",
+      "host": "v-kansai",
+      "url": "https://www.figma.com/proto/12yGlG2LfcrkJ3eWDot0vj/Slides?node-id=487-21",
+      "youtubeUrl": "",
+      "place": "SBI日本少額短期保険株式会社",
+      "image": "",
+      "date": "2025/01/17"
+    },
+    {
       "title": "モノレポ開発における Nuxt module の利活用について",
       "description": "Vue Fes Japan 2024 で導入予定のモノレポについて学びます。",
       "host": "v-kansai",
