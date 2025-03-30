@@ -6,10 +6,7 @@
     "allowJs": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "types": [
-      "node",
-      "@emotion/react/types/css-prop"
-    ],
+    "types": ["node", "@emotion/react/types/css-prop"],
     "strict": false,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
@@ -18,51 +15,21 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "root": [
-        "."
-      ],
-      "@components/*": [
-        "./src/components/*"
-      ],
-      "@hooks/*": [
-        "./src/hooks/*"
-      ],
-      "@sections/*": [
-        "./src/sections/*"
-      ],
-      "css/*": [
-        "./src/styles/*"
-      ],
-      "@utils/*": [
-        "./src/utils/*"
-      ],
-      "@icons/*": [
-        "./src/components/icons/*"
-      ],
-      "@lib/*": [
-        "./src/lib/*"
-      ],
-      "public/*": [
-        "./public/*"
-      ],
-      "node_modules/@nekohack/normalize.css/*": [
-        "../../node_modules/@nekohack/normalize.css/*"
-      ],
-      "@org/data": [
-        "../../libs/data/index.ts"
-      ],
-      "@org/shared/data": [
-        "../../libs/shared/data/index.ts"
-      ],
-      "@org/shared/hooks": [
-        "../../libs/shared/hooks/index.ts"
-      ],
-      "@org/shared/types": [
-        "../../libs/shared/types/index.ts"
-      ],
-      "@org/shared/ui": [
-        "../../libs/shared/ui/index.ts"
-      ]
+      "root": ["."],
+      "@components/*": ["./src/components/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@sections/*": ["./src/sections/*"],
+      "css/*": ["./src/styles/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@icons/*": ["./src/components/icons/*"],
+      "@lib/*": ["./src/lib/*"],
+      "public/*": ["./public/*"],
+      "node_modules/@nekohack/normalize.css/*": ["../../node_modules/@nekohack/normalize.css/*"],
+      "@org/data": ["../../libs/data/index.ts"],
+      "@org/shared/data": ["../../libs/shared/data/index.ts"],
+      "@org/shared/hooks": ["../../libs/shared/hooks/index.ts"],
+      "@org/shared/types": ["../../libs/shared/types/index.ts"],
+      "@org/shared/ui": ["../../libs/shared/ui/index.ts"]
     },
     "plugins": [
       {
@@ -78,10 +45,7 @@
     "**/*.jsx",
     "next-env.d.ts",
     "react-app-env.d.ts",
-    "../../dist/apps/company-legacyapp/.next/types/**/*.ts",
-    ".next/types/**/*.ts"
+    "../../dist/apps/company-legacyapp/.next/types/**/*.ts"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }
