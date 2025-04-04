@@ -30,7 +30,7 @@
     "@storybook/core-server": "7.6.20",
     "@storybook/react": "7.6.20",
     "@storybook/react-vite": "7.6.20",
-    "@stripe/react-stripe-js": "1.16.5",
+    "@stripe/react-stripe-js": "3.6.0",
     "@stripe/stripe-js": "1.54.2",
     "@tanstack/react-virtual": "3.13.6",
     "@types/node": "22.13.14",
