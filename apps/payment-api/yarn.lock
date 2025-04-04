@@ -5103,10 +5103,10 @@ semver@^7.5.3:
   dependencies:
     lru-cache "^6.0.0"
 
-serverless-esbuild@1.54.6:
-  version "1.54.6"
-  resolved "https://registry.yarnpkg.com/serverless-esbuild/-/serverless-esbuild-1.54.6.tgz#069bd259840c149f3453ef42468997c9844c6714"
-  integrity sha512-/2hNXZuAf5Gs/CGThWgLvzOHaq8wTv7WzcqLdDLkibQ9CLMvLuzndLe9HpxkFiU0dCklPyo5csIJ/jE/SdUzmg==
+serverless-esbuild@1.55.0:
+  version "1.55.0"
+  resolved "https://registry.yarnpkg.com/serverless-esbuild/-/serverless-esbuild-1.55.0.tgz#472039888f7a6330b6dc4afc039fa2d1e1eeb62d"
+  integrity sha512-bc25ZXPcY1r1D/7vyW/QxDICutYshY0xcRcbUHuhllt6EWE6V4Ds29igWs9rnoiRvCGrgJwxvbfGSEYeeaSvJg==
   dependencies:
     "@effect/platform" "^0.65.5"
     "@effect/platform-node" "^0.60.5"
