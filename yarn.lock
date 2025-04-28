@@ -5253,10 +5253,10 @@
     "@types/express" "^4.7.0"
     file-system-cache "2.3.0"
 
-"@stripe/react-stripe-js@1.16.5":
-  version "1.16.5"
-  resolved "https://registry.npmjs.org/@stripe/react-stripe-js/-/react-stripe-js-1.16.5.tgz"
-  integrity sha512-lVPW3IfwdacyS22pP+nBB6/GNFRRhT/4jfgAK6T2guQmtzPwJV1DogiGGaBNhiKtSY18+yS8KlHSu+PvZNclvQ==
+"@stripe/react-stripe-js@3.6.0":
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/@stripe/react-stripe-js/-/react-stripe-js-3.6.0.tgz#af6b66c006eef97ed885815ae976fb74f0aa1bf4"
+  integrity sha512-zEnaUmTOsu7zhl3RWbZ0l1dRiad+QIbcAYzQfF+yYelURJowhAwesRHKWH+qGAIBEpkO6/VCLFHhVLH9DtPlnw==
   dependencies:
     prop-types "^15.7.2"
 
