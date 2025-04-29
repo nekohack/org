@@ -1,8 +1,5 @@
-'use client'
-
 import { useEffect } from 'react'
 import Router from 'next/router'
-// import { Metadata } from 'next'
 import NProgress from 'nprogress'
 import 'zenscroll/zenscroll-min'
 import '@unocss/reset/tailwind.css'
@@ -12,12 +9,7 @@ import 'css/nprogress.scss'
 import 'css/fonts.scss'
 import { useScrollTop } from '@org/shared/hooks'
 
-// export const metadata: Metadata = {
-//   title: 'nekohack.me (Under Construction)',
-//   description: 'Hi, I am Yuma Kitamura! A Web Developer.',
-// }
-
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+function App({ Component, pageProps }) {
   useScrollTop()
 
   useEffect(() => {
@@ -39,9 +31,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     }
   }, [])
 
-  return (
-    <html lang='ja'>
-      <body>{children}</body>
-    </html>
-  )
+  return <Component {...pageProps} />
 }
+
+export default App
